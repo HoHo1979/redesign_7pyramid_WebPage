@@ -1,0 +1,63 @@
+{
+  "name": "seven-pyramid-wine-catalog",
+  "version": "1.0.0",
+  "description": "Static site generator for Seven Pyramid wine catalog with 2000+ wine records and SEO optimization",
+  "private": true,
+  "keywords": [
+    "wine",
+    "catalog",
+    "static-site-generator",
+    "seo",
+    "seven-pyramid",
+    "taiwan",
+    "wine-business"
+  ],
+  "license": "MIT",
+  "author": "Seven Pyramid Wine Import Business",
+  "main": "build-wine-catalog.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.prod.js",
+    "build:wine": "node build-wine-catalog.js",
+    "build:dev": "node build-wine-catalog.js && echo 'Build completed. Open generated/wine_list.html to preview.'",
+    "validate": "node validate-wine-data.js",
+    "update-prices": "node update-wine-prices.js",
+    "generate-sitemap": "node build-wine-catalog.js && echo 'Sitemap generated at generated/sitemap.xml'",
+    "deploy": "npm run build:wine && npm run copy-assets",
+    "copy-assets": "cp -r css img js generated/ && cp favicon.ico generated/ && cp site.webmanifest generated/",
+    "serve": "npx http-server generated -p 8080 -o",
+    "lint": "echo 'Linting wine data structure...' && node validate-wine-data.js",
+    "stats": "node wine-stats.js",
+    "fix-csp": "node fix-csp-violations.js",
+    "csp-check": "echo 'Checking for CSP violations...' && grep -r 'on[a-z]*=' *.html || echo 'No inline event handlers found - CSP compliant!'"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "csv-parser": "^3.0.0",
+    "fs-extra": "^11.1.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4",
+    "webpack-merge": "^5.10.0",
+    "http-server": "^14.1.1",
+    "nodemon": "^3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seven-pyramid/wine-catalog"
+  },
+  "bugs": {
+    "url": "https://github.com/seven-pyramid/wine-catalog/issues"
+  },
+  "homepage": "https://newyear.7pyramid.com"
+}

@@ -1,0 +1,652 @@
+<!doctype html>
+<html class="no-js" lang="zh-TW">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>台北頂級葡萄酒進口商 - 波爾多香檳專賣 | 七銘企業 Seven Pyramid</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/light.css" id="theme-link">
+  <meta name="description" content="台北市內湖區專業葡萄酒進口商，提供波爾多、香檳、勃艮第等頂級法國酒款。松山區門市，專業侍酒師服務，企業團購優惠，服務大台北、桃園、新竹、台中地區">
+  <meta name="keywords" content="台北葡萄酒,台北紅酒,內湖區酒商,波爾多台北,香檳台北,企業團購,侍酒師服務,Seven Pyramid,松山區葡萄酒,新竹葡萄酒">
+
+  <!-- Geo Meta Tags -->
+  <meta name="geo.region" content="TW-TPE">
+  <meta name="geo.placename" content="台北市內湖區">
+  <meta name="geo.position" content="25.0686;121.5750">
+  <meta name="ICBM" content="25.0686, 121.5750">
+
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "七銘企業葡萄酒烈酒進口商 Seven Pyramid",
+    "alternateName": ["七銘企業", "Seven Pyramid"],
+    "description": "台北市與新竹市專業葡萄酒進口商，提供頂級法國、澳洲、智利葡萄酒",
+    "url": "https://newyear.7pyramid.com",
+    "priceRange": "$$$$",
+    "openingHours": "Mo-Su 10:00-21:00",
+    "paymentAccepted": "Cash, Credit Card, Bank Transfer",
+    "currenciesAccepted": "TWD",
+    "areaServed": [
+      "台北市",
+      "新北市",
+      "桃園市",
+      "新竹縣",
+      "新竹市",
+      "台中市",
+      "台中縣"
+    ],
+    "serviceType": [
+      "葡萄酒進口",
+      "葡萄酒零售",
+      "企業團購",
+      "品酒活動",
+      "侍酒師服務"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "葡萄酒目錄",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Product",
+            "name": "法國波爾多葡萄酒",
+            "category": "Wine"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Product",
+            "name": "香檳",
+            "category": "Champagne"
+          }
+        }
+      ]
+    },
+    "location": [
+      {
+        "@type": "Place",
+        "name": "台北總公司",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "台北市內湖區",
+          "addressLocality": "內湖區",
+          "addressRegion": "台北市",
+          "postalCode": "114",
+          "addressCountry": "TW"
+        },
+        "telephone": "+886-2-2791-2147",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "25.0686",
+          "longitude": "121.5750"
+        }
+      },
+      {
+        "@type": "Place",
+        "name": "新竹分店",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "新竹市",
+          "addressLocality": "東區",
+          "addressRegion": "新竹市",
+          "postalCode": "300",
+          "addressCountry": "TW"
+        },
+        "telephone": "+886-2-2791-2147",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "24.8138",
+          "longitude": "120.9675"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <meta property="og:title" content="完整酒款目錄 - 七銘企業葡萄酒烈酒進口商">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="瀏覽七銘企業完整酒款目錄，精選世界頂級葡萄酒">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="manifest" href="site.webmanifest">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Wine List Specific Styles */
+    .wine-section {
+      margin: 40px 0;
+      background: var(--md-sys-color-surface-container);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .country-header {
+      color: var(--md-sys-color-primary);
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      text-align: center;
+      padding-bottom: 15px;
+      border-bottom: 3px solid var(--md-sys-color-primary);
+    }
+
+    .region-header {
+      color: var(--md-sys-color-secondary);
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin: 30px 0 20px 0;
+      padding: 15px 20px;
+      background: var(--md-sys-color-secondary-container);
+      border-radius: 10px;
+      border-left: 5px solid var(--md-sys-color-secondary);
+    }
+
+    .wine-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background: var(--md-sys-color-surface);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    }
+
+    .wine-table th {
+      background: var(--md-sys-color-primary);
+      color: var(--md-sys-color-on-primary);
+      padding: 15px 12px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .wine-table td {
+      padding: 12px;
+      border-bottom: 1px solid var(--md-sys-color-outline-variant);
+      color: var(--md-sys-color-on-surface);
+      vertical-align: top;
+    }
+
+    .wine-table tr:hover {
+      background: var(--md-sys-color-surface-variant);
+    }
+
+    .wine-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .wine-name {
+      font-weight: 600;
+      color: var(--md-sys-color-primary);
+    }
+
+    .chinese-name {
+      color: var(--md-sys-color-on-surface-variant);
+      font-size: 0.9rem;
+      margin-top: 5px;
+    }
+
+    .vintage {
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .price {
+      font-weight: 700;
+      color: var(--md-sys-color-tertiary);
+      text-align: right;
+    }
+
+    .region-name {
+      font-style: italic;
+      color: var(--md-sys-color-on-surface-variant);
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      padding: 20px 0;
+      color: var(--md-sys-color-on-surface-variant);
+    }
+
+    .breadcrumb a {
+      color: var(--md-sys-color-primary);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--md-sys-color-secondary);
+    }
+
+    /* Back to top button */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--md-sys-color-primary);
+      color: var(--md-sys-color-on-primary);
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: all 0.3s;
+    }
+
+    .back-to-top:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      .wine-table {
+        font-size: 0.9rem;
+      }
+
+      .wine-table th,
+      .wine-table td {
+        padding: 8px 6px;
+      }
+
+      .country-header {
+        font-size: 2rem;
+      }
+
+      .region-header {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body class="light">
+  <!-- Sticky Navigation Header -->
+  <nav style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: var(--md-sys-color-surface-container); backdrop-filter: blur(10px); border-bottom: 1px solid var(--md-sys-color-outline-variant); padding: 15px 0;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between;">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <img src="img/7pyramidlogo.jpg" alt="Seven Pyramid Logo" style="height: 40px; width: auto; border-radius: 6px;">
+        <div style="font-size: 1.5rem; font-weight: bold; color: var(--md-sys-color-primary);">
+          <a href="index.html" style="text-decoration: none; color: inherit;">七銘企業 Seven Pyramid</a>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 30px;">
+        <a href="index.html" class="nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; transition: color 0.3s;">首頁</a>
+        <a href="#french-wines" class="nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; transition: color 0.3s;">法國酒款</a>
+        <a href="#australian-wines" class="nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; transition: color 0.3s;">澳洲酒款</a>
+        <a href="#chilean-wines" class="nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; transition: color 0.3s;">智利酒款</a>
+        <button id="theme-toggle" style="padding: 8px 12px; border: none; border-radius: 20px; cursor: pointer; background: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); font-size: 0.9rem;">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main style="margin-top: 80px; padding: 40px 20px;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+
+      <!-- Breadcrumb -->
+      <div class="breadcrumb">
+        <a href="index.html">七銘葡萄酒首頁</a> / 完整酒款目錄
+      </div>
+
+      <!-- Page Header -->
+      <div style="text-align: center; margin: 40px 0 60px 0;">
+        <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); color: var(--md-sys-color-primary); margin-bottom: 20px; font-weight: 700;">Seven Pyramid 頂級葡萄酒進口商 - 完整酒款目錄</h1>
+        <p style="font-size: 1.2rem; color: var(--md-sys-color-on-surface-variant); max-width: 700px; margin: 0 auto; line-height: 1.6;">
+          台北市內湖區總店 ＆ 新竹市Howine分店，專業進口世界頂級葡萄酒，每一瓶都經過專業團隊嚴格挑選<br>
+          <span style="color: var(--md-sys-color-primary); font-weight: 600;">雙地現貨供應 | 專業服務 | 企業團購優惠 | 新竹科學園區配送</span>
+        </p>
+      </div>
+
+      <!-- Service Area Section -->
+      <section class="wine-section" style="margin-bottom: 60px;">
+        <h2 style="color: var(--md-sys-color-secondary); font-size: 1.8rem; font-weight: 600; margin-bottom: 25px; text-align: center;">🏪 雙店服務區域與特色</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+          <div style="background: var(--md-sys-color-surface); border-radius: 15px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <h3 style="color: var(--md-sys-color-primary); font-size: 1.3rem; margin-bottom: 15px;">📍 台北總店服務區域</h3>
+            <p style="color: var(--md-sys-color-on-surface); line-height: 1.6; margin-bottom: 15px;">主要服務台北市、新北市、桃園市客戶</p>
+            <ul style="color: var(--md-sys-color-on-surface-variant); list-style-type: none; padding-left: 0;">
+              <li style="margin-bottom: 8px;">🏢 台北市內湖區總店</li>
+              <li style="margin-bottom: 8px;">✅ 台北市松山區門市現貨供應</li>
+              <li style="margin-bottom: 8px;">🚚 大台北地區當日配送服務</li>
+              <li style="margin-bottom: 8px;">📞 總店專線: (02) 2791-2147</li>
+            </ul>
+          </div>
+          <div style="background: var(--md-sys-color-surface); border-radius: 15px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <h3 style="color: var(--md-sys-color-primary); font-size: 1.3rem; margin-bottom: 15px;">📍 新竹Howine服務區域</h3>
+            <p style="color: var(--md-sys-color-on-surface); line-height: 1.6; margin-bottom: 15px;">主要服務新竹縣、新竹市、台中市、台中縣客戶</p>
+            <ul style="color: var(--md-sys-color-on-surface-variant); list-style-type: none; padding-left: 0;">
+              <li style="margin-bottom: 8px;">🏢 新竹市Howine分店</li>
+              <li style="margin-bottom: 8px;">💼 新竹科學園區企業配送</li>
+              <li style="margin-bottom: 8px;">🚚 新竹市區配送服務</li>
+              <li style="margin-bottom: 8px;">📞 分店專線: (02) 2791-2147</li>
+            </ul>
+          </div>
+          <div style="background: var(--md-sys-color-surface); border-radius: 15px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <h3 style="color: var(--md-sys-color-primary); font-size: 1.3rem; margin-bottom: 15px;">📰 台灣品酒會活動週報</h3>
+            <p style="color: var(--md-sys-color-on-surface); line-height: 1.6; margin-bottom: 15px;">定期於台北市與新竹市舉辦專業品酒會，歡迎愛酒人士參加</p>
+            <ul style="color: var(--md-sys-color-on-surface-variant); list-style-type: none; padding-left: 0;">
+              <li style="margin-bottom: 8px;">🥂 雙店每月主題品酒會</li>
+              <li style="margin-bottom: 8px;">👨‍🏫 專業侍酒師導覽</li>
+              <li style="margin-bottom: 8px;">🎯 企業品酒活動規劃</li>
+              <li style="margin-bottom: 8px;">📅 預約制小班教學</li>
+            </ul>
+          </div>
+          <div style="background: var(--md-sys-color-surface); border-radius: 15px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <h3 style="color: var(--md-sys-color-primary); font-size: 1.3rem; margin-bottom: 15px;">🎯 專業服務特色</h3>
+            <p style="color: var(--md-sys-color-on-surface); line-height: 1.6; margin-bottom: 15px;">Seven Pyramid 專業團隊為您提供全方位服務</p>
+            <ul style="color: var(--md-sys-color-on-surface-variant); list-style-type: none; padding-left: 0;">
+              <li style="margin-bottom: 8px;">🍷 專業侍酒師諮詢服務</li>
+              <li style="margin-bottom: 8px;">🏢 企業客戶專案採購</li>
+              <li style="margin-bottom: 8px;">🎁 客製化禮盒包裝服務</li>
+              <li style="margin-bottom: 8px;">📦 溫控冷鏈配送保障</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- French Wines Section -->
+      <section id="french-wines" class="wine-section">
+        <h2 class="country-header">🇫🇷 法國葡萄酒</h2>
+
+        <!-- Bordeaux Region -->
+        <h3 class="region-header">波爾多 Bordeaux</h3>
+        <table class="wine-table">
+          <thead>
+            <tr>
+              <th>酒款名稱</th>
+              <th>中文名稱</th>
+              <th>年份</th>
+              <th>產區</th>
+              <th>價格 (NT$)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="wine-name">Château Margaux</td>
+              <td class="chinese-name">瑪歌酒莊</td>
+              <td class="vintage">2015</td>
+              <td class="region-name">Margaux</td>
+              <td class="price">28,800</td>
+            </tr>
+            <tr>
+              <td class="wine-name">Château Lafite Rothschild</td>
+              <td class="chinese-name">拉菲古堡</td>
+              <td class="vintage">2016</td>
+              <td class="region-name">Pauillac</td>
+              <td class="price">35,600</td>
+            </tr>
+            <tr>
+              <td class="wine-name">Château Latour</td>
+              <td class="chinese-name">拉圖酒莊</td>
+              <td class="vintage">2014</td>
+              <td class="region-name">Pauillac</td>
+              <td class="price">32,400</td>
+            </tr>
+            <tr>
+              <td class="wine-name">Château Haut-Brion</td>
+              <td class="chinese-name">侯伯王酒莊</td>
+              <td class="vintage">2017</td>
+              <td class="region-name">Pessac-Léognan</td>
+              <td class="price">26,800</td>
+            </tr>
+            <tr>
+              <td class="wine-name">Château Mouton Rothschild</td>
+              <td class="chinese-name">木桐酒莊</td>
+              <td class="vintage">2015</td>
+              <td class="region-name">Pauillac</td>
+              <td class="price">31,200</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Burgundy Region -->
+        <h3 class="region-header">勃艮第 Burgundy</h3>
+        <table class="wine-table">
+          <thead>
+            <tr>
+              <th>酒款名稱</th>
+              <th>中文名稱</th>
+              <th>年份</th>
+              <th>產區</th>
+              <th>價格 (NT$)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="wine-name">Domaine de la Romanée-Conti</td>
+              <td class="chinese-name">羅曼尼康帝</td>
+              <td class="vintage">2018</td>
+              <td class="region-name">Vosne-Romanée</td>
+              <td class="price">85,000</td>
+            </tr>
+            <tr>
+              <td class="wine-name">Domaine Leroy Chambertin</td>
+              <td class="chinese-name">勒樺香貝丹</td>
+              <td class="vintage">2017</td>
+              <td class="region-name">Gevrey-Chambertin</td>
+              <td class="price">45,600</td>
+            </tr>
+            <tr>
+              <td class="wine-name">Louis Jadot Clos Vougeot</td>
+              <td class="chinese-name">路易亞都伏舊園</td>
+              <td class="vintage">2016</td>
+              <td class="region-name">Vougeot</td>
+              <td class="price">18,800</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Champagne Region -->
+        <h3 class="region-header">香檳 Champagne</h3>
+        <table class="wine-table">
+          <thead>
+            <tr>
+              <th>酒款名稱</th>
+              <th>中文名稱</th>
+              <th>年份</th>
+              <th>產區</th>
+              <th>價格 (NT$)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="wine-name">Dom Pérignon</td>
+              <td class="chinese-name">香檳王</td>
+              <td class="vintage">2012</td>
+              <td class="region-name">Épernay</td>
+              <td class="price">8,800</td>
+            </tr>
+            <tr>
+              <td class="wine-name">Krug Grande Cuvée</td>
+              <td class="chinese-name">庫克大師精選</td>
+              <td class="vintage">NV</td>
+              <td class="region-name">Reims</td>
+              <td class="price">9,600</td>
+            </tr>
+            <tr>
+              <td class="wine-name">Louis Roederer Cristal</td>
+              <td class="chinese-name">路易侯德勒水晶</td>
+              <td class="vintage">2013</td>
+              <td class="region-name">Reims</td>
+              <td class="price">12,400</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Australian Wines Section -->
+      <section id="australian-wines" class="wine-section">
+        <h2 class="country-header">🇦🇺 澳洲葡萄酒</h2>
+
+        <!-- Barossa Valley -->
+        <h3 class="region-header">巴羅莎谷 Barossa Valley</h3>
+        <table class="wine-table">
+          <thead>
+            <tr>
+              <th>酒款名稱</th>
+              <th>中文名稱</th>
+              <th>年份</th>
+              <th>產區</th>
+              <th>價格 (NT$)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="wine-name">Penfolds Grange</td>
+              <td class="chinese-name">奔富葛蘭許</td>
+              <td class="vintage">2017</td>
+              <td class="region-name">Barossa Valley</td>
+              <td class="price">22,800</td>
+            </tr>
+            <tr>
+              <td class="wine-name">Henschke Hill of Grace</td>
+              <td class="chinese-name">翰斯科神恩山</td>
+              <td class="vintage">2016</td>
+              <td class="region-name">Eden Valley</td>
+              <td class="price">18,600</td>
+            </tr>
+            <tr>
+              <td class="wine-name">Wolf Blass Black Label</td>
+              <td class="chinese-name">禾富黑牌</td>
+              <td class="vintage">2018</td>
+              <td class="region-name">Barossa Valley</td>
+              <td class="price">5,400</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Margaret River -->
+        <h3 class="region-header">瑪格麗特河 Margaret River</h3>
+        <table class="wine-table">
+          <thead>
+            <tr>
+              <th>酒款名稱</th>
+              <th>中文名稱</th>
+              <th>年份</th>
+              <th>產區</th>
+              <th>價格 (NT$)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="wine-name">Cullen Diana Madeline</td>
+              <td class="chinese-name">卡倫黛安娜</td>
+              <td class="vintage">2019</td>
+              <td class="region-name">Margaret River</td>
+              <td class="price">8,800</td>
+            </tr>
+            <tr>
+              <td class="wine-name">Leeuwin Estate Art Series</td>
+              <td class="chinese-name">露紋藝術系列</td>
+              <td class="vintage">2018</td>
+              <td class="region-name">Margaret River</td>
+              <td class="price">6,200</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Chilean Wines Section -->
+      <section id="chilean-wines" class="wine-section">
+        <h2 class="country-header">🇨🇱 智利葡萄酒</h2>
+
+        <!-- Maipo Valley -->
+        <h3 class="region-header">邁波谷 Maipo Valley</h3>
+        <table class="wine-table">
+          <thead>
+            <tr>
+              <th>酒款名稱</th>
+              <th>中文名稱</th>
+              <th>年份</th>
+              <th>產區</th>
+              <th>價格 (NT$)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="wine-name">Almaviva</td>
+              <td class="chinese-name">活靈魂</td>
+              <td class="vintage">2018</td>
+              <td class="region-name">Puente Alto</td>
+              <td class="price">8,600</td>
+            </tr>
+            <tr>
+              <td class="wine-name">Don Melchor</td>
+              <td class="chinese-name">魅力</td>
+              <td class="vintage">2017</td>
+              <td class="region-name">Alto Maipo</td>
+              <td class="price">5,800</td>
+            </tr>
+            <tr>
+              <td class="wine-name">Seña</td>
+              <td class="chinese-name">桑雅</td>
+              <td class="vintage">2019</td>
+              <td class="region-name">Aconcagua Valley</td>
+              <td class="price">7,200</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Colchagua Valley -->
+        <h3 class="region-header">空加瓜谷 Colchagua Valley</h3>
+        <table class="wine-table">
+          <thead>
+            <tr>
+              <th>酒款名稱</th>
+              <th>中文名稱</th>
+              <th>年份</th>
+              <th>產區</th>
+              <th>價格 (NT$)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="wine-name">Montes Alpha M</td>
+              <td class="chinese-name">蒙特斯阿爾法M</td>
+              <td class="vintage">2017</td>
+              <td class="region-name">Apalta</td>
+              <td class="price">4,800</td>
+            </tr>
+            <tr>
+              <td class="wine-name">Casa Lapostolle Clos Apalta</td>
+              <td class="chinese-name">拉博絲特阿帕塔園</td>
+              <td class="vintage">2018</td>
+              <td class="region-name">Apalta</td>
+              <td class="price">6,400</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Contact Section -->
+      <section style="margin-top: 60px; padding: 40px; background: var(--md-sys-color-primary-container); border-radius: 20px; text-align: center;">
+        <h2 style="color: var(--md-sys-color-on-primary-container); margin-bottom: 20px; font-size: 1.8rem; font-weight: 600;">對特定酒款有興趣？</h2>
+        <p style="color: var(--md-sys-color-on-primary-container); margin-bottom: 30px; opacity: 0.8; font-size: 1.1rem;">聯繫我們的專業團隊，獲得詳細資訊與專業建議</p>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+          <a href="index.html#contact" style="display: inline-block; padding: 15px 30px; background: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); text-decoration: none; border-radius: 25px; font-weight: 600; transition: all 0.3s;">聯繫我們</a>
+          <a href="https://newyear.7pyramid.com" target="_blank" style="display: inline-block; padding: 15px 30px; background: transparent; color: var(--md-sys-color-on-primary-container); text-decoration: none; border-radius: 25px; font-weight: 600; border: 2px solid var(--md-sys-color-on-primary-container); transition: all 0.3s;">瀏覽線上目錄</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top-btn" style="display: none;">↑</button>
+
+  <script src="js/app.js"></script>
+  <script src="js/csp-fix.js"></script>
+</body>
+
+</html>

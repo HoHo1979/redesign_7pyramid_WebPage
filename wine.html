@@ -1,0 +1,118 @@
+<!doctype html>
+<html class="no-js" lang="zh-TW">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Dynamic meta tags - will be updated by JavaScript -->
+  <title id="page-title">載入中... | 台灣酒商</title>
+  <meta name="description" id="page-description" content="台灣頂級酒類銷售">
+  <meta name="keywords" id="page-keywords" content="紅酒, 白酒, 香檳, 威士忌, 台灣">
+
+  <!-- Open Graph tags for social sharing -->
+  <meta property="og:title" id="og-title" content="">
+  <meta property="og:description" id="og-description" content="">
+  <meta property="og:image" id="og-image" content="">
+  <meta property="og:url" id="og-url" content="">
+  <meta property="og:type" content="product">
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/karkhc.css" id="theme-link">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+
+  <!-- Structured Data will be inserted here -->
+  <script type="application/ld+json" id="wine-structured-data">
+  </script>
+</head>
+
+<body class="karkhc">
+  <!-- Theme switching button -->
+  <div style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
+    <button id="theme-toggle" style="padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; background: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary);">
+      Change Theme
+    </button>
+  </div>
+
+  <!-- Navigation -->
+  <nav style="padding: 20px; background: var(--md-sys-color-surface-container);">
+    <a href="index.html" style="color: var(--md-sys-color-on-surface); text-decoration: none;">&larr; 返回首頁</a>
+  </nav>
+
+  <!-- Loading state -->
+  <div id="loading" style="text-align: center; padding: 50px; color: var(--md-sys-color-on-surface);">
+    <h2>載入中...</h2>
+    <p>正在獲取酒款資訊</p>
+  </div>
+
+  <!-- Error state -->
+  <div id="error" style="display: none; text-align: center; padding: 50px; color: var(--md-sys-color-error);">
+    <h2>載入失敗</h2>
+    <p id="error-message">無法找到此酒款資訊</p>
+    <button class="reload-btn" style="padding: 10px 20px; margin-top: 20px; background: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); border: none; border-radius: 5px; cursor: pointer;">
+      重新載入
+    </button>
+  </div>
+
+  <!-- Wine content -->
+  <main id="wine-content" style="display: none; max-width: 1200px; margin: 0 auto; padding: 20px; color: var(--md-sys-color-on-surface);">
+    <!-- Wine header -->
+    <header style="text-align: center; margin-bottom: 40px;">
+      <h1 id="wine-name" style="font-size: 2.5rem; margin-bottom: 10px; color: var(--md-sys-color-primary);"></h1>
+      <h2 id="wine-name-en" style="font-size: 1.5rem; margin-bottom: 20px; color: var(--md-sys-color-on-surface-variant);"></h2>
+      <div id="wine-year" style="font-size: 1.2rem; background: var(--md-sys-color-secondary-container); color: var(--md-sys-color-on-secondary-container); padding: 10px 20px; border-radius: 20px; display: inline-block;"></div>
+    </header>
+
+    <!-- Wine details -->
+    <section style="display: grid; grid-template-columns: 1fr 2fr; gap: 40px; margin-bottom: 40px;">
+      <!-- Wine image -->
+      <div>
+        <img id="wine-image" src="" alt="" style="width: 100%; max-width: 400px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      </div>
+
+      <!-- Wine information -->
+      <div>
+        <div style="background: var(--md-sys-color-surface-container); padding: 30px; border-radius: 15px;">
+          <h3 style="color: var(--md-sys-color-primary); margin-bottom: 20px;">酒款資訊</h3>
+
+          <div style="display: grid; gap: 15px;">
+            <div><strong>產區:</strong> <span id="wine-region"></span></div>
+            <div><strong>酒精濃度:</strong> <span id="wine-alcohol"></span></div>
+            <div><strong>葡萄品種:</strong> <span id="wine-grapes"></span></div>
+            <div><strong>價格:</strong> <span id="wine-price" style="color: var(--md-sys-color-primary); font-size: 1.2rem; font-weight: bold;"></span></div>
+            <div><strong>庫存狀態:</strong> <span id="wine-stock"></span></div>
+          </div>
+
+          <button id="contact-btn" style="width: 100%; padding: 15px; margin-top: 20px; background: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); border: none; border-radius: 8px; font-size: 1.1rem; cursor: pointer;">
+            聯繫購買
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wine description -->
+    <section style="background: var(--md-sys-color-surface-container); padding: 30px; border-radius: 15px; margin-bottom: 40px;">
+      <h3 style="color: var(--md-sys-color-primary); margin-bottom: 20px;">酒款介紹</h3>
+      <div id="wine-description" style="line-height: 1.6;"></div>
+    </section>
+
+    <!-- Tasting notes -->
+    <section style="background: var(--md-sys-color-tertiary-container); color: var(--md-sys-color-on-tertiary-container); padding: 30px; border-radius: 15px;">
+      <h3 style="margin-bottom: 20px;">品酒筆記</h3>
+      <div id="wine-tasting-notes" style="line-height: 1.6;"></div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script src="js/wine.js"></script>
+  <script src="js/csp-fix.js"></script>
+</body>
+
+</html>

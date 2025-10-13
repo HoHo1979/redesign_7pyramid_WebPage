@@ -1,0 +1,449 @@
+{
+  "metadata": {
+    "lastUpdated": "2024-12-20T10:30:00Z",
+    "version": "1.0.0",
+    "totalWines": 25,
+    "currencies": ["TWD", "USD"],
+    "priceUpdateFrequency": "weekly",
+    "dataSource": "Seven Pyramid Wine Management System",
+    "contact": {
+      "phone": "+886-2-2791-2147",
+      "email": "info@7pyramid.com",
+      "website": "https://newyear.7pyramid.com"
+    }
+  },
+  "countries": {
+    "france": {
+      "name": "法國葡萄酒",
+      "nameEn": "French Wines",
+      "emoji": "🇫🇷",
+      "description": "世界頂級葡萄酒產區，包含波爾多、勃艮第、香檳等經典產區",
+      "seoTitle": "法國葡萄酒 - 波爾多香檳專賣 | 七銘企業",
+      "seoDescription": "精選法國頂級葡萄酒，包含波爾多、勃艮第、香檳等名莊酒款，台北內湖新竹雙店現貨供應",
+      "regions": {
+        "bordeaux": {
+          "name": "波爾多",
+          "nameEn": "Bordeaux",
+          "description": "世界最著名的紅酒產區，出產拉菲、瑪歌等頂級酒莊",
+          "mapImage": "img/bordeaux_wine_map.png",
+          "wines": [
+            {
+              "id": "FR-BDX-001",
+              "name": "Château Margaux",
+              "nameCh": "瑪歌酒莊",
+              "vintage": "2015",
+              "region": "Margaux",
+              "subRegion": "Left Bank",
+              "appellation": "Margaux AOC",
+              "classification": "First Growth",
+              "price": {
+                "twd": 28800,
+                "usd": 900,
+                "originalPrice": 32000,
+                "discount": 10
+              },
+              "inStock": true,
+              "stockLevel": 12,
+              "category": "Red Wine",
+              "wineType": "Dry Red",
+              "grapes": ["Cabernet Sauvignon 85%", "Merlot 10%", "Petit Verdot 3%", "Cabernet Franc 2%"],
+              "alcohol": 13.5,
+              "servingTemp": "16-18°C",
+              "agingPotential": "2025-2045",
+              "bottleSize": "750ml",
+              "closure": "Cork",
+              "producer": "Château Margaux",
+              "importer": "Seven Pyramid 七銘企業",
+              "description": "世界頂級酒莊，優雅細膩的波爾多經典，絲滑單寧配上複雜花香與黑果風味",
+              "tastingNotes": {
+                "appearance": "深紅寶石色澤",
+                "aroma": "黑醋栗、紫羅蘭、雪松、石墨礦物香氣",
+                "palate": "口感優雅平衡，絲滑單寧，餘韻悠長",
+                "finish": "持久的果香與香料餘味"
+              },
+              "foodPairing": ["牛排", "羊排", "野味", "陳年起司"],
+              "awards": [
+                "Robert Parker: 96/100",
+                "Wine Spectator: 95/100",
+                "James Suckling: 97/100"
+              ],
+              "seoKeywords": ["瑪歌", "波爾多", "法國紅酒", "頂級酒莊", "一級酒莊"],
+              "lastPriceUpdate": "2024-12-15T09:00:00Z",
+              "imageUrl": "img/wines/chateau-margaux-2015.jpg",
+              "available": {
+                "taipei": true,
+                "hsinchu": false
+              },
+              "tags": ["Premium", "Collectible", "Investment Grade", "Corporate Gift"]
+            },
+            {
+              "id": "FR-BDX-002",
+              "name": "Château Lafite Rothschild",
+              "nameCh": "拉菲古堡",
+              "vintage": "2016",
+              "region": "Pauillac",
+              "subRegion": "Left Bank",
+              "appellation": "Pauillac AOC",
+              "classification": "First Growth",
+              "price": {
+                "twd": 35600,
+                "usd": 1113,
+                "originalPrice": 38000,
+                "discount": 6
+              },
+              "inStock": true,
+              "stockLevel": 8,
+              "category": "Red Wine",
+              "wineType": "Dry Red",
+              "grapes": ["Cabernet Sauvignon 92%", "Merlot 7%", "Petit Verdot 1%"],
+              "alcohol": 13.0,
+              "servingTemp": "16-18°C",
+              "agingPotential": "2025-2050",
+              "bottleSize": "750ml",
+              "closure": "Cork",
+              "producer": "Château Lafite Rothschild",
+              "importer": "Seven Pyramid 七銘企業",
+              "description": "世界最著名的葡萄酒之一，優雅精緻的風格代表了波爾多左岸的極致表現",
+              "tastingNotes": {
+                "appearance": "深紅寶石色",
+                "aroma": "黑醋栗、煙草、雪松、石墨香氣",
+                "palate": "結構完美，單寧精細，層次豐富",
+                "finish": "極為悠長的礦物質餘韻"
+              },
+              "foodPairing": ["頂級牛排", "燉牛肉", "烤羊腿", "野味"],
+              "awards": [
+                "Robert Parker: 98/100",
+                "Wine Spectator: 96/100",
+                "Jancis Robinson: 18.5/20"
+              ],
+              "seoKeywords": ["拉菲", "波爾多", "頂級紅酒", "一級酒莊", "投資級"],
+              "lastPriceUpdate": "2024-12-15T09:00:00Z",
+              "imageUrl": "img/wines/chateau-lafite-2016.jpg",
+              "available": {
+                "taipei": true,
+                "hsinchu": true
+              },
+              "tags": ["Premium", "Collectible", "Investment Grade", "Limited Edition"]
+            }
+          ]
+        },
+        "burgundy": {
+          "name": "勃艮第",
+          "nameEn": "Burgundy",
+          "description": "以Pinot Noir和Chardonnay聞名的精品產區",
+          "mapImage": "img/burgundy_wine_map.png",
+          "wines": [
+            {
+              "id": "FR-BUR-001",
+              "name": "Domaine de la Romanée-Conti",
+              "nameCh": "羅曼尼康帝",
+              "vintage": "2018",
+              "region": "Vosne-Romanée",
+              "subRegion": "Côte de Nuits",
+              "appellation": "Romanée-Conti Grand Cru",
+              "classification": "Grand Cru",
+              "price": {
+                "twd": 85000,
+                "usd": 2656,
+                "originalPrice": 90000,
+                "discount": 6
+              },
+              "inStock": true,
+              "stockLevel": 2,
+              "category": "Red Wine",
+              "wineType": "Dry Red",
+              "grapes": ["Pinot Noir 100%"],
+              "alcohol": 13.0,
+              "servingTemp": "14-16°C",
+              "agingPotential": "2025-2040",
+              "bottleSize": "750ml",
+              "closure": "Cork",
+              "producer": "Domaine de la Romanée-Conti",
+              "importer": "Seven Pyramid 七銘企業",
+              "description": "世界最傳奇的葡萄園，勃艮第的聖杯，極為珍稀的頂級佳釀",
+              "tastingNotes": {
+                "appearance": "淺紅寶石色澤",
+                "aroma": "玫瑰花瓣、紅櫻桃、香料、泥土氣息",
+                "palate": "絲綢般質地，極致優雅，層次無窮",
+                "finish": "綿長深邃的餘韻"
+              },
+              "foodPairing": ["松露料理", "野禽", "精緻法餐", "陳年起司"],
+              "awards": [
+                "Robert Parker: 100/100",
+                "Wine Spectator: 98/100",
+                "Allen Meadows: 98/100"
+              ],
+              "seoKeywords": ["羅曼尼康帝", "DRC", "勃艮第", "頂級紅酒", "傳奇酒莊"],
+              "lastPriceUpdate": "2024-12-15T09:00:00Z",
+              "imageUrl": "img/wines/romanee-conti-2018.jpg",
+              "available": {
+                "taipei": true,
+                "hsinchu": false
+              },
+              "tags": ["Ultra Premium", "Legendary", "Investment Grade", "Collector's Item"]
+            }
+          ]
+        },
+        "champagne": {
+          "name": "香檳",
+          "nameEn": "Champagne",
+          "description": "世界最著名的氣泡酒產區，慶祝與奢華的象徵",
+          "mapImage": "img/champagne_wine_map.png",
+          "wines": [
+            {
+              "id": "FR-CHA-001",
+              "name": "Dom Pérignon",
+              "nameCh": "香檳王",
+              "vintage": "2012",
+              "region": "Épernay",
+              "subRegion": "Champagne",
+              "appellation": "Champagne AOC",
+              "classification": "Prestige Cuvée",
+              "price": {
+                "twd": 8800,
+                "usd": 275,
+                "originalPrice": 9500,
+                "discount": 7
+              },
+              "inStock": true,
+              "stockLevel": 24,
+              "category": "Sparkling Wine",
+              "wineType": "Brut",
+              "grapes": ["Chardonnay 50%", "Pinot Noir 50%"],
+              "alcohol": 12.5,
+              "servingTemp": "6-8°C",
+              "agingPotential": "2024-2032",
+              "bottleSize": "750ml",
+              "closure": "Cork & Wire Cage",
+              "producer": "Moët & Chandon",
+              "importer": "Seven Pyramid 七銘企業",
+              "description": "香檳之王，完美平衡的經典香檳，適合各種慶祝場合",
+              "tastingNotes": {
+                "appearance": "金黃色澤，細緻氣泡",
+                "aroma": "柑橘、白花、烤麵包、礦物香氣",
+                "palate": "清新優雅，酸度平衡，氣泡細緻",
+                "finish": "持久的果香與酵母餘韻"
+              },
+              "foodPairing": ["生蠔", "魚子醬", "白肉", "甜點"],
+              "awards": [
+                "Wine Spectator: 94/100",
+                "Robert Parker: 93/100",
+                "Champagne Guide: 17/20"
+              ],
+              "seoKeywords": ["香檳王", "Dom Pérignon", "香檳", "氣泡酒", "慶祝"],
+              "lastPriceUpdate": "2024-12-15T09:00:00Z",
+              "imageUrl": "img/wines/dom-perignon-2012.jpg",
+              "available": {
+                "taipei": true,
+                "hsinchu": true
+              },
+              "tags": ["Premium", "Celebration", "Corporate Gift", "Wedding"]
+            }
+          ]
+        }
+      }
+    },
+    "australia": {
+      "name": "澳洲葡萄酒",
+      "nameEn": "Australian Wines",
+      "emoji": "🇦🇺",
+      "description": "新世界葡萄酒的代表，以Shiraz和Cabernet Sauvignon聞名",
+      "seoTitle": "澳洲葡萄酒 - 巴羅莎谷精選 | 七銘企業",
+      "seoDescription": "精選澳洲頂級葡萄酒，巴羅莎谷、獵人谷名莊酒款，台北內湖新竹雙店現貨供應",
+      "regions": {
+        "barossa": {
+          "name": "巴羅莎谷",
+          "nameEn": "Barossa Valley",
+          "description": "澳洲最著名的紅酒產區，以Shiraz聞名世界",
+          "mapImage": "img/australia_wine_map.png",
+          "wines": [
+            {
+              "id": "AU-BAR-001",
+              "name": "Penfolds Grange",
+              "nameCh": "奔富葛蘭許",
+              "vintage": "2017",
+              "region": "Barossa Valley",
+              "subRegion": "South Australia",
+              "appellation": "Barossa Valley",
+              "classification": "Icon Wine",
+              "price": {
+                "twd": 22800,
+                "usd": 713,
+                "originalPrice": 25000,
+                "discount": 9
+              },
+              "inStock": true,
+              "stockLevel": 15,
+              "category": "Red Wine",
+              "wineType": "Dry Red",
+              "grapes": ["Shiraz 98%", "Cabernet Sauvignon 2%"],
+              "alcohol": 14.5,
+              "servingTemp": "16-18°C",
+              "agingPotential": "2025-2045",
+              "bottleSize": "750ml",
+              "closure": "Cork",
+              "producer": "Penfolds Winery",
+              "importer": "Seven Pyramid 七銘企業",
+              "description": "澳洲國寶級葡萄酒，新世界Shiraz的巔峰之作",
+              "tastingNotes": {
+                "appearance": "深紫紅色",
+                "aroma": "黑莓、香料、巧克力、煙燻橡木香氣",
+                "palate": "濃郁飽滿，結構強勁，單寧成熟",
+                "finish": "持久的果香與香料餘韻"
+              },
+              "foodPairing": ["烤牛肉", "羊肉", "野味", "濃郁起司"],
+              "awards": [
+                "Robert Parker: 97/100",
+                "Wine Spectator: 95/100",
+                "James Halliday: 97/100"
+              ],
+              "seoKeywords": ["奔富", "葛蘭許", "澳洲紅酒", "Shiraz", "巴羅莎"],
+              "lastPriceUpdate": "2024-12-15T09:00:00Z",
+              "imageUrl": "img/wines/penfolds-grange-2017.jpg",
+              "available": {
+                "taipei": true,
+                "hsinchu": true
+              },
+              "tags": ["Premium", "Icon Wine", "Australian Classic", "Investment Grade"]
+            }
+          ]
+        }
+      }
+    },
+    "chile": {
+      "name": "智利葡萄酒",
+      "nameEn": "Chilean Wines",
+      "emoji": "🇨🇱",
+      "description": "南美洲優質葡萄酒產區，以Cabernet Sauvignon和Carménère聞名",
+      "seoTitle": "智利葡萄酒 - 邁波谷精選 | 七銘企業",
+      "seoDescription": "精選智利頂級葡萄酒，邁波谷、空加瓜谷名莊酒款，台北內湖新竹雙店現貨供應",
+      "regions": {
+        "maipo": {
+          "name": "邁波谷",
+          "nameEn": "Maipo Valley",
+          "description": "智利最著名的紅酒產區，以Cabernet Sauvignon聞名",
+          "mapImage": "img/chile_wine_map.png",
+          "wines": [
+            {
+              "id": "CL-MAI-001",
+              "name": "Almaviva",
+              "nameCh": "活靈魂",
+              "vintage": "2018",
+              "region": "Puente Alto",
+              "subRegion": "Maipo Valley",
+              "appellation": "Puente Alto DO",
+              "classification": "Premium",
+              "price": {
+                "twd": 8600,
+                "usd": 269,
+                "originalPrice": 9200,
+                "discount": 7
+              },
+              "inStock": true,
+              "stockLevel": 18,
+              "category": "Red Wine",
+              "wineType": "Dry Red",
+              "grapes": ["Cabernet Sauvignon 72%", "Carménère 19%", "Cabernet Franc 6%", "Petit Verdot 3%"],
+              "alcohol": 14.5,
+              "servingTemp": "16-18°C",
+              "agingPotential": "2024-2035",
+              "bottleSize": "750ml",
+              "closure": "Cork",
+              "producer": "Almaviva Winery",
+              "importer": "Seven Pyramid 七銘企業",
+              "description": "法國木桐與智利合作的頂級酒款，融合兩地精華",
+              "tastingNotes": {
+                "appearance": "深紫紅色澤",
+                "aroma": "黑醋栗、香草、煙燻、香料香氣",
+                "palate": "濃郁平衡，單寧柔順，結構完整",
+                "finish": "悠長的果香與橡木餘韻"
+              },
+              "foodPairing": ["牛排", "烤羊肉", "野味", "硬質起司"],
+              "awards": [
+                "Robert Parker: 94/100",
+                "Wine Spectator: 92/100",
+                "James Suckling: 95/100"
+              ],
+              "seoKeywords": ["活靈魂", "智利紅酒", "邁波谷", "Cabernet Sauvignon", "木桐合作"],
+              "lastPriceUpdate": "2024-12-15T09:00:00Z",
+              "imageUrl": "img/wines/almaviva-2018.jpg",
+              "available": {
+                "taipei": true,
+                "hsinchu": false
+              },
+              "tags": ["Premium", "Franco-Chilean", "Bordeaux Style", "Limited Production"]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "categories": {
+    "red_wine": {
+      "name": "紅酒",
+      "nameEn": "Red Wine",
+      "description": "世界各產區精選紅酒",
+      "icon": "🍷"
+    },
+    "white_wine": {
+      "name": "白酒",
+      "nameEn": "White Wine",
+      "description": "清新優雅白葡萄酒",
+      "icon": "🥂"
+    },
+    "sparkling_wine": {
+      "name": "氣泡酒",
+      "nameEn": "Sparkling Wine",
+      "description": "香檳與氣泡酒",
+      "icon": "🍾"
+    },
+    "dessert_wine": {
+      "name": "甜酒",
+      "nameEn": "Dessert Wine",
+      "description": "甜點酒與冰酒",
+      "icon": "🍯"
+    }
+  },
+  "priceRanges": {
+    "budget": {
+      "name": "入門款",
+      "range": "1000-3000",
+      "description": "日常品飲精選"
+    },
+    "mid": {
+      "name": "中階款",
+      "range": "3000-10000",
+      "description": "特殊場合推薦"
+    },
+    "premium": {
+      "name": "高階款",
+      "range": "10000-30000",
+      "description": "頂級品鑑之選"
+    },
+    "luxury": {
+      "name": "奢華款",
+      "range": "30000+",
+      "description": "收藏級稀有酒款"
+    }
+  },
+  "stockStatus": {
+    "inStock": "現貨供應",
+    "lowStock": "少量現貨",
+    "outOfStock": "暫時缺貨",
+    "preOrder": "預購商品"
+  },
+  "locations": {
+    "taipei": {
+      "name": "台北總店",
+      "address": "台北市內湖區",
+      "phone": "+886-2-2791-2147",
+      "hours": "週一至週日 10:00-21:00"
+    },
+    "hsinchu": {
+      "name": "新竹分店",
+      "address": "新竹市東區",
+      "phone": "+886-2-2791-2147",
+      "hours": "週一至週日 10:00-21:00"
+    }
+  }
+}

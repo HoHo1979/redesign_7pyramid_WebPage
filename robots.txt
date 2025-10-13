@@ -1,0 +1,70 @@
+# Robots.txt for Seven Pyramid 七銘企業葡萄酒烈酒進口商
+# https://newyear.7pyramid.com/robots.txt
+
+User-agent: *
+
+# Allow all major search engines
+Allow: /
+
+# Allow access to main pages
+Allow: /index.html
+Allow: /wine_list.html
+
+# Allow access to CSS and JavaScript files for proper rendering
+Allow: /css/
+Allow: /js/
+Allow: /img/
+
+# Allow access to manifest and icons
+Allow: /site.webmanifest
+Allow: /favicon.ico
+Allow: /icon.png
+Allow: /icon.svg
+
+# Allow search engines to crawl wine region map images
+Allow: /img/australia_wine_map.png
+Allow: /img/french_wine_map.png
+Allow: /img/chile_wine_map.png
+Allow: /img/spain_wine_map.png
+Allow: /img/argentina_wine_map.png
+Allow: /img/us_wine_map.png
+Allow: /img/SPbackground1.png
+
+# Block access to sensitive or unnecessary files
+Disallow: /.git/
+Disallow: /.gitignore
+Disallow: /README.md
+Disallow: /.vscode/
+Disallow: /.idea/
+Disallow: /node_modules/
+Disallow: /package.json
+Disallow: /package-lock.json
+
+# Block access to backup and temporary files
+Disallow: /*.bak
+Disallow: /*.tmp
+Disallow: /*.log
+Disallow: /*~
+
+# Crawl delay for polite crawling
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://newyear.7pyramid.com/sitemap.xml
+
+# User-agent specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1

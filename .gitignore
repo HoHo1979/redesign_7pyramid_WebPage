@@ -1,0 +1,144 @@
+# Seven Pyramid Wine Catalog - Git Ignore File
+# ==============================================
+
+# Node.js Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Build and Distribution
+dist/
+build/
+generated/
+.cache/
+.webpack/
+.parcel-cache/
+
+# Logs and Debug Files
+*.log
+logs/
+debug.log
+error.log
+
+# Environment and Configuration
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+config.local.js
+secrets.json
+
+# Wine Data Backups (auto-generated)
+backups/
+backups-csp/
+backup-*/
+*.backup
+
+# Temporary and Cache Files
+.tmp/
+.temp/
+*.tmp
+*.temp
+.sass-cache/
+
+# macOS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows Files
+Desktop.ini
+$RECYCLE.BIN/
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# JetBrains IDEs
+*.iml
+*.iws
+*.ipr
+out/
+
+# Package Manager Lock Files (keep package-lock.json for stability)
+# yarn.lock
+# pnpm-lock.yaml
+
+# Coverage and Testing
+coverage/
+nyc_output/
+.coverage
+*.cover
+.pytest_cache/
+
+# Wine Business Specific Files
+# (Uncomment if you have these files)
+# wine-inventory-private.json
+# customer-database.json
+# price-updates-confidential.csv
+# sales-reports/
+
+# Generated Reports and Analytics
+wine-analytics.json
+analytics-*.json
+reports/
+stats-export/
+
+# Image Processing Temp Files
+img/temp/
+img/processed/
+img/.thumbnails/
+*.webp.temp
+
+# Deployment and Server Files
+.htaccess.local
+server-config.local.*
+deploy.log
+deployment-keys/
+
+# Database Files (if using local databases)
+*.db
+*.sqlite
+*.sqlite3
+data/
+
+# Archive Files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+wine-backup-*.zip
+
+# Development Tools
+.stylelintcache
+.eslintcache
+.prettiercache
+
+# Documentation Drafts
+docs/drafts/
+NOTES.md
+TODO.md
+
+# Wine Catalog Generation Temp Files
+wine-temp/
+catalog-temp/
+sitemap-temp.xml
+
+# Performance Monitoring
+.lighthouse/
+performance-reports/
