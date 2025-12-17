@@ -249,8 +249,19 @@
       box-shadow: 0 6px 20px rgba(0,0,0,0.4);
     }
 
-    /* Mobile responsiveness */
+    /* Mobile Navigation Styles */
     @media (max-width: 768px) {
+      /* Hide desktop navigation */
+      .desktop-nav {
+        display: none !important;
+      }
+
+      /* Show mobile navigation */
+      .mobile-nav {
+        display: flex !important;
+      }
+
+      /* Wine table mobile adjustments */
       .wine-table {
         font-size: 0.9rem;
       }
@@ -267,6 +278,22 @@
       .region-header {
         font-size: 1.5rem;
       }
+
+      /* Mobile navigation link hover */
+      .mobile-nav-link:hover {
+        background: var(--md-sys-color-primary-container) !important;
+        color: var(--md-sys-color-primary) !important;
+      }
+
+      /* Mobile menu active states */
+      #mobile-menu-overlay.active {
+        opacity: 1 !important;
+        visibility: visible !important;
+      }
+
+      #mobile-menu-overlay.active #mobile-menu {
+        transform: translateX(0) !important;
+      }
     }
   </style>
 </head>
@@ -281,15 +308,61 @@
           <a href="index.html" style="text-decoration: none; color: inherit;">七銘企業 Seven Pyramid</a>
         </div>
       </div>
-      <div style="display: flex; align-items: center; gap: 30px;">
+
+      <!-- Desktop Navigation -->
+      <div id="desktop-nav" class="desktop-nav" style="display: flex; align-items: center; gap: 30px;">
         <a href="index.html" class="nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; transition: color 0.3s;">首頁</a>
         <a href="#french-wines" class="nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; transition: color 0.3s;">法國酒款</a>
         <a href="#australian-wines" class="nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; transition: color 0.3s;">澳洲酒款</a>
         <a href="#chilean-wines" class="nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; transition: color 0.3s;">智利酒款</a>
         <button id="theme-toggle" style="padding: 8px 12px; border: none; border-radius: 20px; cursor: pointer; background: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); font-size: 0.9rem;">🌙</button>
       </div>
+
+      <!-- Mobile Navigation (hamburger menu + theme toggle) -->
+      <div id="mobile-nav" class="mobile-nav" style="display: none; align-items: center; gap: 15px;">
+        <button id="theme-toggle-mobile" style="padding: 8px 12px; border: none; border-radius: 20px; cursor: pointer; background: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); font-size: 0.9rem;">🌙</button>
+        <button id="mobile-menu-toggle" style="padding: 12px; border: none; background: none; color: var(--md-sys-color-primary); cursor: pointer; font-size: 1.5rem; border-radius: 8px; transition: all 0.3s;">☰</button>
+      </div>
     </div>
   </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 2000; opacity: 0; visibility: hidden; transition: all 0.3s ease;">
+    <div id="mobile-menu" style="position: absolute; top: 0; right: 0; width: 300px; height: 100%; background: var(--md-sys-color-surface-container); transform: translateX(100%); transition: transform 0.3s ease; padding: 80px 0 20px 0; overflow-y: auto;">
+      <div style="padding: 0 20px;">
+        <button id="mobile-menu-close" style="position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 1.5rem; color: var(--md-sys-color-on-surface); cursor: pointer;">✕</button>
+
+        <div style="margin-bottom: 30px;">
+          <img src="img/7pyramidlogo.jpg" alt="Seven Pyramid Logo" style="height: 50px; width: auto; border-radius: 8px; display: block; margin: 0 auto 15px;">
+          <h3 style="text-align: center; color: var(--md-sys-color-primary); font-size: 1.2rem; margin: 0;">七銘企業 Seven Pyramid</h3>
+        </div>
+
+        <nav>
+          <a href="index.html" class="mobile-nav-link" style="display: block; padding: 15px 20px; color: var(--md-sys-color-on-surface); text-decoration: none; border-bottom: 1px solid var(--md-sys-color-outline-variant); transition: all 0.3s;">
+            🏠 首頁
+          </a>
+          <a href="#french-wines" class="mobile-nav-link" style="display: block; padding: 15px 20px; color: var(--md-sys-color-on-surface); text-decoration: none; border-bottom: 1px solid var(--md-sys-color-outline-variant); transition: all 0.3s;">
+            🇫🇷 法國酒款
+          </a>
+          <a href="#australian-wines" class="mobile-nav-link" style="display: block; padding: 15px 20px; color: var(--md-sys-color-on-surface); text-decoration: none; border-bottom: 1px solid var(--md-sys-color-outline-variant); transition: all 0.3s;">
+            🇦🇺 澳洲酒款
+          </a>
+          <a href="#chilean-wines" class="mobile-nav-link" style="display: block; padding: 15px 20px; color: var(--md-sys-color-on-surface); text-decoration: none; border-bottom: 1px solid var(--md-sys-color-outline-variant); transition: all 0.3s;">
+            🇨🇱 智利酒款
+          </a>
+          <a href="index.html#services" class="mobile-nav-link" style="display: block; padding: 15px 20px; color: var(--md-sys-color-on-surface); text-decoration: none; border-bottom: 1px solid var(--md-sys-color-outline-variant); transition: all 0.3s;">
+            🎯 服務項目
+          </a>
+          <a href="index.html#contact" class="mobile-nav-link" style="display: block; padding: 15px 20px; color: var(--md-sys-color-on-surface); text-decoration: none; border-bottom: 1px solid var(--md-sys-color-outline-variant); transition: all 0.3s;">
+            📞 聯繫我們
+          </a>
+          <a href="https://newyear.7pyramid.com" class="mobile-nav-link" target="_blank" style="display: block; padding: 15px 20px; color: var(--md-sys-color-primary); text-decoration: none; border-bottom: 1px solid var(--md-sys-color-outline-variant); transition: all 0.3s;">
+            🌐 線上酒款目錄
+          </a>
+        </nav>
+      </div>
+    </div>
+  </div>
 
   <!-- Main Content -->
   <main style="margin-top: 80px; padding: 40px 20px;">

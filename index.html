@@ -215,24 +215,56 @@
       --theme-transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
     }
 
-    /* Mobile Responsiveness */
+    /* Mobile Navigation Styles */
     @media (max-width: 768px) {
+      /* Hide desktop navigation */
+      #desktop-nav {
+        display: none !important;
+      }
+
+      /* Show mobile navigation */
+      #mobile-nav {
+        display: flex !important;
+      }
+
+      /* Mobile menu active states */
+      #mobile-menu-overlay.active {
+        opacity: 1 !important;
+        visibility: visible !important;
+      }
+
+      #mobile-menu-overlay.active #mobile-menu {
+        transform: translateX(0) !important;
+      }
+
+      /* Mobile navigation link hover */
+      .mobile-nav-link:hover {
+        background: var(--md-sys-color-primary-container) !important;
+        color: var(--md-sys-color-primary) !important;
+      }
+
+      /* Wine grid mobile layout */
       .wine-grid {
         grid-template-columns: 1fr !important;
         gap: 20px !important;
       }
 
-      .nav-dropdown {
-        position: fixed !important;
-        top: 80px !important;
-        left: 50% !important;
-        transform: translateX(-50%) translateY(-10px) !important;
-        width: 90vw !important;
-        max-width: 300px !important;
+      /* Hamburger menu animation */
+      #mobile-menu-toggle.active {
+        background: var(--md-sys-color-primary-container) !important;
+        color: var(--md-sys-color-primary) !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      /* Extra small mobile adjustments */
+      #mobile-menu {
+        width: 95vw !important;
+        padding: 20px 15px !important;
       }
 
-      .nav-dropdown.show {
-        transform: translateX(-50%) translateY(0) !important;
+      .wine-card {
+        padding: 20px !important;
       }
     }
 
@@ -260,13 +292,17 @@
   <!-- Sticky Navigation Header -->
   <nav style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: var(--md-sys-color-surface-container); backdrop-filter: blur(10px); border-bottom: 1px solid var(--md-sys-color-outline-variant); padding: 15px 0;">
     <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between;">
-      <div style="display: flex; align-items: center; gap: 12px;">
+
+      <!-- Logo Section -->
+      <div style="display: flex; align-items: center; gap: 12px; flex: 1;">
         <img src="img/7pyramidlogo.jpg" alt="Seven Pyramid Logo" style="height: 40px; width: auto; border-radius: 6px;">
-        <div style="font-size: 1.5rem; font-weight: bold; color: var(--md-sys-color-primary);">
+        <div style="font-size: clamp(1rem, 3vw, 1.5rem); font-weight: bold; color: var(--md-sys-color-primary); white-space: nowrap;">
           Seven Pyramid 七銘企業
         </div>
       </div>
-      <div style="display: flex; align-items: center; gap: 30px;">
+
+      <!-- Desktop Navigation (hidden on mobile) -->
+      <div id="desktop-nav" style="display: flex; align-items: center; gap: 30px;">
         <a href="#home" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; transition: color 0.3s;" class="nav-link">首頁</a>
         <div style="position: relative; display: inline-block;">
           <a href="#wines" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; transition: color 0.3s; display: flex; align-items: center; gap: 5px;" class="nav-link dropdown-trigger">
@@ -289,6 +325,67 @@
         <button id="theme-toggle" style="padding: 8px 12px; border: none; border-radius: 20px; cursor: pointer; background: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); font-size: 0.9rem;">
           🌙
         </button>
+      </div>
+
+      <!-- Mobile Navigation (hamburger menu + theme toggle) -->
+      <div id="mobile-nav" style="display: none; align-items: center; gap: 15px;">
+        <button id="theme-toggle-mobile" style="padding: 8px 12px; border: none; border-radius: 20px; cursor: pointer; background: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); font-size: 0.9rem;">
+          🌙
+        </button>
+        <button id="mobile-menu-toggle" style="padding: 12px; border: none; background: none; color: var(--md-sys-color-primary); cursor: pointer; font-size: 1.5rem; border-radius: 8px; transition: all 0.3s;">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 1100; opacity: 0; visibility: hidden; transition: all 0.3s ease;">
+      <div id="mobile-menu" style="position: absolute; top: 80px; right: 0; width: 280px; max-width: 90vw; background: var(--md-sys-color-surface-container); border-radius: 15px 0 0 15px; padding: 30px 20px; box-shadow: -4px 4px 20px rgba(0,0,0,0.15); transform: translateX(100%); transition: transform 0.3s ease;">
+
+        <!-- Mobile Menu Header -->
+        <div style="display: flex; justify-content: between; align-items: center; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid var(--md-sys-color-outline-variant);">
+          <h3 style="color: var(--md-sys-color-primary); font-size: 1.2rem; font-weight: 600; margin: 0;">選單</h3>
+          <button id="mobile-menu-close" style="background: none; border: none; color: var(--md-sys-color-on-surface); font-size: 1.5rem; cursor: pointer; padding: 5px;">✕</button>
+        </div>
+
+        <!-- Mobile Menu Links -->
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <a href="#home" class="mobile-nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; padding: 12px 15px; border-radius: 10px; transition: all 0.3s; display: flex; align-items: center; gap: 12px;">
+            <span style="font-size: 1.2rem;">🏠</span> 首頁
+          </a>
+
+          <!-- Wine Submenu -->
+          <div>
+            <a href="#wines" class="mobile-nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; padding: 12px 15px; border-radius: 10px; transition: all 0.3s; display: flex; align-items: center; gap: 12px; justify-content: space-between;">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <span style="font-size: 1.2rem;">🍷</span> 精選酒款
+              </div>
+              <span id="wine-submenu-toggle" style="font-size: 0.8rem; transition: transform 0.3s;">▼</span>
+            </a>
+            <div id="wine-submenu" style="margin-left: 20px; padding-left: 15px; border-left: 2px solid var(--md-sys-color-outline-variant); margin-top: 10px; display: none;">
+              <a href="https://newyear.7pyramid.com/#/wine/australia" target="_blank" class="mobile-nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface-variant); font-size: 0.9rem; padding: 8px 10px; display: block; border-radius: 8px; transition: all 0.3s;">🇦🇺 澳洲酒款</a>
+              <a href="https://newyear.7pyramid.com/#/wine/france" target="_blank" class="mobile-nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface-variant); font-size: 0.9rem; padding: 8px 10px; display: block; border-radius: 8px; transition: all 0.3s;">🇫🇷 法國酒款</a>
+              <a href="https://newyear.7pyramid.com/#/wine/chile" target="_blank" class="mobile-nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface-variant); font-size: 0.9rem; padding: 8px 10px; display: block; border-radius: 8px; transition: all 0.3s;">🇨🇱 智利酒款</a>
+              <a href="https://newyear.7pyramid.com/#/wine/us" target="_blank" class="mobile-nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface-variant); font-size: 0.9rem; padding: 8px 10px; display: block; border-radius: 8px; transition: all 0.3s;">🇺🇸 美國酒款</a>
+              <a href="https://newyear.7pyramid.com/#/wine/argentina" target="_blank" class="mobile-nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface-variant); font-size: 0.9rem; padding: 8px 10px; display: block; border-radius: 8px; transition: all 0.3s;">🇦🇷 阿根廷酒款</a>
+              <a href="https://newyear.7pyramid.com/#/wine/spain" target="_blank" class="mobile-nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface-variant); font-size: 0.9rem; padding: 8px 10px; display: block; border-radius: 8px; transition: all 0.3s;">🇪🇸 西班牙酒款</a>
+              <hr style="border: none; border-top: 1px solid var(--md-sys-color-outline-variant); margin: 10px 0;">
+              <a href="https://newyear.7pyramid.com" target="_blank" class="mobile-nav-link" style="text-decoration: none; color: var(--md-sys-color-primary); font-size: 0.9rem; font-weight: 600; padding: 8px 10px; display: block; border-radius: 8px; transition: all 0.3s;">🌍 互動式目錄</a>
+            </div>
+          </div>
+
+          <a href="wine_list.html" class="mobile-nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; padding: 12px 15px; border-radius: 10px; transition: all 0.3s; display: flex; align-items: center; gap: 12px;">
+            <span style="font-size: 1.2rem;">📋</span> 酒款目錄
+          </a>
+
+          <a href="#services" class="mobile-nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; padding: 12px 15px; border-radius: 10px; transition: all 0.3s; display: flex; align-items: center; gap: 12px;">
+            <span style="font-size: 1.2rem;">🔧</span> 服務項目
+          </a>
+
+          <a href="#contact" class="mobile-nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; padding: 12px 15px; border-radius: 10px; transition: all 0.3s; display: flex; align-items: center; gap: 12px;">
+            <span style="font-size: 1.2rem;">📞</span> 聯繫我們
+          </a>
+        </div>
       </div>
     </div>
   </nav>

@@ -30,7 +30,9 @@
     "lint": "echo 'Linting wine data structure...' && node validate-wine-data.js",
     "stats": "node wine-stats.js",
     "fix-csp": "node fix-csp-violations.js",
-    "csp-check": "echo 'Checking for CSP violations...' && grep -r 'on[a-z]*=' *.html || echo 'No inline event handlers found - CSP compliant!'"
+    "csp-check": "echo 'Checking for CSP violations...' && grep -r 'on[a-z]*=' *.html || echo 'No inline event handlers found - CSP compliant!'",
+    "prepare-deploy": "node prepare-deployment.js",
+    "deploy-help": "echo '📋 Deployment Help:' && echo '1. Run: npm run prepare-deploy' && echo '2. Upload deploy/ folder contents to your web server' && echo '3. Test your website' && echo '4. See DEPLOYMENT-GUIDE.md for details'"
   },
   "engines": {
     "node": ">=14.0.0"

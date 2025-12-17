@@ -161,6 +161,84 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  // Mobile Navigation Menu
+  const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+  const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+  const mobileMenuClose = document.getElementById('mobile-menu-close');
+  const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+  // Open mobile menu
+  if (mobileMenuToggle) {
+    mobileMenuToggle.addEventListener('click', function() {
+      mobileMenuOverlay.classList.add('active');
+      mobileMenuToggle.classList.add('active');
+      document.body.style.overflow = 'hidden'; // Prevent scrolling
+    });
+  }
+
+  // Close mobile menu
+  if (mobileMenuClose) {
+    mobileMenuClose.addEventListener('click', closeMobileMenu);
+  }
+
+  // Close mobile menu when clicking overlay
+  if (mobileMenuOverlay) {
+    mobileMenuOverlay.addEventListener('click', function(e) {
+      if (e.target === mobileMenuOverlay) {
+        closeMobileMenu();
+      }
+    });
+  }
+
+  // Close mobile menu when clicking nav links
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      // Only close if it's not a submenu toggle
+      if (!this.querySelector('#wine-submenu-toggle')) {
+        closeMobileMenu();
+      }
+    });
+  });
+
+  function closeMobileMenu() {
+    if (mobileMenuOverlay) {
+      mobileMenuOverlay.classList.remove('active');
+    }
+    if (mobileMenuToggle) {
+      mobileMenuToggle.classList.remove('active');
+    }
+    document.body.style.overflow = ''; // Restore scrolling
+  }
+
+  // Wine submenu toggle in mobile
+  const wineSubmenuToggle = document.getElementById('wine-submenu-toggle');
+  const wineSubmenu = document.getElementById('wine-submenu');
+
+  if (wineSubmenuToggle && wineSubmenu) {
+    wineSubmenuToggle.parentElement.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      if (wineSubmenu.style.display === 'none' || !wineSubmenu.style.display) {
+        wineSubmenu.style.display = 'block';
+        wineSubmenuToggle.style.transform = 'rotate(180deg)';
+      } else {
+        wineSubmenu.style.display = 'none';
+        wineSubmenuToggle.style.transform = 'rotate(0deg)';
+      }
+    });
+  }
+
+  // Sync theme toggles (desktop and mobile)
+  const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+  const themeToggleDesktop = document.getElementById('theme-toggle');
+
+  if (themeToggleMobile && themeToggleDesktop) {
+    // Sync mobile theme toggle with desktop
+    themeToggleMobile.addEventListener('click', function() {
+      themeToggleDesktop.click(); // Trigger desktop theme toggle
+    });
+  }
+
   // Smooth scroll for anchor links
   const anchorLinks = document.querySelectorAll('a[href^="#"]');
   anchorLinks.forEach(link => {
