@@ -1,0 +1,476 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.theme-toggle-button-wrapper {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.theme-toggle-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+}
+
+.main-nav {
+  padding: 20px;
+  background: var(--md-sys-color-surface-container);
+}
+
+.main-nav-content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-site-title {
+  color: var(--md-sys-color-on-surface);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.loading-state {
+  text-align: center;
+  padding: 50px;
+  color: var(--md-sys-color-on-surface);
+}
+
+.error-state {
+  display: none;
+  text-align: center;
+  padding: 50px;
+  color: var(--md-sys-color-error);
+}
+
+.reload-button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.wine-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.wine-name-h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--md-sys-color-primary);
+}
+
+.wine-name-h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.wine-year-display {
+  font-size: 1.2rem;
+  background: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.wine-image-container {
+  text-align: center;
+}
+
+.wine-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  aspect-ratio: 2/3;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.wine-info-box {
+  background: var(--md-sys-color-surface-container);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.wine-info-header {
+  color: var(--md-sys-color-primary);
+  margin-bottom: 20px;
+}
+
+.wine-main-content {
+  display: none;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: var(--md-sys-color-on-surface);
+}
+
+/* Responsive layout for wine details */
+.wine-details-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .wine-details-grid {
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+  }
+}
+
+.wine-details-grid-info {
+  display: grid;
+  gap: 15px;
+}
+
+.wine-price-text {
+  color: var(--md-sys-color-primary);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Breadcrumb styles */
+.breadcrumb {
+  padding: 10px 0;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: var(--md-sys-color-on-surface-variant);
+}
+.breadcrumb a {
+  color: var(--md-sys-color-primary);
+  text-decoration: none;
+}
+.breadcrumb span {
+  margin: 0 5px;
+}
+
+/* FAQ Section for AEO */
+.faq-section {
+  background: var(--md-sys-color-surface-container-low);
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 40px;
+}
+.faq-item {
+  margin-bottom: 20px;
+}
+.faq-question {
+  font-weight: bold;
+  color: var(--md-sys-color-primary);
+  margin-bottom: 5px;
+}
+
+.faq-answer-link {
+  color: inherit;
+}
+.faq-answer {
+  color: var(--md-sys-color-on-surface);
+  line-height: 1.6;
+}
+
+.faq-section-header {
+  color: var(--md-sys-color-primary);
+  margin-bottom: 20px;
+}
+
+.contact-button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.wine-description-section {
+  background: var(--md-sys-color-surface-container);
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.wine-description-header {
+  color: var(--md-sys-color-primary);
+  margin-bottom: 20px;
+}
+
+.wine-description-text {
+  line-height: 1.6;
+}
+
+.wine-tasting-notes-section {
+  background: var(--md-sys-color-tertiary-container);
+  color: var(--md-sys-color-on-tertiary-container);
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.wine-tasting-notes-text {
+  line-height: 1.6;
+}
+
+.wine-tasting-notes-header {
+  margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+

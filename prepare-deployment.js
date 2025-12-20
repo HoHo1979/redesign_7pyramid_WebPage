@@ -13,24 +13,35 @@ class DeploymentPreparation {
   constructor() {
     this.deployDir = './deploy';
     this.filesToDeploy = [
-      // Core HTML files
+      // Core HTML files (index from root, wine catalog from generated)
       'index.html',
-      'wine_list.html',
       '404.html',
 
-      // SEO and PWA files
+      // SEO and PWA files (from root)
       'robots.txt',
-      'sitemap.xml',
       'site.webmanifest',
       'favicon.ico',
       'icon.png',
       'icon.svg',
     ];
 
+    this.generatedFilesToDeploy = [
+      // Generated SEO files (from ./generated/)
+      { source: './generated/sitemap.xml', target: 'sitemap.xml' },
+      { source: './generated/wine_list.html', target: 'wine_list.html' },
+    ];
+
     this.foldersToDeployCompletely = [
       'css',
       'js',
       'img'
+    ];
+
+    this.generatedFoldersToDeploy = [
+      // Generated wine catalog pages for SEO crawling
+      './generated/countries',
+      './generated/regions',
+      './generated/wines'
     ];
 
     this.copiedFiles = 0;
@@ -106,9 +117,9 @@ class DeploymentPreparation {
    * Copy all required files for deployment
    */
   prepareFiles() {
-    console.log('\n📄 Copying individual files...');
+    console.log('\n📄 Copying individual files from root...');
 
-    // Copy individual files
+    // Copy individual files from root
     this.filesToDeploy.forEach(file => {
       const targetPath = path.join(this.deployDir, file);
       if (this.copyFile(file, targetPath)) {
@@ -116,13 +127,33 @@ class DeploymentPreparation {
       }
     });
 
-    console.log('\n📁 Copying complete folders...');
+    console.log('\n📄 Copying generated SEO files...');
 
-    // Copy entire folders
+    // Copy generated files (wine catalog and sitemap)
+    this.generatedFilesToDeploy.forEach(fileConfig => {
+      const targetPath = path.join(this.deployDir, fileConfig.target);
+      if (this.copyFile(fileConfig.source, targetPath)) {
+        console.log(`  ✅ ${fileConfig.target} (from generated/)`);
+      }
+    });
+
+    console.log('\n📁 Copying complete folders from root...');
+
+    // Copy entire folders from root
     this.foldersToDeployCompletely.forEach(folder => {
       const targetPath = path.join(this.deployDir, folder);
       console.log(`  📁 ${folder}/`);
       this.copyDirectory(folder, targetPath);
+    });
+
+    console.log('\n📁 Copying generated wine catalog folders (for SEO crawling)...');
+
+    // Copy generated wine catalog folders
+    this.generatedFoldersToDeploy.forEach(folderPath => {
+      const folderName = path.basename(folderPath);
+      const targetPath = path.join(this.deployDir, folderName);
+      console.log(`  📁 ${folderName}/ (SEO pages)`);
+      this.copyDirectory(folderPath, targetPath);
     });
   }
 
@@ -227,17 +258,22 @@ Total files: ${this.copiedFiles}
 
 ### HTML Files
 - index.html (Main landing page)
-- wine_list.html (Wine catalog)
+- wine_list.html (Generated SEO-optimized wine catalog)
 - 404.html (Error page)
 
+### Generated Wine Catalog (for SEO crawling)
+- countries/ (9 country pages: France, Australia, Chile, USA, etc.)
+- regions/ (38+ region pages for detailed wine discovery)
+- wines/ (Individual wine product pages - crawlable for search engines)
+
 ### Assets
-- css/ folder (All stylesheets)
-- js/ folder (JavaScript files)
-- img/ folder (All images and logos)
+- css/ folder (All stylesheets - Material Design 3)
+- js/ folder (JavaScript files - theme switching, interactivity)
+- img/ folder (All images, logos, wine region maps)
 
 ### SEO & PWA Files
-- robots.txt (Search engine instructions)
-- sitemap.xml (SEO sitemap)
+- robots.txt (Search engine crawling instructions)
+- sitemap.xml (Generated SEO sitemap from wine catalog)
 - site.webmanifest (PWA manifest)
 - favicon.ico (Website icon)
 - icon.png (PWA icon)

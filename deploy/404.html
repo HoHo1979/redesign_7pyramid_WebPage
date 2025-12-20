@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .timer {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+  </style>
+  <meta http-equiv="refresh" content="5;url=https://wine.7pyramid.com/wine_list.html">
+</head>
+<body>
+  <h1>Oops! Page Not Found</h1>
+  <p>We can't seem to find the page you're looking for.</p>
+  <p>Don't worry, we'll redirect you to our wine list in <span id="timer" class="timer">5</span> seconds.</p>
+  <p>If you're not redirected, <a href="https://wine.7pyramid.com/wine_list.html">click here</a>.</p>
+
+  <script>
+    let timeLeft = 5;
+    const timerElement = document.getElementById('timer');
+    const interval = setInterval(() => {
+      timeLeft--;
+      timerElement.textContent = timeLeft;
+      if (timeLeft <= 0) {
+        clearInterval(interval);
+      }
+    }, 1000);
+  </script>
+</body>
+</html>

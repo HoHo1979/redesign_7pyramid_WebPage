@@ -1,0 +1,144 @@
+# Robots.txt for Seven Pyramid 七銘企業葡萄酒烈酒進口商
+# https://wine.7pyramid.com/robots.txt
+# Last Updated: 2025-12-20
+# This file provides crawling instructions for search engines (Google, Bing, Baidu, Yahoo)
+# For optimal SEO and AEO performance for wine commerce site in Taiwan
+
+# Default rules for all user agents
+User-agent: *
+Allow: /
+
+# Primary pages to crawl
+Allow: /index.html
+Allow: /wine_list.html
+Allow: /404.html
+
+# Generated content pages
+Allow: /wines/
+Allow: /countries/
+Allow: /regions/
+Allow: /generated/
+
+# Static assets needed for proper rendering
+Allow: /css/
+Allow: /js/
+Allow: /img/
+
+# Web manifest and icons for PWA
+Allow: /site.webmanifest
+Allow: /favicon.ico
+Allow: /icon.png
+Allow: /icon.svg
+
+# Sitemap and structured data
+Allow: /sitemap.xml
+Allow: /robots.txt
+
+# Block sensitive or unnecessary files
+Disallow: /.git
+Disallow: /.gitignore
+Disallow: /.github
+Disallow: /.specify
+Disallow: /.claude
+Disallow: /.gemini
+Disallow: /.genkit
+Disallow: /README.md
+Disallow: /CLAUDE.md
+Disallow: /.vscode
+Disallow: /.idea
+Disallow: /node_modules/
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /*.bak
+Disallow: /*.backup
+Disallow: /*.tmp
+Disallow: /*.log
+Disallow: /*~
+Disallow: /googleSearchConsole/
+
+# Crawl delay and request rate
+# Allow Google to crawl more aggressively for better indexing
+Request-rate: 1/1s
+Crawl-delay: 1
+
+# Primary sitemap for SEO
+Sitemap: https://wine.7pyramid.com/sitemap.xml
+
+# =====================================================
+# GOOGLE-SPECIFIC RULES
+# =====================================================
+User-agent: Googlebot
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /img/
+Crawl-delay: 0.5
+
+# Enable crawling for Google Images
+User-agent: Googlebot-Image
+Allow: /img/
+
+# =====================================================
+# BING-SPECIFIC RULES
+# =====================================================
+User-agent: Bingbot
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /img/
+Crawl-delay: 1
+
+# =====================================================
+# BAIDU-SPECIFIC RULES (Important for Taiwan market)
+# =====================================================
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: Baiduspider-mobile
+Allow: /
+Crawl-delay: 2
+
+# =====================================================
+# OTHER SEARCH ENGINES
+# =====================================================
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: ia_archiver
+Allow: /
+
+# Block AI/ML crawlers that don't respect robots.txt (optional)
+# Uncomment below if you want to opt-out of AI training data scraping
+# User-agent: GPTBot
+# User-agent: ChatGPT-User
+# User-agent: CCBot
+# User-agent: anthropic-ai
+# User-agent: Claude-Web
+# Disallow: /
+
+# =====================================================
+# BLOCK SPAMMY BOTS AND SCRAPERS
+# =====================================================
+User-agent: MJ12bot
+Crawl-delay: 5
+
+User-agent: SemrushBot
+Crawl-delay: 5
+
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MauiBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /

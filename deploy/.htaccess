@@ -1,0 +1,212 @@
+# =====================================================
+# Seven Pyramid Wine E-Commerce - Apache Configuration
+# Domain: wine.7pyramid.com
+# Hosting: Bluehost cPanel
+# =====================================================
+
+# 404 Error Handler - CRITICAL FOR PROPER ERROR PAGE DISPLAY
+ErrorDocument 404 /404.html
+
+# =====================================================
+# PERFORMANCE & SECURITY
+# =====================================================
+
+# Enable mod_rewrite for URL rewriting
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Force HTTPS (redirect HTTP to HTTPS)
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# =====================================================
+# COMPRESSION - Faster page loading
+# =====================================================
+<IfModule mod_deflate.c>
+    # Compress HTML, CSS, JavaScript
+    AddType application/x-gzip .gz .gzip
+    AddEncoding gzip .gz .gzip
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/json
+
+    # Exclude certain file types
+    SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|svg)$ no-gzip
+</IfModule>
+
+# =====================================================
+# BROWSER CACHING - Faster repeat visits
+# =====================================================
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 2 days"
+
+    # HTML files - 1 week (content changes)
+    ExpiresByType text/html "access plus 1 week"
+
+    # CSS and JavaScript - 1 month (rarely changes)
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType application/x-javascript "access plus 1 month"
+
+    # Images - 3 months (static content)
+    ExpiresByType image/jpeg "access plus 3 months"
+    ExpiresByType image/gif "access plus 3 months"
+    ExpiresByType image/png "access plus 3 months"
+    ExpiresByType image/webp "access plus 3 months"
+    ExpiresByType image/svg+xml "access plus 3 months"
+    ExpiresByType image/x-icon "access plus 1 year"
+
+    # Fonts - 1 year (never change)
+    ExpiresByType application/x-font-ttf "access plus 1 year"
+    ExpiresByType application/x-font-woff "access plus 1 year"
+    ExpiresByType application/font-woff "access plus 1 year"
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType font/otf "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+
+    # Manifests and Data
+    ExpiresByType application/json "access plus 1 month"
+    ExpiresByType application/ld+json "access plus 1 month"
+    ExpiresByType application/xml "access plus 1 month"
+    ExpiresByType text/xml "access plus 1 month"
+</IfModule>
+
+# =====================================================
+# DIRECTORY INDEXING - Security
+# =====================================================
+
+# Set default index files (in priority order)
+DirectoryIndex index.html wine_list.html
+
+# Prevent directory listing (security)
+Options -Indexes
+
+# =====================================================
+# CHARSET & CONTENT TYPE
+# =====================================================
+
+# Set UTF-8 as default character set
+AddDefaultCharset UTF-8
+
+# HTML files
+AddType text/html .html
+
+# JSON files for schema markup
+AddType application/json .json
+AddType application/ld+json .json
+
+# XML files
+AddType application/xml .xml
+
+# =====================================================
+# SECURITY HEADERS
+# =====================================================
+
+<IfModule mod_headers.c>
+    # Prevent MIME type sniffing
+    Header always set X-Content-Type-Options "nosniff"
+
+    # Enable XSS protection in older browsers
+    Header always set X-XSS-Protection "1; mode=block"
+
+    # Prevent clickjacking attacks
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    # Referrer Policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Feature Policy (Permissions Policy)
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# =====================================================
+# PREVENT ACCESS TO SENSITIVE FILES
+# =====================================================
+
+<FilesMatch "^\.">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+<FilesMatch "\.(json|xml|md|bak|backup|tmp|log|~)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# =====================================================
+# OPTIMIZE STATIC ASSETS
+# =====================================================
+
+# Allow CORS for web fonts
+<IfModule mod_headers.c>
+    <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|svg|font.css)$">
+        Header add Access-Control-Allow-Origin "*"
+    </FilesMatch>
+</IfModule>
+
+# =====================================================
+# ENVIRONMENT VARIABLES (if needed)
+# =====================================================
+
+# Set production environment
+SetEnv NODE_ENV production
+
+# =====================================================
+# SITEMAP & ROBOTS.TXT
+# =====================================================
+
+# Allow search engines to access sitemap and robots.txt
+<FilesMatch "^(sitemap\.xml|robots\.txt)$">
+    <IfModule mod_authz_core.c>
+        Require all granted
+    </IfModule>
+</FilesMatch>
+
+# =====================================================
+# FAVICON AND MANIFEST
+# =====================================================
+
+# Suppress 404 errors for favicon
+<FilesMatch "favicon\.ico">
+    ErrorDocument 404 "The requested file was not found."
+</FilesMatch>
+
+# =====================================================
+# NOTES FOR BLUEHOST/CPANEL
+# =====================================================
+
+# If you get "500 Internal Server Error":
+# 1. Check error logs in cPanel
+# 2. Disable mod_rewrite if not needed (first block)
+# 3. Ensure file permissions are correct (644 for .htaccess)
+# 4. Contact Bluehost support if issues persist
+
+# If 404 is not working:
+# 1. Verify 404.html exists in root (public_html/)
+# 2. Clear browser cache
+# 3. Test in incognito/private window
+# 4. Check error logs for issues
+
+# Last Updated: 2025-12-20
