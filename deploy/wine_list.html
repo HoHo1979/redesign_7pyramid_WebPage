@@ -2,64 +2,96 @@
 <html class="no-js" lang="zh-TW">
 
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17830155753"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17830155753');
+</script>
+
+<!-- Event snippet for Click to call conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17830155753/jkqdCO2B0tobEOmrirZC',
+      'value': 1.0,
+      'currency': 'TWD',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>台北頂級葡萄酒進口商 - 波爾多香檳專賣 | 七銘企業 Seven Pyramid</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/light.css" id="theme-link">
+  <link rel="stylesheet" href="css/dark-luxury.css" id="theme-link">
   <style>
-    /* IDE variable recognition - these are overridden by light.css and dark.css at runtime */
+    /* Luxury Dark Wine Theme - Default fallback variables */
     :root {
-      --md-sys-color-primary: rgb(126 0 146);
-      --md-sys-color-surface-tint: rgb(154 37 174);
-      --md-sys-color-on-primary: rgb(255 255 255);
-      --md-sys-color-primary-container: rgb(156 39 176);
-      --md-sys-color-on-primary-container: rgb(255 202 255);
-      --md-sys-color-secondary: rgb(113 84 120);
+      --md-sys-color-primary: rgb(212 175 55);           /* Gold */
+      --md-sys-color-surface-tint: rgb(212 175 55);
+      --md-sys-color-on-primary: rgb(18 18 18);
+      --md-sys-color-primary-container: rgb(94 13 13);   /* Wine Red */
+      --md-sys-color-on-primary-container: rgb(243 229 171);
+      --md-sys-color-secondary: rgb(180 120 120);
       --md-sys-color-on-secondary: rgb(255 255 255);
-      --md-sys-color-secondary-container: rgb(225 190 231);
-      --md-sys-color-on-secondary-container: rgb(102 75 109);
-      --md-sys-color-tertiary: rgb(0 104 118);
-      --md-sys-color-on-tertiary: rgb(255 255 255);
-      --md-sys-color-tertiary-container: rgb(0 188 212);
-      --md-sys-color-on-tertiary-container: rgb(0 70 80);
-      --md-sys-color-error: rgb(186 26 26);
-      --md-sys-color-on-error: rgb(255 255 255);
-      --md-sys-color-error-container: rgb(255 218 214);
-      --md-sys-color-on-error-container: rgb(147 0 10);
-      --md-sys-color-background: rgb(255 247 250);
-      --md-sys-color-on-background: rgb(33 25 33);
-      --md-sys-color-surface: rgb(255 247 250);
-      --md-sys-color-on-surface: rgb(33 25 33);
-      --md-sys-color-surface-variant: rgb(242 220 238);
-      --md-sys-color-on-surface-variant: rgb(81 66 80);
-      --md-sys-color-outline: rgb(131 114 129);
-      --md-sys-color-outline-variant: rgb(213 193 210);
+      --md-sys-color-secondary-container: rgb(94 13 13);
+      --md-sys-color-on-secondary-container: rgb(243 229 171);
+      --md-sys-color-tertiary: rgb(243 229 171);         /* Gold Light */
+      --md-sys-color-on-tertiary: rgb(45 35 0);
+      --md-sys-color-tertiary-container: rgb(184 138 20);
+      --md-sys-color-on-tertiary-container: rgb(255 248 225);
+      --md-sys-color-error: rgb(255 180 171);
+      --md-sys-color-on-error: rgb(105 0 5);
+      --md-sys-color-error-container: rgb(147 0 10);
+      --md-sys-color-on-error-container: rgb(255 218 214);
+      --md-sys-color-background: rgb(18 18 18);          /* Dark BG */
+      --md-sys-color-on-background: rgb(244 244 244);
+      --md-sys-color-surface: rgb(18 18 18);
+      --md-sys-color-on-surface: rgb(244 244 244);
+      --md-sys-color-surface-variant: rgb(45 40 40);
+      --md-sys-color-on-surface-variant: rgb(170 170 170);
+      --md-sys-color-outline: rgb(136 120 100);
+      --md-sys-color-outline-variant: rgb(60 50 45);
       --md-sys-color-shadow: rgb(0 0 0);
       --md-sys-color-scrim: rgb(0 0 0);
-      --md-sys-color-inverse-surface: rgb(55 45 54);
-      --md-sys-color-inverse-on-surface: rgb(252 236 248);
-      --md-sys-color-inverse-primary: rgb(249 171 255);
-      --md-sys-color-primary-fixed: rgb(255 214 254);
-      --md-sys-color-on-primary-fixed: rgb(53 0 63);
-      --md-sys-color-primary-fixed-dim: rgb(249 171 255);
-      --md-sys-color-on-primary-fixed-variant: rgb(123 0 143);
-      --md-sys-color-secondary-fixed: rgb(250 215 255);
-      --md-sys-color-on-secondary-fixed: rgb(41 18 49);
-      --md-sys-color-secondary-fixed-dim: rgb(222 187 228);
-      --md-sys-color-on-secondary-fixed-variant: rgb(88 61 95);
-      --md-sys-color-tertiary-fixed: rgb(161 239 255);
-      --md-sys-color-on-tertiary-fixed: rgb(0 31 37);
-      --md-sys-color-tertiary-fixed-dim: rgb(68 216 241);
-      --md-sys-color-on-tertiary-fixed-variant: rgb(0 78 89);
-      --md-sys-color-surface-dim: rgb(229 214 225);
-      --md-sys-color-surface-bright: rgb(255 247 250);
-      --md-sys-color-surface-container-lowest: rgb(255 255 255);
-      --md-sys-color-surface-container-low: rgb(255 239 251);
-      --md-sys-color-surface-container: rgb(249 233 245);
-      --md-sys-color-surface-container-high: rgb(243 228 239);
-      --md-sys-color-surface-container-highest: rgb(238 222 234);
+      --md-sys-color-inverse-surface: rgb(244 244 244);
+      --md-sys-color-inverse-on-surface: rgb(26 26 26);
+      --md-sys-color-inverse-primary: rgb(156 120 20);
+      --md-sys-color-primary-fixed: rgb(255 235 180);
+      --md-sys-color-on-primary-fixed: rgb(40 30 0);
+      --md-sys-color-primary-fixed-dim: rgb(212 175 55);
+      --md-sys-color-on-primary-fixed-variant: rgb(120 90 10);
+      --md-sys-color-secondary-fixed: rgb(255 200 200);
+      --md-sys-color-on-secondary-fixed: rgb(50 10 10);
+      --md-sys-color-secondary-fixed-dim: rgb(180 120 120);
+      --md-sys-color-on-secondary-fixed-variant: rgb(94 13 13);
+      --md-sys-color-tertiary-fixed: rgb(255 248 225);
+      --md-sys-color-on-tertiary-fixed: rgb(30 25 0);
+      --md-sys-color-tertiary-fixed-dim: rgb(243 229 171);
+      --md-sys-color-on-tertiary-fixed-variant: rgb(100 80 20);
+      --md-sys-color-surface-dim: rgb(18 18 18);
+      --md-sys-color-surface-bright: rgb(50 45 42);
+      --md-sys-color-surface-container-lowest: rgb(12 12 12);
+      --md-sys-color-surface-container-low: rgb(22 22 22);
+      --md-sys-color-surface-container: rgb(26 26 26);   /* Charcoal */
+      --md-sys-color-surface-container-high: rgb(35 32 30);
+      --md-sys-color-surface-container-highest: rgb(45 42 40);
+      /* Luxury custom vars */
+      --luxury-gold: #D4AF37;
+      --luxury-gold-light: #F3E5AB;
+      --luxury-wine-red: #5e0d0d;
     }
   </style>
   <meta name="description" content="台北市內湖區專業葡萄酒進口商，提供波爾多、香檳、勃艮第等頂級法國酒款。松山區門市，專業侍酒師服務，企業團購優惠，服務大台北、桃園、新竹、台中地區">
@@ -374,12 +406,13 @@
       font-size: 2em;
     }
   </style>
+  <link rel="stylesheet" href="css/inquiry_modal.css">
 </head>
 
-<body class="light">
+<body class="dark">
 
   <div id="age-gate-banner">
-    <p>未滿18歲請勿飲酒，開車不喝酒</p>
+    <p>未成年不可以飲酒，開車不喝酒</p>
   </div>
 
   <!-- Sticky Navigation Header -->
@@ -398,12 +431,13 @@
         <a href="#french-wines" class="nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; transition: color 0.3s;">法國酒款</a>
         <a href="#usa-wines" class="nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; transition: color 0.3s;">美國酒款</a>
         <a href="#chilean-wines" class="nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; transition: color 0.3s;">智利酒款</a>
-        <button id="theme-toggle" style="padding: 8px 12px; border: none; border-radius: 20px; cursor: pointer; background: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); font-size: 0.9rem;">🌙</button>
+        <a href="french_wine_knowledge.html" class="nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; transition: color 0.3s;">葡萄酒知識</a>
+        <button id="theme-toggle" style="padding: 8px 12px; border: none; border-radius: 20px; cursor: pointer; background: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); font-size: 0.9rem;">☀️</button>
       </div>
 
       <!-- Mobile Navigation (hamburger menu + theme toggle) -->
       <div id="mobile-nav" class="mobile-nav" style="display: none; align-items: center; gap: 15px;">
-        <button id="theme-toggle-mobile" style="padding: 8px 12px; border: none; border-radius: 20px; cursor: pointer; background: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); font-size: 0.9rem;">🌙</button>
+        <button id="theme-toggle-mobile" style="padding: 8px 12px; border: none; border-radius: 20px; cursor: pointer; background: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); font-size: 0.9rem;">☀️</button>
         <button id="mobile-menu-toggle" style="padding: 12px; border: none; background: none; color: var(--md-sys-color-primary); cursor: pointer; font-size: 1.5rem; border-radius: 8px; transition: all 0.3s;">☰</button>
       </div>
     </div>
@@ -432,6 +466,9 @@
           </a>
           <a href="#chilean-wines" class="mobile-nav-link" style="display: block; padding: 15px 20px; color: var(--md-sys-color-on-surface); text-decoration: none; border-bottom: 1px solid var(--md-sys-color-outline-variant); transition: all 0.3s;">
             🇨🇱 智利酒款
+          </a>
+          <a href="french_wine_knowledge.html" class="mobile-nav-link" style="display: block; padding: 15px 20px; color: var(--md-sys-color-on-surface); text-decoration: none; border-bottom: 1px solid var(--md-sys-color-outline-variant); transition: all 0.3s;">
+            📚 葡萄酒知識
           </a>
           <a href="index.html#services" class="mobile-nav-link" style="display: block; padding: 15px 20px; color: var(--md-sys-color-on-surface); text-decoration: none; border-bottom: 1px solid var(--md-sys-color-outline-variant); transition: all 0.3s;">
             🎯 服務項目
@@ -471,7 +508,7 @@
         <p style="font-size: 1.3rem; margin: 0 0 10px 0; font-weight: 600;">60年限定特價</p>
         <p style="font-size: 1.1rem; margin: 0 0 15px 0; line-height: 1.6;">只到 <strong style="font-size: 1.2rem;">2026年2月28日</strong></p>
         <p style="font-size: 1rem; margin: 0 0 15px 0; opacity: 0.95;">✨ 價格與優惠：6瓶為一個銷售單位<br><strong>單瓶詳細價格敬請洽詢</strong></p>
-        <p style="font-size: 0.95rem; margin: 0; opacity: 0.9;">📞 台北總店：(02) 2791-2147 | 新竹Howine分店：(02) 2791-2147<br>歡迎電洽或親臨門市諮詢最新優惠</p>
+        <p style="font-size: 0.95rem; margin: 0; opacity: 0.9;">📞 台北總店：<a href="tel:+886227912147" onclick="return gtag_report_conversion(this.href);" style="color: inherit; text-decoration: underline;">(02) 2791-2147</a> | 新竹Howine分店：<a href="tel:+886227912147" onclick="return gtag_report_conversion(this.href);" style="color: inherit; text-decoration: underline;">(02) 2791-2147</a><br>歡迎電洽或親臨門市諮詢最新優惠</p>
       </div>
 
       <!-- Service Area Section -->
@@ -485,7 +522,7 @@
               <li style="margin-bottom: 8px;">🏢 台北市內湖區總店</li>
               <li style="margin-bottom: 8px;">✅ 台北市松山區門市現貨供應</li>
               <li style="margin-bottom: 8px;">🚚 大台北地區當日配送服務</li>
-              <li style="margin-bottom: 8px;">📞 總店專線: (02) 2791-2147</li>
+              <li style="margin-bottom: 8px;">📞 總店專線: <a href="tel:+886227912147" onclick="return gtag_report_conversion(this.href);" style="color: inherit; text-decoration: underline;">(02) 2791-2147</a></li>
             </ul>
           </div>
           <div style="background: var(--md-sys-color-surface); border-radius: 15px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
@@ -495,7 +532,7 @@
               <li style="margin-bottom: 8px;">🏢 新竹市Howine分店</li>
               <li style="margin-bottom: 8px;">💼 新竹科學園區企業配送</li>
               <li style="margin-bottom: 8px;">🚚 新竹市區配送服務</li>
-              <li style="margin-bottom: 8px;">📞 分店專線: (02) 2791-2147</li>
+              <li style="margin-bottom: 8px;">📞 分店專線: <a href="tel:+886227912147" onclick="return gtag_report_conversion(this.href);" style="color: inherit; text-decoration: underline;">(02) 2791-2147</a></li>
             </ul>
           </div>
           <div style="background: var(--md-sys-color-surface); border-radius: 15px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
@@ -2090,7 +2127,7 @@
               <td class="chinese-name">奇旺城堡(單一木盒)</td>
               <td class="vintage">2020</td>
               <td class="region-name">Margaux</td>
-              <td class="price">請詢價</td>
+              <td class="price">NT$ 3,880</td>
               <td>✅ 現貨</td>
             </tr>
             <tr>
@@ -2102,7 +2139,7 @@
               <td class="chinese-name">奇旺城堡-6入木箱</td>
               <td class="vintage">2017</td>
               <td class="region-name">Margaux</td>
-              <td class="price">請詢價</td>
+              <td class="price">NT$ 1,780</td>
               <td>✅ 現貨</td>
             </tr>
             <tr>
@@ -2114,7 +2151,7 @@
               <td class="chinese-name">奇旺城堡-6入木箱</td>
               <td class="vintage">2019</td>
               <td class="region-name">Margaux</td>
-              <td class="price">請詢價</td>
+              <td class="price">NT$ 1,900</td>
               <td>✅ 現貨</td>
             </tr>
             <tr>
@@ -2126,7 +2163,7 @@
               <td class="chinese-name">奇旺城堡-6入木箱</td>
               <td class="vintage">2020</td>
               <td class="region-name">Margaux</td>
-              <td class="price">請詢價</td>
+              <td class="price">NT$ 1,880</td>
               <td>✅ 現貨</td>
             </tr>
             <tr>
@@ -2138,7 +2175,7 @@
               <td class="chinese-name">奇旺城堡-12入木箱</td>
               <td class="vintage">2020</td>
               <td class="region-name">Margaux</td>
-              <td class="price">請詢價</td>
+              <td class="price">NT$ 980</td>
               <td>✅ 現貨</td>
             </tr>
             <tr>
@@ -2150,7 +2187,7 @@
               <td class="chinese-name">奇旺城堡-6入木箱</td>
               <td class="vintage">2021</td>
               <td class="region-name">Margaux</td>
-              <td class="price">請詢價</td>
+              <td class="price">NT$ 1,780</td>
               <td>✅ 現貨</td>
             </tr>
             <tr>
@@ -2258,7 +2295,7 @@
               <td class="chinese-name">奇旺國王紅葡萄酒-6入木箱</td>
               <td class="vintage">2019</td>
               <td class="region-name">Margaux</td>
-              <td class="price">請詢價</td>
+              <td class="price">NT$ 1,200</td>
               <td>✅ 現貨</td>
             </tr>
             <tr>
@@ -3401,6 +3438,7 @@
 
   <script src="js/app.js"></script>
   <script src="js/csp-fix.js"></script>
+  <script src="js/inquiry_modal.js"></script>
 </body>
 
 </html>

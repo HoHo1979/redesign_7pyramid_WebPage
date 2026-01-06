@@ -32,7 +32,10 @@
     "fix-csp": "node fix-csp-violations.js",
     "csp-check": "echo 'Checking for CSP violations...' && grep -r 'on[a-z]*=' *.html || echo 'No inline event handlers found - CSP compliant!'",
     "prepare-deploy": "node prepare-deployment.js",
-    "deploy-help": "echo '📋 Deployment Help:' && echo '1. Run: npm run prepare-deploy' && echo '2. Upload deploy/ folder contents to your web server' && echo '3. Test your website' && echo '4. See DEPLOYMENT-GUIDE.md for details'"
+    "deploy-help": "echo '📋 Deployment Help:' && echo '1. Run: npm run prepare-deploy' && echo '2. Upload deploy/ folder contents to your web server' && echo '3. Test your website' && echo '4. See DEPLOYMENT-GUIDE.md for details'",
+    "convert-excel": "node excel-to-json-converter.js",
+    "rebuild-catalog": "npm run convert-excel && npm run build:wine && npm run validate",
+    "full-deploy": "npm run rebuild-catalog && npm run prepare-deploy"
   },
   "engines": {
     "node": ">=14.0.0"
@@ -40,6 +43,7 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
     "csv-parser": "^3.0.0",
+    "exceljs": "^4.4.0",
     "fs-extra": "^11.1.1",
     "lodash": "^4.17.21",
     "moment": "^2.29.4"
@@ -47,12 +51,12 @@
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",
     "html-webpack-plugin": "^5.6.0",
+    "http-server": "^14.1.1",
+    "nodemon": "^3.0.1",
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4",
-    "webpack-merge": "^5.10.0",
-    "http-server": "^14.1.1",
-    "nodemon": "^3.0.1"
+    "webpack-merge": "^5.10.0"
   },
   "repository": {
     "type": "git",

@@ -202,6 +202,19 @@
         grapes: 'Cabernet Sauvignon 85%, Merlot 10%, Petit Verdot 3%, Cabernet Franc 2%',
         image: '/images/chateau-margaux-' + year + '.jpg',
         stock: 'available'
+      },
+      'chateau-cheval-blanc': {
+        nameChinese: '白馬酒莊',
+        nameEnglish: 'Château Cheval Blanc',
+        year: year,
+        description: '白馬酒莊 (Château Cheval Blanc) 是聖艾美隆 (Saint-Émilion) 一級 A 等酒莊，以其獨特的風土和優雅的風格著稱。' + year + '年份展現了極佳的平衡與複雜度。',
+        tastingNotes: '香氣：黑醋栗、薄荷、花香和礦物質<br>口感：豐富飽滿，單寧細緻，餘韻悠長<br>適飲溫度：16-18°C<br>建議醒酒：2-3小時',
+        price: 'NT$ 30,000',
+        region: '法國波爾多聖艾美隆',
+        alcohol: '14%',
+        grapes: 'Merlot, Cabernet Franc',
+        image: 'wines/images/chateau_cheval_blanc_2015.png',
+        stock: 'available'
       }
     };
 

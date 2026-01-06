@@ -1,0 +1,152 @@
+/* Inquiry Modal Styles */
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Modal Content */
+.modal-content {
+  background: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+  border: 1px solid var(--md-sys-color-outline);
+}
+
+.dark .modal-content {
+  border: 1px solid var(--luxury-gold);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+}
+
+/* Close Button */
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--md-sys-color-on-surface);
+  cursor: pointer;
+}
+
+.modal-header {
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--md-sys-color-outline-variant);
+  padding-bottom: 10px;
+}
+
+.modal-header h3 {
+  margin: 0;
+  color: var(--md-sys-color-primary);
+  font-size: 1.5rem;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: var(--md-sys-color-on-surface);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--md-sys-color-outline);
+  background: var(--md-sys-color-surface-container);
+  color: var(--md-sys-color-on-surface);
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--md-sys-color-primary);
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}
+
+.wine-details {
+  background: var(--md-sys-color-surface-container);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.wine-details p {
+  margin: 5px 0;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+}
+
+/* Inquiry Button in Table */
+.inquiry-btn {
+  padding: 8px 16px;
+  border: 1px solid var(--md-sys-color-primary);
+  background: transparent;
+  color: var(--md-sys-color-primary);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.inquiry-btn:hover {
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+}
+
+.dark .inquiry-btn {
+  border-color: var(--luxury-gold);
+  color: var(--luxury-gold);
+}
+
+.dark .inquiry-btn:hover {
+  background: var(--luxury-gold);
+  color: #000;
+}

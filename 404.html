@@ -1,63 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17830155753"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17830155753');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page Not Found</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    * {
-      line-height: 1.2;
-      margin: 0;
-    }
-
-    html {
-      color: #888;
-      display: table;
-      font-family: sans-serif;
-      height: 100%;
-      text-align: center;
-      width: 100%;
-    }
-
     body {
-      display: table-cell;
-      vertical-align: middle;
-      margin: 2em auto;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 40px;
     }
-
     h1 {
-      color: #555;
-      font-size: 2em;
-      font-weight: 400;
+      font-size: 3em;
+      margin-bottom: 10px;
     }
-
     p {
-      margin: 0 auto;
-      width: 280px;
+      font-size: 1.2em;
+      margin-bottom: 20px;
     }
-
-    @media only screen and (max-width: 280px) {
-
-      body,
-      p {
-        width: 95%;
-      }
-
-      h1 {
-        font-size: 1.5em;
-        margin: 0 0 0.3em;
-      }
-
+    .timer {
+      font-size: 1.5em;
+      font-weight: bold;
     }
   </style>
+  <meta http-equiv="refresh" content="5;url=https://wine.7pyramid.com/wine_list.html">
 </head>
-
 <body>
-  <h1>Page Not Found</h1>
-  <p>Sorry, but the page you were trying to view does not exist.</p>
-  <script src="js/csp-fix.js"></script>
-</body>
+  <h1>Oops! Page Not Found</h1>
+  <p>We can't seem to find the page you're looking for.</p>
+  <p>Don't worry, we'll redirect you to our wine list in <span id="timer" class="timer">5</span> seconds.</p>
+  <p>If you're not redirected, <a href="https://wine.7pyramid.com/wine_list.html">click here</a>.</p>
 
+  <script>
+    let timeLeft = 5;
+    const timerElement = document.getElementById('timer');
+    const interval = setInterval(() => {
+      timeLeft--;
+      timerElement.textContent = timeLeft;
+      if (timeLeft <= 0) {
+        clearInterval(interval);
+      }
+    }, 1000);
+  </script>
+</body>
 </html>
-<!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->

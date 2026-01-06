@@ -84,6 +84,235 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.theme-toggle-button-wrapper {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.theme-toggle-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+}
+
+.main-nav {
+  padding: 20px;
+  background: var(--md-sys-color-surface-container);
+}
+
+.main-nav-content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-site-title {
+  color: var(--md-sys-color-on-surface);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.loading-state {
+  text-align: center;
+  padding: 50px;
+  color: var(--md-sys-color-on-surface);
+}
+
+.error-state {
+  display: none;
+  text-align: center;
+  padding: 50px;
+  color: var(--md-sys-color-error);
+}
+
+.reload-button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.wine-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.wine-name-h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--md-sys-color-primary);
+}
+
+.wine-name-h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.wine-year-display {
+  font-size: 1.2rem;
+  background: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.wine-image-container {
+  text-align: center;
+}
+
+.wine-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  aspect-ratio: 2/3;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.wine-info-box {
+  background: var(--md-sys-color-surface-container);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.wine-info-header {
+  color: var(--md-sys-color-primary);
+  margin-bottom: 20px;
+}
+
+.wine-main-content {
+  display: none;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: var(--md-sys-color-on-surface);
+}
+
+/* Responsive layout for wine details */
+.wine-details-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .wine-details-grid {
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+  }
+}
+
+.wine-details-grid-info {
+  display: grid;
+  gap: 15px;
+}
+
+.wine-price-text {
+  color: var(--md-sys-color-primary);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Breadcrumb styles */
+.breadcrumb {
+  padding: 10px 0;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: var(--md-sys-color-on-surface-variant);
+}
+.breadcrumb a {
+  color: var(--md-sys-color-primary);
+  text-decoration: none;
+}
+.breadcrumb span {
+  margin: 0 5px;
+}
+
+/* FAQ Section for AEO */
+.faq-section {
+  background: var(--md-sys-color-surface-container-low);
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 40px;
+}
+.faq-item {
+  margin-bottom: 20px;
+}
+.faq-question {
+  font-weight: bold;
+  color: var(--md-sys-color-primary);
+  margin-bottom: 5px;
+}
+
+.faq-answer-link {
+  color: inherit;
+}
+.faq-answer {
+  color: var(--md-sys-color-on-surface);
+  line-height: 1.6;
+}
+
+.faq-section-header {
+  color: var(--md-sys-color-primary);
+  margin-bottom: 20px;
+}
+
+.contact-button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.wine-description-section {
+  background: var(--md-sys-color-surface-container);
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.wine-description-header {
+  color: var(--md-sys-color-primary);
+  margin-bottom: 20px;
+}
+
+.wine-description-text {
+  line-height: 1.6;
+}
+
+.wine-tasting-notes-section {
+  background: var(--md-sys-color-tertiary-container);
+  color: var(--md-sys-color-on-tertiary-container);
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.wine-tasting-notes-text {
+  line-height: 1.6;
+}
+
+.wine-tasting-notes-header {
+  margin-bottom: 20px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

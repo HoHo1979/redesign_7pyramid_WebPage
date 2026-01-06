@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivino Command Center - Auto Search Helper</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .header {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 8px;
+      font-size: 28px;
+    }
+
+    .subtitle {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .main-panel {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .panel {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .panel-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #333;
+      border-bottom: 2px solid #667eea;
+      padding-bottom: 8px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #666;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    input[type="text"],
+    input[type="file"],
+    select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 2px solid #f0f0f0;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: border-color 0.3s;
+    }
+
+    input[type="text"]:focus,
+    select:focus {
+      outline: none;
+      border-color: #667eea;
+    }
+
+    .btn {
+      background: #667eea;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      width: 100%;
+    }
+
+    .btn:hover {
+      background: #764ba2;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+    }
+
+    .btn-secondary {
+      background: #f0f0f0;
+      color: #333;
+    }
+
+    .btn-secondary:hover {
+      background: #e0e0e0;
+    }
+
+    .wine-list {
+      background: #f9f9f9;
+      border-radius: 6px;
+      padding: 12px;
+      max-height: 300px;
+      overflow-y: auto;
+      margin-bottom: 16px;
+    }
+
+    .wine-item {
+      padding: 8px 12px;
+      border-left: 3px solid #667eea;
+      margin-bottom: 6px;
+      background: white;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .wine-item.completed {
+      border-left-color: #4caf50;
+      opacity: 0.6;
+    }
+
+    .wine-item-actions {
+      display: flex;
+      gap: 6px;
+    }
+
+    .wine-item-btn {
+      padding: 4px 8px;
+      font-size: 11px;
+      background: #667eea;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .wine-item-btn:hover {
+      background: #764ba2;
+    }
+
+    .wine-item-btn.remove {
+      background: #ff6b6b;
+    }
+
+    .wine-item-btn.remove:hover {
+      background: #ee5a52;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 24px;
+      background: #f0f0f0;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 8px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      transition: width 0.3s ease;
+    }
+
+    .progress-text {
+      font-size: 12px;
+      color: #666;
+      text-align: center;
+    }
+
+    .status-bar {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .status-item {
+      text-align: center;
+      padding: 12px;
+      background: #f9f9f9;
+      border-radius: 6px;
+    }
+
+    .status-number {
+      font-size: 24px;
+      font-weight: bold;
+      color: #667eea;
+    }
+
+    .status-label {
+      font-size: 11px;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 4px;
+    }
+
+    .instructions {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+    }
+
+    .instructions h3 {
+      color: #667eea;
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+
+    .instructions ol {
+      margin-left: 20px;
+      line-height: 1.8;
+      font-size: 13px;
+      color: #555;
+    }
+
+    .instructions li {
+      margin-bottom: 8px;
+    }
+
+    .instructions code {
+      background: #f0f0f0;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: monospace;
+      color: #d63384;
+    }
+
+    .notification {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: white;
+      padding: 16px 20px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      font-size: 14px;
+      z-index: 10000;
+      animation: slideIn 0.3s ease;
+    }
+
+    .notification.success {
+      border-left: 4px solid #4caf50;
+    }
+
+    .notification.info {
+      border-left: 4px solid #667eea;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(400px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .main-panel {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+    }
+
+    .tab-controls {
+      display: flex;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .current-wine {
+      background: #f0f4ff;
+      border-left: 4px solid #667eea;
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .current-wine strong {
+      color: #667eea;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🍷 Vivino Command Center</h1>
+      <p class="subtitle">Automated wine search helper - opens Vivino searches one by one</p>
+    </div>
+
+    <div class="instructions">
+      <h3>⚡ Quick Setup (First Time Only)</h3>
+      <ol>
+        <li>Install <strong>Tampermonkey</strong> browser extension (Chrome/Firefox/Edge/Safari)</li>
+        <li>Download & install the <strong>vivino-helper.user.js</strong> script (adds copy buttons on Vivino)</li>
+        <li>Come back here and load your wine list using "Load Wine List from CSV"</li>
+        <li>Click "Open Next Wine Search" to start - it opens Vivino with the wine name pre-filled</li>
+        <li>Find the wine, click the bottle image → use the "Copy Image URL" button that appears</li>
+        <li>Return here and paste the URL, then click "Next Wine"</li>
+        <li>Repeat until done!</li>
+      </ol>
+    </div>
+
+    <div class="main-panel">
+      <!-- Left Panel: Wine Management -->
+      <div class="panel">
+        <div class="panel-title">🍇 Wine Queue</div>
+
+        <div class="status-bar">
+          <div class="status-item">
+            <div class="status-number" id="totalCount">0</div>
+            <div class="status-label">Total</div>
+          </div>
+          <div class="status-item">
+            <div class="status-number" id="remainingCount">0</div>
+            <div class="status-label">Remaining</div>
+          </div>
+          <div class="status-item">
+            <div class="status-number" id="completeCount">0</div>
+            <div class="status-label">Complete</div>
+          </div>
+        </div>
+
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill" style="width: 0%">0%</div>
+        </div>
+        <div class="progress-text" id="progressText">Load a CSV file to start</div>
+
+        <div class="form-group">
+          <label>📁 Load Wine List</label>
+          <input type="file" id="csvInput" accept=".csv" />
+        </div>
+
+        <div class="form-group">
+          <select id="regionFilter">
+            <option value="">All Regions</option>
+            <option value="Bordeaux First Growth">Bordeaux First Growth</option>
+            <option value="Bordeaux Second Growth">Bordeaux Second Growth</option>
+            <option value="Bordeaux Third Growth">Bordeaux Third Growth</option>
+            <option value="Bordeaux Fifth Growth">Bordeaux Fifth Growth</option>
+            <option value="USA Napa Valley">USA Napa Valley</option>
+            <option value="Chile">Chile</option>
+            <option value="Italy Tuscany">Italy Tuscany</option>
+          </select>
+        </div>
+
+        <div class="wine-list" id="wineList">
+          <p style="color: #999; text-align: center; padding: 20px;">
+            Load a CSV file to see wines
+          </p>
+        </div>
+
+        <button class="btn btn-secondary" id="clearCompleted">✓ Clear Completed</button>
+      </div>
+
+      <!-- Right Panel: Current Wine -->
+      <div class="panel">
+        <div class="panel-title">🔍 Current Wine</div>
+
+        <div class="current-wine" id="currentWineDisplay">
+          <p style="color: #999;">No wine selected</p>
+        </div>
+
+        <div class="form-group">
+          <label>Wine Image URL</label>
+          <input type="text" id="imageUrlInput" placeholder="Paste copied image URL here..." />
+        </div>
+
+        <button class="btn" id="openSearchBtn" disabled>🔗 Open Vivino Search</button>
+        <button class="btn btn-secondary" id="copySearchBtn" disabled style="margin-top: 8px;">📋 Copy Search Link</button>
+
+        <div style="margin-top: 16px; padding-top: 16px; border-top: 2px solid #f0f0f0;">
+          <button class="btn" id="saveUrlBtn" disabled style="margin-bottom: 8px;">✅ Save URL & Next Wine</button>
+          <button class="btn btn-secondary" id="skipWineBtn" disabled style="margin-bottom: 8px;">⏭️ Skip This Wine</button>
+          <button class="btn btn-secondary" id="prevWineBtn" disabled>⬅️ Previous Wine</button>
+        </div>
+
+        <div style="margin-top: 16px; padding: 12px; background: #f9f9f9; border-radius: 6px; font-size: 12px; color: #666;">
+          <strong>💡 Tip:</strong> Use these keyboard shortcuts:
+          <div style="margin-top: 8px; font-family: monospace;">
+            <div>Enter = Save & Next</div>
+            <div>Shift+Enter = Skip</div>
+            <div>Ctrl+N = Open Search</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const CSV_STORAGE_KEY = 'vivino_wines_data';
+    const CURRENT_INDEX_KEY = 'vivino_current_index';
+    const COMPLETED_KEY = 'vivino_completed';
+
+    let wines = [];
+    let currentIndex = 0;
+    let completed = new Set();
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', loadFromStorage);
+
+    // File upload
+    document.getElementById('csvInput').addEventListener('change', handleCSVUpload);
+
+    // Buttons
+    document.getElementById('openSearchBtn').addEventListener('click', openVivinoSearch);
+    document.getElementById('copySearchBtn').addEventListener('click', copySearchLink);
+    document.getElementById('saveUrlBtn').addEventListener('click', saveUrlAndNext);
+    document.getElementById('skipWineBtn').addEventListener('click', skipWine);
+    document.getElementById('prevWineBtn').addEventListener('click', previousWine);
+    document.getElementById('clearCompleted').addEventListener('click', clearCompleted);
+    document.getElementById('regionFilter').addEventListener('change', filterWines);
+
+    // Keyboard shortcuts
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        if (document.getElementById('imageUrlInput').value) {
+          saveUrlAndNext();
+        }
+      }
+      if (e.key === 'Enter' && e.shiftKey) {
+        e.preventDefault();
+        skipWine();
+      }
+      if (e.ctrlKey && e.key === 'n') {
+        e.preventDefault();
+        openVivinoSearch();
+      }
+    });
+
+    function handleCSVUpload(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        const csv = e.target.result;
+        parseCSV(csv);
+        saveToStorage();
+        updateDisplay();
+      };
+      reader.readAsText(file);
+    }
+
+    function parseCSV(csv) {
+      const lines = csv.trim().split('\n');
+      const headers = lines[0].split(',').map(h => h.trim());
+
+      wines = [];
+      for (let i = 1; i < lines.length; i++) {
+        if (!lines[i].trim()) continue;
+        const values = lines[i].split(',').map(v => v.trim());
+        const row = {};
+        headers.forEach((header, idx) => {
+          row[header] = values[idx] || '';
+        });
+        wines.push(row);
+      }
+
+      currentIndex = 0;
+      completed.clear();
+      showNotification(`Loaded ${wines.length} wines!`, 'success');
+    }
+
+    function updateDisplay() {
+      const totalCount = wines.length;
+      const completedCount = completed.size;
+      const remainingCount = totalCount - completedCount;
+
+      document.getElementById('totalCount').textContent = totalCount;
+      document.getElementById('completeCount').textContent = completedCount;
+      document.getElementById('remainingCount').textContent = remainingCount;
+
+      const percentage = totalCount > 0 ? Math.round((completedCount / totalCount) * 100) : 0;
+      const fill = document.getElementById('progressFill');
+      fill.style.width = percentage + '%';
+      fill.textContent = percentage + '%';
+      document.getElementById('progressText').textContent = `${completedCount} / ${totalCount} wines completed`;
+
+      updateWineList();
+      updateCurrentWineDisplay();
+      updateButtonStates();
+    }
+
+    function updateWineList() {
+      const filter = document.getElementById('regionFilter').value;
+      const wineList = document.getElementById('wineList');
+      wineList.innerHTML = '';
+
+      wines.forEach((wine, idx) => {
+        if (filter && wine.Region !== filter) return;
+
+        const item = document.createElement('div');
+        item.className = 'wine-item' + (completed.has(idx) ? ' completed' : '');
+        item.innerHTML = `
+          <span>${wine.Wine_Name} ${wine.Vintage}</span>
+          <div class="wine-item-actions">
+            <button class="wine-item-btn" onclick="selectWine(${idx})">View</button>
+            <button class="wine-item-btn remove" onclick="removeWine(${idx})">Remove</button>
+          </div>
+        `;
+        wineList.appendChild(item);
+      });
+    }
+
+    function updateCurrentWineDisplay() {
+      const display = document.getElementById('currentWineDisplay');
+      if (currentIndex >= wines.length) {
+        display.innerHTML = '<p style="color: #4caf50;"><strong>✅ All wines completed!</strong></p>';
+        return;
+      }
+
+      const wine = wines[currentIndex];
+      const isCompleted = completed.has(currentIndex);
+      display.innerHTML = `
+        <p><strong>${wine.Wine_Name}</strong></p>
+        <p style="font-size: 12px; color: #666; margin-top: 4px;">
+          ${wine.Vintage} • ${wine.Region}
+        </p>
+        ${isCompleted ? '<p style="color: #4caf50; margin-top: 8px;">✅ Completed</p>' : ''}
+      `;
+
+      document.getElementById('imageUrlInput').value = wine.Image_URL || '';
+    }
+
+    function updateButtonStates() {
+      const hasWines = wines.length > 0;
+      const atEnd = currentIndex >= wines.length;
+
+      document.getElementById('openSearchBtn').disabled = atEnd;
+      document.getElementById('copySearchBtn').disabled = atEnd;
+      document.getElementById('saveUrlBtn').disabled = atEnd;
+      document.getElementById('skipWineBtn').disabled = atEnd;
+      document.getElementById('prevWineBtn').disabled = currentIndex === 0;
+    }
+
+    function openVivinoSearch() {
+      if (currentIndex >= wines.length) return;
+      const wine = wines[currentIndex];
+      const searchQuery = `${wine.Wine_Name} ${wine.Vintage}`;
+      const url = `https://www.vivino.com/en/search/wines?q=${encodeURIComponent(searchQuery)}`;
+      window.open(url, 'vivino_search');
+      showNotification('Search opened in new tab - find the wine and click the bottle image!', 'info');
+    }
+
+    function copySearchLink() {
+      if (currentIndex >= wines.length) return;
+      const wine = wines[currentIndex];
+      const searchQuery = `${wine.Wine_Name} ${wine.Vintage}`;
+      const url = `https://www.vivino.com/en/search/wines?q=${encodeURIComponent(searchQuery)}`;
+      copyToClipboard(url);
+      showNotification('Search link copied!', 'success');
+    }
+
+    function saveUrlAndNext() {
+      if (currentIndex >= wines.length) return;
+      const url = document.getElementById('imageUrlInput').value.trim();
+      if (!url) {
+        showNotification('Please paste an image URL first', 'error');
+        return;
+      }
+
+      wines[currentIndex].Image_URL = url;
+      completed.add(currentIndex);
+      saveToStorage();
+      updateDisplay();
+
+      // Move to next incomplete wine
+      currentIndex++;
+      while (currentIndex < wines.length && completed.has(currentIndex)) {
+        currentIndex++;
+      }
+
+      if (currentIndex < wines.length) {
+        document.getElementById('imageUrlInput').focus();
+        showNotification('URL saved! Moving to next wine...', 'success');
+      } else {
+        showNotification('🎉 All wines completed! Ready to merge.', 'success');
+      }
+      updateDisplay();
+    }
+
+    function skipWine() {
+      if (currentIndex < wines.length - 1) {
+        currentIndex++;
+        updateDisplay();
+        document.getElementById('imageUrlInput').focus();
+      }
+    }
+
+    function previousWine() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateDisplay();
+        document.getElementById('imageUrlInput').focus();
+      }
+    }
+
+    function selectWine(idx) {
+      currentIndex = idx;
+      updateDisplay();
+      document.getElementById('imageUrlInput').focus();
+      document.getElementById('imageUrlInput').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    function removeWine(idx) {
+      wines.splice(idx, 1);
+      if (currentIndex >= wines.length) currentIndex = Math.max(0, wines.length - 1);
+      saveToStorage();
+      updateDisplay();
+    }
+
+    function clearCompleted() {
+      completed.clear();
+      saveToStorage();
+      updateDisplay();
+    }
+
+    function filterWines() {
+      updateDisplay();
+    }
+
+    function copyToClipboard(text) {
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+    }
+
+    function showNotification(message, type = 'info') {
+      const notif = document.createElement('div');
+      notif.className = `notification ${type}`;
+      notif.textContent = message;
+      document.body.appendChild(notif);
+      setTimeout(() => {
+        notif.style.animation = 'slideIn 0.3s ease reverse';
+        setTimeout(() => notif.remove(), 300);
+      }, 3000);
+    }
+
+    function saveToStorage() {
+      localStorage.setItem(CSV_STORAGE_KEY, JSON.stringify(wines));
+      localStorage.setItem(CURRENT_INDEX_KEY, currentIndex);
+      localStorage.setItem(COMPLETED_KEY, JSON.stringify(Array.from(completed)));
+    }
+
+    function loadFromStorage() {
+      const stored = localStorage.getItem(CSV_STORAGE_KEY);
+      if (stored) {
+        wines = JSON.parse(stored);
+        currentIndex = parseInt(localStorage.getItem(CURRENT_INDEX_KEY)) || 0;
+        const completedStored = localStorage.getItem(COMPLETED_KEY);
+        if (completedStored) {
+          completed = new Set(JSON.parse(completedStored));
+        }
+        updateDisplay();
+      }
+    }
+  </script>
+</body>
+</html>

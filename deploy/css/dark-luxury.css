@@ -1,0 +1,201 @@
+/* Luxury Wine Dark Theme - Gold & Wine Red Palette */
+/* Inspired by premium wine cellar aesthetics */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Noto+Serif+TC:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+.dark {
+  /* === Primary: Gold === */
+  --md-sys-color-primary: rgb(212 175 55);           /* #D4AF37 - Gold */
+  --md-sys-color-surface-tint: rgb(212 175 55);
+  --md-sys-color-on-primary: rgb(18 18 18);          /* Dark text on gold */
+  --md-sys-color-primary-container: rgb(94 13 13);   /* #5e0d0d - Wine Red */
+  --md-sys-color-on-primary-container: rgb(243 229 171); /* #F3E5AB - Gold Light */
+
+  /* === Secondary: Wine Red === */
+  --md-sys-color-secondary: rgb(180 120 120);        /* Lighter wine for readability */
+  --md-sys-color-on-secondary: rgb(255 255 255);
+  --md-sys-color-secondary-container: rgb(94 13 13); /* #5e0d0d */
+  --md-sys-color-on-secondary-container: rgb(243 229 171);
+
+  /* === Tertiary: Gold Light === */
+  --md-sys-color-tertiary: rgb(243 229 171);         /* #F3E5AB */
+  --md-sys-color-on-tertiary: rgb(45 35 0);
+  --md-sys-color-tertiary-container: rgb(184 138 20);
+  --md-sys-color-on-tertiary-container: rgb(255 248 225);
+
+  /* === Error === */
+  --md-sys-color-error: rgb(255 180 171);
+  --md-sys-color-on-error: rgb(105 0 5);
+  --md-sys-color-error-container: rgb(147 0 10);
+  --md-sys-color-on-error-container: rgb(255 218 214);
+
+  /* === Surfaces: Dark Charcoal === */
+  --md-sys-color-background: rgb(18 18 18);          /* #121212 */
+  --md-sys-color-on-background: rgb(244 244 244);    /* #f4f4f4 */
+  --md-sys-color-surface: rgb(18 18 18);
+  --md-sys-color-on-surface: rgb(244 244 244);
+  --md-sys-color-surface-variant: rgb(45 40 40);
+  --md-sys-color-on-surface-variant: rgb(170 170 170); /* #aaaaaa - Muted */
+
+  /* === Outlines === */
+  --md-sys-color-outline: rgb(136 120 100);          /* Warm gray with gold tint */
+  --md-sys-color-outline-variant: rgb(60 50 45);
+
+  /* === Shadows === */
+  --md-sys-color-shadow: rgb(0 0 0);
+  --md-sys-color-scrim: rgb(0 0 0);
+
+  /* === Inverse === */
+  --md-sys-color-inverse-surface: rgb(244 244 244);
+  --md-sys-color-inverse-on-surface: rgb(26 26 26);
+  --md-sys-color-inverse-primary: rgb(156 120 20);
+
+  /* === Fixed Colors === */
+  --md-sys-color-primary-fixed: rgb(255 235 180);
+  --md-sys-color-on-primary-fixed: rgb(40 30 0);
+  --md-sys-color-primary-fixed-dim: rgb(212 175 55);
+  --md-sys-color-on-primary-fixed-variant: rgb(120 90 10);
+  --md-sys-color-secondary-fixed: rgb(255 200 200);
+  --md-sys-color-on-secondary-fixed: rgb(50 10 10);
+  --md-sys-color-secondary-fixed-dim: rgb(180 120 120);
+  --md-sys-color-on-secondary-fixed-variant: rgb(94 13 13);
+  --md-sys-color-tertiary-fixed: rgb(255 248 225);
+  --md-sys-color-on-tertiary-fixed: rgb(30 25 0);
+  --md-sys-color-tertiary-fixed-dim: rgb(243 229 171);
+  --md-sys-color-on-tertiary-fixed-variant: rgb(100 80 20);
+
+  /* === Surface Containers: Charcoal Gradient === */
+  --md-sys-color-surface-dim: rgb(18 18 18);         /* #121212 */
+  --md-sys-color-surface-bright: rgb(50 45 42);
+  --md-sys-color-surface-container-lowest: rgb(12 12 12);
+  --md-sys-color-surface-container-low: rgb(22 22 22);
+  --md-sys-color-surface-container: rgb(26 26 26);   /* #1a1a1a - Charcoal */
+  --md-sys-color-surface-container-high: rgb(35 32 30);
+  --md-sys-color-surface-container-highest: rgb(45 42 40);
+
+  /* === Luxury Custom Variables === */
+  --luxury-gold: #D4AF37;
+  --luxury-gold-light: #F3E5AB;
+  --luxury-wine-red: #5e0d0d;
+  --luxury-wine-red-bright: #8b1a1a;
+  --luxury-charcoal: #1a1a1a;
+  --luxury-dark-bg: #121212;
+
+  /* === Typography === */
+  --font-serif-en: 'Playfair Display', Georgia, serif;
+  --font-serif-tw: 'Noto Serif TC', serif;
+  --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* === Global Luxury Styles === */
+.dark body {
+  font-family: var(--font-sans);
+  background: var(--md-sys-color-background);
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4 {
+  font-family: var(--font-serif-en);
+}
+
+/* === Luxury Table Styling === */
+.dark .wine-table th {
+  background: linear-gradient(135deg, var(--luxury-wine-red) 0%, var(--luxury-wine-red-bright) 100%);
+  border-bottom: 2px solid var(--luxury-gold);
+  color: var(--luxury-gold) !important;  /* Golden text on wine-red header */
+}
+
+.dark .wine-table tr:hover {
+  background: rgba(212, 175, 55, 0.08);
+}
+
+/* === Luxury Buttons === */
+.dark button[id*="theme"],
+.dark .cta-button {
+  background: linear-gradient(135deg, var(--luxury-gold) 0%, #b88a14 100%);
+  color: #000;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+  transition: all 0.3s ease;
+}
+
+.dark button[id*="theme"]:hover,
+.dark .cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.45);
+}
+
+/* === Luxury Headers === */
+.dark .country-header {
+  color: var(--luxury-gold);
+  border-bottom-color: var(--luxury-gold);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.dark .region-header {
+  background: linear-gradient(135deg, var(--luxury-wine-red) 0%, rgba(94, 13, 13, 0.7) 100%);
+  border-left-color: var(--luxury-gold);
+  color: var(--luxury-gold-light);
+}
+
+/* === Luxury Section Styling === */
+.dark .wine-section {
+  background: var(--luxury-charcoal);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* === Luxury Navigation === */
+.dark nav {
+  background: rgba(18, 18, 18, 0.95) !important;
+  border-bottom-color: rgba(212, 175, 55, 0.3) !important;
+}
+
+/* === Promotional Banner Luxury Style === */
+.dark [style*="linear-gradient(135deg, var(--md-sys-color-primary)"] {
+  background: linear-gradient(135deg, var(--luxury-wine-red) 0%, #3d0808 100%) !important;
+  border: 1px solid var(--luxury-gold);
+}
+
+/* === Back to Top Button === */
+.dark .back-to-top {
+  background: linear-gradient(135deg, var(--luxury-gold) 0%, #b88a14 100%);
+  color: #000;
+  border: none;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+}
+
+.dark .back-to-top:hover {
+  box-shadow: 0 6px 25px rgba(212, 175, 55, 0.6);
+}
+
+/* === Age Gate Banner === */
+.dark #age-gate-banner {
+  background: linear-gradient(90deg, var(--luxury-wine-red) 0%, #3d0808 50%, var(--luxury-wine-red) 100%);
+  border-top: 3px solid var(--luxury-gold);
+  color: var(--luxury-gold-light);
+}
+
+/* === Links === */
+.dark a {
+  color: var(--luxury-gold);
+  transition: color 0.3s ease;
+}
+
+.dark a:hover {
+  color: var(--luxury-gold-light);
+}
+
+/* === Wine Names === */
+.dark .wine-name {
+  color: var(--luxury-gold);
+  font-family: var(--font-serif-en);
+}
+
+.dark .chinese-name {
+  font-family: var(--font-serif-tw);
+}
+
+/* === Price Styling === */
+.dark .price {
+  color: var(--luxury-gold-light);
+  font-weight: 700;
+}

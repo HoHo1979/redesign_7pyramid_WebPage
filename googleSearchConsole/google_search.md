@@ -1,0 +1,89 @@
+# Google Search Console Deep Search & SEO/AEO Improvement Plan for Seven Pyramid
+
+This document outlines a "deep search" analysis strategy using Google Search Console (GSC) and a comprehensive plan to improve SEO (Search Engine Optimization) and AEO (Answer Engine Optimization) specifically for the **Seven Pyramid (七銘企業)** architecture as described in `CLAUDE.md`.
+
+## Part 1: Deep Search Analysis in Google Search Console
+
+To leverage GSC for your specific setup (Static Site + Flutter Hash Routing), follow these steps:
+
+### 1. Property Setup Strategy
+Because you have a mixed architecture (Static landing pages + Flutter app on `/#/`), GSC treats them differently.
+*   **The Issue:** GSC generally ignores everything after the `#` in URLs. It sees `https://newyear.7pyramid.com/` and `https://newyear.7pyramid.com/#/wine/france` as the *same page*.
+*   **The Fix:** You must rely heavily on your **Static Pages** (`index.html`, `wine_list.html`) for SEO visibility.
+*   **Action:** In GSC, filter performance reports by "Page" to ensure `wine_list.html` is receiving traffic. If `index.html` is the only page getting clicks, your static wine catalog is underperforming.
+
+### 2. Performance "Deep Dive"
+*   **Query Analysis:**
+    *   **"Missing" Queries:** Check if you rank for specific wine names (e.g., "Chateau Margaux Taiwan"). If not, your `wine_list.html` might be too large/generic.
+    *   **Mobile Usability:** Check the **Mobile Usability** report specifically for `wine_list.html`. Large tables often break mobile layouts, causing "Content wider than screen" errors, which hurts rankings.
+
+---
+
+## Part 2: SEO & AEO Improvement Strategy
+
+### 1. Architecture-Specific SEO (The "Hybrid" Approach)
+Your `CLAUDE.md` describes a "Feature-First Clean Architecture" with a static frontend and Flutter app. Here is how to bridge them:
+
+*   **Static `wine_list.html` as the "SEO Anchor":**
+    *   Since the Flutter app (`/#/`) is hard for crawlers, your generated `wine_list.html` is critical. It must contain **all** text content that exists in the app.
+    *   **Action:** Ensure `build-wine-catalog.js` generates detailed cards/rows, not just simple links. Include vintage, price, and region text in the static HTML.
+
+*   **Deep Linking from Static to Flutter:**
+    *   Ensure every wine in `wine_list.html` has a link like `<a href="/#/wine/123">View in App</a>`.
+    *   **Crucial:** Add `rel="nofollow"` to these app links if you want Google to focus *only* on the static content, OR (better strategy) use the static page to *capture* the search traffic, then upsell the "Interactive App Experience" to the user.
+
+### 2. AEO (Answer Engine Optimization)
+AI Search engines (Gemini, ChatGPT) need structured data to understand your 2000+ wines.
+
+*   **Product Schema Injection:**
+    *   **Current:** `CLAUDE.md` mentions LocalBusiness schema.
+    *   **New Requirement:** Modify `build-wine-catalog.js` to inject `JSON-LD` Product schema for *every* wine row.
+    ```html
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Chateau Example 2018",
+      "description": "French Red Wine from Bordeaux...",
+      "sku": "WINE-001",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "TWD",
+        "price": "1200",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+    ```
+    *   *Why:* AI agents read this code directly to answer "How much is Chateau Example in Taiwan?".
+
+*   **Q&A Content:**
+    *   Add a `FAQ` section to `index.html` with questions like:
+        *   "Do you deliver to Hsinchu Science Park?" (Yes, we specialize in corporate procurement...)
+        *   "What are your business hours?" (Mo-Su 10:00-21:00...)
+
+### 3. Material Design 3 Optimization
+*   **CLS (Cumulative Layout Shift):**
+    *   Material Design often uses large, dynamic images (`img/SPbackground.png`). Ensure you explicitly set `width` and `height` attributes on these `<img>` tags to prevent layout shifts during loading.
+*   **Accessibility (A11y) = SEO:**
+    *   Google uses accessibility as a ranking signal. Ensure your Material Design contrast ratios (Light/Dark mode) meet WCAG AA standards.
+    *   Verify that `js/app.js` toggle doesn't hide content in a way that crawlers can't see (e.g., `display: none` is fine, but ensure the *default* HTML has readable text).
+
+---
+
+## Actionable Checklist for Developers
+
+1.  **[ ] Modify `build-wine-catalog.js`:**
+    *   Add logic to generate `Product` Schema markup for each wine.
+    *   Ensure `alt` text for images includes "Country + Region + Wine Name".
+
+2.  **[ ] Update `index.html`:**
+    *   Add an "FAQ" section with `FAQPage` schema.
+    *   Verify H1/H2 hierarchy: H1 should be "Seven Pyramid - Professional Wine Importer Taiwan".
+
+3.  **[ ] GSC Verification:**
+    *   Verify that `sitemap.xml` (generated by `js/sitemap-generator.js`) is submitted and processed successfully in GSC.
+    *   Check "Page Experience" report for mobile usability issues on `wine_list.html`.
+
+4.  **[ ] Flutter Handoff:**
+    *   Test that links from `wine_list.html` to the Flutter app (`/#/wine/...`) work correctly on mobile devices.

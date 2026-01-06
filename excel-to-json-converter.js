@@ -160,7 +160,7 @@ class ExcelToJsonConverter {
         contact: {
           phone: '+886-2-2791-2147',
           email: 'info@7pyramid.com',
-          website: 'https://newyear.7pyramid.com'
+          website: 'https://wine.7pyramid.com'
         }
       },
       countries: {}
@@ -173,6 +173,16 @@ class ExcelToJsonConverter {
   processWineRow(row, template) {
     // Map Excel column names (using actual column headers from sevenStock.xlsx)
     // Row 0: ProductCode, EnglishName, ChineseName, Score, Stock, WholesalePrice, Bundle, SuggestedPrice, UnitPrice, DirectPrice
+
+    // Check for nulls in specific columns as requested (C4 or C6 equivalent)
+    // In our mapping: Col 4 is __EMPTY_2, Col 6 is __EMPTY_4
+    const col4Value = row['__EMPTY_2'];
+    const col6Value = row['__EMPTY_4'];
+
+    if (!col4Value || col4Value === '' || !col6Value || col6Value === '') {
+      // Skip this row as it's likely a header, spacer, or incomplete record
+      return;
+    }
 
     // Extract and validate core fields
     const nameEn = this.getField(row, ['__EMPTY', 'English Name', 'Product Name', '產品名稱']);

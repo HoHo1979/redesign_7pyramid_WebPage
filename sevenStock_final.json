@@ -1,0 +1,2858 @@
+{
+    "general_stock_inventory": [],
+    "grade_wine_inventory": [
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MD078-20-GCCA",
+            "product_name_en": "CH AUSONE 2020",
+            "product_name_cn": "歐頌城堡(單一木盒)",
+            "score": [
+                "RP95+",
+                "JS99"
+            ],
+            "stock_quantity": "3",
+            "unit": "瓶",
+            "cost_price": "26280",
+            "image": "generated/wines/images/france/MD078-20-GCCACHAUSONE2020_1.png"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "JPM079-15-GCCA",
+            "product_name_en": "Chateau Cheval Blanc, 1er Grand Cru Classe 2015",
+            "product_name_cn": "白馬堡-6入木箱",
+            "score": [
+                "RP100",
+                "JS99",
+                "WE98",
+                "WE100"
+            ],
+            "stock_quantity": "2",
+            "unit": "瓶",
+            "cost_price": "29000",
+            "image": "generated/wines/images/france/JPM079-15-GCCAChâteauCHEVALBLANC2015_1.png"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MG079-18-GCCA",
+            "product_name_en": "Chateau Cheval Blanc, 1er Grand Cru Classe 2018",
+            "product_name_cn": "白馬堡-6入木箱",
+            "score": [
+                "RP98+",
+                "JS99",
+                "WS97"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "27000"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MD079-20-GCCA",
+            "product_name_en": "Chateau Cheval Blanc, 1er Grand Cru Classe 2020",
+            "product_name_cn": "白馬堡(單一木盒)",
+            "score": [
+                "RP96",
+                "JS98"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "20000",
+            "image": "generated/wines/images/france/MD079-20-GCCACHCHEVALBLANC2020_1.png"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "DI087-16-GCCA",
+            "product_name_en": "Chateau Angelus 2016",
+            "product_name_cn": "金鐘城堡-6入木箱",
+            "score": [
+                "JS99-100",
+                "RP96-98"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "17000"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MD087-20-GCCA",
+            "product_name_en": "CH ANGELUS 2020",
+            "product_name_cn": "金鐘城堡(單一木盒)",
+            "score": [
+                "RP97",
+                "99"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "13000",
+            "image": "generated/wines/images/france/MD087-20-GCCASCARILLONDEANGELUS2020_1.png"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MG087-21-GCCA",
+            "product_name_en": "CH ANGELUS 2021",
+            "product_name_cn": "金鐘城堡-3入木盒",
+            "score": [
+                "RP94+",
+                "JS95",
+                "WE96"
+            ],
+            "stock_quantity": "24",
+            "unit": "瓶",
+            "cost_price": "12500",
+            "image": "generated/wines/images/france/MG087-21-GCCACHANGELUS2021_1.png"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MG089-19-GCCA",
+            "product_name_en": "Chateau Pavie 2019",
+            "product_name_cn": "帕維城堡-6入木箱",
+            "score": [
+                "RP94+",
+                "JA98"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "14000"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MG089-20-GCCA",
+            "product_name_en": "CH PAVIE 2020",
+            "product_name_cn": "帕維城堡(單一木盒)",
+            "score": [
+                "RP99",
+                "JS100"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "11790"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MG089-21-GCCA",
+            "product_name_en": "CH PAVIE 1ER G.C.C. A 2021",
+            "product_name_cn": "帕維城堡-6入木箱",
+            "score": [
+                "JS97",
+                "WS94"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "13000",
+            "image": "generated/wines/images/france/MG089-21-GCCAChâteauPavie2021_2.png"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MD227-20-GCCA",
+            "product_name_en": "VIEUX CHATEAU CERTAN 2020",
+            "product_name_cn": "老色丹城堡(單一木盒)",
+            "score": [
+                "RP97",
+                "JS99"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "12500",
+            "image": "generated/wines/images/france/MD227-20-GCCAVIEUXCHATEAUCERTAN2020_3.png"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MD087-18-GCCAS",
+            "product_name_en": "CARILLON DE L'ANGELUS 2018",
+            "product_name_cn": "金鐘城堡副牌-6入木箱",
+            "score": [
+                "RP91",
+                "JS95"
+            ],
+            "stock_quantity": "35",
+            "unit": "瓶",
+            "cost_price": "5000",
+            "image": "generated/wines/images/france/MD087-18-GCCASCARILLONDEANGELUS2018_1.png"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MD087-20-GCCAS",
+            "product_name_en": "CARILLON DE L'ANGELUS 2020",
+            "product_name_cn": "金鐘城堡副牌-3入木盒",
+            "score": [
+                "RP92",
+                "JS95"
+            ],
+            "stock_quantity": "24",
+            "unit": "瓶",
+            "cost_price": "3700",
+            "image": "generated/wines/images/france/MD087-20-GCCASCARILLONDEANGELUS2020_1.png"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MD089-20-GCCAS",
+            "product_name_en": "AROMES DE PAVIE (LES) 2020",
+            "product_name_cn": "帕維城堡副牌-6入木箱",
+            "score": [
+                "RP93",
+                "JS95"
+            ],
+            "stock_quantity": "20",
+            "unit": "瓶",
+            "cost_price": "3500"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "DU082-21-GCCB",
+            "product_name_en": "Château CANON2021",
+            "product_name_cn": "卡農城堡-6入木箱",
+            "score": [
+                "RP95",
+                "JS97"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "4100",
+            "image": "generated/wines/images/france/DU082-21-GCCBCHCANON2021_1.png"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MD082-21-GCCB",
+            "product_name_en": "CHATEAU CANON 2021",
+            "product_name_cn": "卡農城堡-6入木箱",
+            "score": [
+                "RP95",
+                "JS97"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "4100"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MD083-20-GCCB",
+            "product_name_en": "CLOS FOURTET 2020",
+            "product_name_cn": "福特園城堡-6入木箱",
+            "score": [
+                "RP94",
+                "JS97"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "4000"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MD084-18-GCCB",
+            "product_name_en": "Chateau Figeac 2018",
+            "product_name_cn": "菲雅克城堡-6入木箱",
+            "score": [
+                "RP97+",
+                "JS98",
+                "WS96"
+            ],
+            "stock_quantity": "3",
+            "unit": "瓶",
+            "cost_price": "8400"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MD084-19-GCCB",
+            "product_name_en": "Chateau Figeac 2019",
+            "product_name_cn": "菲雅克城堡-6入木箱",
+            "score": [
+                "RP97",
+                "JA98"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "6300",
+            "image": "generated/wines/images/france/MD084-19-GCCBChâteauFIGEAC2019_1.png"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MD084-20-GCCB",
+            "product_name_en": "Chateau Figeac 2020",
+            "product_name_cn": "菲雅克城堡(單一木盒)",
+            "score": [
+                "RP100",
+                "JS100"
+            ],
+            "stock_quantity": "18",
+            "unit": "瓶",
+            "cost_price": "8100",
+            "image": "generated/wines/images/france/MD084-20-GCCBChâteauFIGEAC2020_2.png"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MD085-20-GCCB",
+            "product_name_en": "CH GAFFELIERE (LA)",
+            "product_name_cn": "嘉法葉城堡-6入木箱",
+            "score": [
+                "RP95",
+                "JS97"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "2650",
+            "image": "generated/wines/images/france/MD085-20-GCCB.png"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MD127-20-GCCB",
+            "product_name_en": "CH LARCIS DUCASSE 2020",
+            "product_name_cn": "拉西斯．杜卡斯城堡-6入木箱",
+            "score": [
+                "RP96",
+                "JS98"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "2850",
+            "image": "generated/wines/images/france/MD127-20-GCCBCHLARCISDUCASSE2020_1.png"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MD135-20-GCCB",
+            "product_name_en": "CH PAVIE MACQUIN 2020",
+            "product_name_cn": "帕維麥昆城堡-6入木箱",
+            "score": [
+                "RP95",
+                "JS98"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "3300"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MD149-20-GCCB",
+            "product_name_en": "CH TROPLONG MONDOT 2020",
+            "product_name_cn": "特洛朗蒙度城堡-6入木箱",
+            "score": [
+                "RP98+",
+                "JS97"
+            ],
+            "stock_quantity": "35",
+            "unit": "瓶",
+            "cost_price": "3750"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MS231-20-GCCB",
+            "product_name_en": "CH Valandraud 2020",
+            "product_name_cn": "瓦倫卓堡-6入木箱",
+            "score": [
+                "RP92",
+                "JS99"
+            ],
+            "stock_quantity": "11",
+            "unit": "瓶",
+            "cost_price": "5200",
+            "image": "generated/wines/images/france/MS231-20-GCCBCHValandraud2020_1.png"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MS231-20-GCCBS",
+            "product_name_en": "Virginie de Valandraud 2020",
+            "product_name_cn": "瓦倫卓堡副牌-6入木箱",
+            "score": [
+                "RP93",
+                "JS94"
+            ],
+            "stock_quantity": "24",
+            "unit": "瓶",
+            "cost_price": "1600",
+            "image": "generated/wines/images/france/MS231-20-GCCBSVirginiedeValandraud2020_1.png"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MD064-20-GCCG",
+            "product_name_en": "CH PAPE CLEMENT 2020",
+            "product_name_cn": "黑教皇城堡-6入木箱",
+            "score": [
+                "RP94+",
+                "JS98"
+            ],
+            "stock_quantity": "36",
+            "unit": "瓶",
+            "cost_price": "3200",
+            "image": "generated/wines/images/france/MD064-20-GCCGChâteauPAPECLEMENT2020_1.png"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MS071-20-GCCG",
+            "product_name_en": "DOMAINE DE CHEVALIER PESSAC LEOGNAN ROUGE",
+            "product_name_cn": "騎士堡 2020-6入木箱",
+            "score": [
+                "RP95+",
+                "JS99"
+            ],
+            "stock_quantity": "13",
+            "unit": "瓶",
+            "cost_price": "2500",
+            "image": "generated/wines/images/france/MS071-20-GCCGDOMAINEDECHEVALIER2020_3.png"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MS075-20-GCCG",
+            "product_name_en": "CH Smith Haut Lafitte Red 2020",
+            "product_name_cn": "史密斯拉菲城堡(單一木盒)",
+            "score": [
+                "RP95+",
+                "JS99",
+                "紀念金標"
+            ],
+            "stock_quantity": "3",
+            "unit": "瓶",
+            "cost_price": "4700",
+            "image": "generated/wines/images/france/MS075-20-GCCGCHSMITHHAUTLAFITTEWHITE2020_2.png"
+        },
+        {
+            "category": "Saint-Emilion",
+            "product_id": "MS300-20-SE-MG",
+            "product_name_en": "CH FLEUR CARDINALE 2020(1.5ML)",
+            "product_name_cn": "花園主教城堡(單一木盒)",
+            "score": [
+                "RP95",
+                "JS96"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "4400"
+        },
+        {
+            "category": "Pessac-Leognan",
+            "product_id": "MD069-19-GCCG",
+            "product_name_en": "CH HAUT BAILLY 2019",
+            "product_name_cn": "歐貝力城堡-6入木箱",
+            "score": [
+                "RP96+",
+                "JA99"
+            ],
+            "stock_quantity": "18",
+            "unit": "瓶",
+            "cost_price": "3700",
+            "image": "generated/wines/images/france/MD069-19-GCCGSCHHautBalley_2.png"
+        },
+        {
+            "category": "Pessac-Leognan",
+            "product_id": "MG069-20-GCCG",
+            "product_name_en": "CH HAUT BAILLY 2020",
+            "product_name_cn": "歐貝力城堡-3入木盒",
+            "score": [
+                "RP94+",
+                "JS100"
+            ],
+            "stock_quantity": "23",
+            "unit": "瓶",
+            "cost_price": "4600"
+        },
+        {
+            "category": "Pessac-Leognan",
+            "product_id": "MD069-20-GCCG",
+            "product_name_en": "CH HAUT BAILLY 2020",
+            "product_name_cn": "歐貝力城堡-6入木箱",
+            "score": [
+                "RP94+",
+                "JS100"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "4600",
+            "image": "generated/wines/images/france/MD069-20-GCCGCHHautBalley2020_2.png"
+        },
+        {
+            "category": "Pessac-Leognan",
+            "product_id": "DI065-15-GCCGS",
+            "product_name_en": "La Chapelle de Mission Haut-Brion 2015",
+            "product_name_cn": "教會歐布里翁城堡副牌-6入木箱",
+            "score": [
+                "RP92",
+                "WS93",
+                "WE93"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "3700"
+        },
+        {
+            "category": "Pessac-Leognan",
+            "product_id": "MD069-19-GCCGS",
+            "product_name_en": "HAUT BAILLY II 2019",
+            "product_name_cn": "歐貝力城堡副牌-6入木箱",
+            "score": [
+                "RP90",
+                "JA94"
+            ],
+            "stock_quantity": "22",
+            "unit": "瓶",
+            "cost_price": "1300",
+            "image": "generated/wines/images/france/MD069-19-GCCGSCHHautBalley_2.png"
+        },
+        {
+            "category": "Pessac-Leognan",
+            "product_id": "MD069-20-GCCGS",
+            "product_name_en": "HAUT BAILLY II 2020",
+            "product_name_cn": "歐貝力城堡副牌-6入木箱",
+            "score": [
+                "89+",
+                "96"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "1480"
+        },
+        {
+            "category": "Pomerol",
+            "product_id": "JPM403-20-POM",
+            "product_name_en": "Château LA FLEUR-PÉTRUS2020",
+            "product_name_cn": "柏翠花城堡(單一木盒)",
+            "score": [
+                "RP96",
+                "JS100               WS93"
+            ],
+            "stock_quantity": "18",
+            "unit": "瓶",
+            "cost_price": "7500",
+            "image": "generated/wines/images/france/JPM403-20-POMChâteauLAFLEUR-PÉTRUS2020_2.png"
+        },
+        {
+            "category": "Pomerol",
+            "product_id": "JPM404-16-POM",
+            "product_name_en": "Château BOURGNEUF2016",
+            "product_name_cn": "布聶夫城堡-12入木箱",
+            "score": [
+                "RP94",
+                "JS93",
+                "WS92"
+            ],
+            "stock_quantity": "38",
+            "unit": "瓶",
+            "cost_price": "2100",
+            "image": "generated/wines/images/france/JPM404-16-POMChâteauBOURGNEUF2016_1.png"
+        },
+        {
+            "category": "Pomerol",
+            "product_id": "JPM404-20-POM",
+            "product_name_en": "Château BOURGNEUF2020",
+            "product_name_cn": "布聶夫城堡-6入木箱",
+            "score": [
+                "RP86",
+                "JS96",
+                "WS91"
+            ],
+            "stock_quantity": "51",
+            "unit": "瓶",
+            "cost_price": "2100",
+            "image": "generated/wines/images/france/JPM404-20-POMChâteauBOURGNEUF2020_1.png"
+        },
+        {
+            "category": "Pomerol",
+            "product_id": "JPM404-21-POM",
+            "product_name_en": "Château BOURGNEUF2021",
+            "product_name_cn": "布聶夫城堡-6入木箱",
+            "score": [
+                "RP91+",
+                "JS92"
+            ],
+            "stock_quantity": "60",
+            "unit": "瓶",
+            "cost_price": "2000",
+            "image": "generated/wines/images/france/JPM404-21-POMChâteauBOURGNEUF2021_1.png"
+        },
+        {
+            "category": "Pomerol",
+            "product_id": "JPM406-15-POM",
+            "product_name_en": "Chateau Lafleur 2015",
+            "product_name_cn": "花堡-6入木箱",
+            "score": [
+                "RP100   JS100"
+            ],
+            "stock_quantity": "4",
+            "unit": "瓶",
+            "cost_price": "52000",
+            "image": "generated/wines/images/france/JPM406-15-POMChâteauLAFLEUR2015_2.png"
+        },
+        {
+            "category": "Pomerol",
+            "product_id": "JPM407-15-POM",
+            "product_name_en": "Chateau Certan de May 2015",
+            "product_name_cn": "德美色丹城堡-6入木箱",
+            "score": [
+                "RP95",
+                "WS92",
+                "WE94"
+            ],
+            "stock_quantity": "10",
+            "unit": "瓶",
+            "cost_price": "3870",
+            "image": "generated/wines/images/france/JPM407-15-POMChâteauCERTANDEMAY2015_1.png"
+        },
+        {
+            "category": "Pomerol",
+            "product_id": "MD215-20-POM",
+            "product_name_en": "CH NENIN 2020",
+            "product_name_cn": "聶能城堡-6入木箱",
+            "score": [
+                "RP93+",
+                "JS97"
+            ],
+            "stock_quantity": "24",
+            "unit": "瓶",
+            "cost_price": "2600",
+            "image": "generated/wines/images/france/MD215-20-POMCHNENIN2020_1.png"
+        },
+        {
+            "category": "Pomerol",
+            "product_id": "MD226-20-POM",
+            "product_name_en": "CH CONSEILLANTE (LA) 2020",
+            "product_name_cn": "康瑟雍城堡(單一木盒)",
+            "score": [
+                "RP100",
+                "JS99"
+            ],
+            "stock_quantity": "22",
+            "unit": "瓶",
+            "cost_price": "9900",
+            "image": "generated/wines/images/france/MD226-20-POM2020_2.png"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MD001-19-G1",
+            "product_name_en": "CH LAFITE ROTHSCHILD 2019",
+            "product_name_cn": "拉菲城堡 -6入木箱",
+            "score": [
+                "RP100",
+                "JS100"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "30000"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MD001-20-G1",
+            "product_name_en": "CH LAFITE ROTHSCHILD 2020",
+            "product_name_cn": "拉菲城堡(單一木盒)",
+            "score": [
+                "RP97",
+                "JS100"
+            ],
+            "stock_quantity": "9",
+            "unit": "瓶",
+            "cost_price": "26000"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MD001-21-G1",
+            "product_name_en": "CH LAFITE ROTHSCHILD 2021",
+            "product_name_cn": "拉菲城堡-6入木箱",
+            "score": [
+                "RP96+",
+                "JS97",
+                "WE98"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "22000"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "DI002-15-G1",
+            "product_name_en": "CH MARGAUX 2015",
+            "product_name_cn": "瑪歌城堡-6入木箱(紀念瓶)",
+            "score": [
+                "JS100",
+                "RP99",
+                "WS99",
+                "WE100"
+            ],
+            "stock_quantity": "8",
+            "unit": "瓶",
+            "cost_price": "53000"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "DI002-16-G1",
+            "product_name_en": "CH MARGAUX 2016",
+            "product_name_cn": "瑪歌城堡-6入木箱",
+            "score": [
+                "JS99",
+                "RP99",
+                "WE99",
+                "WS97"
+            ],
+            "stock_quantity": "4",
+            "unit": "瓶",
+            "cost_price": "23000"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MG002-18-G1",
+            "product_name_en": "CH MARGAUX 2018",
+            "product_name_cn": "瑪歌城堡-6入木箱",
+            "score": [
+                "RP100",
+                "JS100",
+                "WS98"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "24000"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MG002-19-G1",
+            "product_name_en": "CH MARGAUX 2019",
+            "product_name_cn": "瑪歌城堡-6入木箱",
+            "score": [
+                "RP100",
+                "JS100"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "25000"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MG002-20-G1",
+            "product_name_en": "CH MARGAUX 2020",
+            "product_name_cn": "瑪歌城堡(單一木盒)",
+            "score": [
+                "RP97+",
+                "JS100"
+            ],
+            "stock_quantity": "3",
+            "unit": "瓶",
+            "cost_price": "23000"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MS002-21-G1",
+            "product_name_en": "CHAT MARGAUX 2021",
+            "product_name_cn": "瑪歌城堡-3入木盒",
+            "score": [
+                "RP95+",
+                "JS98",
+                "WE98"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "20000"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MG003-11-G1",
+            "product_name_en": "Ch Latour 2011",
+            "product_name_cn": "拉圖城堡-6入木箱",
+            "score": [
+                "RP95",
+                "WE97",
+                "WS96"
+            ],
+            "stock_quantity": "9",
+            "unit": "瓶",
+            "cost_price": "26000"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MD003-15-G1",
+            "product_name_en": "CH LATOUR 2015",
+            "product_name_cn": "拉圖城堡-6入木箱",
+            "score": [
+                "RP96",
+                "JS97"
+            ],
+            "stock_quantity": "5",
+            "unit": "瓶",
+            "cost_price": "24000"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "GH004-11-G1",
+            "product_name_en": "Ch Haut Brion 2011",
+            "product_name_cn": "歐布里翁城堡-6入木箱",
+            "score": [
+                "WS95",
+                "RP95"
+            ],
+            "stock_quantity": "5",
+            "unit": "瓶",
+            "cost_price": "19200"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "DI004-16-G1",
+            "product_name_en": "Ch Haut Brion 2016",
+            "product_name_cn": "歐布里翁城堡-6入木箱",
+            "score": [
+                "JS100",
+                "RP100",
+                "WE100",
+                "WS98"
+            ],
+            "stock_quantity": "27",
+            "unit": "瓶",
+            "cost_price": "24000"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MD004-19-G1",
+            "product_name_en": "CH HAUT BRION 2019",
+            "product_name_cn": "歐布里翁城堡 6入木箱",
+            "score": [
+                "RP97+",
+                "JS99"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "19000"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MD004-20-G1",
+            "product_name_en": "CH HAUT BRION 2020",
+            "product_name_cn": "歐布里翁城堡(單一木盒)",
+            "score": [
+                "RP99",
+                "JS98"
+            ],
+            "stock_quantity": "18",
+            "unit": "瓶",
+            "cost_price": "21200"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MD004-21-G1",
+            "product_name_en": "CHATEAU HAUT BRION 2021",
+            "product_name_cn": "歐布里翁城堡-3入木盒",
+            "score": [
+                "RP97+",
+                "JS97",
+                "WE98"
+            ],
+            "stock_quantity": "18",
+            "unit": "瓶",
+            "cost_price": "20200"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "DI005-16-G1",
+            "product_name_en": "CH. Mouton Rothschild 2016",
+            "product_name_cn": "木桐城堡-6入木箱",
+            "score": [
+                "JS95",
+                "RP100",
+                "WE98",
+                "WS98"
+            ],
+            "stock_quantity": "10",
+            "unit": "瓶",
+            "cost_price": "26000"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MG005-18-G1",
+            "product_name_en": "CH. Mouton Rothschild 2018",
+            "product_name_cn": "木桐城堡-6入木箱",
+            "score": [
+                "RP99",
+                "JS100",
+                "WS98"
+            ],
+            "stock_quantity": "2",
+            "unit": "瓶",
+            "cost_price": "23400"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MD005-19-G1",
+            "product_name_en": "CH. Mouton Rothschild 2019",
+            "product_name_cn": "木桐城堡-3入木盒",
+            "score": [
+                "RP98+",
+                "JS99"
+            ],
+            "stock_quantity": "3",
+            "unit": "瓶",
+            "cost_price": "23400"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MD005-19-G1",
+            "product_name_en": "CH. Mouton Rothschild 2019",
+            "product_name_cn": "木桐城堡-6入木箱",
+            "score": [
+                "RP98+",
+                "JS99"
+            ],
+            "stock_quantity": "4",
+            "unit": "瓶",
+            "cost_price": "23400"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MD005-21-G1",
+            "product_name_en": "CHATEAU MOUTON ROTHSCHILD 2021",
+            "product_name_cn": "木桐城堡(單一木盒)",
+            "score": [
+                "RP94",
+                "WE96"
+            ],
+            "stock_quantity": "11",
+            "unit": "瓶",
+            "cost_price": "20600"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MD001-19-G1S",
+            "product_name_en": "Carruades de Lafite Pauillac 2019",
+            "product_name_cn": "拉菲城堡副牌-6入木箱",
+            "score": [
+                "RP92",
+                "JS96"
+            ],
+            "stock_quantity": "15",
+            "unit": "瓶",
+            "cost_price": "12000"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MD001-21-G1S",
+            "product_name_en": "CARRUADES DE LAFITE 2021",
+            "product_name_cn": "拉菲城堡副牌-6入木箱",
+            "score": [
+                "RP91",
+                "JS95",
+                "WE94"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "8100"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "GH002-11-G1S",
+            "product_name_en": "Pavillon Rouge Margaux 2011",
+            "product_name_cn": "瑪歌城堡副牌-12入木箱",
+            "score": [
+                "WS90",
+                "RP89"
+            ],
+            "stock_quantity": "5",
+            "unit": "瓶",
+            "cost_price": "8000"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "SA002-12-G1S",
+            "product_name_en": "Pavillon Rge du Ch Margaux 2012",
+            "product_name_cn": "瑪歌城堡副牌-6入木箱",
+            "score": [
+                "WS90",
+                "RP90+"
+            ],
+            "stock_quantity": "30",
+            "unit": "瓶",
+            "cost_price": "8500"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "DI002-15-G1S",
+            "product_name_en": "Pavillon Rge du Ch Margaux 2015",
+            "product_name_cn": "瑪歌城堡副牌-木箱",
+            "score": [
+                "JS96",
+                "RP92",
+                "WS94"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "8500"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MD002-19-G1S",
+            "product_name_en": "Pavillon Rge du Ch Margaux 2019",
+            "product_name_cn": "瑪歌城堡副牌-6入木箱",
+            "score": [
+                "RP95",
+                "JS96"
+            ],
+            "stock_quantity": "4",
+            "unit": "瓶",
+            "cost_price": "7500"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MS002-20-G1S",
+            "product_name_en": "Pavillon Rge du Ch Margaux 2020",
+            "product_name_cn": "瑪歌城堡副牌-3入木盒",
+            "score": [
+                "RP91+",
+                "JS97"
+            ],
+            "stock_quantity": "3",
+            "unit": "瓶",
+            "cost_price": "7200"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MD002-21-G1S",
+            "product_name_en": "PAVILLON ROUGE DU CH MARGAUX 2021",
+            "product_name_cn": "瑪歌城堡副牌-3入木盒",
+            "score": [
+                "RP91",
+                "JS96",
+                "WE95"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "6800"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MD003-16-G1S",
+            "product_name_en": "Les Forts de Latour Pauillac 2016",
+            "product_name_cn": "拉圖城堡副牌-6入木箱",
+            "score": [
+                "RP95",
+                "JS96"
+            ],
+            "stock_quantity": "2",
+            "unit": "瓶",
+            "cost_price": "8000"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MD003-17-G1S",
+            "product_name_en": "Les Forts de Latour Pauillac 2017",
+            "product_name_cn": "拉圖城堡副牌-6入木箱",
+            "score": [
+                "RP93",
+                "JS95"
+            ],
+            "stock_quantity": "5",
+            "unit": "瓶",
+            "cost_price": "8000"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MD004-19-G1S",
+            "product_name_en": "Le Clarence de Haut-Brion 2019",
+            "product_name_cn": "歐布里翁城堡副牌-6入木箱",
+            "score": [
+                "RP91",
+                "JS96"
+            ],
+            "stock_quantity": "4",
+            "unit": "瓶",
+            "cost_price": "5200"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MD004-20-G1S",
+            "product_name_en": "Le Clarence de Haut-Brion 2020",
+            "product_name_cn": "歐布里翁城堡副牌-3入木盒",
+            "score": [
+                "RP92",
+                "JS96"
+            ],
+            "stock_quantity": "16",
+            "unit": "瓶",
+            "cost_price": "5900"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MD004-21-G1S",
+            "product_name_en": "LE CLARENCE DE HAUT BRION 2021",
+            "product_name_cn": "歐布里翁城堡副牌-3入木盒",
+            "score": [
+                "RP92+",
+                "JS95                 WE94"
+            ],
+            "stock_quantity": "18",
+            "unit": "瓶",
+            "cost_price": "5400"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MD005-20-G1S",
+            "product_name_en": "PETIT MOUTON DE MR 2020",
+            "product_name_cn": "木桐城堡副牌(單一木盒)",
+            "score": [
+                "RP93",
+                "JS98"
+            ],
+            "stock_quantity": "4",
+            "unit": "瓶",
+            "cost_price": "8000"
+        },
+        {
+            "category": "一級酒莊",
+            "product_id": "MD005-21-G1S",
+            "product_name_en": "LE PETIT MOUTON DE MOUTON ROTH 2021",
+            "product_name_cn": "木桐城堡副牌(單一木盒)",
+            "score": [
+                "RP91",
+                "JS95"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "7800"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MD006-21-G2",
+            "product_name_en": "CHATEAU RAUZAN SEGLA2021",
+            "product_name_cn": "湖珊雪格城堡-6入木箱",
+            "score": [
+                "RP93+",
+                "JS95",
+                "WS92"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "3100"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MD008-19-G2",
+            "product_name_en": "Ch Leoville Las Cases 2019",
+            "product_name_cn": "拉斯卡司城堡-6入木箱",
+            "score": [
+                "RP98",
+                "JS98"
+            ],
+            "stock_quantity": "7",
+            "unit": "瓶",
+            "cost_price": "7000"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MG008-20-G2",
+            "product_name_en": "Ch Leoville Las Cases 2020",
+            "product_name_cn": "拉斯卡司城堡(單一木盒)",
+            "score": [
+                "RP97+",
+                "JS98"
+            ],
+            "stock_quantity": "18",
+            "unit": "瓶",
+            "cost_price": "9000"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "DU008-21-G2",
+            "product_name_en": "Château Leoville Las Cases 2021",
+            "product_name_cn": "拉斯卡司城堡-6入木箱",
+            "score": [
+                "RP96+",
+                "JS97"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "7900"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MG008-21-G2",
+            "product_name_en": "CHATEAU LEOVILLE LAS CASES2021",
+            "product_name_cn": "拉斯卡司城堡-6入木箱",
+            "score": [
+                "RP96+",
+                "JS97"
+            ],
+            "stock_quantity": "24",
+            "unit": "瓶",
+            "cost_price": "7900"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MD014-21-G2",
+            "product_name_en": "CHATEAU BRANE CANTENAC2021",
+            "product_name_cn": "伯納康田城堡-6入木箱",
+            "score": [
+                "RP93",
+                "JS95"
+            ],
+            "stock_quantity": "11",
+            "unit": "瓶",
+            "cost_price": "2700"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MS014-21-G2",
+            "product_name_en": "CHAT BRANE CANTENAC2021",
+            "product_name_cn": "伯納康田城堡-6入木箱",
+            "score": [
+                "RP93",
+                "JS95"
+            ],
+            "stock_quantity": "36",
+            "unit": "瓶",
+            "cost_price": "2700"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MG015-19-G2",
+            "product_name_en": "CH PICHON BARON 2019",
+            "product_name_cn": "皮項巴弘城堡-6入木箱",
+            "score": [
+                "RP97+",
+                "JS99"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "5800"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MD015-20-G2",
+            "product_name_en": "CH PICHON LONG. BARON 2020",
+            "product_name_cn": "皮項巴弘城堡-6入木箱",
+            "score": [
+                "RP97",
+                "JS95"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "5800"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MG015-21-G2",
+            "product_name_en": "CH PICHON LONG. BARON 2021",
+            "product_name_cn": "皮項巴弘城堡-6入木箱",
+            "score": [
+                "RP95",
+                "JS95             WS94",
+                "WE96"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "5100"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MD016-19-G2",
+            "product_name_en": "Chateau Pichon Longueville Comtesse de Lalande 2019",
+            "product_name_cn": "皮項拉隆城堡-6入木箱",
+            "score": [
+                "RP65",
+                "JS97"
+            ],
+            "stock_quantity": "18",
+            "unit": "瓶",
+            "cost_price": "6800"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MD016-20-G2",
+            "product_name_en": "CH.PICHON L.C. DE LALANDE 2020",
+            "product_name_cn": "皮項拉隆城堡-6入木箱",
+            "score": [
+                "RP95",
+                "JS98"
+            ],
+            "stock_quantity": "18",
+            "unit": "瓶",
+            "cost_price": "6800"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MS017-20-G2",
+            "product_name_en": "Chteau Ducru Beaucaillou 2020",
+            "product_name_cn": "杜庫布卡優城堡(單一木盒)",
+            "score": [
+                "RP95",
+                "JS97",
+                "蠟封特殊標"
+            ],
+            "stock_quantity": "4",
+            "unit": "瓶",
+            "cost_price": "7700"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MD018-19-G2",
+            "product_name_en": "CH COS D'ESTOURNEL 2019",
+            "product_name_cn": "高斯城堡-6入木箱",
+            "score": [
+                "RP97+",
+                "JS99"
+            ],
+            "stock_quantity": "9",
+            "unit": "瓶",
+            "cost_price": "5500"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MG018-20-G2",
+            "product_name_en": "CH COS D'ESTOURNEL 2020",
+            "product_name_cn": "高斯城堡(單一木盒)",
+            "score": [
+                "RP94",
+                "JS98 特標黑標",
+                "JD百大第2"
+            ],
+            "stock_quantity": "4",
+            "unit": "瓶",
+            "cost_price": "6750"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MS018-21-G2",
+            "product_name_en": "CHAT COS D'ESTOURNEL2021",
+            "product_name_cn": "高斯城堡-6入木箱",
+            "score": [
+                "RP93+",
+                "JS95"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "6200"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MG018-21-G2",
+            "product_name_en": "CH COS D'ESTOURNEL 2021",
+            "product_name_cn": "高斯城堡-6入木箱",
+            "score": [
+                "RP93+",
+                "JS95"
+            ],
+            "stock_quantity": "24",
+            "unit": "瓶",
+            "cost_price": "6200"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MS019-20-G2",
+            "product_name_en": "CH MONTROSE 2020",
+            "product_name_cn": "蒙特羅斯城堡(單一木盒)",
+            "score": [
+                "RP100",
+                "JS99"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "7000"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MD008-19-G2S",
+            "product_name_en": "Le Petit Lion du Marquis de Las Cases 2019",
+            "product_name_cn": "拉斯卡司城堡副牌-6入木箱",
+            "score": [
+                "RP90",
+                "JS95"
+            ],
+            "stock_quantity": "16",
+            "unit": "瓶",
+            "cost_price": "2100"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MS008-20-G2S",
+            "product_name_en": "LE PETIT LION DU MARQUIS DE LAS CASES 2020",
+            "product_name_cn": "拉斯卡司城堡副牌-6入木箱",
+            "score": [
+                "RP94",
+                "JS95"
+            ],
+            "stock_quantity": "36",
+            "unit": "瓶",
+            "cost_price": "2200"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MG008-20-G2S",
+            "product_name_en": "PETIT LION MARQUIS DE LAS CASE 2020",
+            "product_name_cn": "拉斯卡司城堡副牌-3入木盒",
+            "score": [
+                "RP94",
+                "JS95"
+            ],
+            "stock_quantity": "24",
+            "unit": "瓶",
+            "cost_price": "2200"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MD008-20-G2S",
+            "product_name_en": "PETIT LION DU MARQUIS DE LAS CASES (LE) 2020",
+            "product_name_cn": "拉斯卡司城堡副牌-6入木箱",
+            "score": [
+                "RP94",
+                "JS95"
+            ],
+            "stock_quantity": "18",
+            "unit": "瓶",
+            "cost_price": "2200"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MG008-21-G2S",
+            "product_name_en": "PETIT LION MARQUIS DE LAS CASES2021",
+            "product_name_cn": "拉斯卡司城堡副牌-6入木箱",
+            "score": [
+                "RP89",
+                "JS95",
+                "WE92"
+            ],
+            "stock_quantity": "24",
+            "unit": "瓶",
+            "cost_price": "2000"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MD017-15-G2S",
+            "product_name_en": "CROIX DE BEAUCAILLOU 2015",
+            "product_name_cn": "杜庫布卡優城堡副牌-12入木箱",
+            "score": [
+                "RP96",
+                "WS91",
+                "WE94"
+            ],
+            "stock_quantity": "38",
+            "unit": "瓶",
+            "cost_price": "1850"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MS018-11-G2S",
+            "product_name_en": "LES PAGODES DE COS 2011",
+            "product_name_cn": "高斯城堡副牌-6入木箱",
+            "score": [
+                "JS90",
+                "RP88",
+                "WE91",
+                "WS88"
+            ],
+            "stock_quantity": "43",
+            "unit": "瓶",
+            "cost_price": "2500"
+        },
+        {
+            "category": "二級酒莊",
+            "product_id": "MS018-21-G2S",
+            "product_name_en": "LES PAGODES DE COS 2021",
+            "product_name_cn": "高斯城堡副牌-6入木箱",
+            "score": [
+                "RP91",
+                "JS93         WS90",
+                "WE93"
+            ],
+            "stock_quantity": "11",
+            "unit": "瓶",
+            "cost_price": "1550"
+        },
+        {
+            "category": "三級酒莊",
+            "product_id": "MS020-20-G3-MG",
+            "product_name_en": "CH Kirwan 2020(1.5L)",
+            "product_name_cn": "奇旺城堡(單一木盒)",
+            "score": [
+                "JS92+",
+                "WE94"
+            ],
+            "stock_quantity": "13",
+            "unit": "瓶",
+            "cost_price": "3880"
+        },
+        {
+            "category": "三級酒莊",
+            "product_id": "MS037-17-G3",
+            "product_name_en": "CH Kirwan 2017",
+            "product_name_cn": "奇旺城堡-6入木箱",
+            "score": [
+                "JS93",
+                "RP88",
+                "WE95",
+                "WS90"
+            ],
+            "stock_quantity": "11",
+            "unit": "瓶",
+            "cost_price": "1780"
+        },
+        {
+            "category": "三級酒莊",
+            "product_id": "MS020-19-G3",
+            "product_name_en": "CH Kirwan 2019",
+            "product_name_cn": "奇旺城堡-6入木箱",
+            "score": [
+                "RP88",
+                "JS95"
+            ],
+            "stock_quantity": "46",
+            "unit": "瓶",
+            "cost_price": "1900"
+        },
+        {
+            "category": "三級酒莊",
+            "product_id": "MS020-20-G3",
+            "product_name_en": "CH Kirwan 2020",
+            "product_name_cn": "奇旺城堡-6入木箱",
+            "score": [
+                "JS92+",
+                "WE94"
+            ],
+            "stock_quantity": "114",
+            "unit": "瓶",
+            "cost_price": "1880"
+        },
+        {
+            "category": "三級酒莊",
+            "product_id": "MS020-20-G3-1",
+            "product_name_en": "CH Kirwan 2020(375ML)",
+            "product_name_cn": "奇旺城堡-12入木箱",
+            "score": [
+                "JS92+",
+                "WE94"
+            ],
+            "stock_quantity": "59",
+            "unit": "瓶",
+            "cost_price": "980"
+        },
+        {
+            "category": "三級酒莊",
+            "product_id": "MS020-21-G3",
+            "product_name_en": "CHAT KIRWAN 2021",
+            "product_name_cn": "奇旺城堡-6入木箱",
+            "score": [
+                "RP85",
+                "JS93",
+                "WE94"
+            ],
+            "stock_quantity": "36",
+            "unit": "瓶",
+            "cost_price": "1780"
+        },
+        {
+            "category": "三級酒莊",
+            "product_id": "MD021-20-G3",
+            "product_name_en": "Chteau d'Issan 2020",
+            "product_name_cn": "達伊珊城堡-6木箱",
+            "score": [
+                "RP94+",
+                "JS97"
+            ],
+            "stock_quantity": "32",
+            "unit": "瓶",
+            "cost_price": "2100"
+        },
+        {
+            "category": "三級酒莊",
+            "product_id": "MG021-21-G3",
+            "product_name_en": "CH D'ISSAN 2021",
+            "product_name_cn": "達伊珊城堡-6木箱",
+            "score": [
+                "RP92",
+                "JS96"
+            ],
+            "stock_quantity": "60",
+            "unit": "瓶",
+            "cost_price": "2100"
+        },
+        {
+            "category": "三級酒莊",
+            "product_id": "MD023-15-G3",
+            "product_name_en": "CHATEAU LANGOA BARTON 2015",
+            "product_name_cn": "朗歌巴頓城堡-12入木箱",
+            "score": [
+                "JS94",
+                "RP90",
+                "WS93"
+            ],
+            "stock_quantity": "15",
+            "unit": "瓶",
+            "cost_price": "2300"
+        },
+        {
+            "category": "三級酒莊",
+            "product_id": "MD023-21-G3",
+            "product_name_en": "CHATEAU LANGOA BARTON 2021",
+            "product_name_cn": "朗歌巴頓城堡 / 3瓶紙箱",
+            "score": [
+                "RP93",
+                "JS93"
+            ],
+            "stock_quantity": "36",
+            "unit": "瓶",
+            "cost_price": "1600"
+        },
+        {
+            "category": "三級酒莊",
+            "product_id": "MG023-21-G3",
+            "product_name_en": "CH LANGOA BARTON 2021",
+            "product_name_cn": "朗歌巴頓城堡 / 6瓶紙箱",
+            "score": [
+                "RP93",
+                "JS93",
+                "WE95"
+            ],
+            "stock_quantity": "59",
+            "unit": "瓶",
+            "cost_price": "1600"
+        },
+        {
+            "category": "三級酒莊",
+            "product_id": "MG024-21-G3",
+            "product_name_en": "CH GISCOURS 2021",
+            "product_name_cn": "吉斯可斯城堡-6入木箱",
+            "score": [
+                "RP94+",
+                "JS95"
+            ],
+            "stock_quantity": "35",
+            "unit": "瓶",
+            "cost_price": "2100"
+        },
+        {
+            "category": "三級酒莊",
+            "product_id": "MD027-20-G3",
+            "product_name_en": "CH CANTENAC BROWN 2020",
+            "product_name_cn": "康田布朗城堡-6入木箱",
+            "score": [
+                "RP94+",
+                "JS95"
+            ],
+            "stock_quantity": "36",
+            "unit": "瓶",
+            "cost_price": "1900"
+        },
+        {
+            "category": "三級酒莊",
+            "product_id": "MD028-19-G3",
+            "product_name_en": "CH. Palmer 2019",
+            "product_name_cn": "帕瑪城堡-6入木箱",
+            "score": [
+                "RP96+",
+                "JS99"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "9450"
+        },
+        {
+            "category": "三級酒莊",
+            "product_id": "MG028-20-G3",
+            "product_name_en": "CH. Palmer 2020",
+            "product_name_cn": "帕瑪城堡(單一木盒)",
+            "score": [
+                "RP97",
+                "JS98"
+            ],
+            "stock_quantity": "10",
+            "unit": "瓶",
+            "cost_price": "11000"
+        },
+        {
+            "category": "三級酒莊",
+            "product_id": "MG028-21-G3",
+            "product_name_en": "CH PALMER 2021",
+            "product_name_cn": "帕瑪城堡-6入木箱",
+            "score": [
+                "RP95+",
+                "JS95"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "11000"
+        },
+        {
+            "category": "三級酒莊",
+            "product_id": "MD031-21-G3",
+            "product_name_en": "CHATEAU CALON SEGUR 2021",
+            "product_name_cn": "卡隆色古城堡-6入木箱",
+            "score": [
+                "RP93",
+                "JS93"
+            ],
+            "stock_quantity": "3",
+            "unit": "瓶",
+            "cost_price": "4200"
+        },
+        {
+            "category": "三級酒莊",
+            "product_id": "MS032-21-G3",
+            "product_name_en": "CHAT FERRIERE 2021",
+            "product_name_cn": "費里埃城堡-6入木箱",
+            "score": [
+                "RP92",
+                "JS93"
+            ],
+            "stock_quantity": "18",
+            "unit": "瓶",
+            "cost_price": "1750"
+        },
+        {
+            "category": "三級酒莊",
+            "product_id": "MS020-19-G3S-K",
+            "product_name_en": "K de Kirwan 2019",
+            "product_name_cn": "奇旺國王紅葡萄酒-6入木箱",
+            "score": [
+                "JS92"
+            ],
+            "stock_quantity": "31",
+            "unit": "瓶",
+            "cost_price": "1200"
+        },
+        {
+            "category": "三級酒莊",
+            "product_id": "MD028-19-G3S",
+            "product_name_en": "ALTER EGO DE PALMER 2019",
+            "product_name_cn": "帕瑪城堡副牌-6入木箱",
+            "score": [
+                "RP91",
+                "JS96"
+            ],
+            "stock_quantity": "5",
+            "unit": "瓶",
+            "cost_price": "3000"
+        },
+        {
+            "category": "三級酒莊",
+            "product_id": "MD028-21-G3S",
+            "product_name_en": "ALTER EGO DE PALMER 2021",
+            "product_name_cn": "帕瑪城堡副牌(單一木盒)",
+            "score": [
+                "RP92",
+                "JS93",
+                "WE95"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "2800"
+        },
+        {
+            "category": "三級酒莊",
+            "product_id": "MG032-16-G3S",
+            "product_name_en": "LES REMPARTS DE FERRIERE2016 2021",
+            "product_name_cn": "費里埃城堡副牌 / 6瓶紙箱",
+            "score": [],
+            "stock_quantity": "51",
+            "unit": "瓶",
+            "cost_price": "1350"
+        },
+        {
+            "category": "三級酒莊",
+            "product_id": "MG032-18-G3S",
+            "product_name_en": "LES REMPARTS DE FERRIERE 2018",
+            "product_name_cn": "費里埃城堡副牌 / 6瓶紙箱",
+            "score": [
+                "DE90"
+            ],
+            "stock_quantity": "436",
+            "unit": "瓶",
+            "cost_price": "1300"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "SA045-12-MG-G5",
+            "product_name_en": "CH PONTET CANET 2012 (1.5L)",
+            "product_name_cn": "朋特卡內城堡-6入木箱",
+            "score": [
+                "WE92",
+                "RP93"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "8300"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "SA045-13-MG-G5",
+            "product_name_en": "CH PONTET CANET 2013 (1.5L)",
+            "product_name_cn": "朋特卡內城堡-6入木箱",
+            "score": [
+                "WE95",
+                "RP92"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "8000"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "SA045-14-MG-G5",
+            "product_name_en": "CH PONTET CANET 2014 (1.5L)",
+            "product_name_cn": "朋特卡內城堡-3入木盒",
+            "score": [
+                "WS93",
+                "RP96"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "7740"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "SA045-14-G5",
+            "product_name_en": "CH PONTET CANET 2014",
+            "product_name_cn": "朋特卡內城堡-6入木箱",
+            "score": [
+                "WS93",
+                "RP96"
+            ],
+            "stock_quantity": "36",
+            "unit": "瓶",
+            "cost_price": "3600"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "SA045-15-G5",
+            "product_name_en": "CH PONTET CANET 2015",
+            "product_name_cn": "朋特卡內城堡-6入木箱",
+            "score": [
+                "JS98",
+                "RP96+",
+                "WS94",
+                "WE97"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "4600"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "SA045-16-G5",
+            "product_name_en": "CH PONTET CANET 2016",
+            "product_name_cn": "朋特卡內城堡-6入木箱",
+            "score": [
+                "JS97",
+                "RP98",
+                "WE98",
+                "WS95"
+            ],
+            "stock_quantity": "24",
+            "unit": "瓶",
+            "cost_price": "6000"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "MS045-17-G5",
+            "product_name_en": "CH PONTET CANET 2017",
+            "product_name_cn": "朋特卡內城堡-6入木箱",
+            "score": [
+                "JS96",
+                "RP96",
+                "WE96",
+                "WS94"
+            ],
+            "stock_quantity": "35",
+            "unit": "瓶",
+            "cost_price": "3800"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "MG045-20-G5",
+            "product_name_en": "CH PONTET CANET 2020",
+            "product_name_cn": "朋特卡內城堡-6入木箱",
+            "score": [
+                "RP92+",
+                "JS98"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "3800"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "JPM045-20-G5",
+            "product_name_en": "Château PONTET-CANET 2020",
+            "product_name_cn": "朋特卡內城堡-6入木箱",
+            "score": [
+                "RP92+",
+                "JS98",
+                "WE97"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "3800"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "MG051-19-G5",
+            "product_name_en": "Chateau Lynch-Moussas 2019",
+            "product_name_cn": "慕莎城堡-12入木箱(100周年紀念酒)",
+            "score": [
+                "RP91+",
+                "JS94"
+            ],
+            "stock_quantity": "2",
+            "unit": "瓶",
+            "cost_price": "1500"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "MG051-20-G5",
+            "product_name_en": "Chateau Lynch-Moussas 2020",
+            "product_name_cn": "慕莎城堡-6入木箱",
+            "score": [
+                "RP89",
+                "JS94"
+            ],
+            "stock_quantity": "98",
+            "unit": "瓶",
+            "cost_price": "1450"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "MD055-15-G5",
+            "product_name_en": "CHATEAU HAUT BAGES LIBERAL 2015",
+            "product_name_cn": "歐貝吉立貝城堡-12入木箱",
+            "score": [
+                "JS94",
+                "RP83",
+                "WS89"
+            ],
+            "stock_quantity": "45",
+            "unit": "瓶",
+            "cost_price": "1900"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "MG055-16-G5",
+            "product_name_en": "CHATEAU HAUT BAGES LIBERAL 2016",
+            "product_name_cn": "歐貝吉立貝城堡-6入木箱",
+            "score": [
+                "JS94",
+                "RP92",
+                "WS92"
+            ],
+            "stock_quantity": "43",
+            "unit": "瓶",
+            "cost_price": "2000"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "MG055-18-G5",
+            "product_name_en": "CHATEAU HAUT BAGES LIBERAL 2018",
+            "product_name_cn": "歐貝吉立貝城堡-6入木箱",
+            "score": [
+                "JS97"
+            ],
+            "stock_quantity": "40",
+            "unit": "瓶",
+            "cost_price": "1700"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "MS055-21-G5",
+            "product_name_en": "CHAT HAUT-BAGES-LIBERAL 2021",
+            "product_name_cn": "歐貝吉立貝城堡-6入木箱",
+            "score": [
+                "RP92+",
+                "JS93",
+                "WS92"
+            ],
+            "stock_quantity": "24",
+            "unit": "瓶",
+            "cost_price": "1350"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "DU058-21-G5",
+            "product_name_en": "Château DE CAMENSAC 2021",
+            "product_name_cn": "卡門沙克城堡-12入木箱",
+            "score": [
+                "RP88",
+                "JS92",
+                "WS89"
+            ],
+            "stock_quantity": "18",
+            "unit": "瓶",
+            "cost_price": "1100"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "DU061-21-G5",
+            "product_name_en": "Château CROIZET BAGES2021",
+            "product_name_cn": "貝吉城堡-12入木箱",
+            "score": [
+                "RP88",
+                "JS91"
+            ],
+            "stock_quantity": "48",
+            "unit": "瓶",
+            "cost_price": "1400"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "DU062-21-G5",
+            "product_name_en": "Château CANTEMERLE 2021",
+            "product_name_cn": "康特摩爾城堡-6入木箱",
+            "score": [
+                "RP89",
+                "JS92",
+                "WE94"
+            ],
+            "stock_quantity": "54",
+            "unit": "瓶",
+            "cost_price": "1100"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "JPM184-20-G5",
+            "product_name_en": "CH D'ARMAILHAC 2020",
+            "product_name_cn": "達瑪雅克城堡(單一木盒)",
+            "score": [
+                "RP93",
+                "JS95"
+            ],
+            "stock_quantity": "22",
+            "unit": "瓶",
+            "cost_price": "2250"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "DU184-21-G5",
+            "product_name_en": "Château D'ARMAILHAC2021",
+            "product_name_cn": "達瑪雅克城堡-6入木箱",
+            "score": [
+                "RP92",
+                "JS92"
+            ],
+            "stock_quantity": "9",
+            "unit": "瓶",
+            "cost_price": "2000"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "MS184-21-G5",
+            "product_name_en": "CHAT D'ARMAILHAC2021",
+            "product_name_cn": "達瑪雅克城堡(單一木盒)",
+            "score": [
+                "RP92",
+                "JS92"
+            ],
+            "stock_quantity": "8",
+            "unit": "瓶",
+            "cost_price": "2100"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "JA184-21-G5",
+            "product_name_en": "2021CH D'ARMAILHAC2021",
+            "product_name_cn": "達瑪雅克城堡-6入木箱",
+            "score": [
+                "RP92",
+                "JS92"
+            ],
+            "stock_quantity": "34",
+            "unit": "瓶",
+            "cost_price": "2000"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "MD184-21-G5",
+            "product_name_en": "CHATEAU D'ARMAILHAC 2021",
+            "product_name_cn": "達瑪雅克城堡(單一木盒)",
+            "score": [
+                "RP92",
+                "JS92"
+            ],
+            "stock_quantity": "16",
+            "unit": "瓶",
+            "cost_price": "2100"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "LD184-21-G5",
+            "product_name_en": "CH D'ARMAILHAC 2021",
+            "product_name_cn": "達瑪雅克城堡-6入木箱",
+            "score": [
+                "RP92",
+                "JS92"
+            ],
+            "stock_quantity": "18",
+            "unit": "瓶",
+            "cost_price": "2000"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "LD184-22-G5",
+            "product_name_en": "CH D'ARMAILHAC2022",
+            "product_name_cn": "達瑪雅克城堡-6入木箱",
+            "score": [
+                "RP94",
+                "JS97",
+                "WE94"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "2070"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "JA184-22-G5",
+            "product_name_en": "CH D'ARMAILHAC 2022",
+            "product_name_cn": "達瑪雅克城堡-6入木箱",
+            "score": [
+                "RP94",
+                "JS97",
+                "WE94"
+            ],
+            "stock_quantity": "24",
+            "unit": "瓶",
+            "cost_price": "2070"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "MG191-21-G5",
+            "product_name_en": "CH GRAND PUY LACOSTE 2021",
+            "product_name_cn": "拉寇斯特城堡-6入木箱",
+            "score": [
+                "RP94",
+                "JS95",
+                "WS92"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "2450"
+        },
+        {
+            "category": "五級酒莊",
+            "product_id": "MD060-21-G5S",
+            "product_name_en": "PASTOURELLE DE CLERC MILON 2021",
+            "product_name_cn": "克雷米隆城堡副牌-6入木箱",
+            "score": [
+                "RP89",
+                "JS92",
+                "WE95"
+            ],
+            "stock_quantity": "5",
+            "unit": "瓶",
+            "cost_price": "1300"
+        },
+        {
+            "category": "USA",
+            "product_id": "JA-OPUSONE-06-1",
+            "product_name_en": "OPUS ONE 2006(1.5L)",
+            "product_name_cn": "第一樂章-木箱",
+            "score": [
+                "RP93"
+            ],
+            "stock_quantity": "1",
+            "unit": "瓶",
+            "cost_price": "38000"
+        },
+        {
+            "category": "USA",
+            "product_id": "MG-OPUSONE-13-MG",
+            "product_name_en": "OPUS ONE 2013(1.5L)",
+            "product_name_cn": "第一樂章-3入木盒",
+            "score": [
+                "JS100",
+                "2016百大第一"
+            ],
+            "stock_quantity": "3",
+            "unit": "瓶",
+            "cost_price": "36000"
+        },
+        {
+            "category": "USA",
+            "product_id": "MG-OPUSONE-14-MG",
+            "product_name_en": "OPUS ONE 2014(1.5L)",
+            "product_name_cn": "第一樂章-3入木盒",
+            "score": [
+                "JS97",
+                "RP96",
+                "WS93"
+            ],
+            "stock_quantity": "3",
+            "unit": "瓶",
+            "cost_price": "32850"
+        },
+        {
+            "category": "USA",
+            "product_id": "MD-OPUS ONE-15-MG",
+            "product_name_en": "OPUS ONE 2015(1.5L)",
+            "product_name_cn": "第一樂章-3入木盒",
+            "score": [
+                "RP97",
+                "JS98",
+                "WS93"
+            ],
+            "stock_quantity": "2",
+            "unit": "瓶",
+            "cost_price": "34000"
+        },
+        {
+            "category": "USA",
+            "product_id": "MD-OPUS ONE-16-MG",
+            "product_name_en": "OPUS ONE 2016(1.5L)",
+            "product_name_cn": "第一樂章-3入木盒",
+            "score": [
+                "JS99",
+                "RP98"
+            ],
+            "stock_quantity": "1",
+            "unit": "瓶",
+            "cost_price": "30000"
+        },
+        {
+            "category": "USA",
+            "product_id": "JA-OPUSONE-09",
+            "product_name_en": "OPUS ONE 2009",
+            "product_name_cn": "第一樂章-木箱",
+            "score": [],
+            "stock_quantity": "2",
+            "unit": "瓶",
+            "cost_price": "18000"
+        },
+        {
+            "category": "USA",
+            "product_id": "MD-OPUS ONE-18",
+            "product_name_en": "OPUS ONE 2018",
+            "product_name_cn": "第一樂章-6入木箱",
+            "score": [
+                "RP98",
+                "JS99"
+            ],
+            "stock_quantity": "10",
+            "unit": "瓶",
+            "cost_price": "13800"
+        },
+        {
+            "category": "USA",
+            "product_id": "MD-OPUS ONE-19",
+            "product_name_en": "OPUS ONE 2019",
+            "product_name_cn": "第一樂章-6入木箱",
+            "score": [
+                "RP98",
+                "JS99",
+                "WS94"
+            ],
+            "stock_quantity": "2",
+            "unit": "瓶",
+            "cost_price": "13600"
+        },
+        {
+            "category": "USA",
+            "product_id": "DU-OPUS ONE-18-1",
+            "product_name_en": "OPUS ONE 2018(375ML)",
+            "product_name_cn": "第一樂章-12入木箱",
+            "score": [
+                "RP98",
+                "JS99"
+            ],
+            "stock_quantity": "22",
+            "unit": "瓶",
+            "cost_price": "6500"
+        },
+        {
+            "category": "USA",
+            "product_id": "MD-OPUS ONE-19-1",
+            "product_name_en": "OPUS ONE 2019(375ML)",
+            "product_name_cn": "第一樂章-12入木箱",
+            "score": [
+                "RP97",
+                "JS99"
+            ],
+            "stock_quantity": "5",
+            "unit": "瓶",
+            "cost_price": "6500"
+        },
+        {
+            "category": "USA",
+            "product_id": "MD-OPUS ONE-19S",
+            "product_name_en": "OVERTURE",
+            "product_name_cn": "第一樂章副牌-6入木箱",
+            "score": [],
+            "stock_quantity": "42",
+            "unit": "瓶",
+            "cost_price": "5200"
+        },
+        {
+            "category": "USA",
+            "product_id": "MD-OPUS ONE-19S",
+            "product_name_en": "OVERTURE",
+            "product_name_cn": "opus one副牌-6入木箱",
+            "score": [],
+            "stock_quantity": "42",
+            "unit": "瓶",
+            "cost_price": "5200"
+        },
+        {
+            "category": "義大利頂級酒",
+            "product_id": "SV-MASSETO-15",
+            "product_name_en": "Masseto 2015",
+            "product_name_cn": "馬賽多紅葡萄酒-3入木盒",
+            "score": [
+                "RP100",
+                "JS99"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "28800"
+        },
+        {
+            "category": "義大利頂級酒",
+            "product_id": "DI-SOLAIA-15",
+            "product_name_en": "Solaia 2015",
+            "product_name_cn": "索拉亞紅葡萄酒-6入木箱",
+            "score": [
+                "RP100",
+                "WE98",
+                "JS100"
+            ],
+            "stock_quantity": "16",
+            "unit": "瓶",
+            "cost_price": "11800"
+        },
+        {
+            "category": "義大利頂級酒",
+            "product_id": "MD-BIBI-01-SET-07-19",
+            "product_name_en": "BIBI GRAETZ COLORE SET 2003/2008/2015/2016/2018/2019",
+            "product_name_cn": "畢比格雷茲真實色彩套組-6入木箱 (20周年限量套組)",
+            "score": [
+                "DE92",
+                "JS99",
+                "JS98",
+                "JS97",
+                "JS99",
+                "JS99"
+            ],
+            "stock_quantity": "1",
+            "unit": "套",
+            "cost_price": "58000"
+        },
+        {
+            "category": "義大利頂級酒",
+            "product_id": "MD-BIBI-02-SET-07-19",
+            "product_name_en": "BIBI GRAETZ TESTAMATTA SET 2007/2012/2012/2015/2018/2019",
+            "product_name_cn": "畢比格雷茲極度燒腦紅葡萄酒-6入木箱 (20周年限量套組)",
+            "score": [
+                "JS96",
+                "JS95",
+                "JS97",
+                "JS99",
+                "DE100",
+                "JS97"
+            ],
+            "stock_quantity": "3",
+            "unit": "套",
+            "cost_price": "24000"
+        },
+        {
+            "category": "義大利頂級酒",
+            "product_id": "DU-BIBI-01-19",
+            "product_name_en": "Bibi Graetz Colore 2019",
+            "product_name_cn": "畢比格雷茲真實色彩紅葡萄酒-3入木盒 20周年紀念標",
+            "score": [
+                "RP96",
+                "JA99"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "7500"
+        },
+        {
+            "category": "義大利頂級酒",
+            "product_id": "DU-BIBI-02-19",
+            "product_name_en": "Bibi Graetz Testamatta 2019",
+            "product_name_cn": "畢比格雷茲極度燒腦紅葡萄酒-6入木箱 20周年紀念標",
+            "score": [
+                "RP94",
+                "JA97"
+            ],
+            "stock_quantity": "34",
+            "unit": "瓶",
+            "cost_price": "2970"
+        },
+        {
+            "category": "智利 阿根廷",
+            "product_id": "MG-CHADWICK-16",
+            "product_name_en": "Vinedo Chadwick 2016",
+            "product_name_cn": "查德維克旗艦紅葡萄酒-3入木盒",
+            "score": [
+                "RP96",
+                "JS99"
+            ],
+            "stock_quantity": "5",
+            "unit": "瓶",
+            "cost_price": "12000"
+        },
+        {
+            "category": "智利 阿根廷",
+            "product_id": "MG-CHADWICK-17",
+            "product_name_en": "Vinedo Chadwick 2017",
+            "product_name_cn": "查德維克旗艦紅葡萄酒-3入木盒",
+            "score": [
+                "JS100",
+                "RP96+"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "12500"
+        },
+        {
+            "category": "智利 阿根廷",
+            "product_id": "MG-CHADWICK-18",
+            "product_name_en": "Vinedo Chadwick 2018",
+            "product_name_cn": "查德維克旗艦紅葡萄酒-3入木盒",
+            "score": [
+                "RP97",
+                "JS98",
+                "WS94"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "12500"
+        },
+        {
+            "category": "智利 阿根廷",
+            "product_id": "MG-CHADWICK-19",
+            "product_name_en": "Vinedo Chadwick 2019",
+            "product_name_cn": "查德維克旗艦紅葡萄酒-3入木盒",
+            "score": [
+                "RP97",
+                "JS99"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "12500"
+        },
+        {
+            "category": "智利 阿根廷",
+            "product_id": "MG-CHADWICK-20",
+            "product_name_en": "Vinedo Chadwick 2020",
+            "product_name_cn": "查德維克旗艦紅葡萄酒-3入木盒",
+            "score": [
+                "RP97",
+                "JS98"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "10800"
+        },
+        {
+            "category": "智利 阿根廷",
+            "product_id": "MD-CHEVAL ANDES-16",
+            "product_name_en": "CHEVAL DES ANDES 2016",
+            "product_name_cn": "安地斯白馬堡 / 6瓶紙箱",
+            "score": [
+                "RP97+",
+                "SJ98"
+            ],
+            "stock_quantity": "24",
+            "unit": "瓶",
+            "cost_price": "3000"
+        },
+        {
+            "category": "智利 阿根廷",
+            "product_id": "DI-ALMAVIVA-15",
+            "product_name_en": "ALMAVIVA 2015",
+            "product_name_cn": "智利王 (阿瑪維瓦)-6入木箱",
+            "score": [
+                "JS100",
+                "2017百大第一"
+            ],
+            "stock_quantity": "1",
+            "unit": "瓶",
+            "cost_price": "4990"
+        },
+        {
+            "category": "智利 阿根廷",
+            "product_id": "DU-ALMAVIVA-19",
+            "product_name_en": "ALMAVIVA 2019",
+            "product_name_cn": "智利王 (阿瑪維瓦)-6入木箱",
+            "score": [
+                "RP95",
+                "JA97"
+            ],
+            "stock_quantity": "21",
+            "unit": "瓶",
+            "cost_price": "5400"
+        },
+        {
+            "category": "智利 阿根廷",
+            "product_id": "JA-ALMAVIVA-20",
+            "product_name_en": "ALMAVIVA 2020",
+            "product_name_cn": "智利王-6入木箱",
+            "score": [
+                "RP96",
+                "JS98",
+                "WS95"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "5220"
+        },
+        {
+            "category": "智利 阿根廷",
+            "product_id": "MD-ALMAVIVA-20",
+            "product_name_en": "ALMAVIVA 2020",
+            "product_name_cn": "智利王 (阿瑪維瓦)-6入木箱(25週年紀念)",
+            "score": [
+                "RP96",
+                "JS98"
+            ],
+            "stock_quantity": "24",
+            "unit": "瓶",
+            "cost_price": "5220",
+            "image": "generated/wines/images/chile/MD-ALMAVIVA-20S.png"
+        },
+        {
+            "category": "智利 阿根廷",
+            "product_id": "JA-ALMAVIVA-21",
+            "product_name_en": "ALMAVIVA 2021",
+            "product_name_cn": "智利王-6入木箱",
+            "score": [
+                "RP96+",
+                "JS98",
+                "WS96"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "5550"
+        },
+        {
+            "category": "智利 阿根廷",
+            "product_id": "MD-ALMAVIVA-20S",
+            "product_name_en": "EPU 2020",
+            "product_name_cn": "智利王副牌-6入木箱",
+            "score": [
+                "RP93",
+                "JS96"
+            ],
+            "stock_quantity": "5",
+            "unit": "瓶",
+            "cost_price": "1800",
+            "image": "generated/wines/images/chile/MD-ALMAVIVA-20S.png"
+        },
+        {
+            "category": "智利 阿根廷",
+            "product_id": "MG-ALMAVIVA-21S",
+            "product_name_en": "EPU 2021",
+            "product_name_cn": "智利王副牌-6入木箱",
+            "score": [
+                "RP94+",
+                "JS94",
+                "WS92"
+            ],
+            "stock_quantity": "24",
+            "unit": "瓶",
+            "cost_price": "1900"
+        },
+        {
+            "category": "智利 阿根廷",
+            "product_id": "MG-SENA-09",
+            "product_name_en": "SENA 2009",
+            "product_name_cn": "SENA智利酒王-6入木箱",
+            "score": [
+                "RP92",
+                "JA95"
+            ],
+            "stock_quantity": "24",
+            "unit": "瓶",
+            "cost_price": "4800"
+        },
+        {
+            "category": "智利 阿根廷",
+            "product_id": "DI-SENA-14",
+            "product_name_en": "SENA 2014",
+            "product_name_cn": "SENA智利酒王-6入木箱",
+            "score": [
+                "JS97",
+                "RP95"
+            ],
+            "stock_quantity": "2",
+            "unit": "瓶",
+            "cost_price": "4680"
+        },
+        {
+            "category": "智利 阿根廷",
+            "product_id": "JA-SENA-15",
+            "product_name_en": "SENA 2015",
+            "product_name_cn": "SENA智利酒王-6入木箱",
+            "score": [
+                "JS100",
+                "2017百大第三"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "5500"
+        },
+        {
+            "category": "智利 阿根廷",
+            "product_id": "MG-SENA-17",
+            "product_name_en": "SENA 2017",
+            "product_name_cn": "SENA智利酒王-6入木箱",
+            "score": [
+                "RP96+"
+            ],
+            "stock_quantity": "16",
+            "unit": "瓶",
+            "cost_price": "4200"
+        },
+        {
+            "category": "智利 阿根廷",
+            "product_id": "JA-SENA-18",
+            "product_name_en": "SENA 2018",
+            "product_name_cn": "SENA智利酒王-6入木箱",
+            "score": [
+                "RP98",
+                "JS100"
+            ],
+            "stock_quantity": "18",
+            "unit": "瓶",
+            "cost_price": "4150"
+        },
+        {
+            "category": "智利 阿根廷",
+            "product_id": "MG-SENA-19",
+            "product_name_en": "SENA 2019",
+            "product_name_cn": "SENA智利酒王-6入木箱(25週年紀念)",
+            "score": [
+                "RP98",
+                "JS98"
+            ],
+            "stock_quantity": "36",
+            "unit": "瓶",
+            "cost_price": "4600"
+        },
+        {
+            "category": "智利 阿根廷",
+            "product_id": "MD-SENA-20",
+            "product_name_en": "SENA 2020",
+            "product_name_cn": "SENA智利酒王-6入木箱",
+            "score": [
+                "RP97",
+                "JS98"
+            ],
+            "stock_quantity": "24",
+            "unit": "瓶",
+            "cost_price": "4300"
+        },
+        {
+            "category": "智利 阿根廷",
+            "product_id": "MG-SENA-21",
+            "product_name_en": "SENA 2021",
+            "product_name_cn": "SENA智利酒王-6入木箱",
+            "score": [
+                "RP98+",
+                "JS100"
+            ],
+            "stock_quantity": "42",
+            "unit": "瓶",
+            "cost_price": "4600"
+        },
+        {
+            "category": "智利 阿根廷",
+            "product_id": "MD-SENA-20S",
+            "product_name_en": "ROCAS DE SENA 2020",
+            "product_name_cn": "SENA智利酒王副牌-6入木箱",
+            "score": [
+                "RP93",
+                "JS96"
+            ],
+            "stock_quantity": "48",
+            "unit": "瓶",
+            "cost_price": "1900"
+        },
+        {
+            "category": "智利 阿根廷",
+            "product_id": "MG-SENA-21S",
+            "product_name_en": "ROCAS DE SENA 2021",
+            "product_name_cn": "SENA智利酒王副牌-6入木箱",
+            "score": [
+                "RP94",
+                "JS96"
+            ],
+            "stock_quantity": "41",
+            "unit": "瓶",
+            "cost_price": "1900"
+        },
+        {
+            "category": "波爾多白葡萄酒",
+            "product_id": "MD218-19-G1W",
+            "product_name_en": "CHATEAU D'YQUEM 2019",
+            "product_name_cn": "滴金城堡白葡萄酒-6入木箱",
+            "score": [
+                "JS96"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "12460"
+        },
+        {
+            "category": "波爾多白葡萄酒",
+            "product_id": "MD218-19-G1W-1",
+            "product_name_en": "CHATEAU D'YQUEM 2019(375ML)",
+            "product_name_cn": "滴金城堡白葡萄酒-3入木盒",
+            "score": [
+                "JS96"
+            ],
+            "stock_quantity": "9",
+            "unit": "瓶",
+            "cost_price": "6700"
+        },
+        {
+            "category": "波爾多白葡萄酒",
+            "product_id": "MS075-20-GCCG-W",
+            "product_name_en": "CH Smith Haut Lafitte Blanc 2020",
+            "product_name_cn": "史密斯拉菲城堡-白 (紀念金標)(單一木盒)",
+            "score": [
+                "RP94",
+                "JS97"
+            ],
+            "stock_quantity": "2",
+            "unit": "瓶",
+            "cost_price": "5220"
+        },
+        {
+            "category": "波爾多白葡萄酒",
+            "product_id": "MD079-18-GCCA-S",
+            "product_name_en": "LE PETIT CHEVAL BLANC 2018",
+            "product_name_cn": "白馬堡副牌白葡萄酒-3入木盒",
+            "score": [
+                "RP92",
+                "JS98",
+                "WS91"
+            ],
+            "stock_quantity": "6",
+            "unit": "瓶",
+            "cost_price": "5000"
+        },
+        {
+            "category": "波爾多白葡萄酒",
+            "product_id": "MD079-19-GCCA-S",
+            "product_name_en": "LE PETIT CHEVAL BLANC 2019",
+            "product_name_cn": "白馬堡副牌白葡萄酒-3入木盒",
+            "score": [
+                "RP91",
+                "JS96"
+            ],
+            "stock_quantity": "7",
+            "unit": "瓶",
+            "cost_price": "4500"
+        },
+        {
+            "category": "波爾多白葡萄酒",
+            "product_id": "MD079-20-GCCAS-W",
+            "product_name_en": "LE PETIT CHEVAL BLANC 2020",
+            "product_name_cn": "白馬堡副牌白葡萄酒-3入木盒",
+            "score": [
+                "JS96"
+            ],
+            "stock_quantity": "24",
+            "unit": "瓶",
+            "cost_price": "4950"
+        },
+        {
+            "category": "波爾多白葡萄酒",
+            "product_id": "MD005-21-G1W",
+            "product_name_en": "AILE D'ARGENT 2021",
+            "product_name_cn": "木桐城堡白葡萄酒 (單一木盒)",
+            "score": [
+                "RP91",
+                "JS98"
+            ],
+            "stock_quantity": "20",
+            "unit": "瓶",
+            "cost_price": "4850"
+        },
+        {
+            "category": "波爾多白葡萄酒",
+            "product_id": "MD004-20-G1WS",
+            "product_name_en": "CLARTE DE HAUT BRION BLC (LA)2020",
+            "product_name_cn": "歐布里翁城堡白副-3入木盒",
+            "score": [
+                "RP92",
+                "JS94"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "3690"
+        },
+        {
+            "category": "波爾多白葡萄酒",
+            "product_id": "MD004-21-G1WS",
+            "product_name_en": "CLARTE DE HAUT BRION BLC (LA) 2021",
+            "product_name_cn": "歐布里翁城堡白副-6入木箱",
+            "score": [
+                "RP91",
+                "JS96"
+            ],
+            "stock_quantity": "18",
+            "unit": "瓶",
+            "cost_price": "4350"
+        },
+        {
+            "category": "波爾多白葡萄酒",
+            "product_id": "MS018-21-G2W",
+            "product_name_en": "COS D'ESTOURNEL -Blanc 2021",
+            "product_name_cn": "高斯城堡白葡萄酒-6入木箱",
+            "score": [
+                "RP93",
+                "JS97                   SW90"
+            ],
+            "stock_quantity": "12",
+            "unit": "瓶",
+            "cost_price": "6000"
+        },
+        {
+            "category": "波爾多白葡萄酒",
+            "product_id": "MS018-21-G2SW",
+            "product_name_en": "LES PAGODES DE COS BLANC 2021",
+            "product_name_cn": "高斯城堡副牌白葡萄酒-6入木箱",
+            "score": [
+                "RP92",
+                "JS94"
+            ],
+            "stock_quantity": "27",
+            "unit": "瓶",
+            "cost_price": "2400"
+        },
+        {
+            "category": "波爾多白葡萄酒",
+            "product_id": "MG022-21-G3W",
+            "product_name_en": "LES ARUMS DE LAGRANGE -blanc 221",
+            "product_name_cn": "拉葛隆吉城堡白葡萄酒 / 6瓶紙箱",
+            "score": [
+                "RP92"
+            ],
+            "stock_quantity": "10",
+            "unit": "瓶",
+            "cost_price": "1200"
+        },
+        {
+            "category": "波爾多白葡萄酒",
+            "product_id": "SA216-79-G1W",
+            "product_name_en": "CH Rieussec 1979",
+            "product_name_cn": "胡賽克城堡貴腐甜白酒-木箱",
+            "score": [
+                "RP84"
+            ],
+            "stock_quantity": "3",
+            "unit": "瓶",
+            "cost_price": "3800"
+        },
+        {
+            "category": "波爾多白葡萄酒",
+            "product_id": "JA217-88-G2W",
+            "product_name_en": "CH Doisy-Vedrines 1988",
+            "product_name_cn": "維德里納城堡貴腐甜白酒-木箱",
+            "score": [
+                "WS90",
+                "RP91"
+            ],
+            "stock_quantity": "3",
+            "unit": "瓶",
+            "cost_price": "4600"
+        },
+        {
+            "category": "波爾多白葡萄酒",
+            "product_id": "JA217-89-G2W",
+            "product_name_en": "CH Doisy-Vedrines 1989",
+            "product_name_cn": "維德里納城堡貴腐甜白酒-木箱",
+            "score": [
+                "WS91",
+                "RP95"
+            ],
+            "stock_quantity": "10",
+            "unit": "瓶",
+            "cost_price": "3600"
+        }
+    ]
+}

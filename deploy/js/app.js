@@ -4,13 +4,13 @@ document.addEventListener('DOMContentLoaded', function() {
   const themeLink = document.getElementById('theme-link');
   const body = document.body;
 
-  // Available themes
+  // Available themes - Luxury Wine Edition
   const themes = [
-    { name: 'light', file: 'css/light.css', displayName: 'Light' },
-    { name: 'dark', file: 'css/dark.css', displayName: 'Dark' }
+    { name: 'dark', file: 'css/dark-luxury.css', displayName: '🌙 Dark' },
+    { name: 'light', file: 'css/light-luxury.css', displayName: '☀️ Light' }
   ];
 
-  let currentThemeIndex = 0; // Default to light theme
+  let currentThemeIndex = 0; // Default to dark luxury theme
 
   // Load saved theme from localStorage
   const savedTheme = localStorage.getItem('selectedTheme');
