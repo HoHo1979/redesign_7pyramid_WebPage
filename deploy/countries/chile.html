@@ -1,34 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="zh-TW">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17830155753"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17830155753');
-</script>
-
-<!-- Event snippet for Click to call conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-17830155753/jkqdCO2B0tobEOmrirZC',
-      'value': 1.0,
-      'currency': 'TWD',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>智利葡萄酒 - Seven Pyramid 七銘企業</title>
@@ -61,6 +33,7 @@ function gtag_report_conversion(url) {
         <div style="display: flex; align-items: center; gap: 30px;">
           <a href="../index.html" class="nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; transition: color 0.3s;">首頁</a>
           <a href="../wine_list.html" class="nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; transition: color 0.3s;">酒款目錄</a>
+          <a href="../french_wine_knowledge.html" class="nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; transition: color 0.3s;">葡萄酒知識</a>
           <button id="theme-toggle" style="padding: 8px 12px; border: none; border-radius: 20px; cursor: pointer; background: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); font-size: 0.9rem;">🌙</button>
         </div>
       </div>

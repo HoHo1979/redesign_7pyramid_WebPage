@@ -1,13 +1,14 @@
 // Theme switching functionality
 document.addEventListener('DOMContentLoaded', function() {
   const themeToggle = document.getElementById('theme-toggle');
+  const themeToggleMobile = document.getElementById('theme-toggle-mobile');
   const themeLink = document.getElementById('theme-link');
   const body = document.body;
 
-  // Available themes - Luxury Wine Edition
+  // Available themes for luxury wine theme
   const themes = [
-    { name: 'dark', file: 'css/dark-luxury.css', displayName: '🌙 Dark' },
-    { name: 'light', file: 'css/light-luxury.css', displayName: '☀️ Light' }
+    { name: 'dark', file: 'css/dark-luxury.css', displayName: '☀️', emoji: '☀️' },
+    { name: 'light', file: 'css/dark-luxury.css', displayName: '🌙', emoji: '🌙' }
   ];
 
   let currentThemeIndex = 0; // Default to dark luxury theme
@@ -26,7 +27,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const theme = themes[themeIndex];
     themeLink.href = theme.file;
     body.className = theme.name;
-    themeToggle.textContent = `Theme: ${theme.displayName}`;
+    
+    // Update both desktop and mobile toggle buttons
+    if (themeToggle) {
+      themeToggle.textContent = theme.emoji;
+    }
+    if (themeToggleMobile) {
+      themeToggleMobile.textContent = theme.emoji;
+    }
+    
     localStorage.setItem('selectedTheme', theme.name);
   }
 

@@ -1,5 +1,5 @@
 # Robots.txt for Seven Pyramid 七銘企業葡萄酒烈酒進口商
-# https://newyear.7pyramid.com/robots.txt
+# https://wine.7pyramid.com/robots.txt
 
 User-agent: *
 
@@ -9,6 +9,7 @@ Allow: /
 # Allow access to main pages
 Allow: /index.html
 Allow: /wine_list.html
+Allow: /french_wine_knowledge.html
 
 # Allow access to CSS and JavaScript files for proper rendering
 Allow: /css/
@@ -29,6 +30,7 @@ Allow: /img/spain_wine_map.png
 Allow: /img/argentina_wine_map.png
 Allow: /img/us_wine_map.png
 Allow: /img/SPbackground1.png
+Allow: /img/pontetCanet.png
 
 # Block access to sensitive or unnecessary files
 Disallow: /.git/
@@ -50,7 +52,7 @@ Disallow: /*~
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://newyear.7pyramid.com/sitemap.xml
+Sitemap: https://wine.7pyramid.com/sitemap.xml
 
 # User-agent specific rules for major search engines
 User-agent: Googlebot

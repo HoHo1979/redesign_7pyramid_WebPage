@@ -2,34 +2,6 @@
 <html class="no-js" lang="zh-TW">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17830155753"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17830155753');
-</script>
-
-<!-- Event snippet for Click to call conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-17830155753/jkqdCO2B0tobEOmrirZC',
-      'value': 1.0,
-      'currency': 'TWD',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>台北頂級葡萄酒進口商 - 波爾多香檳專賣 | 七銘企業 Seven Pyramid</title>
@@ -37,18 +9,18 @@ function gtag_report_conversion(url) {
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/dark-luxury.css" id="theme-link">
   <style>
-    /* Luxury Dark Wine Theme - Default fallback variables */
+    /* IDE variable recognition - these are overridden by light.css and dark.css at runtime */
     :root {
-      --md-sys-color-primary: rgb(212 175 55);           /* Gold */
+      --md-sys-color-primary: rgb(212 175 55);
       --md-sys-color-surface-tint: rgb(212 175 55);
       --md-sys-color-on-primary: rgb(18 18 18);
-      --md-sys-color-primary-container: rgb(94 13 13);   /* Wine Red */
+      --md-sys-color-primary-container: rgb(94 13 13);
       --md-sys-color-on-primary-container: rgb(243 229 171);
       --md-sys-color-secondary: rgb(180 120 120);
       --md-sys-color-on-secondary: rgb(255 255 255);
       --md-sys-color-secondary-container: rgb(94 13 13);
       --md-sys-color-on-secondary-container: rgb(243 229 171);
-      --md-sys-color-tertiary: rgb(243 229 171);         /* Gold Light */
+      --md-sys-color-tertiary: rgb(243 229 171);
       --md-sys-color-on-tertiary: rgb(45 35 0);
       --md-sys-color-tertiary-container: rgb(184 138 20);
       --md-sys-color-on-tertiary-container: rgb(255 248 225);
@@ -56,7 +28,7 @@ function gtag_report_conversion(url) {
       --md-sys-color-on-error: rgb(105 0 5);
       --md-sys-color-error-container: rgb(147 0 10);
       --md-sys-color-on-error-container: rgb(255 218 214);
-      --md-sys-color-background: rgb(18 18 18);          /* Dark BG */
+      --md-sys-color-background: rgb(18 18 18);
       --md-sys-color-on-background: rgb(244 244 244);
       --md-sys-color-surface: rgb(18 18 18);
       --md-sys-color-on-surface: rgb(244 244 244);
@@ -85,7 +57,7 @@ function gtag_report_conversion(url) {
       --md-sys-color-surface-bright: rgb(50 45 42);
       --md-sys-color-surface-container-lowest: rgb(12 12 12);
       --md-sys-color-surface-container-low: rgb(22 22 22);
-      --md-sys-color-surface-container: rgb(26 26 26);   /* Charcoal */
+      --md-sys-color-surface-container: rgb(26 26 26);
       --md-sys-color-surface-container-high: rgb(35 32 30);
       --md-sys-color-surface-container-highest: rgb(45 42 40);
       /* Luxury custom vars */
@@ -123,7 +95,9 @@ function gtag_report_conversion(url) {
       "新竹縣",
       "新竹市",
       "台中市",
-      "台中縣"
+      "台中縣",
+      "台南市",
+      "高雄市"
     ],
     "serviceType": [
       "葡萄酒進口",
@@ -342,6 +316,33 @@ function gtag_report_conversion(url) {
       box-shadow: 0 6px 20px rgba(0,0,0,0.4);
     }
 
+    /* Wine Card Hover Effects */
+    .wine-card {
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .wine-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2) !important;
+    }
+
+    /* Theme Coordination Variables */
+    :root {
+      --wine-app-primary: var(--md-sys-color-primary);
+      --wine-app-secondary: var(--md-sys-color-secondary);
+      --wine-app-accent: var(--md-sys-color-tertiary);
+      --transition-speed: 0.3s;
+    }
+
+    /* Ensure theme coordination between landing page and Flutter app */
+    .dark {
+      --theme-transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .light {
+      --theme-transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    }
+
     /* Mobile Navigation Styles */
     @media (max-width: 768px) {
       /* Hide desktop navigation */
@@ -412,7 +413,7 @@ function gtag_report_conversion(url) {
 <body class="dark">
 
   <div id="age-gate-banner">
-    <p>未成年不可以飲酒，開車不喝酒</p>
+    <p>開車不喝酒，未滿18歲不可飲酒</p>
   </div>
 
   <!-- Sticky Navigation Header -->
@@ -508,7 +509,7 @@ function gtag_report_conversion(url) {
         <p style="font-size: 1.3rem; margin: 0 0 10px 0; font-weight: 600;">60年限定特價</p>
         <p style="font-size: 1.1rem; margin: 0 0 15px 0; line-height: 1.6;">只到 <strong style="font-size: 1.2rem;">2026年2月28日</strong></p>
         <p style="font-size: 1rem; margin: 0 0 15px 0; opacity: 0.95;">✨ 價格與優惠：6瓶為一個銷售單位<br><strong>單瓶詳細價格敬請洽詢</strong></p>
-        <p style="font-size: 0.95rem; margin: 0; opacity: 0.9;">📞 台北總店：<a href="tel:+886227912147" onclick="return gtag_report_conversion(this.href);" style="color: inherit; text-decoration: underline;">(02) 2791-2147</a> | 新竹Howine分店：<a href="tel:+886227912147" onclick="return gtag_report_conversion(this.href);" style="color: inherit; text-decoration: underline;">(02) 2791-2147</a><br>歡迎電洽或親臨門市諮詢最新優惠</p>
+        <p style="font-size: 0.95rem; margin: 0; opacity: 0.9;">📞 台北總店：(02) 2791-2147 | 新竹Howine分店：(02) 2791-2147<br>歡迎電洽或親臨門市諮詢最新優惠</p>
       </div>
 
       <!-- Service Area Section -->
@@ -522,7 +523,7 @@ function gtag_report_conversion(url) {
               <li style="margin-bottom: 8px;">🏢 台北市內湖區總店</li>
               <li style="margin-bottom: 8px;">✅ 台北市松山區門市現貨供應</li>
               <li style="margin-bottom: 8px;">🚚 大台北地區當日配送服務</li>
-              <li style="margin-bottom: 8px;">📞 總店專線: <a href="tel:+886227912147" onclick="return gtag_report_conversion(this.href);" style="color: inherit; text-decoration: underline;">(02) 2791-2147</a></li>
+              <li style="margin-bottom: 8px;">📞 總店專線: (02) 2791-2147</li>
             </ul>
           </div>
           <div style="background: var(--md-sys-color-surface); border-radius: 15px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
@@ -532,7 +533,7 @@ function gtag_report_conversion(url) {
               <li style="margin-bottom: 8px;">🏢 新竹市Howine分店</li>
               <li style="margin-bottom: 8px;">💼 新竹科學園區企業配送</li>
               <li style="margin-bottom: 8px;">🚚 新竹市區配送服務</li>
-              <li style="margin-bottom: 8px;">📞 分店專線: <a href="tel:+886227912147" onclick="return gtag_report_conversion(this.href);" style="color: inherit; text-decoration: underline;">(02) 2791-2147</a></li>
+              <li style="margin-bottom: 8px;">📞 分店專線: (02) 2791-2147</li>
             </ul>
           </div>
           <div style="background: var(--md-sys-color-surface); border-radius: 15px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
@@ -559,7 +560,7 @@ function gtag_report_conversion(url) {
       </section>
 
       <!-- Dynamic Country Sections will be inserted here -->
-      
+
       <section id="french-wines" class="wine-section">
         <h2 class="country-header">
           <a href="countries/france.html" style="text-decoration: none; color: inherit;">
@@ -3421,7 +3422,7 @@ function gtag_report_conversion(url) {
         </table></section>
 
       <!-- Contact Section -->
-      
+
     <section style="margin-top: 60px; padding: 40px; background: var(--md-sys-color-primary-container); border-radius: 20px; text-align: center;">
       <h2 style="color: var(--md-sys-color-on-primary-container); margin-bottom: 20px; font-size: 1.8rem; font-weight: 600;">對特定酒款有興趣？</h2>
       <p style="color: var(--md-sys-color-on-primary-container); margin-bottom: 30px; opacity: 0.8; font-size: 1.1rem;">聯繫我們的專業團隊，獲得詳細資訊與專業建議</p>

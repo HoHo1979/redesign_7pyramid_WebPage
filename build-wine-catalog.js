@@ -349,6 +349,18 @@ class WineCatalogBuilder {
     console.log(`📄 Generated main catalog: ${outputPath} and ./deploy/wine_list.html`);
 
     this.generatedPages.push({
+      url: '/index.html',
+      lastmod: new Date().toISOString(),
+      priority: '1.0'
+    });
+
+    this.generatedPages.push({
+      url: '/french_wine_knowledge.html',
+      lastmod: new Date().toISOString(),
+      priority: '0.8'
+    });
+
+    this.generatedPages.push({
       url: '/wine_list.html',
       lastmod: new Date().toISOString(),
       priority: '0.9'
@@ -447,7 +459,7 @@ class WineCatalogBuilder {
   <title>台北頂級葡萄酒進口商 - 波爾多香檳專賣 | 七銘企業 Seven Pyramid</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/light.css" id="theme-link">
+  <link rel="stylesheet" href="css/dark-luxury.css" id="theme-link">
   <style>
     /* IDE variable recognition - these are overridden by light.css and dark.css at runtime */
     :root {
@@ -1412,6 +1424,7 @@ ${scoreSectionHtml}
         <div style="display: flex; align-items: center; gap: 30px;">
           <a href="../index.html" class="nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; transition: color 0.3s;">首頁</a>
           <a href="../wine_list.html" class="nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; transition: color 0.3s;">酒款目錄</a>
+          <a href="../french_wine_knowledge.html" class="nav-link" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500; transition: color 0.3s;">葡萄酒知識</a>
           <button id="theme-toggle" style="padding: 8px 12px; border: none; border-radius: 20px; cursor: pointer; background: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); font-size: 0.9rem;">🌙</button>
         </div>
       </div>

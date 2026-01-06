@@ -15,6 +15,7 @@ class DeploymentPreparation {
     this.filesToDeploy = [
       // Core HTML files (index from root, wine catalog from generated)
       'index.html',
+      'french_wine_knowledge.html',
       '404.html',
 
       // SEO and PWA files (from root)
