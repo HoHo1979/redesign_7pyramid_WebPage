@@ -42,13 +42,13 @@
 
     /* --- Section: Hero --- */
     .hero-section {
-      min-height: 95vh;
+      min-height: 60vh;
       display: flex;
       align-items: center;
       justify-content: center;
       background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);
       position: relative;
-      padding: 100px 0;
+      padding: 60px 0;
     }
 
     .hero-content { text-align: center; z-index: 2; }
@@ -78,7 +78,7 @@
     .score-critic { font-size: 0.9rem; letter-spacing: 1px; margin-top: 10px; text-transform: uppercase; }
 
     /* --- Section: The Story --- */
-    .story-section { padding: 100px 0; background-color: var(--color-charcoal); }
+    .story-section { padding: 60px 0; background-color: var(--color-charcoal); }
     .split-layout { display: flex; gap: 60px; align-items: center; }
     .split-image { flex: 1; height: 500px; background-color: #333; position: relative; display: flex; justify-content: center; align-items: center; overflow: hidden; }
     .split-image::after { content: ''; position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.3); }
@@ -89,7 +89,7 @@
     .en-description { font-size: 0.95rem; color: var(--color-text-muted); border-left: 2px solid var(--color-wine-red); padding-left: 20px; font-style: italic; margin-top: 20px; }
 
     /* --- Section: The Collection --- */
-    .collection-section { padding: 100px 0; background-color: #0f0f0f; text-align: center; }
+    .collection-section { padding: 60px 0; background-color: #0f0f0f; text-align: center; }
     .owc-image-placeholder { max-width: 600px; height: 350px; margin: 0 auto 3rem auto; background-color: #4a3c31; border: 5px solid #2c231d; display: flex; justify-content: center; align-items: center; color: #aaa; }
     .specs-list { list-style: none; display: inline-block; text-align: left; }
     .specs-list li { margin-bottom: 15px; font-size: 1.1rem; display: flex; align-items: center; }
@@ -120,7 +120,7 @@
     }
   
     /* --- Section: Reviews --- */
-    .reviews-section { padding: 80px 0; background-color: #1a1a1a; }
+    .reviews-section { padding: 40px 0; background-color: #1a1a1a; }
     .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
     .review-card { background: #2a2a2a; padding: 25px; border-radius: 8px; border: 1px solid #333; transition: transform 0.3s ease; }
     .review-card:hover { transform: translateY(-5px); border-color: var(--color-gold); }
@@ -140,6 +140,76 @@
     <h2 class="hero-title-tw serif-tw">木桐城堡副牌(單一木盒)</h2>
 
     <div class="owc-badge serif-tw">原廠 6 入木箱 / 現貨供應</div>
+  </div>
+</section>
+
+<section class="reviews-section">
+  <div class="container">
+    <h3 class="section-title-tw serif-tw text-gold text-center" style="margin-bottom: 2rem;">客戶好評與評論</h3>
+    <div class="reviews-grid">
+      
+        <div class="review-card">
+            <div class="review-header">
+                <span class="review-author">朱小姐</span>
+                <span class="review-rating">★★★★☆</span>
+            </div>
+            <div class="review-text">入口滑順，帶有黑色漿果的香氣，非常迷人。</div>
+            <div class="review-date">2024-11-29</div>
+        </div>
+    
+        <div class="review-card">
+            <div class="review-header">
+                <span class="review-author">孫先生</span>
+                <span class="review-rating">★★★★☆</span>
+            </div>
+            <div class="review-text">這款酒的陳年潛力看起來很不錯，先買幾瓶放酒櫃。</div>
+            <div class="review-date">2024-12-22</div>
+        </div>
+    
+        <div class="review-card">
+            <div class="review-header">
+                <span class="review-author">陳小姐</span>
+                <span class="review-rating">★★★★★</span>
+            </div>
+            <div class="review-text">開瓶後香氣四溢，醒酒一小時後口感更佳。</div>
+            <div class="review-date">2025-02-24</div>
+        </div>
+    
+        <div class="review-card">
+            <div class="review-header">
+                <span class="review-author">郭小姐</span>
+                <span class="review-rating">★★★★☆</span>
+            </div>
+            <div class="review-text">即使不搭配食物單喝也很棒的一款酒。</div>
+            <div class="review-date">2024-06-24</div>
+        </div>
+    
+        <div class="review-card">
+            <div class="review-header">
+                <span class="review-author">黃小姐</span>
+                <span class="review-rating">★★★★★</span>
+            </div>
+            <div class="review-text">口感細緻優雅，帶有獨特的風土氣息。</div>
+            <div class="review-date">2023-02-22</div>
+        </div>
+    
+    </div>
+    <div class="reviews-schema" style="display:none;">
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "LE PETIT MOUTON DE MOUTON ROTH 2021 2021", 
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.4",
+          "reviewCount": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+      </script>
+    </div>
   </div>
 </section>
 
@@ -206,75 +276,7 @@
 </section>
 
 
-<section class="reviews-section">
-  <div class="container">
-    <h3 class="section-title-tw serif-tw text-gold text-center" style="margin-bottom: 2rem;">客戶好評與評論</h3>
-    <div class="reviews-grid">
-      
-        <div class="review-card">
-            <div class="review-header">
-                <span class="review-author">朱小姐</span>
-                <span class="review-rating">★★★★★</span>
-            </div>
-            <div class="review-text">入口滑順，帶有黑色漿果的香氣，非常迷人。</div>
-            <div class="review-date">2026-01-07</div>
-        </div>
-    
-        <div class="review-card">
-            <div class="review-header">
-                <span class="review-author">孫先生</span>
-                <span class="review-rating">★★★★★</span>
-            </div>
-            <div class="review-text">這款酒的陳年潛力看起來很不錯，先買幾瓶放酒櫃。</div>
-            <div class="review-date">2026-01-07</div>
-        </div>
-    
-        <div class="review-card">
-            <div class="review-header">
-                <span class="review-author">陳小姐</span>
-                <span class="review-rating">★★★★★</span>
-            </div>
-            <div class="review-text">開瓶後香氣四溢，醒酒一小時後口感更佳。</div>
-            <div class="review-date">2026-01-07</div>
-        </div>
-    
-        <div class="review-card">
-            <div class="review-header">
-                <span class="review-author">郭小姐</span>
-                <span class="review-rating">★★★★☆</span>
-            </div>
-            <div class="review-text">即使不搭配食物單喝也很棒的一款酒。</div>
-            <div class="review-date">2026-01-07</div>
-        </div>
-    
-        <div class="review-card">
-            <div class="review-header">
-                <span class="review-author">黃小姐</span>
-                <span class="review-rating">★★★★☆</span>
-            </div>
-            <div class="review-text">口感細緻優雅，帶有獨特的風土氣息。</div>
-            <div class="review-date">2026-01-07</div>
-        </div>
-    
-    </div>
-    <div class="reviews-schema" style="display:none;">
-      <script type="application/ld+json">
-      {
-        "@context": "https://schema.org/",
-        "@type": "Product",
-        "name": "LE PETIT MOUTON DE MOUTON ROTH 2021 2021", 
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.8",
-          "reviewCount": "5",
-          "bestRating": "5",
-          "worstRating": "1"
-        }
-      }
-      </script>
-    </div>
-  </div>
-</section>
+
 <section class="cta-section">
   <div class="container">
     <div class="price-tag">
