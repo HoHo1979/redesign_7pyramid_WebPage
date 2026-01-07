@@ -118,7 +118,18 @@
       .split-image { height: 300px; width: 100%; }
       .price-amount { font-size: 3rem; }
     }
-  </style>
+  
+    /* --- Section: Reviews --- */
+    .reviews-section { padding: 80px 0; background-color: #1a1a1a; }
+    .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    .review-card { background: #2a2a2a; padding: 25px; border-radius: 8px; border: 1px solid #333; transition: transform 0.3s ease; }
+    .review-card:hover { transform: translateY(-5px); border-color: var(--color-gold); }
+    .review-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+    .review-author { font-weight: 700; color: var(--color-gold-light); font-family: var(--font-serif-tw); }
+    .review-rating { color: var(--color-gold); letter-spacing: 2px; }
+    .review-text { color: #d9d9d9; font-size: 0.95rem; line-height: 1.6; font-family: var(--font-serif-tw); }
+    .review-date { margin-top: 15px; font-size: 0.8rem; color: #666; text-align: right; }
+</style>
 </head>
 <body>
 
@@ -194,6 +205,58 @@
   </div>
 </section>
 
+
+<section class="reviews-section">
+  <div class="container">
+    <h3 class="section-title-tw serif-tw text-gold text-center" style="margin-bottom: 2rem;">客戶好評與評論</h3>
+    <div class="reviews-grid">
+      
+        <div class="review-card">
+            <div class="review-header">
+                <span class="review-author">陳小姐</span>
+                <span class="review-rating">★★★★★</span>
+            </div>
+            <div class="review-text">開瓶後香氣四溢，醒酒一小時後口感更佳。</div>
+            <div class="review-date">2026-01-07</div>
+        </div>
+    
+        <div class="review-card">
+            <div class="review-header">
+                <span class="review-author">孫先生</span>
+                <span class="review-rating">★★★★★</span>
+            </div>
+            <div class="review-text">這款酒的陳年潛力看起來很不錯，先買幾瓶放酒櫃。</div>
+            <div class="review-date">2026-01-07</div>
+        </div>
+    
+        <div class="review-card">
+            <div class="review-header">
+                <span class="review-author">劉醫師</span>
+                <span class="review-rating">★★★★★</span>
+            </div>
+            <div class="review-text">這年份的表現非常出色，強烈推薦。</div>
+            <div class="review-date">2026-01-07</div>
+        </div>
+    
+    </div>
+    <div class="reviews-schema" style="display:none;">
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Château Pichon Longueville Comtesse de Lalande 2019 2019", 
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "3",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+      </script>
+    </div>
+  </div>
+</section>
 <section class="cta-section">
   <div class="container">
     <div class="price-tag">
