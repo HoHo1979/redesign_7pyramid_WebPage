@@ -70,3 +70,21 @@ Crawl-delay: 2
 User-agent: Slurp
 Allow: /
 Crawl-delay: 1
+
+# AI Bot Access Control for GEO (Generative Engine Optimization)
+# Allow AI crawlers to index content for brand visibility and traffic generation
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /

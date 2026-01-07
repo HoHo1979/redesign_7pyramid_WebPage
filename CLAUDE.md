@@ -12,7 +12,7 @@ This is **Seven Pyramid 七銘企業**, a professional wine import business webs
 - **Landing Page (`index.html`)**: Modern hero section with wine region showcase cards linking to Flutter app
 - **Wine Catalog (`wine_list.html`)**: SEO-optimized static page with comprehensive wine listings organized by country/region
 - **Theme System**: Material Design 3 with light/dark mode toggle via `js/app.js`
-- **SEO Infrastructure**: Full local business schema markup, sitemap.xml, robots.txt for Taiwan market
+- **SEO Infrastructure**: Full local business schema markup, entity-based sitemap architecture, GEO-optimized robots.txt for Taiwan market
 
 ### Theme Architecture
 The website uses a sophisticated Material Design 3 theming system:
@@ -114,8 +114,17 @@ seven_pyramid/
 ├── generated/                         # Build output (if using generator)
 │
 ├── SEO & PWA
-├── robots.txt                         # Search engine instructions
-├── sitemap.xml                        # SEO sitemap (auto-generated)
+├── robots.txt                         # AI bot access control (GEO optimized)
+├── sitemap.xml                        # Sitemap index (entity-based architecture)
+├── sitemap-main.xml                   # Core pages sitemap
+├── sitemap-wines-france.xml           # French wine inventory
+├── sitemap-wines-chile.xml            # Chilean wine inventory
+├── sitemap-wines-usa.xml              # USA wine inventory
+├── sitemap-wines-australia.xml        # Australian wine inventory
+├── sitemap-wines-argentina.xml        # Argentinian wine inventory
+├── sitemap-wines-spain.xml            # Spanish wine inventory
+├── sitemap-services.xml               # Business services sitemap
+├── sitemap-knowledge.xml              # Educational content sitemap
 ├── site.webmanifest                   # PWA manifest
 ├── favicon.ico
 │
@@ -161,7 +170,26 @@ The theme system cycles between light/dark with localStorage persistence. Defaul
 - **Verification**: Run `npm run csp-check` to detect violations
 
 ### SEO Implementation
-Both `index.html` and `wine_list.html` contain comprehensive JSON-LD structured data for local business with dual locations. Wine catalog uses semantic HTML tables for easy search engine parsing. Sitemap auto-generated via `js/sitemap-generator.js`.
+Both `index.html` and `wine_list.html` contain comprehensive JSON-LD structured data for local business with dual locations. Wine catalog uses semantic HTML tables for easy search engine parsing.
+
+**Entity-Based Sitemap Architecture (GEO Optimized)**:
+- **sitemap.xml**: Sitemap index file referencing all segmented sitemaps
+- **sitemap-main.xml**: Core pages (homepage, wine_list.html, Flutter app)
+- **sitemap-wines-{region}.xml**: Wine inventory segmented by region (france, chile, usa, australia, argentina, spain)
+- **sitemap-services.xml**: Business services (import, cellar management, investment, consulting)
+- **sitemap-knowledge.xml**: Educational content (french_wine_knowledge.html)
+
+This entity-based structure helps AI understand semantic relationships:
+- Seven Pyramid (entity) → has Product → from Region (France, Chile, etc.)
+- Seven Pyramid (entity) → offers Service → (cellar management, investment, consulting)
+- Seven Pyramid (entity) → provides Knowledge → about Wine
+
+**AI Bot Access Control (robots.txt)**:
+Explicitly allows AI crawlers for Generative Engine Optimization (GEO):
+- GPTBot: OpenAI training crawler (brand visibility)
+- ChatGPT-User: Real-time browsing agent (traffic generation)
+- Google-Extended: Gemini and Vertex AI training
+- ClaudeBot & anthropic-ai: Anthropic AI crawlers
 
 ### Mobile Responsiveness
 Grid layouts collapse to single columns on <768px screens. Navigation dropdowns have special mobile positioning with transform-based centering.

@@ -1,5 +1,5 @@
 # Robots.txt for Seven Pyramid 七銘企業葡萄酒烈酒進口商
-# https://wine.7pyramid.com/robots.txt
+# https://newyear.7pyramid.com/robots.txt
 
 User-agent: *
 
@@ -52,7 +52,7 @@ Disallow: /*~
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://wine.7pyramid.com/sitemap.xml
+Sitemap: https://newyear.7pyramid.com/sitemap.xml
 
 # User-agent specific rules for major search engines
 User-agent: Googlebot
@@ -70,3 +70,21 @@ Crawl-delay: 2
 User-agent: Slurp
 Allow: /
 Crawl-delay: 1
+
+# AI Bot Access Control for GEO (Generative Engine Optimization)
+# Allow AI crawlers to index content for brand visibility and traffic generation
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Chilean Wine Category -->
+  <url>
+    <loc>https://newyear.7pyramid.com/#/wine/chile</loc>
+    <lastmod>2026-01-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Individual Chilean wines will be added here dynamically -->
+  <!-- Entity: Seven Pyramid → has Product → from Region: Chile -->
+
+</urlset>
