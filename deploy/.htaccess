@@ -1,0 +1,10 @@
+# Allow all XML files
+<FilesMatch "\.(xml)$">
+    Require all granted
+</FilesMatch>
+
+# Set correct MIME type
+AddType application/xml .xml
+
+# Custom error page
+ErrorDocument 404 /404.html

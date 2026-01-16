@@ -6,10 +6,26 @@
 
   <!-- French Wine Knowledge -->
   <url>
-    <loc>https://newyear.7pyramid.com/french_wine_knowledge.html</loc>
+    <loc>https://wine.7pyramid.com/french_wine_knowledge.html</loc>
     <lastmod>2026-01-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+
+  <!-- How to Drink Wine -->
+  <url>
+    <loc>https://wine.7pyramid.com/how_to_drink_wine.html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- FAQ -->
+  <url>
+    <loc>https://wine.7pyramid.com/faq.html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 
   <!-- Wine regions educational content can be added here -->

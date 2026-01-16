@@ -3,50 +3,50 @@
   
   <!-- Main Pages Sitemap -->
   <sitemap>
-    <loc>https://newyear.7pyramid.com/sitemap-main.xml</loc>
+    <loc>https://wine.7pyramid.com/sitemap-main.xml</loc>
     <lastmod>2026-01-08</lastmod>
   </sitemap>
 
   <!-- Wine Inventory by Region - Entity-based segmentation -->
   <sitemap>
-    <loc>https://newyear.7pyramid.com/sitemap-wines-france.xml</loc>
+    <loc>https://wine.7pyramid.com/sitemap-wines-france.xml</loc>
     <lastmod>2026-01-08</lastmod>
   </sitemap>
 
   <sitemap>
-    <loc>https://newyear.7pyramid.com/sitemap-wines-chile.xml</loc>
+    <loc>https://wine.7pyramid.com/sitemap-wines-chile.xml</loc>
     <lastmod>2026-01-08</lastmod>
   </sitemap>
 
   <sitemap>
-    <loc>https://newyear.7pyramid.com/sitemap-wines-usa.xml</loc>
+    <loc>https://wine.7pyramid.com/sitemap-wines-usa.xml</loc>
     <lastmod>2026-01-08</lastmod>
   </sitemap>
 
   <sitemap>
-    <loc>https://newyear.7pyramid.com/sitemap-wines-australia.xml</loc>
+    <loc>https://wine.7pyramid.com/sitemap-wines-australia.xml</loc>
     <lastmod>2026-01-08</lastmod>
   </sitemap>
 
   <sitemap>
-    <loc>https://newyear.7pyramid.com/sitemap-wines-argentina.xml</loc>
+    <loc>https://wine.7pyramid.com/sitemap-wines-argentina.xml</loc>
     <lastmod>2026-01-08</lastmod>
   </sitemap>
 
   <sitemap>
-    <loc>https://newyear.7pyramid.com/sitemap-wines-spain.xml</loc>
+    <loc>https://wine.7pyramid.com/sitemap-wines-spain.xml</loc>
     <lastmod>2026-01-08</lastmod>
   </sitemap>
 
   <!-- Services Sitemap -->
   <sitemap>
-    <loc>https://newyear.7pyramid.com/sitemap-services.xml</loc>
+    <loc>https://wine.7pyramid.com/sitemap-services.xml</loc>
     <lastmod>2026-01-08</lastmod>
   </sitemap>
 
   <!-- Knowledge & Educational Content -->
   <sitemap>
-    <loc>https://newyear.7pyramid.com/sitemap-knowledge.xml</loc>
+    <loc>https://wine.7pyramid.com/sitemap-knowledge.xml</loc>
     <lastmod>2026-01-08</lastmod>
   </sitemap>
 
