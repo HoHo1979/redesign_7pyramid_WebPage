@@ -1,0 +1,94 @@
+html.dark body,
+html.dark main,
+html.dark main > section,
+html.dark header,
+html.dark #mobile-menu,
+html.dark footer,
+html.dark aside,
+html.dark article,
+html.dark figure,
+html.dark [class*="bg-white"],
+html.dark [class*="bg-[#F6F3EE]"],
+html.dark [class*="bg-[#E8E0D4]"],
+html.dark [class*="bg-[#D6CEBC]"] {
+  background: #000000 !important;
+}
+
+html.dark body {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+html.dark #age-gate-banner {
+  background: #6b2737 !important;
+  color: #ffffff !important;
+}
+
+html.dark body *,
+html.dark body *::before,
+html.dark body *::after {
+  color: #ffffff;
+}
+
+html.dark body [class*="border-[#E8E0D4]"],
+html.dark body [class*="border-[#07141E]"],
+html.dark body [class*="border-[#800020]"],
+html.dark body [class*="border-[#6B2737]"],
+html.dark body [class*="border-t"],
+html.dark body [class*="border-b"],
+html.dark body [class*="border-l"],
+html.dark body [class*="border-r"] {
+  border-color: rgba(128, 0, 32, 0.45) !important;
+}
+
+html.dark body [class*="text-[#07141E]"],
+html.dark body [class*="text-[#07141E]/"],
+html.dark body [class*="text-[#6B2737]"],
+html.dark body [class*="text-[#6B2737]/"],
+html.dark body [class*="text-[#722F37]"],
+html.dark body [class*="text-[#800020]"],
+html.dark body [class*="text-[#E8E0D4]"],
+html.dark body [class*="text-[#F6F3EE]"],
+html.dark body [class*="text-primary"],
+html.dark body [class*="text-white"] {
+  color: #ffffff !important;
+}
+
+html.dark body [class*="bg-[#6B2737]"] {
+  background: #6b2737 !important;
+}
+
+html.dark body [class*="bg-gradient-to-br"] {
+  background-image: none !important;
+  background-color: #000000 !important;
+}
+
+html.dark .editorial-shadow {
+  box-shadow: 40px 40px 80px rgba(128, 0, 32, 0.18) !important;
+}
+
+html.dark .wine-list-lottie,
+html.dark .wine-list-three-scene {
+  border-color: rgba(128, 0, 32, 0.45) !important;
+  background: radial-gradient(circle at 35% 35%, rgba(128, 0, 32, 0.22), rgba(0, 0, 0, 0.96) 72%) !important;
+}
+
+html.dark .wine-list-filter-select,
+html.dark .wine-list-filter-chevron {
+  color: #ffffff !important;
+}
+
+html.dark img:not([src*="7pyramidlogo"]) {
+  filter: brightness(0.92) contrast(1.04);
+}
+
+html.dark a:hover,
+html.dark button:hover {
+  color: #ffffff !important;
+}
+
+html.dark .focus\:not-sr-only:focus,
+html.dark .focus\:not-sr-only:focus-visible {
+  background: #ffffff !important;
+  color: #000000 !important;
+}

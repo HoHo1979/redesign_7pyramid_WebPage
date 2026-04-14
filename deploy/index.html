@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js light" lang="zh-TW" style="scroll-behavior: smooth;">
+<html class="no-js dark" lang="zh-TW" style="scroll-behavior: smooth;">
 
 <head>
   <!-- Google tag (gtag.js) -->
@@ -99,7 +99,7 @@
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/7pyramidlogo.webp">
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#000000">
 
   <!-- New Design System -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -108,10 +108,46 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
   <link href="css/tailwind.css" rel="stylesheet"/>
   <link href="css/editorial-motion.css" rel="stylesheet"/>
+  <link href="css/page-dark-theme.css" rel="stylesheet"/>
 <style>
-      body { font-family: 'Montserrat', sans-serif; background-color: #FFFFFF; min-height: max(884px, 100dvh); }
+      :root {
+        --theme-page-bg: #FFFFFF;
+        --theme-surface-bg: #FFFFFF;
+        --theme-surface-muted: #F6F3EE;
+        --theme-surface-soft: #E8E0D4;
+        --theme-text: #07141E;
+        --theme-text-muted: rgba(7, 20, 30, 0.7);
+        --theme-heading: #6B2737;
+        --theme-heading-soft: #722F37;
+        --theme-border: #E8E0D4;
+        --theme-border-strong: #800020;
+        --theme-shadow: rgba(10, 5, 8, 0.08);
+      }
+      html.dark {
+        --theme-page-bg: #000000;
+        --theme-surface-bg: #000000;
+        --theme-surface-muted: #000000;
+        --theme-surface-soft: #000000;
+        --theme-text: #FFFFFF;
+        --theme-text-muted: rgba(255, 255, 255, 0.78);
+        --theme-heading: #FFFFFF;
+        --theme-heading-soft: #FFFFFF;
+        --theme-border: rgba(128, 0, 32, 0.45);
+        --theme-border-strong: #800020;
+        --theme-shadow: rgba(128, 0, 32, 0.18);
+      }
+      body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: var(--theme-page-bg);
+        color: var(--theme-text);
+        min-height: max(884px, 100dvh);
+      }
+      ::selection {
+        background-color: #6B2737;
+        color: #FFFFFF;
+      }
       .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48; }
-      .editorial-shadow { box-shadow: 40px 40px 80px rgba(10, 5, 8, 0.08); }
+      .editorial-shadow { box-shadow: 40px 40px 80px var(--theme-shadow); }
       #age-gate-banner { position: fixed; bottom: 0; left: 0; width: 100%; height: 10vh; background-color: #6b2737; color: #fff; text-align: center; display: flex; align-items: center; justify-content: center; z-index: 1001; }
       #age-gate-banner p { margin: 0; font-size: clamp(0.8rem, 2.5vh, 2rem); font-weight: bold; }
       .hero-editorial-shell { isolation: isolate; }
@@ -129,6 +165,9 @@
         .hero-lottie-accent { opacity: 0.5; }
       }
       @media (prefers-reduced-motion: reduce) { * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
+      html.dark body .hero-atmosphere::before {
+        background: radial-gradient(circle at 28% 36%, rgba(128, 0, 32, 0.2), transparent 56%), radial-gradient(circle at 70% 62%, rgba(128, 0, 32, 0.18), transparent 58%);
+      }
   </style>
 </head>
 
@@ -160,7 +199,7 @@
         <a class="hover:text-[#800020] transition-colors" href="#services">服務項目</a>
         <a class="hover:text-[#800020] transition-colors" href="#contact">聯繫我們</a>
       </nav>
-      <button id="theme-toggle" class="material-symbols-outlined text-[#6B2737] dark:text-[#E8E0D4] hover:bg-[#F6F3EE] p-2 rounded-full transition-colors duration-200">light_mode</button>
+      <button id="theme-toggle" aria-label="切換深色主題" class="material-symbols-outlined text-[#6B2737] dark:text-[#E8E0D4] hover:bg-[#F6F3EE] p-2 rounded-full transition-colors duration-200">dark_mode</button>
     </div>
     </div>
   </header>
@@ -170,7 +209,10 @@
       <div id="mobile-menu" class="absolute top-20 right-0 w-[280px] max-w-[90vw] bg-white dark:bg-slate-900 shadow-xl translate-x-full transition-transform duration-300 flex flex-col p-6">
         <div class="flex justify-between items-center mb-6">
           <span class="text-xl font-bold tracking-[0.1em] text-[#6B2737] dark:text-[#F6F3EE] uppercase">選單</span>
-          <button id="mobile-menu-close" class="material-symbols-outlined text-[#6B2737] dark:text-[#F6F3EE]">close</button>
+          <div class="flex items-center gap-2">
+            <button id="theme-toggle-mobile" aria-label="切換深色主題" class="material-symbols-outlined text-[#6B2737] dark:text-[#F6F3EE] hover:bg-[#F6F3EE] p-2 rounded-full transition-colors duration-200">dark_mode</button>
+            <button id="mobile-menu-close" class="material-symbols-outlined text-[#6B2737] dark:text-[#F6F3EE]">close</button>
+          </div>
         </div>
         <nav role="navigation" aria-label="行動裝置導航" class="flex flex-col gap-6 text-sm font-semibold tracking-widest text-[#6B2737] dark:text-[#F6F3EE] uppercase">
           <a class="hover:text-[#800020] transition-colors" href="#home">首頁</a>

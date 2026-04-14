@@ -76,6 +76,17 @@ Burgundy is the signature color of the brand — it bridges the gold luxury high
 | `--color-text-inverse` | `#FFFFFF` | Only on dark backgrounds (like the button color) |
 | `--color-text-burgundy` | `var(--color-burgundy-deep)` | For headings or emphasis on light backgrounds where a warm tone is needed |
 
+### Homepage Theme Toggle Modes
+
+The homepage (`deploy/index.html`) supports two deliberate theme states through the top-right toggle:
+
+| Mode | Background | Text | Accent Treatment | Usage |
+|---|---|---|---|---|
+| **Luxury Light** | `#FFFFFF` with warm neutrals (`#F6F3EE`, `#E8E0D4`) | `#07141E` body text with burgundy headings | Burgundy remains the hero accent and border language | Default browsing mode |
+| **Homepage Dark** | `#000000` | `#FFFFFF` for all structural text | Burgundy shifts to support role: borders, dividers, selected buttons, warnings | Toggle-on reading mode for a stark premium presentation |
+
+**Implementation note:** the homepage dark mode is an explicit exception to the earlier "no pure black" rule because the user requested a true black presentation for the toggle state. This exception is limited to the homepage theme toggle and should not silently replace the default luxury palette elsewhere.
+
 ---
 
 ## 2. Typography Rules

@@ -4,14 +4,16 @@ document.addEventListener('DOMContentLoaded', function() {
   const themeToggleMobile = document.getElementById('theme-toggle-mobile');
   const themeLink = document.getElementById('theme-link');
   const body = document.body;
+  const root = document.documentElement;
+  const themeColorMeta = document.querySelector('meta[name="theme-color"]');
 
   // Available themes for luxury wine theme
   const themes = [
-    { name: 'dark', file: 'css/dark-luxury.css', displayName: '☀️', emoji: '☀️' },
-    { name: 'light', file: 'css/dark-luxury.css', displayName: '🌙', emoji: '🌙' }
+    { name: 'light', file: 'css/light.css', icon: 'dark_mode', themeColor: '#ffffff' },
+    { name: 'dark', file: 'css/dark.css', icon: 'light_mode', themeColor: '#000000' }
   ];
 
-  let currentThemeIndex = 0; // Default to dark luxury theme
+  let currentThemeIndex = themes.findIndex(theme => theme.name === 'dark');
 
   // Load saved theme from localStorage
   const savedTheme = localStorage.getItem('selectedTheme');
@@ -20,22 +22,34 @@ document.addEventListener('DOMContentLoaded', function() {
     if (savedIndex !== -1) {
       currentThemeIndex = savedIndex;
     }
+  } else if (root.classList.contains('dark')) {
+    currentThemeIndex = themes.findIndex(theme => theme.name === 'dark');
   }
 
   // Apply the current theme
   function applyTheme(themeIndex) {
     const theme = themes[themeIndex];
-    themeLink.href = theme.file;
-    body.className = theme.name;
-    
+    if (themeLink) {
+      themeLink.href = theme.file;
+    }
+
+    root.classList.remove('light', 'dark');
+    root.classList.add(theme.name);
+    body.dataset.theme = theme.name;
+     
     // Update both desktop and mobile toggle buttons
     if (themeToggle) {
-      themeToggle.textContent = theme.emoji;
+      themeToggle.textContent = theme.icon;
+      themeToggle.setAttribute('aria-label', theme.name === 'dark' ? '切換為淺色主題' : '切換為深色主題');
     }
     if (themeToggleMobile) {
-      themeToggleMobile.textContent = theme.emoji;
+      themeToggleMobile.textContent = theme.icon;
+      themeToggleMobile.setAttribute('aria-label', theme.name === 'dark' ? '切換為淺色主題' : '切換為深色主題');
     }
-    
+    if (themeColorMeta) {
+      themeColorMeta.setAttribute('content', theme.themeColor);
+    }
+     
     localStorage.setItem('selectedTheme', theme.name);
   }
 
@@ -45,6 +59,12 @@ document.addEventListener('DOMContentLoaded', function() {
   // Theme toggle button click handler
   if (themeToggle) {
     themeToggle.addEventListener('click', function() {
+      currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+      applyTheme(currentThemeIndex);
+    });
+  }
+  if (themeToggleMobile) {
+    themeToggleMobile.addEventListener('click', function() {
       currentThemeIndex = (currentThemeIndex + 1) % themes.length;
       applyTheme(currentThemeIndex);
     });
