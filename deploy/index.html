@@ -113,7 +113,8 @@
   </div>
 
   <!-- TopAppBar -->
-  <header role="banner" class="bg-white dark:bg-slate-900 border-b border-[#E8E0D4] flex items-center justify-between px-6 py-4 w-full fixed top-0 z-[60]">
+  <header role="banner" class="bg-white dark:bg-slate-900 border-b border-[#E8E0D4] w-full fixed top-0 z-[60]">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
     <div class="flex items-center gap-4">
       <button id="mobile-menu-toggle" class="material-symbols-outlined text-[#6B2737] dark:text-[#E8E0D4] hover:bg-[#F6F3EE] md:hidden p-2 focus:outline-2 focus:outline-[#6B2737] focus:outline-offset-2 transition-colors duration-200">menu</button>
       <a href="#home" class="flex items-center gap-3">
@@ -132,6 +133,7 @@
         <a class="hover:text-[#800020] transition-colors" href="#contact">聯繫我們</a>
       </nav>
       <button id="theme-toggle" class="material-symbols-outlined text-[#6B2737] dark:text-[#E8E0D4] hover:bg-[#F6F3EE] p-2 rounded-full transition-colors duration-200">light_mode</button>
+    </div>
     </div>
   </header>
 
@@ -157,7 +159,8 @@
 <main id="home" class="pt-20">
   
   <!-- Hero Section -->
-  <section class="relative min-h-[795px] bg-white flex flex-col md:flex-row items-center px-8 md:px-20 py-20 gap-12 overflow-hidden hero-editorial-shell">
+  <section class="relative min-h-[795px] bg-white py-20 overflow-hidden hero-editorial-shell px-8 md:px-20">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
     <div class="hero-atmosphere" data-three-scene data-three-mode="editorial-particles" data-three-count="78" data-three-size="0.034" data-three-speed="0.22" data-three-radius="2.8" data-three-depth="2.3" aria-hidden="true"></div>
     <div class="z-10 w-full md:w-1/2">
       <div class="flex items-center gap-6 mb-8" data-editorial-reveal data-motion-distance="18" data-motion-start="top 93%">
@@ -186,10 +189,12 @@
           </p>
       </div>
     </div>
+    </div>
   </section>
 
   <!-- The Golden Gap / Intro -->
   <section class="bg-[#F6F3EE] py-32 px-8 md:px-20">
+    <div class="max-w-6xl mx-auto">
     <div class="max-w-4xl border-l-4 border-[#6B2737] pl-12" data-editorial-reveal data-motion-distance="28" data-motion-start="top 82%">
       <h2 class="text-2xl md:text-3xl font-semibold text-[#6B2737] leading-tight mb-8">
         我們不僅進口葡萄酒； <br/> 我們精心策劃頂級風味。
@@ -203,10 +208,12 @@
         </p>
       </div>
     </div>
+    </div>
   </section>
 
   <!-- Wine Collection Showcase (Asymmetric Bento) -->
   <section id="wines" class="bg-white py-32 px-8 md:px-20">
+    <div class="max-w-6xl mx-auto">
     <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8" data-editorial-reveal data-motion-distance="22" data-motion-start="top 84%">
       <div>
         <span class="text-[12px] font-semibold uppercase tracking-[0.2em] text-[#800020] block mb-4">Current Selection</span>
@@ -216,98 +223,80 @@
 
     <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16">
       
-      <!-- Large Feature: France -->
-      <div class="md:col-span-7 bg-[#F6F3EE] p-0 flex flex-col md:flex-row group" data-editorial-reveal data-motion-distance="34" data-motion-start="top 86%">
-        <div class="w-full md:w-1/2 h-full overflow-hidden">
-          <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="France Wine" loading="lazy" src="img/french_wine_map.webp"/>
+      <!-- Row 1: France + USA -->
+      <!-- France -->
+      <div class="md:col-span-7 h-[200px] border border-[#07141E] flex flex-row group overflow-hidden" data-editorial-reveal data-motion-distance="34" data-motion-start="top 86%">
+        <div class="w-[45%] h-full overflow-hidden bg-[#E8E0D4] flex items-center justify-center shrink-0">
+          <img class="max-w-[35%] max-h-[35%] object-contain grayscale group-hover:grayscale-0 transition-all duration-700" alt="France Wine Regions — Bordeaux, Burgundy, Champagne" loading="lazy" src="img/french_wine_map.webp"/>
         </div>
-        <div class="w-full md:w-1/2 p-12 flex flex-col justify-center">
-          <div class="flex justify-between items-center mb-4">
-             <span class="text-[11px] font-bold uppercase tracking-widest text-[#6B2737]/60">French Wines</span>
-             <span class="text-xl">🇫🇷</span>
-          </div>
-          <h3 class="text-3xl font-semibold text-[#6B2737] mb-2">法國經典</h3>
-          <p class="text-xs text-[#07141E]/50 mb-6 uppercase tracking-wider">French Classic Wines</p>
-          <p class="text-sm leading-relaxed mb-8 text-[#07141E]/80">
-            波爾多 • 勃艮第 • 香檳區<br/>
-            代表結構優雅的極致，從石灰石山丘中孕育出的建築奇蹟。
+        <div class="flex-1 p-6 flex flex-col justify-center bg-[#F6F3EE] overflow-hidden">
+          <span class="text-[10px] font-bold uppercase tracking-widest text-[#6B2737]/60 mb-2 block">French Wines</span>
+          <h3 class="text-xl font-semibold text-[#6B2737] mb-1">法國經典</h3>
+          <p class="text-[10px] text-[#07141E]/50 mb-3 uppercase tracking-wider">French Classic Wines</p>
+          <p class="text-xs leading-relaxed text-[#07141E]/80 mb-4">
+            波爾多 • 勃艮第 • 香檳區<br/>代表結構優雅的極致。
           </p>
-          <div class="flex gap-4">
-            <a href="https://newyear.7pyramid.com/#/wine/france" class="bg-[#6B2737] text-white px-6 py-3 text-[10px] font-bold uppercase tracking-widest flex items-center gap-2 hover:bg-[#800020] transition-colors"><span class="material-symbols-outlined text-[14px]">arrow_outward</span> 探索法國酒款</a>
-          </div>
+          <a href="https://newyear.7pyramid.com/#/wine/france" class="bg-[#6B2737] text-white px-4 py-2 text-[10px] font-bold uppercase tracking-widest inline-flex items-center gap-2 hover:bg-[#800020] transition-colors self-start"><span class="material-symbols-outlined text-[14px]">arrow_outward</span> 探索法國酒款</a>
         </div>
       </div>
 
-      <!-- Small Card 1: USA -->
-      <div class="md:col-span-5 bg-white p-8 border border-[#E8E0D4] flex flex-col justify-between group" data-editorial-reveal data-motion-distance="28" data-motion-delay="0.05" data-motion-start="top 86%">
-        <div>
-          <div class="h-48 mb-8 overflow-hidden rounded">
-            <img class="h-full w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-700" alt="US Wine" loading="lazy" src="img/us_wine_map.webp"/>
-          </div>
-          <div class="flex justify-between">
-              <h4 class="text-xl font-bold text-[#6B2737] mb-2 uppercase tracking-tight">美國佳釀</h4>
-              <span class="text-lg">🇺🇸</span>
-          </div>
-          <p class="text-xs text-[#07141E]/50 mb-4 uppercase tracking-wider">American Premium Wines</p>
-          <div class="text-[12px] font-medium text-[#722F37] mb-2 uppercase">納帕谷 • 索諾瑪 • 俄勒岡</div>
-          <p class="text-sm text-[#07141E]/70 leading-relaxed italic">
-            "蘊含厚實的建築深度，強烈的黑果風味與火山礦物完美交融。"
+      <!-- USA -->
+      <div class="md:col-span-5 h-[200px] border border-[#E8E0D4] flex flex-row group overflow-hidden" data-editorial-reveal data-motion-distance="28" data-motion-delay="0.05" data-motion-start="top 86%">
+        <div class="w-[45%] h-full overflow-hidden bg-[#F6F3EE] flex items-center justify-center shrink-0">
+          <img class="max-w-full max-h-full object-contain p-4 grayscale group-hover:grayscale-0 transition-all duration-700" alt="USA Wine Regions — Napa Valley, Sonoma, Oregon" loading="lazy" src="img/us_wine_map.webp"/>
+        </div>
+        <div class="flex-1 p-6 flex flex-col justify-center bg-white overflow-hidden">
+          <span class="text-[10px] font-bold uppercase tracking-widest text-[#6B2737]/60 mb-2 block">American Wines</span>
+          <h4 class="text-xl font-semibold text-[#6B2737] mb-1 tracking-tight">美國佳釀</h4>
+          <p class="text-[10px] text-[#07141E]/50 mb-2 uppercase tracking-wider">American Premium</p>
+          <div class="text-[10px] font-medium text-[#722F37] mb-2 uppercase">納帕谷 • 索諾瑪 • 俄勒岡</div>
+          <p class="text-xs text-[#07141E]/70 leading-relaxed italic mb-3">蘊含厚實的建築深度，強烈的黑果風味與火山礦物完美交融。</p>
+          <a href="https://newyear.7pyramid.com/#/wine/us" class="text-[#6B2737] font-bold uppercase text-[10px] tracking-widest hover:text-[#800020] inline-flex items-center gap-1 transition-colors self-end mt-auto">探索美國酒款 <span class="material-symbols-outlined text-[14px]">arrow_forward</span></a>
+        </div>
+      </div>
+
+      <!-- Row 2: Australia + New World -->
+      <!-- Australia -->
+      <div class="md:col-span-5 h-[200px] bg-[#E8E0D4] flex flex-row group overflow-hidden" data-editorial-reveal data-motion-distance="28" data-motion-delay="0.1" data-motion-start="top 86%">
+        <div class="w-[45%] h-full overflow-hidden bg-[#D6CEBC] flex items-center justify-center shrink-0">
+          <img class="max-w-full max-h-full object-contain p-4 grayscale group-hover:grayscale-0 transition-all duration-700" alt="Australia Wine Regions — Barossa Valley, Hunter Valley" loading="lazy" src="img/australia_wine_map.webp"/>
+        </div>
+        <div class="flex-1 p-6 flex flex-col justify-center overflow-hidden">
+          <span class="text-[10px] font-bold uppercase tracking-widest text-[#6B2737]/60 mb-2 block">Australian Wines</span>
+          <h4 class="text-xl font-semibold text-[#6B2737] mb-1 tracking-tight">澳洲精選</h4>
+          <p class="text-[10px] text-[#07141E]/50 mb-2 uppercase tracking-wider">Australian Premium</p>
+          <p class="text-xs leading-relaxed text-[#07141E]/80 mb-4">
+            巴羅莎谷 • 獵人谷<br/>無妥協的濃郁結構，歷久彌新的產區典範。
           </p>
-        </div>
-        <div class="mt-8 pt-6 border-t border-[#F6F3EE] flex justify-end items-center">
-            <a href="https://newyear.7pyramid.com/#/wine/us" class="text-[#6B2737] font-bold uppercase text-[11px] tracking-widest hover:text-[#800020] inline-flex items-center gap-2 transition-colors">探索 <span class="material-symbols-outlined text-[14px]">arrow_forward</span></a>
+          <a href="https://newyear.7pyramid.com/#/wine/australia" class="border border-[#6B2737] py-2 text-center text-[10px] font-bold uppercase tracking-widest hover:bg-[#6B2737] hover:text-white transition-all mt-auto">探索澳洲酒款</a>
         </div>
       </div>
 
-      <!-- Small Card 2: Australia -->
-      <div class="md:col-span-4 bg-[#E8E0D4] p-8 flex flex-col group" data-editorial-reveal data-motion-distance="28" data-motion-delay="0.1" data-motion-start="top 86%">
-        <div class="flex justify-between items-center mb-10">
-          <span class="text-[10px] font-bold uppercase tracking-tighter text-[#6B2737]">Collection III</span>
-          <span>🇦🇺</span>
-        </div>
-        <div class="h-48 mb-8 overflow-hidden">
-          <img class="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-700" alt="Australia Wine Pattern" loading="lazy" src="img/australia_wine_map.webp"/>
-        </div>
-        <h4 class="text-lg font-bold text-[#6B2737] uppercase mb-1">澳洲精選</h4>
-        <p class="text-[10px] text-[#07141E]/50 mb-4 uppercase tracking-wider">Australian Premium</p>
-        <p class="text-xs leading-relaxed text-[#6B2737]/80 mb-6 uppercase tracking-wider">
-           巴羅莎谷 • 獵人谷<br/><br/>
-           無妥協的濃郁結構，歷久彌新的產區典範。
+      <!-- New World & Iberian -->
+      <div class="md:col-span-7 h-[200px] bg-gradient-to-br from-[#6B2737] to-[#2A0A14] text-white p-8 relative overflow-hidden flex flex-col justify-center" data-editorial-reveal data-motion-distance="34" data-motion-delay="0.08" data-motion-start="top 86%">
+        <h3 class="text-xl font-semibold mb-3 tracking-tighter">THE NEW WORLD & IBERIAN EXCELLENCE</h3>
+        <p class="text-[#E8E0D4]/70 leading-relaxed mb-4 max-w-xl text-xs">
+            深入探索智利新星、阿根廷精品與西班牙經典。
         </p>
-        <a href="https://newyear.7pyramid.com/#/wine/australia" class="mt-auto border border-[#6B2737] py-3 text-center text-[10px] font-bold uppercase tracking-widest hover:bg-[#6B2737] hover:text-white transition-all">探索澳洲酒款</a>
-      </div>
-
-    <!-- Wide Storytelling Block: Chile, Argentina, Spain -->
-    <div class="md:col-span-8 bg-gradient-to-br from-[#6B2737] to-[#2A0A14] text-white p-10 relative overflow-hidden flex flex-col justify-center" data-editorial-reveal data-motion-distance="34" data-motion-delay="0.08" data-motion-start="top 86%">
-        <h3 class="text-3xl font-semibold mb-6 tracking-tighter">THE NEW WORLD & IBERIAN EXCELLENCE</h3>
-        <p class="text-[#E8E0D4]/70 leading-relaxed mb-10 max-w-xl text-sm">
-            深入探索智利新星、阿根廷精品與西班牙經典。每一個產區都嚴格遵循著我們挑選的結構標準，呈現最精湛的工藝。
-        </p>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Chile -->
-            <a href="https://newyear.7pyramid.com/#/wine/chile" class="group border border-[#800020]/30 p-6 hover:bg-white hover:text-[#6B2737] transition-all duration-300 relative overflow-hidden block">
-                <span class="text-2xl absolute top-4 right-4 opacity-50 group-hover:opacity-100 transition-opacity">🇨🇱</span>
-                <h4 class="text-lg font-bold uppercase mb-2">智利新星</h4>
-                <p class="text-[10px] uppercase tracking-widest opacity-60 mb-8 group-hover:opacity-100">Chilean Premium</p>
-                <span class="text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">Explore <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+        <div class="grid grid-cols-3 gap-3">
+            <a href="https://newyear.7pyramid.com/#/wine/chile" class="group/card border border-[#800020]/30 p-3 hover:bg-white hover:text-[#6B2737] transition-all duration-300 block">
+                <h4 class="text-sm font-bold uppercase mb-1">智利新星</h4>
+                <p class="text-[9px] uppercase tracking-widest opacity-60 mb-3 group-hover/card:opacity-100">Chilean Premium</p>
+                <span class="text-[9px] font-bold uppercase tracking-widest flex items-center gap-1">Explore <span class="material-symbols-outlined text-[12px]">arrow_forward</span></span>
             </a>
-            <!-- Argentina -->
-            <a href="https://newyear.7pyramid.com/#/wine/argentina" class="group border border-[#800020]/30 p-6 hover:bg-white hover:text-[#6B2737] transition-all duration-300 relative overflow-hidden block">
-                <span class="text-2xl absolute top-4 right-4 opacity-50 group-hover:opacity-100 transition-opacity">🇦🇷</span>
-                <h4 class="text-lg font-bold uppercase mb-2">阿根廷精品</h4>
-                <p class="text-[10px] uppercase tracking-widest opacity-60 mb-8 group-hover:opacity-100">Argentinian Premium</p>
-                <span class="text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">Explore <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+            <a href="https://newyear.7pyramid.com/#/wine/argentina" class="group/card border border-[#800020]/30 p-3 hover:bg-white hover:text-[#6B2737] transition-all duration-300 block">
+                <h4 class="text-sm font-bold uppercase mb-1">阿根廷精品</h4>
+                <p class="text-[9px] uppercase tracking-widest opacity-60 mb-3 group-hover/card:opacity-100">Argentinian Premium</p>
+                <span class="text-[9px] font-bold uppercase tracking-widest flex items-center gap-1">Explore <span class="material-symbols-outlined text-[12px]">arrow_forward</span></span>
             </a>
-            <!-- Spain -->
-            <a href="https://newyear.7pyramid.com/#/wine/spain" class="group border border-[#800020]/30 p-6 hover:bg-white hover:text-[#6B2737] transition-all duration-300 relative overflow-hidden block">
-                <span class="text-2xl absolute top-4 right-4 opacity-50 group-hover:opacity-100 transition-opacity">🇪🇸</span>
-                <h4 class="text-lg font-bold uppercase mb-2">西班牙經典</h4>
-                <p class="text-[10px] uppercase tracking-widest opacity-60 mb-8 group-hover:opacity-100">Spanish Classic</p>
-                <span class="text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">Explore <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+            <a href="https://newyear.7pyramid.com/#/wine/spain" class="group/card border border-[#800020]/30 p-3 hover:bg-white hover:text-[#6B2737] transition-all duration-300 block">
+                <h4 class="text-sm font-bold uppercase mb-1">西班牙經典</h4>
+                <p class="text-[9px] uppercase tracking-widest opacity-60 mb-3 group-hover/card:opacity-100">Spanish Classic</p>
+                <span class="text-[9px] font-bold uppercase tracking-widest flex items-center gap-1">Explore <span class="material-symbols-outlined text-[12px]">arrow_forward</span></span>
             </a>
         </div>
       </div>
+    </div>
     </div>
   </section>
 
@@ -397,7 +386,8 @@
   </section>
 
   <!-- Contact Section - Minimalist Editorial CTA -->
-  <section id="contact" class="py-32 px-8 text-center bg-white border-b border-[#E8E0D4]">
+  <section id="contact" class="py-32 px-8 md:px-20 text-center bg-white border-b border-[#E8E0D4]">
+    <div class="max-w-6xl mx-auto">
     <span class="text-[10px] font-bold text-[#800020] uppercase tracking-[0.2em] mb-4 block" data-editorial-reveal data-motion-distance="16" data-motion-start="top 88%">Private Advisory</span>
     <h2 class="text-4xl md:text-5xl font-semibold text-[#6B2737] tracking-tighter mb-8" data-editorial-reveal data-motion-distance="24" data-motion-delay="0.04" data-motion-start="top 88%">聯繫我們的專業團隊</h2>
     <p class="max-w-xl mx-auto text-[#07141E]/60 text-base mb-16 leading-relaxed" data-editorial-reveal data-motion-distance="20" data-motion-delay="0.08" data-motion-start="top 88%">
@@ -426,12 +416,14 @@
              <span class="text-[10px] font-bold tracking-[0.2em] uppercase border-b border-transparent group-hover:border-white pb-1">+886-2-2791-2147</span>
         </a>
     </div>
+    </div>
   </section>
 
 </main>
 
   <!-- Footer -->
-  <footer role="contentinfo" class="bg-[#07141E] text-[#E8E0D4] flex flex-col items-center justify-center px-8 py-16 gap-12 text-center">
+  <footer role="contentinfo" class="bg-[#07141E] text-[#E8E0D4] px-8 md:px-20 py-16 text-center">
+    <div class="max-w-6xl mx-auto flex flex-col items-center justify-center gap-12">
     <div class="flex gap-4 mb-4" data-editorial-reveal data-motion-distance="18" data-motion-start="top 94%">
         <a href="https://www.facebook.com/SevenPyramid/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-[#9B2335] transition-colors"><span class="material-symbols-outlined">thumb_up</span></a>
         <a href="https://www.instagram.com/seven_pyramid/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-[#9B2335] transition-colors"><span class="material-symbols-outlined">photo_camera</span></a>
@@ -456,6 +448,7 @@
   <p class="font-['Montserrat'] text-[10px] tracking-[0.15em] opacity-30 mt-2" data-editorial-reveal data-motion-distance="12" data-motion-delay="0.1" data-motion-start="top 96%">
     Built by <a href="https://rxai.com.au" target="_blank" rel="noopener noreferrer" class="hover:text-white hover:opacity-60 transition-colors underline">RXAI</a>
   </p>
+    </div>
   </footer>
 
   <!-- Scripts -->

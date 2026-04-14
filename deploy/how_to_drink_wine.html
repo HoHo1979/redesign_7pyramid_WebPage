@@ -58,8 +58,8 @@
     開車不喝酒，未滿18歲不可飲酒
    </p>
   </div>
-  <header role="banner" class="bg-white dark:bg-slate-900 border-b border-[#E8E0D4] flex items-center justify-between px-6 py-4 w-full fixed top-0 z-[60]">
-   <div class="flex items-center gap-4">
+  <header role="banner" class="bg-white dark:bg-slate-900 border-b border-[#E8E0D4] w-full fixed top-0 z-[60]">
+   <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4"><div class="flex items-center gap-4">
     <button class="material-symbols-outlined text-[#6B2737] dark:text-[#E8E0D4] hover:bg-[#F6F3EE] md:hidden p-2 focus:outline-2 focus:outline-[#6B2737] focus:outline-offset-2 transition-colors duration-200" id="mobile-menu-toggle">
      menu
     </button>
@@ -95,7 +95,7 @@
      light_mode
     </button>
    </div>
-  </header>
+  </div></header>
   <div class="fixed inset-0 bg-black/50 z-[100] opacity-0 invisible transition-all duration-300" id="mobile-menu-overlay">
    <div class="absolute top-20 right-0 w-[280px] max-w-[90vw] bg-white dark:bg-slate-900 shadow-xl translate-x-full transition-transform duration-300 flex flex-col p-6" id="mobile-menu">
     <div class="flex justify-between items-center mb-6">
@@ -131,7 +131,7 @@
     </nav>
    </div>
   </div>
-  <main id="main-content" class="pt-24 max-w-7xl mx-auto px-6 md:px-12 py-16">
+  <main id="main-content" class="pt-24 max-w-6xl mx-auto px-6 md:px-12 py-16">
    <header class="mb-24 max-w-3xl">
     <span class="text-[12px] font-semibold uppercase tracking-[0.3em] text-[#800020] mb-6 block">
      The Art of Tasting / 品酒藝術
@@ -142,7 +142,14 @@
     <p class="text-lg text-[#6B2737]/70 leading-relaxed border-l-4 border-[#800020] pl-8">
      品酒是一種需要系統學習的美學修練。從視覺到嗅覺，從口感到餘韻，每一個環節都蘊含著與釀酒師的無聲對話。
     </p>
-   </header>
+   </div></header>
+
+   <!-- Wine Tasting Overview Illustration -->
+   <figure class="mb-28">
+    <img class="w-full max-w-4xl rounded" src="img/wine_testing_steps.webp" alt="品酒三步驟 — 1. Eye 觀察酒色與邊緣 2. Nose 聞香辨識香氣 3. Mouth 品味口感與餘韻" loading="lazy"/>
+    <figcaption class="text-[11px] text-[#6B2737]/50 uppercase tracking-widest mt-4">The Art of Wine Tasting — Eye, Nose, Mouth</figcaption>
+   </figure>
+
    <section class="mb-28 scroll-mt-32 grid grid-cols-1 md:grid-cols-12 gap-12" id="sight">
     <div class="md:col-span-2 flex items-start">
      <span class="text-7xl font-bold text-[#F6F3EE] leading-none select-none">
@@ -235,8 +242,8 @@
     </a>
    </section>
   </main>
-  <footer role="contentinfo" class="bg-[#07141E] text-[#E8E0D4] flex flex-col items-center justify-center px-8 py-16 gap-12 text-center">
-   <div class="flex gap-4 mb-4">
+  <footer role="contentinfo" class="bg-[#07141E] text-[#E8E0D4] px-8 md:px-20 py-16 text-center">
+   <div class="max-w-6xl mx-auto flex flex-col items-center justify-center gap-12"><div class="flex gap-4 mb-4">
     <a class="hover:text-white transition-colors" href="https://www.facebook.com/SevenPyramid/" target="_blank" aria-label="Facebook" rel="noopener noreferrer">
      <span class="material-symbols-outlined">
       thumb_up
@@ -273,7 +280,7 @@
   <p class="font-['Montserrat'] text-[10px] tracking-[0.15em] opacity-30 mt-2">
     Built by <a href="https://rxai.com.au" target="_blank" rel="noopener noreferrer" class="hover:text-white hover:opacity-60 transition-colors underline">RXAI</a>
   </p>
-  </footer>
+  </div></footer>
   <script src="js/app.js">
   </script>
   <script src="js/csp-fix.js">
