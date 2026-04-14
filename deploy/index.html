@@ -57,6 +57,15 @@
   <meta property="og:url" content="https://wine.7pyramid.com/">
   <meta property="og:image" content="https://wine.7pyramid.com/img/barrel_margaux_bg.webp">
   <meta property="og:image:alt" content="台灣頂級葡萄酒烈酒酒商">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Seven Pyramid 七銘企業">
+  <meta property="og:description" content="Seven Pyramid 七銘企業是台灣頂級葡萄酒進口商，專營法國波爾多列級酒莊、勃艮第、香檳及世界知名產區紅酒與白酒。">
+  <meta property="og:site_name" content="七銘企業 Seven Pyramid">
+  <meta property="og:locale" content="zh_TW">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="法國波爾多列級酒莊直營 | 台北新竹高級葡萄酒專賣店 - 七銘企業">
+  <meta name="twitter:description" content="Seven Pyramid 七銘企業是台灣頂級葡萄酒進口商，專營法國波爾多列級酒莊、勃艮第、香檳及世界知名產區紅酒與白酒。">
+  <meta name="twitter:image" content="https://wine.7pyramid.com/img/barrel_margaux_bg.webp">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
@@ -65,6 +74,8 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- New Design System -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -140,10 +151,12 @@
       .editorial-shadow { box-shadow: 40px 40px 80px rgba(10, 5, 8, 0.08); }
       #age-gate-banner { position: fixed; bottom: 0; left: 0; width: 100%; height: 10vh; background-color: #11324b; color: #fff; text-align: center; display: flex; align-items: center; justify-content: center; z-index: 1001; }
       #age-gate-banner p { margin: 0; font-size: clamp(0.8rem, 2.5vh, 2rem); font-weight: bold; }
+      @media (prefers-reduced-motion: reduce) { * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
   </style>
 </head>
 
 <body class="text-[#07141E] selection:bg-[#11324B] selection:text-white pb-16">
+<a href="#home" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-white focus:text-black">跳到主要內容</a>
 
   <!-- Age Gate -->
   <div id="age-gate-banner">
@@ -151,7 +164,7 @@
   </div>
 
   <!-- TopAppBar -->
-  <header class="bg-white dark:bg-slate-900 border-b border-[#E8E0D4] flex items-center justify-between px-6 py-4 w-full fixed top-0 z-[60]">
+  <header role="banner" class="bg-white dark:bg-slate-900 border-b border-[#E8E0D4] flex items-center justify-between px-6 py-4 w-full fixed top-0 z-[60]">
     <div class="flex items-center gap-4">
       <button id="mobile-menu-toggle" class="material-symbols-outlined text-[#11324B] dark:text-[#E8E0D4] hover:bg-[#F6F3EE] md:hidden p-2 focus:outline-2 focus:outline-[#11324B] focus:outline-offset-2 transition-colors duration-200">menu</button>
       <a href="#home" class="flex items-center gap-3">
@@ -161,7 +174,7 @@
     </div>
 
     <div class="flex items-center gap-6">
-      <nav id="desktop-nav" class="hidden md:flex gap-8 text-[12px] font-semibold uppercase tracking-widest text-[#11324B] dark:text-[#F6F3EE]">
+      <nav id="desktop-nav" role="navigation" aria-label="主要導航" class="hidden md:flex gap-8 text-[12px] font-semibold uppercase tracking-widest text-[#11324B] dark:text-[#F6F3EE]">
         <a class="hover:text-[#800020] transition-colors" href="#wines">酒款目錄</a>
         <a class="hover:text-[#800020] transition-colors" href="french_wine_knowledge.html">葡萄酒知識</a>
         <a class="hover:text-[#800020] transition-colors" href="how_to_drink_wine.html">如何品酒</a>
@@ -180,7 +193,7 @@
           <span class="text-xl font-bold tracking-[0.1em] text-[#11324B] dark:text-[#F6F3EE] uppercase">選單</span>
           <button id="mobile-menu-close" class="material-symbols-outlined text-[#11324B] dark:text-[#F6F3EE]">close</button>
         </div>
-        <nav class="flex flex-col gap-6 text-sm font-semibold tracking-widest text-[#11324B] dark:text-[#F6F3EE] uppercase">
+        <nav role="navigation" aria-label="行動裝置導航" class="flex flex-col gap-6 text-sm font-semibold tracking-widest text-[#11324B] dark:text-[#F6F3EE] uppercase">
           <a class="hover:text-[#800020] transition-colors" href="#home">首頁</a>
           <a class="hover:text-[#800020] transition-colors" href="#wines">酒款目錄</a>
           <a class="hover:text-[#800020] transition-colors" href="french_wine_knowledge.html">葡萄酒知識</a>
@@ -440,7 +453,7 @@
     </p>
 
     <div class="grid grid-cols-1 md:grid-cols-3 max-w-4xl mx-auto gap-8">
-        <a href="https://wa.me/" class="border border-[#11324B] p-10 hover:bg-[#11324B] hover:text-white transition-colors duration-300 group">
+        <a href="https://wa.me/886227912147" class="border border-[#11324B] p-10 hover:bg-[#11324B] hover:text-white transition-colors duration-300 group">
              <div class="text-3xl mb-4 text-[#11324B] group-hover:text-white transition-colors"><span class="material-symbols-outlined text-[36px]">chat</span></div>
              <h3 class="text-sm font-bold uppercase tracking-widest mb-2">WhatsApp 諮詢</h3>
              <p class="text-xs opacity-70 mb-8">即時獲得選酒建議與服務</p>
@@ -466,10 +479,10 @@
 </main>
 
   <!-- Footer -->
-  <footer class="bg-[#07141E] text-[#E8E0D4] flex flex-col items-center justify-center px-8 py-16 gap-12 text-center">
+  <footer role="contentinfo" class="bg-[#07141E] text-[#E8E0D4] flex flex-col items-center justify-center px-8 py-16 gap-12 text-center">
     <div class="flex gap-4 mb-4">
-        <a href="https://www.facebook.com/SevenPyramid/" target="_blank" class="hover:text-[#9B2335] transition-colors"><span class="material-symbols-outlined">thumb_up</span></a>
-        <a href="https://www.instagram.com/seven_pyramid/" target="_blank" class="hover:text-[#9B2335] transition-colors"><span class="material-symbols-outlined">photo_camera</span></a>
+        <a href="https://www.facebook.com/SevenPyramid/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-[#9B2335] transition-colors"><span class="material-symbols-outlined">thumb_up</span></a>
+        <a href="https://www.instagram.com/seven_pyramid/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-[#9B2335] transition-colors"><span class="material-symbols-outlined">photo_camera</span></a>
     </div>
 
     <div>
@@ -489,7 +502,7 @@
         © 2025 Seven Pyramid 七銘企業. All Rights Reserved.
     </p>
   <p class="font-['Montserrat'] text-[10px] tracking-[0.15em] opacity-30 mt-2">
-    Built by <a href="https://rxai.com.au" target="_blank" rel="noopener" class="hover:text-white hover:opacity-60 transition-colors underline">RXAI</a>
+    Built by <a href="https://rxai.com.au" target="_blank" rel="noopener noreferrer" class="hover:text-white hover:opacity-60 transition-colors underline">RXAI</a>
   </p>
   </footer>
 
