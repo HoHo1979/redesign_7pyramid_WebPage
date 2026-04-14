@@ -53,6 +53,12 @@
   --luxury-gold: #D4AF37;
   --luxury-gold-light: #F3E5AB;
   --luxury-wine-red: #5e0d0d;
+  /* Burgundy Wine Palette */
+  --color-burgundy-deep: #800020;
+  --color-burgundy-rich: #722F37;
+  --color-burgundy-light: #9B2335;
+  --color-burgundy-muted: #A0526B;
+  --color-burgundy-bg: #2A0A14;
 }
 
 /* Light theme variant for luxury theme */
@@ -111,4 +117,10 @@
   --luxury-gold: #D4AF37;
   --luxury-gold-light: #F3E5AB;
   --luxury-wine-red: #5e0d0d;
+  /* Burgundy Wine Palette */
+  --color-burgundy-deep: #800020;
+  --color-burgundy-rich: #722F37;
+  --color-burgundy-light: #9B2335;
+  --color-burgundy-muted: #A0526B;
+  --color-burgundy-bg: #2A0A14;
 }

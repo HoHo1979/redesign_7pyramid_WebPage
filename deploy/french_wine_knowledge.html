@@ -1,619 +1,327 @@
-<!doctype html>
-<html class="no-js" lang="zh-TW">
-
-<head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17830155753"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-17830155753');
-</script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>法國葡萄酒知識 - 1855波爾多分級制度 | 七銘企業 Seven Pyramid</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/dark-luxury.css" id="theme-link">
-  <style>
-    /* Luxury Dark Wine Theme - Default fallback variables */
-    :root {
-      --md-sys-color-primary: rgb(212 175 55);
-      --md-sys-color-surface-tint: rgb(212 175 55);
-      --md-sys-color-on-primary: rgb(18 18 18);
-      --md-sys-color-primary-container: rgb(94 13 13);
-      --md-sys-color-on-primary-container: rgb(243 229 171);
-      --md-sys-color-secondary: rgb(180 120 120);
-      --md-sys-color-on-secondary: rgb(255 255 255);
-      --md-sys-color-secondary-container: rgb(94 13 13);
-      --md-sys-color-on-secondary-container: rgb(243 229 171);
-      --md-sys-color-tertiary: rgb(243 229 171);
-      --md-sys-color-on-tertiary: rgb(45 35 0);
-      --md-sys-color-background: rgb(18 18 18);
-      --md-sys-color-on-background: rgb(244 244 244);
-      --md-sys-color-surface: rgb(18 18 18);
-      --md-sys-color-on-surface: rgb(244 244 244);
-      --md-sys-color-surface-variant: rgb(45 40 40);
-      --md-sys-color-on-surface-variant: rgb(170 170 170);
-      --md-sys-color-outline: rgb(136 120 100);
-      --md-sys-color-outline-variant: rgb(60 50 45);
-      --md-sys-color-surface-container: rgb(26 26 26);
-      --md-sys-color-surface-container-high: rgb(35 32 30);
-      --luxury-gold: #D4AF37;
-      --luxury-gold-light: #F3E5AB;
-      --luxury-wine-red: #5e0d0d;
-    }
-
-    html { scroll-behavior: smooth; }
-
-    .knowledge-section {
-      margin: 40px 0;
-      background: var(--md-sys-color-surface-container);
-      border-radius: 15px;
-      padding: 30px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-      border: 1px solid rgba(212, 175, 55, 0.15);
-    }
-
-    .section-header {
-      color: var(--luxury-gold);
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 25px;
-      padding-bottom: 15px;
-      border-bottom: 2px solid var(--luxury-gold);
-      font-family: 'Playfair Display', serif;
-    }
-
-    .subsection-header {
-      color: var(--luxury-gold-light);
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin: 25px 0 15px 0;
-      padding: 12px 20px;
-      background: linear-gradient(135deg, var(--luxury-wine-red) 0%, rgba(94, 13, 13, 0.7) 100%);
-      border-radius: 8px;
-      border-left: 4px solid var(--luxury-gold);
-    }
-
-    .knowledge-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
-      background: var(--md-sys-color-surface);
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 15px rgba(0,0,0,0.2);
-    }
-
-    .knowledge-table th {
-      background: linear-gradient(135deg, var(--luxury-wine-red) 0%, #8b1a1a 100%);
-      color: var(--luxury-gold) !important;
-      padding: 15px 12px;
-      text-align: left;
-      font-weight: 600;
-      font-size: 1rem;
-      border-bottom: 2px solid var(--luxury-gold);
-    }
-
-    .knowledge-table td {
-      padding: 12px;
-      border-bottom: 1px solid var(--md-sys-color-outline-variant);
-      color: var(--md-sys-color-on-surface);
-      vertical-align: top;
-    }
-
-    .knowledge-table tr:hover {
-      background: rgba(212, 175, 55, 0.08);
-    }
-
-    .knowledge-table tr:last-child td {
-      border-bottom: none;
-    }
-
-    .wine-intro {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      color: var(--md-sys-color-on-surface);
-      margin-bottom: 20px;
-    }
-
-    .wine-intro p {
-      margin-bottom: 15px;
-    }
-
-    .highlight-text {
-      color: var(--luxury-gold);
-      font-weight: 600;
-    }
-
-    .wine-card {
-      background: var(--md-sys-color-surface-container-high);
-      border-radius: 12px;
-      padding: 25px;
-      margin: 20px 0;
-      border-left: 4px solid var(--luxury-gold);
-    }
-
-    .wine-card h4 {
-      color: var(--luxury-gold);
-      font-size: 1.3rem;
-      margin-bottom: 10px;
-      font-family: 'Playfair Display', serif;
-    }
-
-    .wine-card .english-name {
-      color: var(--md-sys-color-on-surface-variant);
-      font-style: italic;
-      margin-bottom: 15px;
-    }
-
-    .wine-card p {
-      color: var(--md-sys-color-on-surface);
-      line-height: 1.7;
-    }
-
-    .breadcrumb {
-      padding: 20px 0;
-      color: var(--md-sys-color-on-surface-variant);
-    }
-
-    .breadcrumb a {
-      color: var(--luxury-gold);
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-
-    .breadcrumb a:hover {
-      color: var(--luxury-gold-light);
-    }
-
-    #age-gate-banner {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background: linear-gradient(90deg, var(--luxury-wine-red) 0%, #3d0808 50%, var(--luxury-wine-red) 100%);
-      border-top: 3px solid var(--luxury-gold);
-      color: var(--luxury-gold-light);
-      text-align: center;
-      padding: 15px;
-      z-index: 1001;
-    }
-
-    #age-gate-banner p {
-      margin: 0;
-      font-size: 1.5em;
-    }
-
-    @media (max-width: 768px) {
-      .section-header { font-size: 1.6rem; }
-      .subsection-header { font-size: 1.2rem; }
-      .knowledge-table { font-size: 0.9rem; }
-      .knowledge-table th, .knowledge-table td { padding: 10px 8px; }
-    }
-  </style>
-  <meta name="description" content="深入了解1855年波爾多左岸分級制度，認識法國頂級酒莊與台灣葡萄酒專業用語。七銘企業專業葡萄酒知識分享。">
-  <meta name="keywords" content="1855分級,波爾多,左岸,一級酒莊,拉菲,拉圖,瑪歌,木桐,歐布里翁,龐特卡內,葡萄酒知識">
-  <link rel="canonical" href="https://wine.7pyramid.com/french_wine_knowledge.html">
-</head>
-
-<body class="dark">
-
-  <div id="age-gate-banner">
-    <p>開車不喝酒，未滿18歲不可飲酒</p>
-  </div>
-
-  <!-- Sticky Navigation Header -->
-  <nav style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: var(--md-sys-color-surface-container); backdrop-filter: blur(10px); border-bottom: 1px solid var(--md-sys-color-outline-variant); padding: 15px 0;">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between;">
-      <div style="display: flex; align-items: center; gap: 12px;">
-        <img src="img/7pyramidlogo.jpg" alt="Seven Pyramid Logo" style="height: 40px; width: auto; border-radius: 6px;">
-        <div style="font-size: 1.5rem; font-weight: bold; color: var(--md-sys-color-primary);">
-          <a href="index.html" style="text-decoration: none; color: inherit;">七銘企業 Seven Pyramid</a>
-        </div>
-      </div>
-
-      <div style="display: flex; align-items: center; gap: 30px;">
-        <a href="index.html" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500;">首頁</a>
-        <a href="wine_list.html" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500;">酒款目錄</a>
-        <a href="french_wine_knowledge.html" style="text-decoration: none; color: var(--luxury-gold); font-weight: 500;">葡萄酒知識</a>
-        <a href="how_to_drink_wine.html" style="text-decoration: none; color: var(--md-sys-color-on-surface); font-weight: 500;">如何品酒</a>
-        <button id="theme-toggle" style="padding: 8px 12px; border: none; border-radius: 20px; cursor: pointer; background: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); font-size: 0.9rem;">☀️</button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Main Content -->
-  <main style="margin-top: 80px; padding: 40px 20px 100px 20px;">
-    <div style="max-width: 1200px; margin: 0 auto;">
-
-      <!-- Breadcrumb -->
-      <div class="breadcrumb">
-        <a href="index.html">七銘葡萄酒首頁</a> / <a href="wine_list.html">酒款目錄</a> / 葡萄酒知識
-      </div>
-
-      <!-- Page Header -->
-      <div style="text-align: center; margin: 40px 0 60px 0;">
-        <h1 style="font-size: clamp(2rem, 4vw, 3rem); color: var(--luxury-gold); margin-bottom: 20px; font-weight: 700; font-family: 'Playfair Display', serif;">
-          🍷 法國葡萄酒知識
-        </h1>
-        <p style="font-size: 1.2rem; color: var(--md-sys-color-on-surface-variant); max-width: 700px; margin: 0 auto; line-height: 1.6;">
-          深入了解波爾多分級制度與頂級酒莊的傳奇故事
-        </p>
-      </div>
-
-      <!-- Featured Infographic -->
-      <div style="text-align: center; margin-bottom: 60px;">
-        <img src="img/pontetCanet.png" alt="波爾多一級酒莊與龐特卡內堡介紹" style="max-width: 100%; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(212, 175, 55, 0.3);">
-      </div>
-
-      <!-- 1855 Classification Introduction -->
-      <section class="knowledge-section">
-        <h2 class="section-header">📜 1855年波爾多左岸分級制度</h2>
-
-        <div class="wine-intro">
-          <p>
-            <span class="highlight-text">1855年波爾多分級制度</span>（Classification officielle des vins de Bordeaux de 1855）是世界上最古老且最具權威性的葡萄酒分級系統之一。這套分級制度是在拿破崙三世的指示下，為了1855年巴黎世界博覽會而建立的。
-          </p>
-          <p>
-            當時，波爾多酒商公會（Syndicat des Courtiers）根據各酒莊葡萄酒的<span class="highlight-text">市場價格</span>與<span class="highlight-text">歷史聲譽</span>，將梅多克（Médoc）與索甸（Sauternes）產區的酒莊進行排名。左岸紅酒共分為五個等級：
-          </p>
-        </div>
-
-        <table class="knowledge-table">
-          <thead>
-            <tr>
-              <th>等級</th>
-              <th>法文名稱</th>
-              <th>台灣常用稱呼</th>
-              <th>酒莊數量</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="highlight-text">一級酒莊</span></td>
-              <td>Premiers Crus (1ers Crus)</td>
-              <td>一級莊、頭等苑</td>
-              <td>5間</td>
-            </tr>
-            <tr>
-              <td>二級酒莊</td>
-              <td>Deuxièmes Crus (2èmes Crus)</td>
-              <td>二級莊</td>
-              <td>14間</td>
-            </tr>
-            <tr>
-              <td>三級酒莊</td>
-              <td>Troisièmes Crus (3èmes Crus)</td>
-              <td>三級莊</td>
-              <td>14間</td>
-            </tr>
-            <tr>
-              <td>四級酒莊</td>
-              <td>Quatrièmes Crus (4èmes Crus)</td>
-              <td>四級莊</td>
-              <td>10間</td>
-            </tr>
-            <tr>
-              <td>五級酒莊</td>
-              <td>Cinquièmes Crus (5èmes Crus)</td>
-              <td>五級莊</td>
-              <td>18間</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <p class="wine-intro">
-          值得注意的是，自1855年以來，這套分級制度<span class="highlight-text">僅修改過一次</span>：1973年，木桐酒莊（Château Mouton Rothschild）從二級酒莊升級為一級酒莊，成為「五大酒莊」之一。
-        </p>
-      </section>
-
-      <!-- Taiwan Wine Terminology -->
-      <section class="knowledge-section">
-        <h2 class="section-header">📖 台灣葡萄酒專業用語對照表</h2>
-
-        <table class="knowledge-table">
-          <thead>
-            <tr>
-              <th>法文/英文</th>
-              <th>台灣用語</th>
-              <th>說明</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Château</td>
-              <td>城堡、酒莊</td>
-              <td>波爾多地區酒莊的稱呼</td>
-            </tr>
-            <tr>
-              <td>Grand Cru Classé</td>
-              <td>列級酒莊</td>
-              <td>1855年分級制度中的酒莊</td>
-            </tr>
-            <tr>
-              <td>Premier Cru / First Growth</td>
-              <td>一級酒莊、一級莊</td>
-              <td>最高等級的五間酒莊</td>
-            </tr>
-            <tr>
-              <td>Grand Vin</td>
-              <td>正牌酒、主牌</td>
-              <td>酒莊的旗艦酒款</td>
-            </tr>
-            <tr>
-              <td>Second Vin</td>
-              <td>副牌酒、二軍</td>
-              <td>酒莊的第二品牌酒款</td>
-            </tr>
-            <tr>
-              <td>Médoc</td>
-              <td>梅多克</td>
-              <td>波爾多左岸主要產區</td>
-            </tr>
-            <tr>
-              <td>Pauillac</td>
-              <td>波亞克</td>
-              <td>擁有三間一級酒莊的村莊</td>
-            </tr>
-            <tr>
-              <td>Margaux</td>
-              <td>瑪歌</td>
-              <td>以優雅風格聞名的產區</td>
-            </tr>
-            <tr>
-              <td>Saint-Julien</td>
-              <td>聖祖利安</td>
-              <td>品質穩定的中級產區</td>
-            </tr>
-            <tr>
-              <td>Saint-Estèphe</td>
-              <td>聖愛斯泰夫</td>
-              <td>風格強勁的北部產區</td>
-            </tr>
-            <tr>
-              <td>Cabernet Sauvignon</td>
-              <td>卡本內蘇維濃</td>
-              <td>左岸主要葡萄品種</td>
-            </tr>
-            <tr>
-              <td>Merlot</td>
-              <td>梅洛</td>
-              <td>右岸主要葡萄品種</td>
-            </tr>
-            <tr>
-              <td>Tannin</td>
-              <td>單寧</td>
-              <td>葡萄酒中的澀感物質</td>
-            </tr>
-            <tr>
-              <td>Bouquet</td>
-              <td>酒香、花束香</td>
-              <td>陳年後發展的複雜香氣</td>
-            </tr>
-            <tr>
-              <td>Terroir</td>
-              <td>風土</td>
-              <td>土壤、氣候、地形的綜合影響</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <!-- First Growth Wines -->
-      <section class="knowledge-section">
-        <h2 class="section-header">🏆 一級酒莊（Premiers Crus）介紹</h2>
-
-        <p class="wine-intro">
-          波爾多五大一級酒莊被譽為葡萄酒界的「夢幻隊伍」，每一瓶酒都代表著波爾多最頂級的釀酒工藝與百年傳承。
-        </p>
-
-        <div class="wine-card">
-          <h4>🏰 拉菲堡 Château Lafite Rothschild</h4>
-          <p class="english-name">波亞克產區 | Pauillac</p>
-          <p>
-            拉菲堡是全球最具知名度的葡萄酒之一，以其<span class="highlight-text">優雅細膩</span>的風格聞名於世。1855年分級時名列一級酒莊首位。酒款特色為精緻的黑醋栗香氣，配合雪松、石墨和紫羅蘭的複雜層次，單寧絲滑，餘韻悠長。
-          </p>
-        </div>
-
-        <div class="wine-card">
-          <h4>🏰 拉圖堡 Château Latour</h4>
-          <p class="english-name">波亞克產區 | Pauillac</p>
-          <p>
-            拉圖堡以<span class="highlight-text">強勁濃郁</span>的風格著稱，是五大酒莊中最為雄壯有力的一款。其酒款結構紮實，單寧豐富，具有極佳的陳年潛力，年輕時較為封閉，但經過數十年陳放後展現驚人的複雜度與深度。
-          </p>
-        </div>
-
-        <div class="wine-card">
-          <h4>🏰 瑪歌堡 Château Margaux</h4>
-          <p class="english-name">瑪歌產區 | Margaux</p>
-          <p>
-            瑪歌堡被譽為「波爾多的凡爾賽宮」，以其<span class="highlight-text">芬芳優雅</span>的風格聞名。酒款展現出玫瑰花瓣、紫羅蘭與黑色莓果的迷人香氣，口感柔順如絲綢，是五大酒莊中最為女性化的一款。
-          </p>
-        </div>
-
-        <div class="wine-card">
-          <h4>🏰 木桐堡 Château Mouton Rothschild</h4>
-          <p class="english-name">波亞克產區 | Pauillac</p>
-          <p>
-            木桐堡是唯一一間從二級升級為一級的酒莊（1973年）。以其<span class="highlight-text">華麗奔放</span>的風格著稱，每年邀請知名藝術家設計酒標更是一大特色。酒款豐潤飽滿，帶有黑加侖、烤麵包和咖啡的複雜香氣。
-          </p>
-        </div>
-
-        <div class="wine-card">
-          <h4>🏰 歐布里翁堡 Château Haut-Brion</h4>
-          <p class="english-name">佩薩克-雷奧良產區 | Pessac-Léognan</p>
-          <p>
-            歐布里翁堡是五大酒莊中唯一位於格拉夫（Graves）產區的酒莊，也是歷史最悠久的一間。以其<span class="highlight-text">煙燻礦物</span>風格聞名，帶有獨特的燒烤、雪茄盒和松露香氣，口感圓潤細膩，展現出與眾不同的個性。
-          </p>
-        </div>
-      </section>
-
-      <!-- Pontet Canet Section -->
-      <section class="knowledge-section">
-        <h2 class="section-header">⭐ 龐特卡內堡 Château Pontet-Canet</h2>
-
-        <div class="wine-intro">
-          <p>
-            <span class="highlight-text">龐特卡內堡</span>（Château Pontet-Canet）是波爾多波亞克（Pauillac）產區的<span class="highlight-text">五級酒莊</span>，但其品質與聲譽早已遠超其分級。這間酒莊被譽為「超級五級莊」，酒款品質可媲美二級甚至一級酒莊。
-          </p>
-        </div>
-
-        <h3 class="subsection-header">酒莊背景</h3>
-        <table class="knowledge-table">
-          <tbody>
-            <tr>
-              <td style="width: 30%; font-weight: 600; color: var(--luxury-gold);">法文名稱</td>
-              <td>Château Pontet-Canet</td>
-            </tr>
-            <tr>
-              <td style="font-weight: 600; color: var(--luxury-gold);">台灣譯名</td>
-              <td>龐特卡內堡、邦特卡奈</td>
-            </tr>
-            <tr>
-              <td style="font-weight: 600; color: var(--luxury-gold);">產區</td>
-              <td>波亞克（Pauillac）</td>
-            </tr>
-            <tr>
-              <td style="font-weight: 600; color: var(--luxury-gold);">分級</td>
-              <td>1855年五級酒莊（Cinquième Cru）</td>
-            </tr>
-            <tr>
-              <td style="font-weight: 600; color: var(--luxury-gold);">葡萄園面積</td>
-              <td>約81公頃</td>
-            </tr>
-            <tr>
-              <td style="font-weight: 600; color: var(--luxury-gold);">主要葡萄品種</td>
-              <td>卡本內蘇維濃（62%）、梅洛（32%）、小維鐸（4%）、卡本內弗朗（2%）</td>
-            </tr>
-            <tr>
-              <td style="font-weight: 600; color: var(--luxury-gold);">現任莊主</td>
-              <td>泰瑟宏家族（Tesseron Family）自1975年</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3 class="subsection-header">酒莊特色與成就</h3>
-        <div class="wine-intro">
-          <p>
-            龐特卡內堡是波爾多最具代表性的<span class="highlight-text">有機與生物動力法</span>酒莊之一。自2004年起，酒莊開始實行有機耕作，2010年正式獲得有機認證，2014年更獲得<span class="highlight-text">生物動力法認證</span>（Biodyvin）。
-          </p>
-          <p>
-            酒莊的釀酒理念強調<span class="highlight-text">尊重風土</span>，採用傳統馬匹耕作葡萄園，避免機械壓實土壤。在酒窖中，酒莊使用傳統的水泥槽和雙耳陶罐（Amphora）進行發酵與陳年，賦予酒款獨特的純淨與活力。
-          </p>
-        </div>
-
-        <h3 class="subsection-header">酒款風格</h3>
-        <div class="wine-intro">
-          <p>
-            龐特卡內堡的酒款以<span class="highlight-text">濃郁飽滿</span>、<span class="highlight-text">結構紮實</span>聞名。典型特色包括：
-          </p>
-          <ul style="color: var(--md-sys-color-on-surface); line-height: 2; margin-left: 20px;">
-            <li>🍇 深邃的黑色水果香氣（黑醋栗、黑莓、藍莓）</li>
-            <li>🌿 礦物感與鮮明的石墨氣息</li>
-            <li>🍫 高雅的橡木風味（香草、烤麵包、咖啡）</li>
-            <li>💪 強勁但細膩的單寧結構</li>
-            <li>⏳ 極佳的陳年潛力（優質年份可陳年30年以上）</li>
-          </ul>
-        </div>
-
-        <h3 class="subsection-header">國際評價</h3>
-        <div class="wine-intro">
-          <p>
-            龐特卡內堡近年來多次獲得國際酒評家的<span class="highlight-text">滿分評價</span>，包括：
-          </p>
-          <ul style="color: var(--md-sys-color-on-surface); line-height: 2; margin-left: 20px;">
-            <li>🏅 <strong>2009年份</strong>：Robert Parker 100分</li>
-            <li>🏅 <strong>2010年份</strong>：Robert Parker 100分、James Suckling 100分</li>
-            <li>🏅 <strong>2016年份</strong>：多位酒評家給予98-100分</li>
-            <li>🏅 <strong>2018年份</strong>：James Suckling 100分</li>
-            <li>🏅 <strong>2019年份</strong>：多位酒評家給予98-100分</li>
-          </ul>
-          <p style="margin-top: 20px;">
-            這些傑出的表現使龐特卡內堡成為<span class="highlight-text">性價比最高</span>的波爾多頂級酒款之一，深受全球葡萄酒收藏家與愛好者的追捧。
-          </p>
-        </div>
-      </section>
-
-      <!-- Social Sharing Section -->
-      <section style="margin: 40px 0; text-align: center; padding: 30px; background: var(--md-sys-color-surface-container); border-radius: 15px; border: 1px solid rgba(212, 175, 55, 0.1);">
-        <h3 style="color: var(--luxury-gold); margin-bottom: 20px; font-size: 1.2rem; font-weight: 600;">分享此葡萄酒知識</h3>
-        <div style="display: flex; gap: 15px; justify-content: center; align-items: center; flex-wrap: wrap;">
-          <a href="https://social-plugins.line.me/lineit/share?url=https://wine.7pyramid.com/french_wine_knowledge.html" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 8px; padding: 10px 20px; background: #06C755; color: white; text-decoration: none; border-radius: 20px; font-weight: 600; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="Line" style="height: 20px; width: 20px; filter: brightness(0) invert(1);">
-            LINE 分享
-          </a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://wine.7pyramid.com/french_wine_knowledge.html" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 8px; padding: 10px 20px; background: #0b4a99; color: white; text-decoration: none; border-radius: 20px; font-weight: 600; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-            </svg>
-            Facebook 分享
-          </a>
-          <a href="https://www.instagram.com/seven_pyramid/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 8px; padding: 10px 20px; background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); color: white; text-decoration: none; border-radius: 25px; font-weight: 600; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-            </svg>
-            Instagram
-          </a>
-          <button onclick="copyCurrentUrl()" style="display: flex; align-items: center; gap: 8px; padding: 10px 20px; background: var(--md-sys-color-outline); color: white; border: none; border-radius: 20px; font-weight: 600; cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-            🔗 複製連結
-          </button>
-        </div>
-      </section>
-
-      <script>
-        function copyCurrentUrl() {
-          const url = window.location.href;
-          navigator.clipboard.writeText(url).then(() => {
-            alert('連結已複製到剪貼簿！');
-          }).catch(err => {
-            console.error('複製失敗:', err);
-          });
+<!DOCTYPE html>
+<html class="no-js light" lang="zh-TW" style="scroll-behavior:smooth;">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   法國葡萄酒知識百科 - 波爾多、勃艮第、香檳完整指南 | 七銘企業 Seven Pyramid
+  </title>
+  <meta content="深入了解法國葡萄酒產區知識：波爾多列級酒莊、勃艮第特級園、香檳製法及各大知名酒莊介紹。七銘企業專業侍酒師整理的完整葡萄酒知識指南。" name="description"/>
+  <link href="https://wine.7pyramid.com/french_wine_knowledge.html" rel="canonical"/>
+  <meta content="法國葡萄酒知識百科 - 波爾多、勃艮第、香檳完整指南 | 七銘企業 Seven Pyramid" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://wine.7pyramid.com/french_wine_knowledge.html" property="og:url"/>
+  <meta content="七銘企業 Seven Pyramid" property="og:site_name"/>
+  <meta content="zh_TW" property="og:locale"/>
+  <meta content="TW-TPE" name="geo.region"/>
+  <meta content="台北市內湖區" name="geo.placename"/>
+  <meta content="25.0686;121.5750" name="geo.position"/>
+  <meta content="25.0686, 121.5750" name="ICBM"/>
+  <link href="/favicon.ico" rel="icon" sizes="any"/>
+  <link href="img/7pyramidlogo.webp" rel="apple-touch-icon"/>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-17830155753">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17830155753');
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">
+    </script>
+    <script id="tailwind-config">
+     tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-fixed-variant": "#2b4963",
+                        "on-error": "#ffffff",
+                        "on-surface-variant": "#43474d",
+                        "on-background": "#1c1c19",
+                        "secondary-fixed": "#cce5ff",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#c3c7ce",
+                        "tertiary-fixed-dim": "#ffb2be",
+                        "tertiary": "#3c0315",
+                        "inverse-on-surface": "#f3f0eb",
+                        "primary-fixed-dim": "#abcae9",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#f0ede8",
+                        "inverse-surface": "#31302d",
+                        "on-surface": "#1c1c19",
+                        "on-secondary-container": "#42627e",
+                        "on-tertiary-container": "#d67d8e",
+                        "surface-container-low": "#f6f3ee",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#bcdefe",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#581829",
+                        "surface-container-high": "#ebe8e3",
+                        "secondary-fixed-dim": "#a9caea",
+                        "outline": "#73777e",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#44617c",
+                        "surface": "#fcf9f4",
+                        "on-primary-fixed": "#001d32",
+                        "on-tertiary-fixed": "#3d0315",
+                        "on-primary-container": "#7d9ab8",
+                        "secondary": "#41627d",
+                        "on-tertiary-fixed-variant": "#762f3f",
+                        "on-secondary-fixed": "#001e31",
+                        "background": "#fcf9f4",
+                        "primary": "#001d31",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#11324b",
+                        "surface-container-highest": "#e5e2dd",
+                        "surface-bright": "#fcf9f4",
+                        "on-secondary-fixed-variant": "#284a64",
+                        "tertiary-fixed": "#ffd9de",
+                        "inverse-primary": "#abcae9",
+                        "primary-fixed": "#cde5ff",
+                        "surface-variant": "#e5e2dd",
+                        "surface-dim": "#dcdad5",
+                        "burgundy-deep": "#800020",
+                        "burgundy-rich": "#722F37",
+                        "burgundy-light": "#9B2335",
+                        "burgundy-muted": "#A0526B",
+                        "burgundy-bg": "#2A0A14"
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
         }
-      </script>
-
-      <!-- Contact Section -->
-      <section style="margin-top: 60px; padding: 40px; background: linear-gradient(135deg, var(--luxury-wine-red) 0%, #3d0808 100%); border-radius: 20px; text-align: center; border: 1px solid var(--luxury-gold);">
-        <h2 style="color: var(--luxury-gold-light); margin-bottom: 20px; font-size: 1.8rem; font-weight: 600;">想品嚐這些頂級酒款？</h2>
-        <p style="color: var(--md-sys-color-on-surface); margin-bottom: 30px; opacity: 0.9; font-size: 1.1rem;">七銘企業提供多款1855列級酒莊酒款，歡迎洽詢</p>
-        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-          <a href="wine_list.html" style="display: inline-block; padding: 15px 30px; background: linear-gradient(135deg, var(--luxury-gold) 0%, #b88a14 100%); color: #000; text-decoration: none; border-radius: 25px; font-weight: 600; transition: all 0.3s;">瀏覽酒款目錄</a>
-          <a href="tel:+886227912147" style="display: inline-block; padding: 15px 30px; background: transparent; color: var(--luxury-gold-light); text-decoration: none; border-radius: 25px; font-weight: 600; border: 2px solid var(--luxury-gold); transition: all 0.3s;">📞 (02) 2791-2147</a>
-        </div>
-      </section>
-
-      <!-- Social Media Links -->
-      <section style="margin-top: 40px; padding: 30px; background: var(--md-sys-color-surface-container); border-radius: 20px; text-align: center; border: 1px solid rgba(212, 175, 55, 0.3);">
-        <h3 style="color: var(--luxury-gold); margin-bottom: 20px; font-size: 1.3rem; font-weight: 600;">關注我們的社群媒體</h3>
-        <div style="display: flex; gap: 20px; justify-content: center; align-items: center; flex-wrap: wrap;">
-          <a href="https://www.facebook.com/SevenPyramid/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 10px; padding: 12px 24px; background: #0b4a99; color: white; text-decoration: none; border-radius: 25px; font-weight: 600; transition: all 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-            </svg>
-            Facebook
-          </a>
-          <a href="https://www.instagram.com/seven_pyramid/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 10px; padding: 12px 24px; background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); color: white; text-decoration: none; border-radius: 25px; font-weight: 600; transition: all 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-            </svg>
-            Instagram
-          </a>
-        </div>
-      </section>
-
+    </script>
+    <style>
+     body { font-family: 'Montserrat', sans-serif; background-color: #FFFFFF; min-height: max(884px, 100dvh); }
+      .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48; }
+      .editorial-shadow { box-shadow: 40px 40px 80px rgba(10, 5, 8, 0.08); }
+      #age-gate-banner { position: fixed; bottom: 0; left: 0; width: 100%; height: 10vh; background-color: #11324b; color: #fff; text-align: center; display: flex; align-items: center; justify-content: center; z-index: 1001; }
+      #age-gate-banner p { margin: 0; font-size: clamp(0.8rem, 2.5vh, 2rem); font-weight: bold; }
+    </style>
+   </link>
+  </link>
+ </head>
+ <body class="text-[#07141E] selection:bg-[#11324B] selection:text-white pb-16">
+  <div id="age-gate-banner">
+   <p>
+    開車不喝酒，未滿18歲不可飲酒
+   </p>
+  </div>
+  <header class="bg-white dark:bg-slate-900 border-b border-[#E8E0D4] flex items-center justify-between px-6 py-4 w-full fixed top-0 z-[60]">
+   <div class="flex items-center gap-4">
+    <button class="material-symbols-outlined text-[#11324B] dark:text-[#E8E0D4] hover:bg-[#F6F3EE] md:hidden p-2 focus:outline-2 focus:outline-[#11324B] focus:outline-offset-2 transition-colors duration-200" id="mobile-menu-toggle">
+     menu
+    </button>
+    <a class="flex items-center gap-3" href="#home">
+     <img alt="Seven Pyramid Logo" class="h-10 w-10" src="img/7pyramidlogo.webp"/>
+     <span class="text-lg font-bold tracking-[0.1em] text-[#11324B] dark:text-[#F6F3EE] uppercase hidden sm:block">
+      Seven Pyramid 七銘企業
+     </span>
+    </a>
+   </div>
+   <div class="flex items-center gap-6">
+    <nav class="hidden md:flex gap-8 text-[12px] font-semibold uppercase tracking-widest text-[#11324B] dark:text-[#F6F3EE]" id="desktop-nav">
+     <a class="hover:text-[#800020] transition-colors" href="#wines">
+      酒款目錄
+     </a>
+     <a class="hover:text-[#800020] transition-colors" href="french_wine_knowledge.html">
+      葡萄酒知識
+     </a>
+     <a class="hover:text-[#800020] transition-colors" href="how_to_drink_wine.html">
+      如何品酒
+     </a>
+     <a class="hover:text-[#800020] transition-colors" href="faq.html">
+      葡萄酒投資
+     </a>
+     <a class="hover:text-[#800020] transition-colors" href="#services">
+      服務項目
+     </a>
+     <a class="hover:text-[#800020] transition-colors" href="#contact">
+      聯繫我們
+     </a>
+    </nav>
+    <button class="material-symbols-outlined text-[#11324B] dark:text-[#E8E0D4] hover:bg-[#F6F3EE] p-2 rounded-full transition-colors duration-200" id="theme-toggle">
+     light_mode
+    </button>
+   </div>
+  </header>
+  <div class="fixed inset-0 bg-black/50 z-[100] opacity-0 invisible transition-all duration-300" id="mobile-menu-overlay">
+   <div class="absolute top-20 right-0 w-[280px] max-w-[90vw] bg-white dark:bg-slate-900 shadow-xl translate-x-full transition-transform duration-300 flex flex-col p-6" id="mobile-menu">
+    <div class="flex justify-between items-center mb-6">
+     <span class="text-xl font-bold tracking-[0.1em] text-[#11324B] dark:text-[#F6F3EE] uppercase">
+      選單
+     </span>
+     <button class="material-symbols-outlined text-[#11324B] dark:text-[#F6F3EE]" id="mobile-menu-close">
+      close
+     </button>
     </div>
+    <nav class="flex flex-col gap-6 text-sm font-semibold tracking-widest text-[#11324B] dark:text-[#F6F3EE] uppercase">
+     <a class="hover:text-[#800020] transition-colors" href="#home">
+      首頁
+     </a>
+     <a class="hover:text-[#800020] transition-colors" href="#wines">
+      酒款目錄
+     </a>
+     <a class="hover:text-[#800020] transition-colors" href="french_wine_knowledge.html">
+      葡萄酒知識
+     </a>
+     <a class="hover:text-[#800020] transition-colors" href="how_to_drink_wine.html">
+      如何品酒
+     </a>
+     <a class="hover:text-[#800020] transition-colors" href="faq.html">
+      葡萄酒投資
+     </a>
+     <a class="hover:text-[#800020] transition-colors" href="#services">
+      服務項目
+     </a>
+     <a class="hover:text-[#800020] transition-colors" href="#contact">
+      聯繫我們
+     </a>
+    </nav>
+   </div>
+  </div>
+  <main class="pt-24 max-w-7xl mx-auto px-6 md:px-12 py-16">
+   <header class="mb-24 max-w-3xl">
+    <span class="text-[12px] font-semibold uppercase tracking-[0.3em] text-[#800020] mb-6 block">
+     Expert Knowledge / 專業知識
+    </span>
+    <h1 class="text-4xl md:text-6xl font-semibold text-[#11324B] leading-[1.1] mb-8 tracking-tight">
+     法國葡萄酒完整知識指南
+    </h1>
+    <p class="text-lg text-[#11324B]/70 leading-relaxed border-l-4 border-[#800020] pl-8">
+     從波爾多列級酒莊到勃艮第特級園，從香檳製法到優質年份解讀&mdash;&mdash;我們為您系統整理法國葡萄酒的一切精髓。
+    </p>
+   </header>
+   <section class="mb-28 scroll-mt-32" id="bordeaux">
+    <div class="mb-10">
+     <span class="text-[11px] font-semibold tracking-[0.35em] text-[#800020] uppercase">
+      01 / Bordeaux &bull; 波爾多
+     </span>
+     <div class="w-full h-px bg-[#11324B]/10 mt-4">
+     </div>
+    </div>
+    <article class="max-w-3xl">
+     <h2 class="text-3xl font-semibold text-[#11324B] mb-6 leading-snug">
+      波爾多：世界最知名的列級酒莊產區
+     </h2>
+     <p class="text-[#11324B]/75 leading-loose text-lg">
+      波爾多是全球最重要的葡萄酒產區之一，以梅多克（M&eacute;doc）列級制度聞名。1855年拿破崙三世頒布的分級制度，將頂尖酒莊分為五個等級，確立了拉菲（Ch&acirc;teau Lafite Rothschild）、瑪歌（Ch&acirc;teau Margaux）、拉圖（Ch&acirc;teau Latour）、木桐（Ch&acirc;teau Mouton Rothschild）及侯伯王（Ch&acirc;teau Haut-Brion）五大酒莊的殿堂地位。這些酒款不僅代表法國釀酒藝術的巔峰，更是全球收藏家競相追捧的珍稀資產。
+     </p>
+    </article>
+   </section>
+   <section class="mb-28 scroll-mt-32" id="burgundy">
+    <div class="mb-10">
+     <span class="text-[11px] font-semibold tracking-[0.35em] text-[#800020] uppercase">
+      02 / Burgundy &bull; 勃艮第
+     </span>
+     <div class="w-full h-px bg-[#11324B]/10 mt-4">
+     </div>
+    </div>
+    <article class="max-w-3xl">
+     <h2 class="text-3xl font-semibold text-[#11324B] mb-6 leading-snug">
+      勃艮第：風土哲學的極致體現
+     </h2>
+     <p class="text-[#11324B]/75 leading-loose text-lg">
+      勃艮第（Burgundy）以風土（Terroir）哲學傳世，每一塊葡萄園都有精確的分級制度。從最高級的特級園（Grand Cru）到村莊級（Village），每個等級代表不同的風土精髓。羅曼尼-康帝（Domaine de la Roman&eacute;e-Conti，DRC）是勃艮第最著名的酒莊，其旗下特級園在拍賣市場上往往創下天價。一瓶DRC Roman&eacute;e-Conti甚至可達數十萬美元，成為頂級葡萄酒收藏的終極標的。
+     </p>
+    </article>
+   </section>
+   <section class="mb-28 scroll-mt-32" id="champagne">
+    <div class="mb-10">
+     <span class="text-[11px] font-semibold tracking-[0.35em] text-[#800020] uppercase">
+      03 / Champagne &bull; 香檳
+     </span>
+     <div class="w-full h-px bg-[#11324B]/10 mt-4">
+     </div>
+    </div>
+    <article class="max-w-3xl">
+     <h2 class="text-3xl font-semibold text-[#11324B] mb-6 leading-snug">
+      香檳：慶典與奢華的不朽象徵
+     </h2>
+     <p class="text-[#11324B]/75 leading-loose text-lg">
+      香檳（Champagne）是世界上唯一能合法以「Champagne」命名的氣泡酒產區，其傳統製法（M&eacute;thode Champenoise）賦予了香檳獨特的細緻氣泡與複雜風味。頂級香檳如Dom P&eacute;rignon、Krug、Louis Roederer Cristal不僅是慶典場合的首選，更是高端葡萄酒市場的保值投資標的。年份香檳（Vintage Champagne）的投資潛力尤其值得關注。
+     </p>
+    </article>
+   </section>
+   <section class="mb-28 scroll-mt-32" id="vintages">
+    <div class="mb-10">
+     <span class="text-[11px] font-semibold tracking-[0.35em] text-[#800020] uppercase">
+      04 / Vintages &bull; 年份解析
+     </span>
+     <div class="w-full h-px bg-[#11324B]/10 mt-4">
+     </div>
+    </div>
+    <article class="max-w-3xl">
+     <h2 class="text-3xl font-semibold text-[#11324B] mb-6 leading-snug">
+      如何解讀年份：影響品質的關鍵因素
+     </h2>
+     <p class="text-[#11324B]/75 leading-loose text-lg">
+      年份（Vintage）代表葡萄採收的年份，是影響葡萄酒品質與投資價值的核心因素。偉大年份（如波爾多的1982、1990、2005、2009、2010、2016）的葡萄酒往往具有更長的陳年潛力與更高的市場溢價。氣候條件決定了葡萄的成熟度、酸度與單寧結構，進而影響酒款的深度與複雜性。七銘企業的專業顧問可協助您根據年份表現制定最優化的採購策略。
+     </p>
+    </article>
+   </section>
+   <section class="bg-[#F6F3EE] border-l-4 border-[#800020] p-16 mb-16">
+    <h2 class="text-2xl font-semibold text-[#11324B] mb-4">
+     想了解更多？預約專屬侍酒師諮詢
+    </h2>
+    <p class="text-[#11324B]/70 mb-8 max-w-lg leading-relaxed">
+     我們的資深侍酒師將根據您的預算與收藏目標，為您推薦最適合的葡萄酒投資組合。
+    </p>
+    <a class="bg-[#11324B] text-white px-10 py-4 text-sm font-bold uppercase tracking-widest hover:bg-[#22445E] transition-all" href="mailto:account2@7pyramid.com?subject=葡萄酒知識諮詢">
+     立即諮詢
+    </a>
+   </section>
   </main>
-
-  <!-- Footer -->
-  <footer style="padding: 30px 0 100px; text-align: center; font-size: 0.9rem; color: #cfcfcf; background-color: #000;">
-    <div style="max-width: 1200px; margin: 0 auto;">
-      <p>© 2025 Seven Pyramid 七銘企業. All Rights Reserved.</p>
-      <p style="margin-top:10px;"><a href="wine_list.html" style="color:#e6e6e6;">返回酒款目錄</a></p>
+  <footer class="bg-[#07141E] text-[#E8E0D4] flex flex-col items-center justify-center px-8 py-16 gap-12 text-center">
+   <div class="flex gap-4 mb-4">
+    <a class="hover:text-white transition-colors" href="https://www.facebook.com/SevenPyramid/" target="_blank">
+     <span class="material-symbols-outlined">
+      thumb_up
+     </span>
+    </a>
+    <a class="hover:text-white transition-colors" href="https://www.instagram.com/seven_pyramid/" target="_blank">
+     <span class="material-symbols-outlined">
+      photo_camera
+     </span>
+    </a>
+   </div>
+   <div>
+    <h4 class="text-xl font-bold tracking-[0.2em] mb-4 uppercase text-white">
+     SEVEN PYRAMID 七銘企業
+    </h4>
+    <p class="font-['Montserrat'] text-[12px] opacity-60 leading-relaxed max-w-sm mx-auto mb-8">
+     Architectural Integrity in Viticulture.
+     <br/>
+     嚴選代理進口法國、頂級莊園葡萄酒。
+    </p>
+    <div class="flex flex-wrap justify-center gap-6 text-[11px] uppercase tracking-widest mb-12 border-t border-[#E8E0D4]/20 pt-8">
+     <a class="hover:text-white transition-colors" href="faq.html">
+      常見問題 FAQ
+     </a>
+     <a class="hover:text-white transition-colors" href="wine_list.html">
+      酒款目錄
+     </a>
+     <a class="hover:text-white transition-colors" href="#services">
+      專業服務
+     </a>
     </div>
+   </div>
+   <p class="font-['Montserrat'] text-[10px] uppercase tracking-[0.15em] opacity-40">
+    &copy; 2025 Seven Pyramid 七銘企業. All Rights Reserved.
+   </p>
+  <p class="font-['Montserrat'] text-[10px] tracking-[0.15em] opacity-30 mt-2">
+    Built by <a href="https://rxai.com.au" target="_blank" rel="noopener" class="hover:text-white hover:opacity-60 transition-colors underline">RXAI</a>
+  </p>
   </footer>
-
-  <script src="js/app.js"></script>
-</body>
+  <script src="js/app.js">
+  </script>
+  <script src="js/csp-fix.js">
+  </script>
+ </body>
 </html>

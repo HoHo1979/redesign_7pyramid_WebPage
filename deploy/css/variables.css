@@ -54,5 +54,11 @@
   --md-sys-color-surface-container: rgb(249 233 245);
   --md-sys-color-surface-container-high: rgb(243 228 239);
   --md-sys-color-surface-container-highest: rgb(238 222 234);
+  /* Burgundy Wine Palette */
+  --color-burgundy-deep: #800020;
+  --color-burgundy-rich: #722F37;
+  --color-burgundy-light: #9B2335;
+  --color-burgundy-muted: #A0526B;
+  --color-burgundy-bg: #2A0A14;
 }
 /* stylelint-enable no-invalid-position-at-import-rule */

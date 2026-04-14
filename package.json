@@ -1,7 +1,7 @@
 {
-  "name": "seven-pyramid-wine-catalog",
+  "name": "seven-pyramid-deploy-workspace",
   "version": "1.0.0",
-  "description": "Static site generator for Seven Pyramid wine catalog with 2000+ wine records and SEO optimization",
+  "description": "Lightweight workspace for the canonical Seven Pyramid deploy bundle",
   "private": true,
   "keywords": [
     "wine",
@@ -14,49 +14,17 @@
   ],
   "license": "MIT",
   "author": "Seven Pyramid Wine Import Business",
-  "main": "build-wine-catalog.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --open --config webpack.config.dev.js",
-    "build": "webpack --config webpack.config.prod.js",
-    "build:wine": "node build-wine-catalog.js",
-    "build:dev": "node build-wine-catalog.js && echo 'Build completed. Open generated/wine_list.html to preview.'",
-    "validate": "node validate-wine-data.js",
-    "update-prices": "node update-wine-prices.js",
-    "generate-sitemap": "node build-wine-catalog.js && echo 'Sitemap generated at generated/sitemap.xml'",
-    "deploy": "npm run build:wine && npm run copy-assets",
-    "copy-assets": "cp -r css img js generated/ && cp favicon.ico generated/ && cp site.webmanifest generated/",
-    "serve": "npx http-server generated -p 8080 -o",
-    "lint": "echo 'Linting wine data structure...' && node validate-wine-data.js",
-    "stats": "node wine-stats.js",
-    "fix-csp": "node fix-csp-violations.js",
-    "csp-check": "echo 'Checking for CSP violations...' && grep -r 'on[a-z]*=' *.html || echo 'No inline event handlers found - CSP compliant!'",
-    "prepare-deploy": "node prepare-deployment.js",
-    "deploy-help": "echo '📋 Deployment Help:' && echo '1. Run: npm run prepare-deploy' && echo '2. Upload deploy/ folder contents to your web server' && echo '3. Test your website' && echo '4. See DEPLOYMENT-GUIDE.md for details'",
-    "convert-excel": "node excel-to-json-converter.js",
-    "rebuild-catalog": "npm run convert-excel && npm run build:wine && npm run validate",
-    "full-deploy": "npm run rebuild-catalog && npm run prepare-deploy"
+    "test": "npm run check:deploy",
+    "start": "npm run serve",
+    "serve": "http-server deploy -p 8080 -o",
+    "check:deploy": "node -e \"const fs=require('fs'); const required=['deploy/.htaccess','deploy/index.html','deploy/404.html','deploy/wine_list.html','deploy/css/style.css','deploy/js/app.js','deploy/img/7pyramidlogo.webp','deploy/countries/france.html','deploy/regions/france-bordeaux.html','deploy/wines/md001-20-g1-ch-lafite-rothschild-2020.html','deploy/robots.txt','deploy/sitemap.xml','deploy/site.webmanifest']; const missing=required.filter((file)=>!fs.existsSync(file)); if(missing.length){console.error('Missing deploy files:\\n' + missing.join('\\n')); process.exit(1);} console.log('deploy/ is present and internally complete.');\""
   },
   "engines": {
     "node": ">=14.0.0"
   },
-  "dependencies": {
-    "cheerio": "^1.0.0-rc.12",
-    "csv-parser": "^3.0.0",
-    "exceljs": "^4.4.0",
-    "fs-extra": "^11.1.1",
-    "lodash": "^4.17.21",
-    "moment": "^2.29.4"
-  },
   "devDependencies": {
-    "copy-webpack-plugin": "^11.0.0",
-    "html-webpack-plugin": "^5.6.0",
-    "http-server": "^14.1.1",
-    "nodemon": "^3.0.1",
-    "webpack": "^5.91.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4",
-    "webpack-merge": "^5.10.0"
+    "http-server": "^14.1.1"
   },
   "repository": {
     "type": "git",
