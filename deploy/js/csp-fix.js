@@ -169,9 +169,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Open mobile menu
   if (mobileMenuToggle) {
+    mobileMenuToggle.setAttribute('aria-expanded', 'false');
     mobileMenuToggle.addEventListener('click', function() {
-      mobileMenuOverlay.classList.add('active');
+      if (mobileMenuOverlay) {
+        mobileMenuOverlay.classList.add('active');
+      }
       mobileMenuToggle.classList.add('active');
+      mobileMenuToggle.setAttribute('aria-expanded', 'true');
       document.body.style.overflow = 'hidden'; // Prevent scrolling
     });
   }
@@ -206,6 +210,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     if (mobileMenuToggle) {
       mobileMenuToggle.classList.remove('active');
+      mobileMenuToggle.setAttribute('aria-expanded', 'false');
     }
     document.body.style.overflow = ''; // Restore scrolling
   }

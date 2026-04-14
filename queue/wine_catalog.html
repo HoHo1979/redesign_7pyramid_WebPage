@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wine Catalog | The Monolithic Archive</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                "on-primary": "#ffffff",
+                "surface-container-lowest": "#ffffff",
+                "secondary-container": "#bcdefe",
+                "primary-fixed": "#cde5ff",
+                "on-primary-fixed": "#001d32",
+                "surface-container-low": "#f6f3ee",
+                "tertiary-container": "#581829",
+                "on-secondary-container": "#42627e",
+                "on-secondary-fixed": "#001e31",
+                "on-primary-fixed-variant": "#2b4963",
+                "surface-tint": "#44617c",
+                "on-error-container": "#93000a",
+                "on-tertiary-fixed": "#3d0315",
+                "tertiary-fixed": "#ffd9de",
+                "surface-bright": "#fcf9f4",
+                "secondary": "#41627d",
+                "error-container": "#ffdad6",
+                "surface-container-high": "#ebe8e3",
+                "primary-container": "#11324b",
+                "on-primary-container": "#7d9ab8",
+                "outline": "#73777e",
+                "surface-container": "#f0ede8",
+                "on-surface-variant": "#43474d",
+                "tertiary": "#3c0315",
+                "surface-container-highest": "#e5e2dd",
+                "on-tertiary-fixed-variant": "#762f3f",
+                "surface-variant": "#e5e2dd",
+                "on-secondary-fixed-variant": "#284a64",
+                "primary": "#001d31",
+                "secondary-fixed-dim": "#a9caea",
+                "on-tertiary": "#ffffff",
+                "secondary-fixed": "#cce5ff",
+                "inverse-surface": "#31302d",
+                "background": "#fcf9f4",
+                "on-surface": "#1c1c19",
+                "surface-dim": "#dcdad5",
+                "on-secondary": "#ffffff",
+                "inverse-on-surface": "#f3f0eb",
+                "on-tertiary-container": "#d67d8e",
+                "on-error": "#ffffff",
+                "on-background": "#1c1c19",
+                "tertiary-fixed-dim": "#ffb2be",
+                "outline-variant": "#c3c7ce",
+                "surface": "#fcf9f4",
+                "primary-fixed-dim": "#abcae9",
+                "inverse-primary": "#abcae9",
+                "error": "#ba1a1a"
+              },
+              "borderRadius": {
+                "DEFAULT": "0px",
+                "lg": "0px",
+                "xl": "0px",
+                "full": "9999px"
+              },
+              "fontFamily": {
+                "sans": ["Montserrat", "sans-serif"],
+                "headline": ["Montserrat", "sans-serif"],
+                "body": ["Montserrat", "sans-serif"],
+                "label": ["Montserrat", "sans-serif"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-line {
+            height: 1px;
+            background-color: #11324B;
+            opacity: 0.1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body m-0 p-0">
+<!-- Top Navigation Shell -->
+<header class="fixed top-0 w-full z-50 bg-white dark:bg-stone-950">
+<nav class="flex justify-between items-center px-12 py-8 w-full max-w-screen-2xl mx-auto">
+<div class="text-xl font-semibold uppercase tracking-[0.2em] text-slate-900 dark:text-stone-50">
+                The Monolithic Archive
+            </div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="font-['Montserrat'] font-semibold tracking-tight text-slate-500 dark:text-stone-400 hover:text-slate-900 dark:hover:text-stone-50 hover:opacity-80 transition-opacity duration-300" href="#">Portfolio</a>
+<a class="font-['Montserrat'] font-semibold tracking-tight text-slate-500 dark:text-stone-400 hover:text-slate-900 dark:hover:text-stone-50 hover:opacity-80 transition-opacity duration-300" href="#">Regions</a>
+<a class="font-['Montserrat'] font-semibold tracking-tight text-slate-500 dark:text-stone-400 hover:text-slate-900 dark:hover:text-stone-50 hover:opacity-80 transition-opacity duration-300" href="#">Vintages</a>
+<a class="font-['Montserrat'] font-semibold tracking-tight text-slate-500 dark:text-stone-400 hover:text-slate-900 dark:hover:text-stone-50 hover:opacity-80 transition-opacity duration-300" href="#">Journal</a>
+<div class="flex items-center gap-6 ml-4">
+<span class="material-symbols-outlined text-slate-900 dark:text-stone-50 cursor-pointer">shopping_bag</span>
+</div>
+</div>
+</nav>
+</header>
+<div class="flex min-h-screen pt-24">
+<!-- Sidebar Navigation Shell -->
+<aside class="fixed left-0 top-0 h-full z-[60] flex flex-col h-full w-80 0px-radius border-r-0 bg-stone-50 dark:bg-stone-900 shadow-xl dark:shadow-none hidden lg:flex">
+<div class="p-12 flex flex-col h-full">
+<div class="mb-12">
+<div class="text-lg font-bold tracking-tighter uppercase text-slate-900 dark:text-stone-50">The Monolithic Archive</div>
+<div class="font-['Montserrat'] uppercase tracking-widest text-[10px] text-slate-500 mt-1">EST. 1924</div>
+</div>
+<nav class="flex flex-col gap-2 flex-grow">
+<a class="bg-slate-900 text-white dark:bg-stone-50 dark:text-stone-950 p-4 font-['Montserrat'] uppercase tracking-widest text-xs transition-colors duration-200 Active: translate-x-1 flex items-center gap-3" href="#">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+                        The Archive
+                    </a>
+<a class="text-slate-600 dark:text-stone-400 p-4 hover:bg-stone-200 dark:hover:bg-stone-800 font-['Montserrat'] uppercase tracking-widest text-xs transition-colors duration-200 Active: translate-x-1 flex items-center gap-3" href="#">
+<span class="material-symbols-outlined" data-icon="Wine_Bar">wine_bar</span>
+                        Cellar Selection
+                    </a>
+<a class="text-slate-600 dark:text-stone-400 p-4 hover:bg-stone-200 dark:hover:bg-stone-800 font-['Montserrat'] uppercase tracking-widest text-xs transition-colors duration-200 Active: translate-x-1 flex items-center gap-3" href="#">
+<span class="material-symbols-outlined" data-icon="edit_note">edit_note</span>
+                        Sommelier Notes
+                    </a>
+<a class="text-slate-600 dark:text-stone-400 p-4 hover:bg-stone-200 dark:hover:bg-stone-800 font-['Montserrat'] uppercase tracking-widest text-xs transition-colors duration-200 Active: translate-x-1 flex items-center gap-3" href="#">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+                        Exclusive Imports
+                    </a>
+<a class="text-slate-600 dark:text-stone-400 p-4 hover:bg-stone-200 dark:hover:bg-stone-800 font-['Montserrat'] uppercase tracking-widest text-xs transition-colors duration-200 Active: translate-x-1 flex items-center gap-3" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+                        Inquire
+                    </a>
+</nav>
+<div class="mt-auto space-y-6">
+<button class="w-full bg-[#11324B] text-white py-4 font-['Montserrat'] uppercase tracking-widest text-xs hover:bg-[#22445E] transition-colors">
+                        Request Consultation
+                    </button>
+<div class="flex gap-4">
+<a class="text-[10px] uppercase tracking-tighter text-slate-400" href="#">Terms</a>
+<a class="text-[10px] uppercase tracking-tighter text-slate-400" href="#">Privacy</a>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 lg:ml-80 bg-white">
+<section class="max-w-screen-xl mx-auto px-12 py-20">
+<!-- Page Header -->
+<header class="mb-24 flex flex-col md:flex-row items-end justify-between gap-12">
+<div class="max-w-2xl">
+<span class="block font-medium uppercase tracking-[0.3em] text-[12px] text-[#6B2737] mb-4">Cellar Inventory</span>
+<h1 class="text-5xl md:text-7xl font-semibold tracking-tighter leading-[1.1] text-primary">
+                            Curated Vintages <br/>of the Archive.
+                        </h1>
+</div>
+<div class="w-full md:w-64 pb-2 border-b border-primary/20">
+<div class="flex justify-between items-center text-[10px] uppercase tracking-widest text-slate-500 mb-2">
+<span>Filtering by</span>
+<span>A-Z Order</span>
+</div>
+<div class="text-primary font-semibold flex justify-between items-center cursor-pointer">
+                            All Regions <span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+</div>
+</div>
+</header>
+<!-- Editorial List Section 1: Bordeaux -->
+<div class="mb-32">
+<div class="flex items-center gap-8 mb-12">
+<h2 class="text-xs font-semibold uppercase tracking-[0.4em] text-slate-400 whitespace-nowrap">Bordeaux Selection</h2>
+<div class="editorial-line w-full"></div>
+</div>
+<div class="space-y-16">
+<!-- Item 1: Wide Layout -->
+<article class="grid grid-cols-1 md:grid-cols-12 gap-12 group">
+<div class="md:col-span-1 text-3xl font-light text-slate-300 transition-colors group-hover:text-[#6B2737]">01</div>
+<div class="md:col-span-6">
+<div class="flex items-center gap-4 mb-2">
+<span class="text-[11px] font-semibold tracking-widest text-[#11324B] uppercase bg-[#F6F3EE] px-2 py-1">Pauillac</span>
+<span class="text-[11px] font-semibold tracking-widest text-slate-400 uppercase">1982</span>
+</div>
+<h3 class="text-3xl font-semibold tracking-tight text-primary mb-4 leading-tight">Château Mouton Rothschild</h3>
+<p class="text-slate-600 max-w-md leading-relaxed">Considered a legendary vintage. Notes of blackcurrant, lead pencil, and cedar. A monumental structure with an exceptionally long finish.</p>
+</div>
+<div class="md:col-span-3 flex flex-col justify-end pb-1">
+<div class="text-[11px] uppercase tracking-widest text-slate-400 mb-1">Market Valuation</div>
+<div class="text-lg font-medium text-primary">€1,850.00</div>
+</div>
+<div class="md:col-span-2 flex flex-col justify-end">
+<button class="text-[11px] font-bold uppercase tracking-widest text-[#6B2737] border-b-2 border-[#6B2737] pb-1 w-fit hover:opacity-60 transition-opacity">
+                                    Inquire
+                                </button>
+</div>
+</article>
+<!-- Item 2: Offset Layout -->
+<article class="grid grid-cols-1 md:grid-cols-12 gap-12 group ml-0 md:ml-12 border-t border-slate-50 pt-16">
+<div class="md:col-span-1 text-3xl font-light text-slate-300 group-hover:text-[#6B2737]">02</div>
+<div class="md:col-span-5">
+<div class="flex items-center gap-4 mb-2">
+<span class="text-[11px] font-semibold tracking-widest text-[#11324B] uppercase bg-[#F6F3EE] px-2 py-1">Saint-Émilion</span>
+<span class="text-[11px] font-semibold tracking-widest text-slate-400 uppercase">2005</span>
+</div>
+<h3 class="text-3xl font-semibold tracking-tight text-primary mb-4 leading-tight">Château Cheval Blanc</h3>
+<p class="text-slate-600 leading-relaxed">Floral, spicy, and perfectly balanced. The expression of the iron-rich soil brings a unique earthy complexity.</p>
+</div>
+<div class="md:col-span-4 overflow-hidden h-40 relative">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="close-up of an old wine bottle label with elegant serif typography resting in a dark wooden cellar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb-ITRGG5KgmzPRK93uL7SS23DA-to75Pq5s5wELmMhDR6U8wO-KrwZGXGO6FLbUAfbcVB9vIy2QoYXgiFm7OoScQzIfsPRgt_74Wq-puYdTUR20B3TKiFDm_yc5J9q32suKdrbCZL0vs-h5v_Hc4vfr0S4RBSj2BpXwvCxNaskFsplQSizf4sou1r8ONYOgPdgo_uWTgYuEQzyGVql53qrFLH2rh4hXP1sNhV9AlKuPiBna16OjrTw7hWzfOTRxpIs35qEDC0zdQB"/>
+</div>
+<div class="md:col-span-2 flex flex-col justify-end">
+<button class="text-[11px] font-bold uppercase tracking-widest text-[#6B2737] border-b-2 border-[#6B2737] pb-1 w-fit hover:opacity-60 transition-opacity">
+                                    Inquire
+                                </button>
+</div>
+</article>
+</div>
+</div>
+<!-- Editorial List Section 2: Burgundy -->
+<div class="mb-32">
+<div class="flex items-center gap-8 mb-12">
+<h2 class="text-xs font-semibold uppercase tracking-[0.4em] text-slate-400 whitespace-nowrap">Burgundy Domaine</h2>
+<div class="editorial-line w-full"></div>
+</div>
+<div class="space-y-16">
+<!-- Item 3: Typography Focus -->
+<article class="grid grid-cols-1 md:grid-cols-12 gap-12 group border-t border-slate-50 pt-16">
+<div class="md:col-span-1 text-3xl font-light text-slate-300 group-hover:text-[#6B2737]">03</div>
+<div class="md:col-span-8">
+<div class="flex items-center gap-4 mb-2">
+<span class="text-[11px] font-semibold tracking-widest text-[#11324B] uppercase bg-[#F6F3EE] px-2 py-1">Vosne-Romanée</span>
+<span class="text-[11px] font-semibold tracking-widest text-slate-400 uppercase">2010</span>
+</div>
+<h3 class="text-4xl md:text-5xl font-semibold tracking-tighter text-primary mb-6">Domaine de la Romanée-Conti <br/><span class="italic font-light">Échezeaux</span></h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<p class="text-slate-600 leading-relaxed text-sm">A masterclass in restraint. Wild strawberries, dried rose petals, and exotic spices. Silky tannins that coat the palate like velvet.</p>
+<div class="flex flex-col justify-between">
+<div class="flex gap-4 text-[10px] uppercase tracking-widest text-slate-400 mb-4">
+<span>Acidity: High</span>
+<span>Maturity: Peak</span>
+</div>
+<button class="bg-primary text-white px-8 py-3 w-fit text-[11px] font-bold uppercase tracking-widest hover:bg-[#22445E] transition-colors">
+                                            Private Allocation Only
+                                        </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Item 4: Asymmetric Minimal -->
+<article class="grid grid-cols-1 md:grid-cols-12 gap-12 group border-t border-slate-50 pt-16">
+<div class="md:col-span-1 text-3xl font-light text-slate-300 group-hover:text-[#6B2737]">04</div>
+<div class="md:col-span-3">
+<div class="flex items-center gap-4 mb-2">
+<span class="text-[11px] font-semibold tracking-widest text-[#11324B] uppercase bg-[#F6F3EE] px-2 py-1">Chablis</span>
+<span class="text-[11px] font-semibold tracking-widest text-slate-400 uppercase">2018</span>
+</div>
+<h3 class="text-2xl font-semibold tracking-tight text-primary mb-4 leading-tight">Domaine Raveneau Montee de Tonnerre</h3>
+</div>
+<div class="md:col-span-6 bg-stone-50 p-8 flex items-center justify-between">
+<p class="text-slate-500 italic text-sm">"The quintessence of oyster-shell minerality and laser-like precision. An archive favorite."</p>
+<span class="text-primary font-bold ml-4">€420</span>
+</div>
+<div class="md:col-span-2 flex flex-col justify-center">
+<button class="text-[11px] font-bold uppercase tracking-widest text-[#6B2737] border-b-2 border-[#6B2737] pb-1 w-fit hover:opacity-60 transition-opacity">
+                                    Inquire
+                                </button>
+</div>
+</article>
+</div>
+</div>
+<!-- Call to Action Section -->
+<section class="bg-surface-container-low p-16 mt-40">
+<div class="max-w-2xl">
+<h2 class="text-4xl font-semibold tracking-tighter text-primary mb-6">Seeking a specific bottle?</h2>
+<p class="text-slate-600 mb-8 leading-relaxed">Our archivists maintain relationships with the world's most private cellars. If you are looking for a particular vintage not listed in our public catalog, we offer a dedicated procurement service.</p>
+<a class="inline-block bg-[#11324B] text-white px-10 py-4 font-bold uppercase tracking-[0.2em] text-xs hover:bg-[#22445E] transition-colors" href="#">
+                            Speak with a Sommelier
+                        </a>
+</div>
+</section>
+</section>
+</main>
+</div>
+<!-- Footer Shell -->
+<footer class="w-full py-20 px-12 bg-stone-200 dark:bg-stone-900 border-t border-stone-300 dark:border-stone-800">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="md:col-span-2">
+<div class="text-slate-900 dark:text-stone-50 font-['Montserrat'] font-light text-sm tracking-wide mb-8">
+                    © 2024 The Monolithic Archive. Excellence in Viticulture.
+                </div>
+<div class="flex flex-wrap gap-8">
+<a class="font-['Montserrat'] font-light text-sm tracking-wide text-slate-600 dark:text-stone-400 hover:text-slate-900 hover:text-red-900 dark:hover:text-red-400 transition-colors" href="#">Provenance</a>
+<a class="font-['Montserrat'] font-light text-sm tracking-wide text-slate-600 dark:text-stone-400 hover:text-slate-900 hover:text-red-900 dark:hover:text-red-400 transition-colors" href="#">Legal</a>
+<a class="font-['Montserrat'] font-light text-sm tracking-wide text-slate-600 dark:text-stone-400 hover:text-slate-900 hover:text-red-900 dark:hover:text-red-400 transition-colors" href="#">Contact</a>
+<a class="font-['Montserrat'] font-light text-sm tracking-wide text-slate-600 dark:text-stone-400 hover:text-slate-900 hover:text-red-900 dark:hover:text-red-400 transition-colors" href="#">Shipping</a>
+<a class="font-['Montserrat'] font-light text-sm tracking-wide text-slate-600 dark:text-stone-400 hover:text-slate-900 hover:text-red-900 dark:hover:text-red-400 transition-colors" href="#">Sustainability</a>
+</div>
+</div>
+<div class="md:col-span-2 text-right flex flex-col justify-between items-end">
+<div class="text-xs uppercase tracking-[0.4em] text-slate-400">Archiving the extraordinary since 1924</div>
+<div class="mt-8 md:mt-0 flex items-center gap-2 group cursor-pointer">
+<span class="text-xs font-semibold uppercase tracking-widest">Back to top</span>
+<span class="material-symbols-outlined text-sm group-hover:-translate-y-1 transition-transform">north</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

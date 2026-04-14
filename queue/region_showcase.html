@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "background": "#fcf9f4",
+                        "tertiary-fixed-dim": "#ffb2be",
+                        "inverse-surface": "#31302d",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#c3c7ce",
+                        "primary": "#001d31",
+                        "on-secondary-fixed-variant": "#284a64",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#3d0315",
+                        "secondary-container": "#bcdefe",
+                        "primary-fixed": "#cde5ff",
+                        "tertiary-fixed": "#ffd9de",
+                        "on-surface-variant": "#43474d",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#dcdad5",
+                        "surface": "#fcf9f4",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#581829",
+                        "on-primary-container": "#7d9ab8",
+                        "primary-container": "#11324b",
+                        "surface-bright": "#fcf9f4",
+                        "on-tertiary-container": "#d67d8e",
+                        "tertiary": "#3c0315",
+                        "surface-container-high": "#ebe8e3",
+                        "on-primary-fixed-variant": "#2b4963",
+                        "on-primary-fixed": "#001d32",
+                        "secondary": "#41627d",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e5e2dd",
+                        "surface-tint": "#44617c",
+                        "on-surface": "#1c1c19",
+                        "secondary-fixed-dim": "#a9caea",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#f0ede8",
+                        "on-secondary-fixed": "#001e31",
+                        "primary-fixed-dim": "#abcae9",
+                        "on-background": "#1c1c19",
+                        "inverse-on-surface": "#f3f0eb",
+                        "inverse-primary": "#abcae9",
+                        "on-tertiary-fixed-variant": "#762f3f",
+                        "surface-container-low": "#f6f3ee",
+                        "secondary-fixed": "#cce5ff",
+                        "on-secondary-container": "#42627e",
+                        "surface-variant": "#e5e2dd",
+                        "on-secondary": "#ffffff",
+                        "outline": "#73777e",
+                        "brand-navy": "#11324B",
+                        "brand-burgundy": "#6B2737",
+                        "brand-cream": "#F6F3EE",
+                        "brand-paper": "#E8E0D4"
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Montserrat', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift { transition: background-color 0.3s ease; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopNavBar (Shared Component) -->
+<header class="w-full top-0 z-50 bg-white dark:bg-stone-950 flex justify-between items-center px-12 py-8 w-full max-w-full">
+<div class="text-xl font-bold tracking-[0.2em] text-slate-900 dark:text-stone-100 uppercase">
+            THE MONOLITHIC ARCHIVE
+        </div>
+<nav class="hidden md:flex items-center space-x-12">
+<a class="text-slate-500 dark:text-stone-400 hover:text-slate-900 dark:hover:text-stone-100 transition-colors font-semibold tracking-tighter" href="#">Collections</a>
+<a class="text-slate-900 dark:text-white border-b-2 border-slate-900 dark:border-white pb-1 font-semibold tracking-tighter" href="#">Regions</a>
+<a class="text-slate-500 dark:text-stone-400 hover:text-slate-900 dark:hover:text-stone-100 transition-colors font-semibold tracking-tighter" href="#">Vintages</a>
+<a class="text-slate-500 dark:text-stone-400 hover:text-slate-900 dark:hover:text-stone-100 transition-colors font-semibold tracking-tighter" href="#">Journal</a>
+</nav>
+<button class="bg-brand-navy text-white px-8 py-3 font-semibold tracking-tighter scale-100 active:scale-[0.99] transition-all hover:bg-[#22445E]">
+            Contact Sommelier
+        </button>
+</header>
+<main>
+<!-- Hero Banner: Asymmetric, High Contrast -->
+<section class="relative w-full h-[870px] overflow-hidden bg-brand-navy">
+<div class="absolute inset-0 opacity-60">
+<img alt="Monochrome aerial view of rolling Burgundian vineyards" class="w-full h-full object-cover grayscale" data-alt="monochrome black and white aerial view of rolling vineyards in Burgundy France with geometric vine rows and soft morning mist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK-Is5MdGkZDNWz2Rw1ZMRBEMJK-x0wLAHw2i9cVhZBz6QKcythTM3UeQ13OD-4Wr6ltHgNpVEClEbhc5uC6DlwbQxQ0rxP3spi7xR8dNCKOSchktrK--8K50_mfSf0k6QosbhSTQVK7dZSElOoUNVr1eJDI5GwYxjZkmK945F30i_trjgN4uolQnSQ2mL5RzRiLfGnJOMp1KMGsgzbVV7CquBzV65qD7EqdvK8DVKzyX8QiJjb-5xKr9NqeYIe-7sAu5RV3kTVFS9"/>
+</div>
+<div class="relative h-full flex flex-col justify-end px-12 pb-24 z-10">
+<div class="max-w-4xl">
+<p class="text-white text-sm font-semibold tracking-[0.4em] uppercase mb-4">The Monolithic Archive / Region</p>
+<h1 class="text-[120px] md:text-[160px] leading-[0.85] font-extrabold text-white tracking-tighter uppercase mb-8">
+                        BURGUNDY
+                    </h1>
+<div class="w-24 h-1 bg-white mb-8"></div>
+<p class="text-white text-lg font-medium tracking-widest uppercase max-w-lg">
+                        Architectural Heritage of Côte d'Or
+                    </p>
+</div>
+</div>
+</section>
+<!-- Storytelling: Terroir & Tradition -->
+<section class="bg-surface py-32 px-12">
+<div class="flex flex-col md:flex-row gap-24 items-start">
+<div class="md:w-5/12">
+<h2 class="text-[32px] font-semibold text-brand-navy mb-12 uppercase tracking-[0.1em]">Terroir, Limestone, &amp; Monastic Origins</h2>
+<div class="space-y-8">
+<p class="text-xl leading-[1.6] text-on-surface-variant font-normal max-w-prose">
+                            The geology of Burgundy is a complex mosaic of limestone and clay, a subterranean architecture meticulously charted by Cistercian and Benedictine monks over a thousand years ago. This heritage is not merely historical; it is a living blueprint for the most expressive Pinot Noir and Chardonnay on the planet.
+                        </p>
+<p class="text-xl leading-[1.6] text-on-surface-variant font-normal max-w-prose">
+                            In the Côte d'Or, the "Golden Slope," every plot or *climat* possesses a distinct atmospheric and mineral signature. Our archive focuses on the most prestigious crus—monolithic artifacts of viticulture that have remained unchanged in their boundaries since the Middle Ages.
+                        </p>
+</div>
+</div>
+<div class="md:w-7/12 pt-24">
+<div class="bg-surface-container-low p-1 border-0 h-[600px] w-full relative">
+<img alt="Detail of ancient limestone wall in a Burgundy cellar" class="w-full h-full object-cover grayscale brightness-75" data-alt="dramatic close-up of textured ancient limestone wall in a dark French wine cellar with soft directional shadow play" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmJpNst8UI4o4d9y_fxsgOKLlUUKDcKM3Pd1CVUz4Bk1Xrla3WfJaqRRG87S6HmgVa9trprr-1e4Er3TCnuaCIrj4qzFjzx6Bpzt9yUmjQ11C6b50sTKXU5WXc1diXHJ3XMlak1Kf1zXR1Yb0pEA3WaOq0DGnKLdWFTuSyr29B8kq2zTAQ9-TZxoaGX3RUWOupIHaYfqCbuNQBtdPgZz3wORkhIlz3uPdYPLXxgXyt2Z9_WVLvaustEMprVuF8Hh3CbK_pPjEsMUzf"/>
+<div class="absolute -bottom-8 -left-8 bg-brand-navy text-white p-8 max-w-xs">
+<p class="text-xs tracking-widest font-bold uppercase mb-2">Technical Insight</p>
+<p class="text-sm font-medium italic">"The kimmeridgian soil provides the structural tension found in the region's most enduring archives."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Archive: Non-standard List Layout -->
+<section class="bg-brand-paper py-32 px-12">
+<div class="mb-24">
+<p class="text-brand-burgundy font-bold tracking-[0.3em] uppercase text-sm mb-4">Curated Selection</p>
+<h2 class="text-5xl font-semibold text-brand-navy tracking-tighter">THE BURGUNDY ARCHIVE</h2>
+</div>
+<div class="space-y-48">
+<!-- Archive Item 1: Left Aligned Text, Right Offset Image -->
+<div class="flex flex-col md:flex-row items-center gap-12 group">
+<div class="md:w-1/2">
+<span class="text-brand-burgundy text-xs font-bold tracking-widest uppercase">Archive Ref. B-90-RC</span>
+<h3 class="text-4xl font-semibold mt-4 mb-6 text-brand-navy uppercase">Romanée-Conti 1990</h3>
+<p class="text-on-surface-variant max-w-sm mb-8 leading-relaxed">
+                            A legendary vintage representing the pinnacle of Pinot Noir. Notes of dark cherry, exotic spice, and deep forest floor. A monolithic presence in any cellar.
+                        </p>
+<div class="flex items-end gap-12">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Market Valuation</p>
+<p class="text-2xl font-bold text-brand-navy">€24,500.00</p>
+</div>
+<a class="border-b border-brand-burgundy text-brand-burgundy font-bold uppercase tracking-widest text-sm pb-1 hover:text-brand-navy hover:border-brand-navy transition-colors" href="#">
+                                Inquire
+                            </a>
+</div>
+</div>
+<div class="md:w-1/2 flex justify-center">
+<div class="bg-white p-12 transition-transform group-hover:scale-[1.02] duration-500">
+<img alt="Minimalist bottle of Romanée-Conti" class="h-96 w-auto object-contain grayscale" data-alt="luxury wine bottle with classic label isolated against a minimalist white background with clean architectural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEBiQstQjknsc5DCaxnvhZg_aPKIvDhUm6PUfDtPyJhvoe1GfXE_0o_vRzYa8lAvVSUE2tC77OR-RV1CD3pariL3Bbgrd2XXlUXZQbupquFEzy2-MGSLa5Ya1JEy2A89ITz-nRFiUqB3WH8DaY77VuPCHgElzlMS_10-GkbljyXWAMS8xA_HCp5vrbd_4DC7X2hjLyl3EsTYgwIkLUGzdtyjNxqYupLw5x3SZAPw6zuG_WAvIu7d7Q5zf10ba7WM8A4NL6Fp6rgagU"/>
+</div>
+</div>
+</div>
+<!-- Archive Item 2: Right Aligned Text, Left Offset Image (Asymmetric) -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-12 group">
+<div class="md:w-1/2 md:pl-24">
+<span class="text-brand-burgundy text-xs font-bold tracking-widest uppercase">Archive Ref. B-15-MC</span>
+<h3 class="text-4xl font-semibold mt-4 mb-6 text-brand-navy uppercase">Montrachet Grand Cru 2015</h3>
+<p class="text-on-surface-variant max-w-sm mb-8 leading-relaxed">
+                            The absolute expression of Chardonnay. Structural brilliance with immense concentration and mineral energy. A monumental investment piece.
+                        </p>
+<div class="flex items-end gap-12">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Market Valuation</p>
+<p class="text-2xl font-bold text-brand-navy">€9,800.00</p>
+</div>
+<a class="border-b border-brand-burgundy text-brand-burgundy font-bold uppercase tracking-widest text-sm pb-1 hover:text-brand-navy hover:border-brand-navy transition-colors" href="#">
+                                Inquire
+                            </a>
+</div>
+</div>
+<div class="md:w-1/2 flex justify-start">
+<div class="bg-white p-12 transition-transform group-hover:scale-[1.02] duration-500">
+<img alt="Minimalist bottle of Montrachet Grand Cru" class="h-96 w-auto object-contain grayscale" data-alt="elegant dark glass wine bottle with a cream vintage label against a pure white architectural backdrop with sharp shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrdBE--tHHTFsGniVFVCFl9hPa2RJowlsrfQnJhCM6Lp4UUz_VVtv9mzx-9eE3PCSWAVTgMdJ-uaJfi8SFGA-xMHZ_OL-rL-0gZAXVDQogD5Mgdq1zKnKiWsjxMXcmMr6W6OYTaR_A1NbjPjEdw8bAWxyBmKDrh_TolSE_UVokoBpc_Dl-jh-ueBqKa7KjjKOhpx08omaiA0H1bey06AGfIQ7Di5kIRfJ25Ew-kdJN5sqs_IevoBMdRnCp-cwz9pGL7VV7iIgCgqdc"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA: Discreet Luxury -->
+<section class="bg-brand-navy py-40 px-12 text-center">
+<div class="max-w-2xl mx-auto">
+<span class="text-brand-paper text-xs font-bold tracking-[0.4em] uppercase mb-8 block">Exclusive Access</span>
+<h2 class="text-white text-[40px] font-semibold mb-12 tracking-tighter leading-tight">
+                    ENHANCE YOUR PRIVATE CELLAR WITH CURATED BURGUNDIAN ARTIFACTS
+                </h2>
+<button class="bg-brand-burgundy text-white px-12 py-5 font-bold uppercase tracking-widest transition-all hover:bg-red-900 active:scale-95">
+                    Request a Private Sommelier Consultation
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-[#E8E0D4] dark:bg-stone-900 flex flex-col md:flex-row justify-between items-start px-12 py-20 w-full">
+<div class="mb-12 md:mb-0">
+<div class="text-lg font-semibold tracking-[0.15em] text-slate-900 dark:text-stone-100 uppercase mb-8">
+                THE MONOLITHIC ARCHIVE
+            </div>
+<p class="font-['Montserrat'] font-medium uppercase tracking-[0.1em] text-[12px] text-slate-700 dark:text-stone-400">
+                © 2024 THE MONOLITHIC ARCHIVE. ALL RIGHTS RESERVED.
+            </p>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-['Montserrat'] font-medium uppercase tracking-[0.1em] text-[12px] text-slate-700 dark:text-stone-400 hover:text-red-900 dark:hover:text-red-400 transition-colors" href="#">Provenance</a>
+<a class="font-['Montserrat'] font-medium uppercase tracking-[0.1em] text-[12px] text-slate-700 dark:text-stone-400 hover:text-red-900 dark:hover:text-red-400 transition-colors" href="#">Shipping</a>
+<a class="font-['Montserrat'] font-medium uppercase tracking-[0.1em] text-[12px] text-slate-700 dark:text-stone-400 hover:text-red-900 dark:hover:text-red-400 transition-colors" href="#">Private Cellar</a>
+<a class="font-['Montserrat'] font-medium uppercase tracking-[0.1em] text-[12px] text-slate-700 dark:text-stone-400 hover:text-red-900 dark:hover:text-red-400 transition-colors" href="#">Terms</a>
+<a class="font-['Montserrat'] font-medium uppercase tracking-[0.1em] text-[12px] text-slate-700 dark:text-stone-400 hover:text-red-900 dark:hover:text-red-400 transition-colors" href="#">Privacy</a>
+</div>
+</footer>
+</body></html>

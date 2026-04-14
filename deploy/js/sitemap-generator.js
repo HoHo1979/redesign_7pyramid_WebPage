@@ -77,7 +77,7 @@
         nameChinese: '拉菲酒莊',
         nameEnglish: 'Chateau Lafite Rothschild',
         year: '2015',
-        image: '/images/chateau-lafite-2015.jpg',
+        image: '/images/chateau-lafite-2015.webp',
         lastModified: '2024-01-15T10:00:00Z'
       },
       {
@@ -85,7 +85,7 @@
         nameChinese: '拉菲酒莊',
         nameEnglish: 'Chateau Lafite Rothschild',
         year: '2016',
-        image: '/images/chateau-lafite-2016.jpg',
+        image: '/images/chateau-lafite-2016.webp',
         lastModified: '2024-01-15T10:00:00Z'
       },
       {
@@ -93,7 +93,7 @@
         nameChinese: '瑪歌酒莊',
         nameEnglish: 'Chateau Margaux',
         year: '2018',
-        image: '/images/chateau-margaux-2018.jpg',
+        image: '/images/chateau-margaux-2018.webp',
         lastModified: '2024-01-15T10:00:00Z'
       }
     ];

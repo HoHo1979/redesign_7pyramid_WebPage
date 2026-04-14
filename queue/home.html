@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-fixed-variant": "#2b4963",
+                        "on-error": "#ffffff",
+                        "on-surface-variant": "#43474d",
+                        "on-background": "#1c1c19",
+                        "secondary-fixed": "#cce5ff",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#c3c7ce",
+                        "tertiary-fixed-dim": "#ffb2be",
+                        "tertiary": "#3c0315",
+                        "inverse-on-surface": "#f3f0eb",
+                        "primary-fixed-dim": "#abcae9",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#f0ede8",
+                        "inverse-surface": "#31302d",
+                        "on-surface": "#1c1c19",
+                        "on-secondary-container": "#42627e",
+                        "on-tertiary-container": "#d67d8e",
+                        "surface-container-low": "#f6f3ee",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#bcdefe",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#581829",
+                        "surface-container-high": "#ebe8e3",
+                        "secondary-fixed-dim": "#a9caea",
+                        "outline": "#73777e",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#44617c",
+                        "surface": "#fcf9f4",
+                        "on-primary-fixed": "#001d32",
+                        "on-tertiary-fixed": "#3d0315",
+                        "on-primary-container": "#7d9ab8",
+                        "secondary": "#41627d",
+                        "on-tertiary-fixed-variant": "#762f3f",
+                        "on-secondary-fixed": "#001e31",
+                        "background": "#fcf9f4",
+                        "primary": "#001d31",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#11324b",
+                        "surface-container-highest": "#e5e2dd",
+                        "surface-bright": "#fcf9f4",
+                        "on-secondary-fixed-variant": "#284a64",
+                        "tertiary-fixed": "#ffd9de",
+                        "inverse-primary": "#abcae9",
+                        "primary-fixed": "#cde5ff",
+                        "surface-variant": "#e5e2dd",
+                        "surface-dim": "#dcdad5"
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #FFFFFF; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48; }
+        .editorial-shadow { box-shadow: 40px 40px 80px rgba(10, 5, 8, 0.08); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-[#07141E] selection:bg-[#11324B] selection:text-white">
+<!-- TopAppBar -->
+<header class="bg-white dark:bg-slate-900 flex items-center justify-between px-6 py-4 w-full fixed top-0 z-[60]">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#11324B] dark:text-[#E8E0D4] hover:bg-[#F6F3EE] p-2 focus:outline-2 focus:outline-[#11324B] focus:outline-offset-2 transition-colors duration-200">menu</button>
+<span class="text-lg font-bold tracking-[0.1em] text-[#11324B] dark:text-[#F6F3EE] uppercase">SEVEN PYRAMID</span>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex gap-8 text-[12px] font-semibold uppercase tracking-widest text-[#11324B]">
+<a class="text-[#6B2737] border-b-2 border-[#6B2737]" href="#">The Archive</a>
+<a class="hover:text-[#6B2737] transition-colors" href="#">Sommelier Selection</a>
+<a class="hover:text-[#6B2737] transition-colors" href="#">Wholesale</a>
+</nav>
+<button class="material-symbols-outlined text-[#11324B] dark:text-[#E8E0D4] hover:bg-[#F6F3EE] p-2 transition-colors duration-200">dark_mode</button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[795px] bg-white flex flex-col md:flex-row items-center px-8 md:px-20 py-20 gap-12 overflow-hidden">
+<div class="z-10 w-full md:w-1/2">
+<span class="text-[12px] font-semibold uppercase tracking-[0.3em] text-[#11324B] mb-8 block">Architectural Integrity in Viticulture</span>
+<h1 class="text-4xl md:text-7xl font-semibold leading-[1.1] text-[#11324B] tracking-tighter max-w-xl">
+                    THE ARCHIVE <br/> OF CURATED <br/> TERROIR.
+                </h1>
+<p class="mt-10 text-lg text-[#07141E]/70 max-w-md leading-relaxed">
+                    A monolithic approach to wine importing. We preserve the structural lineage of the world’s most significant estates.
+                </p>
+<div class="mt-12">
+<button class="bg-[#11324B] text-white px-10 py-5 text-sm font-semibold uppercase tracking-widest hover:bg-[#22445E] focus:outline-2 focus:outline-[#11324B] focus:outline-offset-2 transition-all">
+                        Explore the Cellar
+                    </button>
+</div>
+</div>
+<div class="relative w-full md:w-1/2 h-[600px] flex items-center justify-center">
+<!-- Asymmetric overlapping images -->
+<div class="absolute top-0 right-0 w-3/4 h-full bg-[#F6F3EE] z-0"></div>
+<img class="absolute top-10 left-0 w-2/3 h-4/5 object-cover editorial-shadow z-20" data-alt="dramatic close-up of a deep red wine being poured into a crystal glass with architectural lighting and dark moody background" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFlvxn-ZXeKtr21daDA7Dj2BRB41y1a3uE0KGC3voujljFxzRFewfQ5oKsEWFDi778ZqnNZSX0caJdeSeuf6n9CnIrSJteFnBsPZj4S17FBRSiuOfGrDgAWmw7JUwKyZihtE9Or31B7PgFU-KAe5Z68k4LHPvozARx8scz67tRmGxk-tNslYr6MNLYi0DmSufDnm1tbtbl5XVKAGmpkmBR90ZTbG25MWKwPo9rCNAZ1hG-ynXNpDBLfnbeuDSRFRCq0gv1ktDuX0IZ"/>
+<img class="absolute bottom-0 right-0 w-1/2 h-3/5 object-cover editorial-shadow z-10 opacity-80" data-alt="minimalist architectural shot of a modern wine cellar with clean lines stone walls and backlit bottle displays" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1-l7G4cZTlJvx2lsK2Ck7okj0hKc4ad4bTSqhh5GsLsYcXlaHZ9gn9xj3kdcnL_R2LDAzh3FWb6VpNOZPh1VAmD9tb0yTuo7wkhr305nqX0ZnoojTpVGxpJKnGWxskqF5pc1AUUvzrQLV3ACPXJe83an-xXwhS0WAMvW8pBITS6IdQmuRkuAy7ndmvGRRGYoDinX0SRAfppYbGMWK8Gu4IGLala_O6xQbbNBmXG1hJ0FuXBHpnKa7Dv3uN4vSqJLQsshAp2AqFo_D"/>
+</div>
+</section>
+<!-- The Golden Gap / Intro -->
+<section class="bg-[#F6F3EE] py-32 px-8 md:px-20">
+<div class="max-w-4xl border-l-4 border-[#11324B] pl-12">
+<h2 class="text-2xl md:text-4xl font-semibold text-[#11324B] leading-tight mb-8">
+                    WE DON'T JUST IMPORT WINE; <br/> WE CURATE ARCHITECTURAL LIQUID.
+                </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<p class="text-[#07141E] leading-relaxed">
+                        Our selection process is rigorous, focusing on estates that respect the geometry of their land. Every bottle in our archive represents a specific point in time and space, captured with absolute clarity.
+                    </p>
+<p class="text-[#07141E] leading-relaxed">
+                        Seven Pyramid stands at the intersection of heritage and modern preservation. We ensure that the provenance of every vintage is maintained through a strictly controlled monolithic supply chain.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Wine Collection Showcase (Asymmetric Bento) -->
+<section class="bg-white py-32 px-8 md:px-20">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div>
+<span class="text-[12px] font-semibold uppercase tracking-[0.2em] text-[#6B2737] block mb-4">Current Selection</span>
+<h2 class="text-4xl font-semibold text-[#11324B] tracking-tight">The Sommelier’s Archive</h2>
+</div>
+<a class="text-sm font-bold uppercase tracking-widest border-b-2 border-[#11324B] pb-1 hover:text-[#6B2737] hover:border-[#6B2737] transition-all" href="#">View All 1,402 Bottles</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Large Feature -->
+<div class="md:col-span-7 bg-[#F6F3EE] p-0 flex flex-col md:flex-row">
+<div class="w-full md:w-1/2 h-full">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="stunning aerial view of ancient vineyard terraces in the Douro Valley at sunrise with misty river below" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMF8XjFzdN3LY5tq99wXjnh5M-Sd9ia_BPbNaGPxyRKZonj0VZG0C5aycXQQBhUR-2f_dv-f8fd9OPpYd_ZhuJgXS9vnoZEXeyqqo-UtOhwsTqmCQs5Q0pDiT7udLBN5Sj-cH-S_BZu-TPKXh9YY_qGCJhFFXg8W9umYtUC-SIFsc3N_umeZqtY0zDBlaTJoDM8hLM3uH3sraGDOCT6VZCOMSru1LIN8Vp1_k6raR8giRB9O_s7OScEBTLuU2YONRalowIyiUSQiz8"/>
+</div>
+<div class="w-full md:w-1/2 p-12 flex flex-col justify-center">
+<span class="text-[11px] font-bold uppercase tracking-widest text-[#11324B]/60 mb-4">Estate Spotlight</span>
+<h3 class="text-3xl font-semibold text-[#11324B] mb-6">DOMAINE DE LA VOUTE</h3>
+<p class="text-sm leading-relaxed mb-8 text-[#07141E]/80">
+                            An architectural marvel carved into the limestone hills of Burgundy. This vintage represents the peak of structural elegance.
+                        </p>
+<div class="flex gap-4">
+<button class="bg-[#11324B] text-white px-6 py-3 text-[10px] font-bold uppercase tracking-widest">Reserve Allocation</button>
+</div>
+</div>
+</div>
+<!-- Small Card 1 -->
+<div class="md:col-span-5 bg-white p-8 border-l border-[#E8E0D4] flex flex-col justify-between">
+<div>
+<div class="h-64 mb-8">
+<img class="h-full w-auto mx-auto object-contain" data-alt="elegant wine bottle with minimalist white label sitting on a textured concrete surface with sharp shadows" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx_oFDWSq6bN5wN2EKKOLSR7A8mt8gL7uZVu90V_4bNdWlg0zTS_lE78WTBDXMXdwMLw-geKGc0tu3t9915npFoXWsr3OZurLNPHPW-PN20J1UmDQSDuAlNmcWXGbhJSlw3JdOrf4hPlAtf_xXgHwpd3x2JgmSwWpJeDYFt_uiEvpHIdCE3czvGpk-_AZHFFrxqNkdeAa_MhE2dJ6zKNiMkTybjEybMVP9FucLm2G9VCcRCDJAVg2WPDWFSC1j2oraxLUDt00dXm0O"/>
+</div>
+<h4 class="text-xl font-bold text-[#11324B] mb-2 uppercase tracking-tight">Barolo Riserva 2016</h4>
+<div class="text-[12px] font-medium text-[#6B2737] mb-4 uppercase">Piedmont, Italy • 98 pts</div>
+<p class="text-sm text-[#07141E]/70 leading-relaxed italic">
+                            "Notes of dried rose, tar, and crushed stone. A monolithic structure that will age for decades."
+                        </p>
+</div>
+<div class="mt-8 pt-8 border-t border-[#F6F3EE] flex justify-between items-center">
+<span class="text-lg font-semibold text-[#11324B]">$420.00</span>
+<button class="text-[#6B2737] font-bold uppercase text-[11px] tracking-widest hover:underline">Inquire</button>
+</div>
+</div>
+<!-- Small Card 2 - Offset -->
+<div class="md:col-span-4 bg-[#E8E0D4] p-8 flex flex-col">
+<span class="text-[10px] font-bold uppercase tracking-tighter text-[#11324B] mb-12">Collection II</span>
+<div class="h-48 mb-8">
+<img class="w-full h-full object-cover" data-alt="close-up detail of wine corks and vintage cellar tools on an old oak table with warm golden light" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrIKZ0WTHdVnkupG_40WEhvYtY2O7U1FGRYg8kQGwmnYJvziGHTYh-egV_6UtURJh5vwmKrV7X9q6BmJUTu7eJhBECZTIkiwY-4clQueeG4ysL8bi_GuGPikSnmDOlkoqt_kpCwpeq51nt84SqPDwb022U1Mi4ljPxvBF66W-IUjudH4NKI0KYyewIfLIUws7U9_NVTwKDh377MFAYbRqIhJux18wlMWGTYoRZDrOHZTGsDAnKg8zwtHVhszVBqGi-B5qSmiNBrP5s"/>
+</div>
+<h4 class="text-lg font-bold text-[#11324B] uppercase mb-4">The Volcanic Series</h4>
+<p class="text-xs leading-relaxed text-[#11324B]/80 mb-6 uppercase tracking-wider">
+                        A curation of wines grown in high-altitude volcanic ash. Sharp, mineral, and uncompromising.
+                    </p>
+<button class="mt-auto border border-[#11324B] py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-[#11324B] hover:text-white transition-all">Explore Series</button>
+</div>
+<!-- Large Storytelling Block -->
+<div class="md:col-span-8 bg-[#11324B] text-white p-12 md:p-20 relative overflow-hidden">
+<div class="relative z-10 max-w-lg">
+<h3 class="text-4xl font-semibold mb-8 tracking-tighter">BEYOND THE BOTTLE. <br/> PROVENANCE GUARANTEED.</h3>
+<p class="text-[#E8E0D4]/70 leading-relaxed mb-10">
+                            Every acquisition is accompanied by a digital certificate of integrity, documenting the temperature-controlled journey from the estate's cellar to yours.
+                        </p>
+<ul class="space-y-4 mb-12">
+<li class="flex items-center gap-4 text-xs font-bold uppercase tracking-[0.2em]">
+<span class="material-symbols-outlined text-[#6B2737]">verified</span>
+                                Direct Estate sourcing
+                            </li>
+<li class="flex items-center gap-4 text-xs font-bold uppercase tracking-[0.2em]">
+<span class="material-symbols-outlined text-[#6B2737]">ac_unit</span>
+                                14°C cold-chain logistics
+                            </li>
+<li class="flex items-center gap-4 text-xs font-bold uppercase tracking-[0.2em]">
+<span class="material-symbols-outlined text-[#6B2737]">history_edu</span>
+                                Signed provenance dossiers
+                            </li>
+</ul>
+<button class="bg-[#6B2737] text-white px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-[#833144] transition-all">Request Private Tasting</button>
+</div>
+<div class="absolute right-[-10%] bottom-[-10%] w-2/3 h-full opacity-20 pointer-events-none">
+<img class="w-full h-full object-contain" data-alt="faint outline of a blueprint of a classical winery building with geometric lines and measurements" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9DVVWYpbDY4vDY-hoota2vPR2oqolDT8q-rdMF87BLh58JuMx9o4q8T9Exb2CQAQN9tse_0KUlfTTCY5a3qe2KYhjSsLv4AoLPtjbN-xwGU81o3ZQpStykpl9Q9tFTF_dQZ1VXA4yJGWRY0PZI1_1fxMmlKRjX7wNelgCikuqwASbz7Ko9L_Ibot5wEP3x-HbK3b5EWT3XOs4qJVUyMZKZjEx05ue_8a6DaBAmqmZVDwqvYopKbK5i5gE8BdJk1vv29cIITyGtj1d"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Wine Detail/Scores Section (Minimalist Table) -->
+<section class="bg-[#F6F3EE] py-32 px-8 md:px-20">
+<div class="max-w-6xl mx-auto">
+<div class="mb-16">
+<h2 class="text-3xl font-semibold text-[#11324B] uppercase tracking-widest">The Critique Matrix</h2>
+<p class="text-sm text-[#07141E]/60 mt-2">Quantitative and qualitative analysis of our current holdings.</p>
+</div>
+<div class="space-y-0">
+<!-- Row 1 -->
+<div class="grid grid-cols-1 md:grid-cols-4 py-10 border-b border-[#E8E0D4] items-center gap-6 group hover:bg-white transition-colors px-4">
+<div class="text-[12px] font-bold uppercase tracking-widest text-[#11324B]/50">001 / Bordeaux</div>
+<div class="text-xl font-semibold text-[#11324B]">Château Margaux 2010</div>
+<div class="text-sm text-[#07141E]/70 leading-relaxed italic">"A titan of structure. Precise acidity meets velvet tannins."</div>
+<div class="text-right">
+<span class="text-2xl font-bold text-[#6B2737] tracking-tighter">99 PTS</span>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="grid grid-cols-1 md:grid-cols-4 py-10 border-b border-[#E8E0D4] items-center gap-6 group hover:bg-white transition-colors px-4">
+<div class="text-[12px] font-bold uppercase tracking-widest text-[#11324B]/50">002 / Napa Valley</div>
+<div class="text-xl font-semibold text-[#11324B]">Harlan Estate 2018</div>
+<div class="text-sm text-[#07141E]/70 leading-relaxed italic">"Architectural depth. Intense black fruit and volcanic minerals."</div>
+<div class="text-right">
+<span class="text-2xl font-bold text-[#6B2737] tracking-tighter">100 PTS</span>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="grid grid-cols-1 md:grid-cols-4 py-10 border-b border-[#E8E0D4] items-center gap-6 group hover:bg-white transition-colors px-4">
+<div class="text-[12px] font-bold uppercase tracking-widest text-[#11324B]/50">003 / Mosel</div>
+<div class="text-xl font-semibold text-[#11324B]">Egon Müller Scharzhofberg</div>
+<div class="text-sm text-[#07141E]/70 leading-relaxed italic">"Crystalline purity. A skyscraper of slate and lime."</div>
+<div class="text-right">
+<span class="text-2xl font-bold text-[#6B2737] tracking-tighter">97 PTS</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-40 px-8 text-center bg-white">
+<h2 class="text-5xl md:text-7xl font-semibold text-[#11324B] tracking-tighter mb-12">SECURE YOUR <br/> ALLOCATION.</h2>
+<p class="max-w-xl mx-auto text-[#07141E]/60 text-lg mb-16">
+                Entrance to The Archive is limited. Join our private ledger to receive updates on upcoming architectural releases.
+            </p>
+<form class="max-w-md mx-auto relative">
+<input class="w-full bg-[#F6F3EE] border-0 border-b-2 border-transparent focus:border-[#11324B] focus:ring-0 py-6 px-4 text-sm font-semibold tracking-widest uppercase placeholder:text-[#11324B]/30 transition-all" placeholder="EMAIL ADDRESS" type="email"/>
+<button class="absolute right-0 top-0 h-full px-8 text-[#11324B] font-bold uppercase tracking-widest hover:text-[#6B2737] transition-all">Join</button>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#11324B] text-white flex flex-col md:flex-row items-start justify-between px-8 py-20 gap-12">
+<div class="max-w-xs">
+<h4 class="text-xl font-bold tracking-[0.2em] mb-6 uppercase">SEVEN PYRAMID</h4>
+<p class="font-['Montserrat'] text-[12px] uppercase tracking-[0.15em] opacity-60 leading-loose">
+                Architectural Integrity in Viticulture. A monolithic archive of the world's most significant liquid assets.
+            </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-16">
+<div class="flex flex-col gap-4">
+<span class="text-[10px] font-bold text-[#6B2737] uppercase tracking-widest">Navigation</span>
+<a class="font-['Montserrat'] text-[12px] uppercase tracking-[0.15em] text-[#E8E0D4]/80 hover:text-white underline decoration-[#6B2737] underline-offset-4" href="#">Provenance</a>
+<a class="font-['Montserrat'] text-[12px] uppercase tracking-[0.15em] text-[#E8E0D4]/80 hover:text-white transition-colors" href="#">The Archive</a>
+<a class="font-['Montserrat'] text-[12px] uppercase tracking-[0.15em] text-[#E8E0D4]/80 hover:text-white transition-colors" href="#">Somm Selection</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-[10px] font-bold text-[#6B2737] uppercase tracking-widest">Legal</span>
+<a class="font-['Montserrat'] text-[12px] uppercase tracking-[0.15em] text-[#E8E0D4]/80 hover:text-white transition-colors" href="#">Terms</a>
+<a class="font-['Montserrat'] text-[12px] uppercase tracking-[0.15em] text-[#E8E0D4]/80 hover:text-white transition-colors" href="#">Privacy</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-[10px] font-bold text-[#6B2737] uppercase tracking-widest">Contact</span>
+<a class="font-['Montserrat'] text-[12px] uppercase tracking-[0.15em] text-[#E8E0D4]/80 hover:text-white transition-colors" href="#">Wholesale</a>
+<a class="font-['Montserrat'] text-[12px] uppercase tracking-[0.15em] text-[#E8E0D4]/80 hover:text-white transition-colors" href="#">Sommelier Direct</a>
+</div>
+</div>
+<div class="w-full md:w-auto mt-12 md:mt-0 flex flex-col items-end gap-8">
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-[#E8E0D4]/40 cursor-pointer hover:text-white">language</span>
+<span class="material-symbols-outlined text-[#E8E0D4]/40 cursor-pointer hover:text-white">share</span>
+</div>
+<p class="font-['Montserrat'] text-[10px] uppercase tracking-[0.15em] opacity-40 text-right">
+                © 2024 SEVEN PYRAMID IMPORTS. <br/> ALL RIGHTS RESERVED.
+            </p>
+</div>
+</footer>
+<!-- NavigationDrawer (Hidden by default) -->
+<div class="hidden fixed inset-y-0 left-0 z-50 flex flex-col bg-white dark:bg-slate-900 h-full w-80 shadow-2xl transition-all duration-300 ease-in-out" id="drawer">
+<div class="p-8 border-b border-[#F6F3EE] flex justify-between items-center">
+<span class="text-xl font-semibold text-[#11324B] font-['Montserrat'] uppercase tracking-widest">THE ARCHIVE</span>
+<button class="material-symbols-outlined text-[#11324B]">close</button>
+</div>
+<nav class="flex flex-col py-8">
+<a class="flex items-center gap-4 py-4 font-['Montserrat'] uppercase tracking-widest text-sm font-bold text-[#6B2737] border-l-4 border-[#6B2737] pl-8" href="#">
+<span class="material-symbols-outlined">wine_bar</span> The Archive
+            </a>
+<a class="flex items-center gap-4 py-4 font-['Montserrat'] uppercase tracking-widest text-sm text-[#11324B] hover:bg-[#E8E0D4] pl-8 transition-colors" href="#">
+<span class="material-symbols-outlined">auto_awesome</span> Sommelier Selection
+            </a>
+<a class="flex items-center gap-4 py-4 font-['Montserrat'] uppercase tracking-widest text-sm text-[#11324B] hover:bg-[#E8E0D4] pl-8 transition-colors" href="#">
+<span class="material-symbols-outlined">architecture</span> Import Philosophy
+            </a>
+<a class="flex items-center gap-4 py-4 font-['Montserrat'] uppercase tracking-widest text-sm text-[#11324B] hover:bg-[#E8E0D4] pl-8 transition-colors" href="#">
+<span class="material-symbols-outlined">inventory_2</span> Cellar Management
+            </a>
+<a class="flex items-center gap-4 py-4 font-['Montserrat'] uppercase tracking-widest text-sm text-[#11324B] hover:bg-[#E8E0D4] pl-8 transition-colors" href="#">
+<span class="material-symbols-outlined">mail</span> Contact
+            </a>
+</nav>
+<div class="mt-auto p-8 bg-[#F6F3EE]">
+<span class="text-[10px] font-bold uppercase tracking-widest text-[#11324B]/40 block mb-2">Member Status</span>
+<span class="text-sm font-semibold text-[#11324B] uppercase">Reserve Tier II</span>
+</div>
+</div>
+</body></html>

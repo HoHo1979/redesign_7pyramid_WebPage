@@ -39,86 +39,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">
-    </script>
-    <script id="tailwind-config">
-     tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "on-primary-fixed-variant": "#2b4963",
-                        "on-error": "#ffffff",
-                        "on-surface-variant": "#43474d",
-                        "on-background": "#1c1c19",
-                        "secondary-fixed": "#cce5ff",
-                        "surface-container-lowest": "#ffffff",
-                        "outline-variant": "#c3c7ce",
-                        "tertiary-fixed-dim": "#ffb2be",
-                        "tertiary": "#3c0315",
-                        "inverse-on-surface": "#f3f0eb",
-                        "primary-fixed-dim": "#abcae9",
-                        "error": "#ba1a1a",
-                        "on-tertiary": "#ffffff",
-                        "surface-container": "#f0ede8",
-                        "inverse-surface": "#31302d",
-                        "on-surface": "#1c1c19",
-                        "on-secondary-container": "#42627e",
-                        "on-tertiary-container": "#d67d8e",
-                        "surface-container-low": "#f6f3ee",
-                        "on-secondary": "#ffffff",
-                        "secondary-container": "#bcdefe",
-                        "on-error-container": "#93000a",
-                        "tertiary-container": "#581829",
-                        "surface-container-high": "#ebe8e3",
-                        "secondary-fixed-dim": "#a9caea",
-                        "outline": "#73777e",
-                        "error-container": "#ffdad6",
-                        "surface-tint": "#44617c",
-                        "surface": "#fcf9f4",
-                        "on-primary-fixed": "#001d32",
-                        "on-tertiary-fixed": "#3d0315",
-                        "on-primary-container": "#7d9ab8",
-                        "secondary": "#41627d",
-                        "on-tertiary-fixed-variant": "#762f3f",
-                        "on-secondary-fixed": "#001e31",
-                        "background": "#fcf9f4",
-                        "primary": "#001d31",
-                        "on-primary": "#ffffff",
-                        "primary-container": "#11324b",
-                        "surface-container-highest": "#e5e2dd",
-                        "surface-bright": "#fcf9f4",
-                        "on-secondary-fixed-variant": "#284a64",
-                        "tertiary-fixed": "#ffd9de",
-                        "inverse-primary": "#abcae9",
-                        "primary-fixed": "#cde5ff",
-                        "surface-variant": "#e5e2dd",
-                        "surface-dim": "#dcdad5",
-                        "burgundy-deep": "#800020",
-                        "burgundy-rich": "#722F37",
-                        "burgundy-light": "#9B2335",
-                        "burgundy-muted": "#A0526B",
-                        "burgundy-bg": "#2A0A14"
-                    },
-                    fontFamily: {
-                        sans: ['Montserrat', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
+  <link href="css/tailwind.css" rel="stylesheet"/>
+<style>
      body { font-family: 'Montserrat', sans-serif; background-color: #FFFFFF; min-height: max(884px, 100dvh); }
       .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48; }
       .editorial-shadow { box-shadow: 40px 40px 80px rgba(10, 5, 8, 0.08); }
-      #age-gate-banner { position: fixed; bottom: 0; left: 0; width: 100%; height: 10vh; background-color: #11324b; color: #fff; text-align: center; display: flex; align-items: center; justify-content: center; z-index: 1001; }
+      #age-gate-banner { position: fixed; bottom: 0; left: 0; width: 100%; height: 10vh; background-color: #6b2737; color: #fff; text-align: center; display: flex; align-items: center; justify-content: center; z-index: 1001; }
       #age-gate-banner p { margin: 0; font-size: clamp(0.8rem, 2.5vh, 2rem); font-weight: bold; }
       @media (prefers-reduced-motion: reduce) { * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
     </style>
    </link>
   </link>
  </head>
- <body class="text-[#07141E] selection:bg-[#11324B] selection:text-white pb-16">
+ <body class="text-[#07141E] selection:bg-[#6B2737] selection:text-white pb-16">
   <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-white focus:text-black">跳到主要內容</a>
   <div id="age-gate-banner">
    <p>
@@ -127,19 +60,19 @@
   </div>
   <header role="banner" class="bg-white dark:bg-slate-900 border-b border-[#E8E0D4] flex items-center justify-between px-6 py-4 w-full fixed top-0 z-[60]">
    <div class="flex items-center gap-4">
-    <button class="material-symbols-outlined text-[#11324B] dark:text-[#E8E0D4] hover:bg-[#F6F3EE] md:hidden p-2 focus:outline-2 focus:outline-[#11324B] focus:outline-offset-2 transition-colors duration-200" id="mobile-menu-toggle">
+    <button class="material-symbols-outlined text-[#6B2737] dark:text-[#E8E0D4] hover:bg-[#F6F3EE] md:hidden p-2 focus:outline-2 focus:outline-[#6B2737] focus:outline-offset-2 transition-colors duration-200" id="mobile-menu-toggle">
      menu
     </button>
-    <a class="flex items-center gap-3" href="#home">
+    <a class="flex items-center gap-3" href="index.html#home">
      <img alt="Seven Pyramid Logo" class="h-10 w-10" src="img/7pyramidlogo.webp"/>
-     <span class="text-lg font-bold tracking-[0.1em] text-[#11324B] dark:text-[#F6F3EE] uppercase hidden sm:block">
+     <span class="text-lg font-bold tracking-[0.1em] text-[#6B2737] dark:text-[#F6F3EE] uppercase hidden sm:block">
       Seven Pyramid 七銘企業
      </span>
     </a>
    </div>
    <div class="flex items-center gap-6">
-    <nav role="navigation" aria-label="主要導航" class="hidden md:flex gap-8 text-[12px] font-semibold uppercase tracking-widest text-[#11324B] dark:text-[#F6F3EE]" id="desktop-nav">
-     <a class="hover:text-[#800020] transition-colors" href="#wines">
+    <nav role="navigation" aria-label="主要導航" class="hidden md:flex gap-8 text-[12px] font-semibold uppercase tracking-widest text-[#6B2737] dark:text-[#F6F3EE]" id="desktop-nav">
+     <a class="hover:text-[#800020] transition-colors" href="index.html#wines">
       酒款目錄
      </a>
      <a class="hover:text-[#800020] transition-colors" href="french_wine_knowledge.html">
@@ -151,14 +84,14 @@
      <a class="hover:text-[#800020] transition-colors" href="faq.html">
       葡萄酒投資
      </a>
-     <a class="hover:text-[#800020] transition-colors" href="#services">
+     <a class="hover:text-[#800020] transition-colors" href="index.html#services">
       服務項目
      </a>
-     <a class="hover:text-[#800020] transition-colors" href="#contact">
+     <a class="hover:text-[#800020] transition-colors" href="index.html#contact">
       聯繫我們
      </a>
     </nav>
-    <button class="material-symbols-outlined text-[#11324B] dark:text-[#E8E0D4] hover:bg-[#F6F3EE] p-2 rounded-full transition-colors duration-200" id="theme-toggle">
+    <button class="material-symbols-outlined text-[#6B2737] dark:text-[#E8E0D4] hover:bg-[#F6F3EE] p-2 rounded-full transition-colors duration-200" id="theme-toggle">
      light_mode
     </button>
    </div>
@@ -166,18 +99,18 @@
   <div class="fixed inset-0 bg-black/50 z-[100] opacity-0 invisible transition-all duration-300" id="mobile-menu-overlay">
    <div class="absolute top-20 right-0 w-[280px] max-w-[90vw] bg-white dark:bg-slate-900 shadow-xl translate-x-full transition-transform duration-300 flex flex-col p-6" id="mobile-menu">
     <div class="flex justify-between items-center mb-6">
-     <span class="text-xl font-bold tracking-[0.1em] text-[#11324B] dark:text-[#F6F3EE] uppercase">
+     <span class="text-xl font-bold tracking-[0.1em] text-[#6B2737] dark:text-[#F6F3EE] uppercase">
       選單
      </span>
-     <button class="material-symbols-outlined text-[#11324B] dark:text-[#F6F3EE]" id="mobile-menu-close">
+     <button class="material-symbols-outlined text-[#6B2737] dark:text-[#F6F3EE]" id="mobile-menu-close">
       close
      </button>
     </div>
-    <nav role="navigation" aria-label="行動裝置導航" class="flex flex-col gap-6 text-sm font-semibold tracking-widest text-[#11324B] dark:text-[#F6F3EE] uppercase">
-     <a class="hover:text-[#800020] transition-colors" href="#home">
+    <nav role="navigation" aria-label="行動裝置導航" class="flex flex-col gap-6 text-sm font-semibold tracking-widest text-[#6B2737] dark:text-[#F6F3EE] uppercase">
+     <a class="hover:text-[#800020] transition-colors" href="index.html#home">
       首頁
      </a>
-     <a class="hover:text-[#800020] transition-colors" href="#wines">
+     <a class="hover:text-[#800020] transition-colors" href="index.html#wines">
       酒款目錄
      </a>
      <a class="hover:text-[#800020] transition-colors" href="french_wine_knowledge.html">
@@ -189,10 +122,10 @@
      <a class="hover:text-[#800020] transition-colors" href="faq.html">
       葡萄酒投資
      </a>
-     <a class="hover:text-[#800020] transition-colors" href="#services">
+     <a class="hover:text-[#800020] transition-colors" href="index.html#services">
       服務項目
      </a>
-     <a class="hover:text-[#800020] transition-colors" href="#contact">
+     <a class="hover:text-[#800020] transition-colors" href="index.html#contact">
       聯繫我們
      </a>
     </nav>
@@ -203,10 +136,10 @@
     <span class="text-[12px] font-semibold uppercase tracking-[0.3em] text-[#800020] mb-6 block">
      The Art of Tasting / 品酒藝術
     </span>
-    <h1 class="text-4xl md:text-6xl font-semibold text-[#11324B] leading-[1.1] mb-8 tracking-tight">
+    <h1 class="text-4xl md:text-6xl font-semibold text-[#6B2737] leading-[1.1] mb-8 tracking-tight">
      如何品鑑頂級葡萄酒
     </h1>
-    <p class="text-lg text-[#11324B]/70 leading-relaxed border-l-4 border-[#800020] pl-8">
+    <p class="text-lg text-[#6B2737]/70 leading-relaxed border-l-4 border-[#800020] pl-8">
      品酒是一種需要系統學習的美學修練。從視覺到嗅覺，從口感到餘韻，每一個環節都蘊含著與釀酒師的無聲對話。
     </p>
    </header>
@@ -222,10 +155,10 @@
      </span>
      <div class="w-16 h-px bg-[#800020] mb-6">
      </div>
-     <h2 class="text-2xl md:text-3xl font-semibold text-[#11324B] mb-5 leading-snug">
+     <h2 class="text-2xl md:text-3xl font-semibold text-[#6B2737] mb-5 leading-snug">
       Step 1 &mdash; 觀察酒色
      </h2>
-     <p class="text-[#11324B]/75 leading-loose text-base max-w-2xl">
+     <p class="text-[#6B2737]/75 leading-loose text-base max-w-2xl">
       傾斜酒杯至45度，在白色背景前觀察酒液的色澤、深度與澄清度。紅酒從紫紅（年輕）到磚紅（成熟）的色澤漸變反映了陳年程度。白酒由淡黃到金黃的轉變，則暗示著橡木桶陳釀與年份的影響。色緣（rim）的顏色是判斷酒齡最直觀的指標之一。
      </p>
     </div>
@@ -242,10 +175,10 @@
      </span>
      <div class="w-16 h-px bg-[#800020] mb-6">
      </div>
-     <h2 class="text-2xl md:text-3xl font-semibold text-[#11324B] mb-5 leading-snug">
+     <h2 class="text-2xl md:text-3xl font-semibold text-[#6B2737] mb-5 leading-snug">
       Step 2 &mdash; 品嗅香氣
      </h2>
-     <p class="text-[#11324B]/75 leading-loose text-base max-w-2xl">
+     <p class="text-[#6B2737]/75 leading-loose text-base max-w-2xl">
       搖晃酒杯使酒液與空氣充分接觸，然後深吸一口氣。優質葡萄酒的香氣分為三個層次：初香（Primary Aromas）來自葡萄品種本身，如黑醋栗、玫瑰；二級香（Secondary Aromas）來自發酵過程；陳年香（Tertiary Aromas，又稱Bouquet）則是經過長時間橡木桶及瓶中陳年後形成的複雜香氣，如皮革、雪松、松露等。
      </p>
     </div>
@@ -262,10 +195,10 @@
      </span>
      <div class="w-16 h-px bg-[#800020] mb-6">
      </div>
-     <h2 class="text-2xl md:text-3xl font-semibold text-[#11324B] mb-5 leading-snug">
+     <h2 class="text-2xl md:text-3xl font-semibold text-[#6B2737] mb-5 leading-snug">
       Step 3 &mdash; 品味口感
      </h2>
-     <p class="text-[#11324B]/75 leading-loose text-base max-w-2xl">
+     <p class="text-[#6B2737]/75 leading-loose text-base max-w-2xl">
       小啜一口酒液，讓其覆蓋整個口腔。注意甜度、酸度、單寧（澀感）、酒精感以及酒體（Body）的平衡。頂級紅酒的單寧應細緻絲滑，而非粗礪刺口。偉大的葡萄酒在口中的感受應是多層次且和諧統一的，各元素相輔相成，沒有突兀的突出點。
      </p>
     </div>
@@ -282,15 +215,15 @@
      </span>
      <div class="w-16 h-px bg-[#800020] mb-6">
      </div>
-     <h2 class="text-2xl md:text-3xl font-semibold text-[#11324B] mb-5 leading-snug">
+     <h2 class="text-2xl md:text-3xl font-semibold text-[#6B2737] mb-5 leading-snug">
       Step 4 &mdash; 感受餘韻
      </h2>
-     <p class="text-[#11324B]/75 leading-loose text-base max-w-2xl">
+     <p class="text-[#6B2737]/75 leading-loose text-base max-w-2xl">
       餘韻（Finish 或 Aftertaste）是判斷葡萄酒品質最重要的指標之一。頂級葡萄酒的餘韻應持續30秒甚至數分鐘，香氣和風味在口腔中縈繞不散。常見的評測單位是「盞」（Caudalies），代表餘韻持續的秒數。波爾多五大酒莊或DRC的偉大年份，往往有令人難忘的悠長餘韻。
      </p>
     </div>
    </section>
-   <section class="bg-[#11324B] p-16 md:p-24 flex flex-col items-center text-center mt-8 mb-16">
+   <section class="bg-[#6B2737] p-16 md:p-24 flex flex-col items-center text-center mt-8 mb-16">
     <h2 class="text-white text-3xl md:text-4xl font-semibold mb-8 tracking-tight max-w-lg leading-tight">
      親身體驗七銘企業的品酒文化
     </h2>
@@ -328,10 +261,8 @@
      <a class="hover:text-white transition-colors" href="faq.html">
       常見問題 FAQ
      </a>
-     <a class="hover:text-white transition-colors" href="wine_list.html">
-      酒款目錄
-     </a>
-     <a class="hover:text-white transition-colors" href="#services">
+     <a class="hover:text-[#800020] transition-colors text-[50px]" href="wine_list.html">探索完整酒款目錄</a>
+     <a class="hover:text-white transition-colors" href="index.html#services">
       專業服務
      </a>
     </div>

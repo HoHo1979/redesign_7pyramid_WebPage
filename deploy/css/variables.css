@@ -1,64 +1,80 @@
 /* stylelint-disable no-invalid-position-at-import-rule */
 /* Material Design 3 System Color Custom Properties
    These are declared here for IDE recognition.
-   Actual values are overridden by light.css and dark.css at runtime.
-*/
+   These defaults should still reflect the Seven Pyramid dark-luxury brand
+   when a theme class has not been applied yet.
+ */
 
 :root {
-  --md-sys-color-primary: rgb(126 0 146);
-  --md-sys-color-surface-tint: rgb(154 37 174);
-  --md-sys-color-on-primary: rgb(255 255 255);
-  --md-sys-color-primary-container: rgb(156 39 176);
-  --md-sys-color-on-primary-container: rgb(255 202 255);
-  --md-sys-color-secondary: rgb(113 84 120);
+  --md-sys-color-primary: rgb(212 175 55);
+  --md-sys-color-surface-tint: rgb(212 175 55);
+  --md-sys-color-on-primary: rgb(7 20 30);
+  --md-sys-color-primary-container: rgb(42 10 20);
+  --md-sys-color-on-primary-container: rgb(243 229 171);
+  --md-sys-color-secondary: rgb(114 47 55);
   --md-sys-color-on-secondary: rgb(255 255 255);
-  --md-sys-color-secondary-container: rgb(225 190 231);
-  --md-sys-color-on-secondary-container: rgb(102 75 109);
-  --md-sys-color-tertiary: rgb(0 104 118);
+  --md-sys-color-secondary-container: rgb(94 13 13);
+  --md-sys-color-on-secondary-container: rgb(243 229 171);
+  --md-sys-color-tertiary: rgb(17 50 75);
   --md-sys-color-on-tertiary: rgb(255 255 255);
-  --md-sys-color-tertiary-container: rgb(0 188 212);
-  --md-sys-color-on-tertiary-container: rgb(0 70 80);
+  --md-sys-color-tertiary-container: rgb(7 20 30);
+  --md-sys-color-on-tertiary-container: rgb(243 229 171);
   --md-sys-color-error: rgb(186 26 26);
   --md-sys-color-on-error: rgb(255 255 255);
   --md-sys-color-error-container: rgb(255 218 214);
   --md-sys-color-on-error-container: rgb(147 0 10);
-  --md-sys-color-background: rgb(255 247 250);
-  --md-sys-color-on-background: rgb(33 25 33);
-  --md-sys-color-surface: rgb(255 247 250);
-  --md-sys-color-on-surface: rgb(33 25 33);
-  --md-sys-color-surface-variant: rgb(242 220 238);
-  --md-sys-color-on-surface-variant: rgb(81 66 80);
-  --md-sys-color-outline: rgb(131 114 129);
-  --md-sys-color-outline-variant: rgb(213 193 210);
-  --md-sys-color-shadow: rgb(0 0 0);
-  --md-sys-color-scrim: rgb(0 0 0);
-  --md-sys-color-inverse-surface: rgb(55 45 54);
-  --md-sys-color-inverse-on-surface: rgb(252 236 248);
-  --md-sys-color-inverse-primary: rgb(249 171 255);
-  --md-sys-color-primary-fixed: rgb(255 214 254);
-  --md-sys-color-on-primary-fixed: rgb(53 0 63);
-  --md-sys-color-primary-fixed-dim: rgb(249 171 255);
-  --md-sys-color-on-primary-fixed-variant: rgb(123 0 143);
-  --md-sys-color-secondary-fixed: rgb(250 215 255);
-  --md-sys-color-on-secondary-fixed: rgb(41 18 49);
-  --md-sys-color-secondary-fixed-dim: rgb(222 187 228);
-  --md-sys-color-on-secondary-fixed-variant: rgb(88 61 95);
-  --md-sys-color-tertiary-fixed: rgb(161 239 255);
-  --md-sys-color-on-tertiary-fixed: rgb(0 31 37);
-  --md-sys-color-tertiary-fixed-dim: rgb(68 216 241);
-  --md-sys-color-on-tertiary-fixed-variant: rgb(0 78 89);
-  --md-sys-color-surface-dim: rgb(229 214 225);
-  --md-sys-color-surface-bright: rgb(255 247 250);
-  --md-sys-color-surface-container-lowest: rgb(255 255 255);
-  --md-sys-color-surface-container-low: rgb(255 239 251);
-  --md-sys-color-surface-container: rgb(249 233 245);
-  --md-sys-color-surface-container-high: rgb(243 228 239);
-  --md-sys-color-surface-container-highest: rgb(238 222 234);
+  --md-sys-color-background: rgb(7 20 30);
+  --md-sys-color-on-background: rgb(244 244 244);
+  --md-sys-color-surface: rgb(7 20 30);
+  --md-sys-color-on-surface: rgb(244 244 244);
+  --md-sys-color-surface-variant: rgb(26 34 43);
+  --md-sys-color-on-surface-variant: rgb(214 205 192);
+  --md-sys-color-outline: rgb(160 130 72);
+  --md-sys-color-outline-variant: rgb(66 47 54);
+  --md-sys-color-shadow: rgb(10 5 8);
+  --md-sys-color-scrim: rgb(7 20 30 / 0.72);
+  --md-sys-color-inverse-surface: rgb(246 243 238);
+  --md-sys-color-inverse-on-surface: rgb(7 20 30);
+  --md-sys-color-inverse-primary: rgb(156 120 20);
+  --md-sys-color-primary-fixed: rgb(255 235 180);
+  --md-sys-color-on-primary-fixed: rgb(40 30 0);
+  --md-sys-color-primary-fixed-dim: rgb(212 175 55);
+  --md-sys-color-on-primary-fixed-variant: rgb(120 90 10);
+  --md-sys-color-secondary-fixed: rgb(224 194 202);
+  --md-sys-color-on-secondary-fixed: rgb(42 10 20);
+  --md-sys-color-secondary-fixed-dim: rgb(160 82 107);
+  --md-sys-color-on-secondary-fixed-variant: rgb(114 47 55);
+  --md-sys-color-tertiary-fixed: rgb(214 228 239);
+  --md-sys-color-on-tertiary-fixed: rgb(7 20 30);
+  --md-sys-color-tertiary-fixed-dim: rgb(34 68 94);
+  --md-sys-color-on-tertiary-fixed-variant: rgb(17 50 75);
+  --md-sys-color-surface-dim: rgb(6 14 21);
+  --md-sys-color-surface-bright: rgb(17 50 75);
+  --md-sys-color-surface-container-lowest: rgb(4 10 16);
+  --md-sys-color-surface-container-low: rgb(13 26 37);
+  --md-sys-color-surface-container: rgb(18 31 42);
+  --md-sys-color-surface-container-high: rgb(23 37 49);
+  --md-sys-color-surface-container-highest: rgb(30 44 57);
+  --luxury-gold: #D4AF37;
+  --luxury-gold-light: #F3E5AB;
+  --luxury-wine-red: #5E0D0D;
   /* Burgundy Wine Palette */
   --color-burgundy-deep: #800020;
   --color-burgundy-rich: #722F37;
   --color-burgundy-light: #9B2335;
   --color-burgundy-muted: #A0526B;
   --color-burgundy-bg: #2A0A14;
+  --color-gold: #D4AF37;
+  --color-button: #6B2737;
+  --color-button-hover: #22445E;
+  --color-accent: #11324B;
+  --color-background: #FFFFFF;
+  --color-background-secondary: #F6F3EE;
+  --color-background-burgundy: var(--color-burgundy-bg);
+  --color-shadow-luxury: rgb(10 5 8 / 0.15);
+  --color-selection: var(--color-button);
+  --color-foreground: #07141E;
+  --color-text-inverse: #FFFFFF;
+  --color-text-burgundy: var(--color-burgundy-deep);
 }
 /* stylelint-enable no-invalid-position-at-import-rule */

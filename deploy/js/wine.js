@@ -56,7 +56,7 @@
     // Update Open Graph tags
     document.getElementById('og-title').setAttribute('content', title);
     document.getElementById('og-description').setAttribute('content', metaDescription);
-    document.getElementById('og-image').setAttribute('content', image || '/images/default-wine.jpg');
+    document.getElementById('og-image').setAttribute('content', image || '/images/default-wine.webp');
     document.getElementById('og-url').setAttribute('content', window.location.href);
 
     // Update canonical URL if needed
@@ -79,7 +79,7 @@
       "name": `${nameChinese} ${nameEnglish} ${year}`,
       "alternateName": [nameChinese, nameEnglish],
       "description": description || `${nameChinese} (${nameEnglish}) ${year}年份來自${region}的優質紅酒`,
-      "image": image || "/images/default-wine.jpg",
+      "image": image || "/images/default-wine.webp",
       "brand": {
         "@type": "Brand",
         "name": nameEnglish.split(' ')[0] // e.g., "Chateau" from "Chateau Lafite"
@@ -154,7 +154,7 @@
 
     // Update image
     const wineImage = document.getElementById('wine-image');
-    wineImage.src = image || '/images/default-wine.jpg';
+    wineImage.src = image || '/images/default-wine.webp';
     wineImage.alt = `${nameChinese} ${nameEnglish} ${year}年`;
 
     // Show content, hide loading
@@ -187,7 +187,7 @@
         region: '法國波爾多左岸',
         alcohol: '13.5%',
         grapes: 'Cabernet Sauvignon 70%, Merlot 25%, Cabernet Franc 3%, Petit Verdot 2%',
-        image: '/images/chateau-lafite-' + year + '.jpg',
+        image: '/images/chateau-lafite-' + year + '.webp',
         stock: 'available'
       },
       'chateau-margaux': {
@@ -200,7 +200,7 @@
         region: '法國波爾多瑪歌村',
         alcohol: '13%',
         grapes: 'Cabernet Sauvignon 85%, Merlot 10%, Petit Verdot 3%, Cabernet Franc 2%',
-        image: '/images/chateau-margaux-' + year + '.jpg',
+        image: '/images/chateau-margaux-' + year + '.webp',
         stock: 'available'
       },
       'chateau-cheval-blanc': {
@@ -213,7 +213,7 @@
         region: '法國波爾多聖艾美隆',
         alcohol: '14%',
         grapes: 'Merlot, Cabernet Franc',
-        image: 'wines/images/chateau_cheval_blanc_2015.png',
+        image: 'wines/images/chateau_cheval_blanc_2015.webp',
         stock: 'available'
       }
     };

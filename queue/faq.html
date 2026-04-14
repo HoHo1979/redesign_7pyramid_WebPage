@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Questions &amp; Insights | MONOLITHIC ARCHIVE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#43474d",
+                    "surface": "#fcf9f4",
+                    "on-background": "#1c1c19",
+                    "on-secondary-fixed-variant": "#284a64",
+                    "secondary-fixed": "#cce5ff",
+                    "inverse-primary": "#abcae9",
+                    "primary-fixed-dim": "#abcae9",
+                    "error": "#ba1a1a",
+                    "surface-tint": "#44617c",
+                    "tertiary": "#3c0315",
+                    "inverse-surface": "#31302d",
+                    "tertiary-container": "#581829",
+                    "outline": "#73777e",
+                    "primary": "#001d31",
+                    "surface-container-low": "#f6f3ee",
+                    "on-secondary-container": "#42627e",
+                    "surface-bright": "#fcf9f4",
+                    "primary-fixed": "#cde5ff",
+                    "error-container": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#bcdefe",
+                    "outline-variant": "#c3c7ce",
+                    "on-tertiary-container": "#d67d8e",
+                    "background": "#fcf9f4",
+                    "on-error-container": "#93000a",
+                    "inverse-on-surface": "#f3f0eb",
+                    "surface-dim": "#dcdad5",
+                    "on-tertiary-fixed-variant": "#762f3f",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed-variant": "#2b4963",
+                    "surface-container-highest": "#e5e2dd",
+                    "surface-container-high": "#ebe8e3",
+                    "primary-container": "#11324b",
+                    "on-secondary-fixed": "#001e31",
+                    "secondary": "#41627d",
+                    "surface-container": "#f0ede8",
+                    "tertiary-fixed": "#ffd9de",
+                    "on-primary-fixed": "#001d32",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed": "#3d0315",
+                    "on-surface": "#1c1c19",
+                    "tertiary-fixed-dim": "#ffb2be",
+                    "secondary-fixed-dim": "#a9caea",
+                    "surface-variant": "#e5e2dd",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#7d9ab8",
+                    "on-error": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "0px"
+            },
+            "fontFamily": {
+                    "sans": ["Montserrat", "sans-serif"],
+                    "headline": ["Montserrat", "sans-serif"],
+                    "body": ["Montserrat", "sans-serif"],
+                    "label": ["Montserrat", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fcf9f4; /* Equivalent to Surface-Low #F6F3EE for warmth */
+        }
+        .golden-gap {
+            margin-bottom: clamp(4rem, 10vw, 12rem);
+        }
+    </style>
+</head>
+<body class="font-['Montserrat'] text-[#07141E] selection:bg-[#11324B] selection:text-white">
+<!-- Top Navigation Bar -->
+<nav class="flex justify-between items-center w-full px-12 py-8 max-w-full bg-[#FFFFFF] sticky top-0 z-50">
+<div class="text-xl font-semibold tracking-[0.1em] text-[#11324B]">MONOLITHIC ARCHIVE</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#07141E] font-medium hover:text-[#6B2737] transition-colors duration-300" href="#">Portfolio</a>
+<a class="text-[#07141E] font-medium hover:text-[#6B2737] transition-colors duration-300" href="#">Regions</a>
+<a class="text-[#07141E] font-medium hover:text-[#6B2737] transition-colors duration-300" href="#">Vintages</a>
+<a class="text-[#07141E] font-medium hover:text-[#6B2737] transition-colors duration-300" href="#">Journal</a>
+<div class="ml-4 flex items-center gap-6">
+<span class="material-symbols-outlined cursor-pointer text-[#11324B]">search</span>
+<button class="bg-[#6B2737] text-white px-8 py-3 text-[12px] font-semibold tracking-widest uppercase hover:bg-[#521d2a] transition-colors">
+                    Contact Sommelier
+                </button>
+</div>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-6 md:px-12 py-24">
+<!-- Hero Section -->
+<header class="mb-32 max-w-3xl">
+<h1 class="text-[40px] md:text-[64px] font-semibold text-[#11324B] leading-[1.1] mb-8 tracking-tight">
+                Questions &amp; Insights
+            </h1>
+<p class="text-lg md:text-xl text-[#11324B]/70 font-light leading-relaxed italic border-l-2 border-[#6B2737] pl-8">
+                In the pursuit of the monolithic, clarity is the final vintage. We approach every inquiry with the same architectural precision we apply to our curation.
+            </p>
+</header>
+<!-- Insights Grid / Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Side Category Navigation (Editorial Table of Contents) -->
+<aside class="hidden lg:block lg:col-span-3 sticky top-40 h-fit">
+<nav class="flex flex-col gap-6">
+<span class="text-[12px] font-bold tracking-[0.2em] text-[#6B2737] uppercase mb-4">Themes</span>
+<a class="text-[#11324B] font-semibold hover:pl-2 transition-all duration-300" href="#provenance">Provenance &amp; Authentication</a>
+<a class="text-[#07141E]/60 hover:text-[#11324B] transition-colors" href="#procurement">The Procurement Process</a>
+<a class="text-[#07141E]/60 hover:text-[#11324B] transition-colors" href="#management">Cellar Management</a>
+<a class="text-[#07141E]/60 hover:text-[#11324B] transition-colors" href="#allocation">Private Allocation</a>
+</nav>
+</aside>
+<!-- Questions Content -->
+<div class="lg:col-span-9 space-y-32">
+<!-- Category: Provenance -->
+<section class="scroll-mt-40" id="provenance">
+<div class="mb-12">
+<span class="text-[12px] font-semibold tracking-[0.3em] text-[#6B2737] uppercase">01 / Provenance &amp; Authentication</span>
+<div class="w-full h-[1px] bg-[#11324B]/10 mt-4"></div>
+</div>
+<div class="space-y-20">
+<article class="max-w-2xl">
+<h3 class="text-2xl font-semibold text-[#11324B] mb-6">How is the integrity of older vintages verified?</h3>
+<div class="text-[#11324B] leading-relaxed space-y-4">
+<p>We employ a multi-layered verification protocol that begins with primary source documentation. Every bottle is examined for physical markers of authenticity, including capsule integrity, cork depth, and label typography consistent with the era of production.</p>
+<p>For high-value monolithic selections, we cross-reference batch numbers directly with estate archives, ensuring a closed loop of custody from the cellar floor to our climate-controlled vault.</p>
+</div>
+</article>
+<article class="max-w-2xl ml-auto border-l border-[#11324B]/10 pl-12">
+<h3 class="text-2xl font-semibold text-[#6B2737] mb-6">Can I request a detailed condition report?</h3>
+<div class="text-[#11324B] leading-relaxed">
+<p>Every allocation over a specific valuation is accompanied by a digital dossier. This includes high-resolution photography of the ullage levels, capsule condition, and any historical markings. We believe transparency is the foundation of institutional wine collecting.</p>
+</div>
+</article>
+</div>
+</section>
+<!-- Visual Break / Image -->
+<section class="w-full py-12">
+<div class="bg-[#F6F3EE] p-1 pr-0 flex items-center">
+<div class="w-2/3 h-[400px] bg-slate-200 overflow-hidden">
+<img alt="Cellar detail" class="w-full h-full object-cover filter grayscale" data-alt="Close up of dusty vintage wine bottles stored in a dark stone cellar with dramatic moody lighting and shallow depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6lZVzFM3Y2VLRIPsJhtevhD4BZTe9mgq11FxHV_hdafiqNjrM_WVNm4jC4lTJ3YBRbO2u1FJtZ3kLrOB-a8243BH9ujXN3LBj55kx8EMiqkuuaKi530aD9RYooZFWlHhWeKJr1fydw85PoobOuxLL5N1CV-sADFXvRi0sYiF9GKI76I6z7FF2CT_9s7wfpw_-vEtedL0rfOs7c1dtKvX0Zs9qVeOMSaYUhk7FY_f-KYXrP8GQyzrMEEhmdvXvsuI3KFESIQOQapce"/>
+</div>
+<div class="w-1/3 px-12">
+<p class="text-[12px] font-medium uppercase tracking-[0.2em] text-[#11324B] leading-loose">
+                                "Preservation is not a static act, but a constant dialogue with time."
+                            </p>
+</div>
+</div>
+</section>
+<!-- Category: Procurement -->
+<section class="scroll-mt-40" id="procurement">
+<div class="mb-12">
+<span class="text-[12px] font-semibold tracking-[0.3em] text-[#6B2737] uppercase">02 / The Procurement Process</span>
+<div class="w-full h-[1px] bg-[#11324B]/10 mt-4"></div>
+</div>
+<div class="space-y-20">
+<article class="max-w-2xl">
+<h3 class="text-2xl font-semibold text-[#11324B] mb-6">What is the timeline for sourcing bespoke requests?</h3>
+<div class="text-[#11324B] leading-relaxed">
+<p>Sourcing exceptional wine is an architectural project, not a retail transaction. While our internal archive is vast, bespoke search mandates typically range from two to six weeks. This allows our global network of private collectors and estates to respond to our high standards for storage and provenance.</p>
+</div>
+</article>
+</div>
+</section>
+<!-- Category: Management -->
+<section class="scroll-mt-40" id="management">
+<div class="mb-12">
+<span class="text-[12px] font-semibold tracking-[0.3em] text-[#6B2737] uppercase">03 / Cellar Management</span>
+<div class="w-full h-[1px] bg-[#11324B]/10 mt-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<article>
+<h3 class="text-xl font-semibold text-[#6B2737] mb-6">Do you offer advisory for physical cellar construction?</h3>
+<div class="text-[#11324B] leading-relaxed">
+<p>We consult on the environmental requirements necessary to house a monolithic collection. This includes thermal stability, vibration isolation, and light filtration strategies. We work alongside architects to ensure form meets the rigorous function of fine wine preservation.</p>
+</div>
+</article>
+<article>
+<h3 class="text-xl font-semibold text-[#11324B] mb-6">How is valuation tracked over time?</h3>
+<div class="text-[#11324B] leading-relaxed">
+<p>Clients receive quarterly reports that benchmark their holdings against international auction performance and secondary market indices, providing a clear fiscal view of their liquid assets.</p>
+</div>
+</article>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="bg-[#11324B] p-16 md:p-24 flex flex-col items-center text-center">
+<h2 class="text-white text-3xl md:text-5xl font-semibold mb-10 tracking-tight max-w-2xl leading-tight">
+                        Seek Clarity for Your Collection
+                    </h2>
+<p class="text-white/60 mb-12 max-w-lg">
+                        If your inquiry requires a more nuanced perspective, our senior sommeliers are available for private consultation.
+                    </p>
+<button class="bg-[#6B2737] text-white px-12 py-5 text-sm font-bold tracking-[0.2em] uppercase hover:bg-[#8d3348] transition-all duration-500">
+                        Inquire for Private Consultation
+                    </button>
+</section>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full px-12 py-16 flex flex-col md:flex-row justify-between items-start bg-[#E8E0D4] dark:bg-slate-900 mt-24">
+<div class="mb-12 md:mb-0">
+<div class="text-[#11324B] font-bold tracking-[0.2em] uppercase text-lg mb-8">MONOLITHIC ARCHIVE</div>
+<p class="font-['Montserrat'] uppercase tracking-[0.2em] text-[12px] text-[#11324B]">
+                © 2024 THE MONOLITHIC ARCHIVE. ALL RIGHTS RESERVED.
+            </p>
+</div>
+<div class="flex flex-col md:flex-row gap-12">
+<div class="flex flex-col gap-4">
+<span class="font-bold text-[10px] tracking-[0.3em] uppercase text-[#11324B]/40">Legal</span>
+<a class="font-['Montserrat'] uppercase tracking-[0.2em] text-[12px] text-[#07141E]/60 hover:text-[#6B2737] transition-colors" href="#">Privacy</a>
+<a class="font-['Montserrat'] uppercase tracking-[0.2em] text-[12px] text-[#07141E]/60 hover:text-[#6B2737] transition-colors" href="#">Terms</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-bold text-[10px] tracking-[0.3em] uppercase text-[#11324B]/40">Commerce</span>
+<a class="font-['Montserrat'] uppercase tracking-[0.2em] text-[12px] text-[#07141E]/60 hover:text-[#6B2737] transition-colors" href="#">Allocation</a>
+<a class="font-['Montserrat'] uppercase tracking-[0.2em] text-[12px] text-[#07141E]/60 hover:text-[#6B2737] transition-colors" href="#">Wholesale</a>
+</div>
+</div>
+</footer>
+</body></html>

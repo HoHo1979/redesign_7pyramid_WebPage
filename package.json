@@ -18,13 +18,21 @@
     "test": "npm run check:deploy",
     "start": "npm run serve",
     "serve": "http-server deploy -p 8080 -o",
-    "check:deploy": "node -e \"const fs=require('fs'); const required=['deploy/.htaccess','deploy/index.html','deploy/404.html','deploy/wine_list.html','deploy/css/style.css','deploy/js/app.js','deploy/img/7pyramidlogo.webp','deploy/countries/france.html','deploy/regions/france-bordeaux.html','deploy/wines/md001-20-g1-ch-lafite-rothschild-2020.html','deploy/robots.txt','deploy/sitemap.xml','deploy/site.webmanifest']; const missing=required.filter((file)=>!fs.existsSync(file)); if(missing.length){console.error('Missing deploy files:\\n' + missing.join('\\n')); process.exit(1);} console.log('deploy/ is present and internally complete.');\""
+    "serve:express": "node server.js",
+    "check:deploy": "node -e \"const fs=require('fs'); const required=['deploy/.htaccess','deploy/index.html','deploy/404.html','deploy/wine_list.html','deploy/css/style.css','deploy/css/editorial-motion.css','deploy/js/app.js','deploy/js/editorial-motion.js','deploy/js/vendor/gsap.min.js','deploy/js/vendor/ScrollTrigger.min.js','deploy/js/vendor/lottie.min.js','deploy/js/vendor/three.module.min.js','deploy/img/7pyramidlogo.webp','deploy/countries/france.html','deploy/regions/france-bordeaux.html','deploy/wines/md001-20-g1-ch-lafite-rothschild-2020.html','deploy/robots.txt','deploy/sitemap.xml','deploy/site.webmanifest']; const missing=required.filter((file)=>!fs.existsSync(file)); if(missing.length){console.error('Missing deploy files:\\n' + missing.join('\\n')); process.exit(1);} console.log('deploy/ is present and internally complete.');\"",
+    "build:tailwind": "tailwindcss -c tailwind.config.js -i tailwind.input.css -o deploy/css/tailwind.css --minify",
+    "vendor:motion": "node scripts/sync-motion-vendors.js",
+    "postinstall": "npm run vendor:motion"
   },
   "engines": {
     "node": ">=14.0.0"
   },
   "devDependencies": {
-    "http-server": "^14.1.1"
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.11",
+    "express": "^5.2.1",
+    "http-server": "^14.1.1",
+    "tailwindcss": "^3.4.19"
   },
   "repository": {
     "type": "git",
@@ -33,5 +41,10 @@
   "bugs": {
     "url": "https://github.com/seven-pyramid/wine-catalog/issues"
   },
-  "homepage": "https://newyear.7pyramid.com"
+  "homepage": "https://newyear.7pyramid.com",
+  "dependencies": {
+    "gsap": "^3.15.0",
+    "lottie-web": "^5.13.0",
+    "three": "^0.183.2"
+  }
 }

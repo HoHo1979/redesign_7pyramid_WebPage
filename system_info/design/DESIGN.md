@@ -56,9 +56,9 @@ Burgundy is the signature color of the brand — it bridges the gold luxury high
 | Token | Var / Value | Role |
 |---|---|---|
 | `--color-gold` | `#D4AF37` | Premium highlights — logos, award badges, special labels. Use sparingly. |
-| `--color-button` | `#11324B` | Primary buttons, announcement bar, footer |
-| `--color-button-hover` | `#22445E` | Button hover (pair with `--color-burgundy-light` for warm variant) |
-| `--color-accent` | `#6B2737` | Deep CTA/sale accent. Do not use for large blocks; burgundy is preferred for warm areas |
+| `--color-button` | `#6B2737` | Primary buttons, announcement bar, footer |
+| `--color-button-hover` | `#8A3A4D` | Button hover (pair with `--color-burgundy-light` for warm variant) |
+| `--color-accent` | `#11324B` | Deep CTA/sale accent (navy). Do not use for large blocks; burgundy/wine-red is preferred for warm areas |
 
 **Surfaces & Shadows**
 | Token | Var / Value | Role |
