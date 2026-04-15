@@ -1,0 +1,209 @@
+- generic [active] [ref=e1]:
+  - link "跳到主要內容" [ref=e2] [cursor=pointer]:
+    - /url: "#home"
+  - paragraph [ref=e4]: 開車不喝酒，未滿18歲不可飲酒
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - link "Seven Pyramid Logo Seven Pyramid 七銘企業" [ref=e8] [cursor=pointer]:
+        - /url: "#home"
+        - img "Seven Pyramid Logo" [ref=e9]
+        - generic [ref=e10]: Seven Pyramid 七銘企業
+      - generic [ref=e11]:
+        - navigation "主要導航" [ref=e12]:
+          - link "探索完整酒款目錄" [ref=e13] [cursor=pointer]:
+            - /url: wine_list.html
+          - link "葡萄酒知識" [ref=e14] [cursor=pointer]:
+            - /url: french_wine_knowledge.html
+          - link "如何品酒" [ref=e15] [cursor=pointer]:
+            - /url: how_to_drink_wine.html
+          - link "葡萄酒投資" [ref=e16] [cursor=pointer]:
+            - /url: faq.html
+          - link "服務項目" [ref=e17] [cursor=pointer]:
+            - /url: "#services"
+          - link "聯繫我們" [ref=e18] [cursor=pointer]:
+            - /url: "#contact"
+        - button "切換為深色主題" [ref=e19] [cursor=pointer]: dark_mode
+  - main [ref=e20]:
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e25]: Architectural Integrity in Viticulture
+        - heading "精選世界頂級酒款， 提供最優質的 品酒體驗。" [level=1] [ref=e26]:
+          - text: 精選世界頂級酒款，
+          - text: 提供最優質的
+          - text: 品酒體驗。
+        - paragraph [ref=e27]: 專業酒類顧問為您量身打造獨特品酒之旅。我們以建築般的嚴謹態度，為您保存世界最珍貴的液體資產。
+        - generic [ref=e28]:
+          - link "探索酒款" [ref=e29] [cursor=pointer]:
+            - /url: "#wines"
+          - link "專業諮詢" [ref=e30] [cursor=pointer]:
+            - /url: "#contact"
+      - generic [ref=e31]:
+        - img "Margaux Barrel" [ref=e33]
+        - paragraph [ref=e35]:
+          - text: Curated Terroir
+          - text: From 14°C Controlled logistics
+          - text: Seven Pyramid Exclusive
+    - generic [ref=e38]:
+      - heading "我們不僅進口葡萄酒； 我們精心策劃頂級風味。" [level=2] [ref=e39]:
+        - text: 我們不僅進口葡萄酒；
+        - text: 我們精心策劃頂級風味。
+      - generic [ref=e40]:
+        - paragraph [ref=e41]: 每一瓶酒都經過我們專業團隊精心挑選，確保為您提供最頂級的品酒體驗。我們專注於尊重土地幾何的莊園，確保每一滴酒液都代表著無可取代的風土地理。
+        - paragraph [ref=e42]: Seven Pyramid 站在傳統傳承與現代保存的交會點。我們確保每一個年份的來源與品質，都通過嚴格控制的單一供應鏈來維持，並交遞到您的手中。
+    - generic [ref=e44]:
+      - generic [ref=e46]:
+        - generic [ref=e47]: Current Selection
+        - heading "精選酒款" [level=2] [ref=e48]
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - img "France Wine Regions — Bordeaux, Burgundy, Champagne" [ref=e52]
+          - generic [ref=e53]:
+            - generic [ref=e54]: French Wines
+            - heading "法國經典" [level=3] [ref=e55]
+            - paragraph [ref=e56]: French Classic Wines
+            - paragraph [ref=e57]:
+              - text: 波爾多 • 勃艮第 • 香檳區
+              - text: 代表結構優雅的極致。
+            - link "arrow_outward 探索法國酒款" [ref=e58] [cursor=pointer]:
+              - /url: https://newyear.7pyramid.com/#/wine/france
+              - generic [ref=e59]: arrow_outward
+              - text: 探索法國酒款
+        - generic [ref=e60]:
+          - img "USA Wine Regions — Napa Valley, Sonoma, Oregon" [ref=e62]
+          - generic [ref=e63]:
+            - generic [ref=e64]: American Wines
+            - heading "美國佳釀" [level=4] [ref=e65]
+            - paragraph [ref=e66]: American Premium
+            - generic [ref=e67]: 納帕谷 • 索諾瑪 • 俄勒岡
+            - paragraph [ref=e68]: 蘊含厚實的建築深度，強烈的黑果風味與火山礦物完美交融。
+            - link "探索美國酒款 arrow_forward" [ref=e69] [cursor=pointer]:
+              - /url: https://newyear.7pyramid.com/#/wine/us
+              - text: 探索美國酒款
+              - generic [ref=e70]: arrow_forward
+        - generic [ref=e71]:
+          - generic:
+            - img "Australia Wine Regions — Barossa Valley, Hunter Valley"
+          - generic [ref=e72]:
+            - generic [ref=e73]: Australian Wines
+            - heading "澳洲精選" [level=4] [ref=e74]
+            - paragraph [ref=e75]: Australian Premium
+            - paragraph [ref=e76]:
+              - text: 巴羅莎谷 • 獵人谷
+              - text: 無妥協的濃郁結構，歷久彌新的產區典範。
+            - link "探索澳洲酒款" [ref=e77] [cursor=pointer]:
+              - /url: https://newyear.7pyramid.com/#/wine/australia
+        - generic [ref=e78]:
+          - heading "THE NEW WORLD & IBERIAN EXCELLENCE" [level=3] [ref=e79]
+          - paragraph [ref=e80]: 深入探索智利新星、阿根廷精品與西班牙經典。
+          - generic [ref=e81]:
+            - link "智利新星 Chilean Premium Explore arrow_forward" [ref=e82] [cursor=pointer]:
+              - /url: https://newyear.7pyramid.com/#/wine/chile
+              - heading "智利新星" [level=4] [ref=e83]
+              - paragraph [ref=e84]: Chilean Premium
+              - generic [ref=e85]:
+                - text: Explore
+                - generic [ref=e86]: arrow_forward
+            - link "阿根廷精品 Argentinian Premium Explore arrow_forward" [ref=e87] [cursor=pointer]:
+              - /url: https://newyear.7pyramid.com/#/wine/argentina
+              - heading "阿根廷精品" [level=4] [ref=e88]
+              - paragraph [ref=e89]: Argentinian Premium
+              - generic [ref=e90]:
+                - text: Explore
+                - generic [ref=e91]: arrow_forward
+            - link "西班牙經典 Spanish Classic Explore arrow_forward" [ref=e92] [cursor=pointer]:
+              - /url: https://newyear.7pyramid.com/#/wine/spain
+              - heading "西班牙經典" [level=4] [ref=e93]
+              - paragraph [ref=e94]: Spanish Classic
+              - generic [ref=e95]:
+                - text: Explore
+                - generic [ref=e96]: arrow_forward
+    - generic [ref=e98]:
+      - generic [ref=e99]:
+        - heading "專業服務" [level=2] [ref=e100]
+        - paragraph [ref=e101]: Comprehensive Client Solutions
+      - generic:
+        - generic:
+          - generic: Solution 01
+          - generic:
+            - generic: wine_bar
+            - generic: 專業諮詢
+          - generic: 專業侍酒師為您提供個人化酒款建議，根據您的喜好和預算推薦最適合的酒款。
+        - generic:
+          - generic: Solution 02
+          - generic:
+            - generic: library_books
+            - generic: 收藏策劃
+          - generic: 協助您建立個人酒窖，從投資角度和品飲樂趣雙重考量，打造專屬收藏矩陣。
+        - generic:
+          - generic: Solution 03
+          - generic:
+            - generic: emoji_food_beverage
+            - generic: 品酒活動
+          - generic: 定期舉辦專業品酒會，與志同道合的酒友一起探索世界各地的頂級佳釀，傳遞年份的歷史縮影。
+        - generic:
+          - generic: Solution 04
+          - generic:
+            - generic: inventory_2
+            - generic: 酒窖管理
+          - generic: 提供專業酒窖設計與管理服務，確保您的珍藏在恆溫、最佳濕度環境中陳年熟成，維持葡萄酒生命力的顛峰狀態。
+        - generic:
+          - generic: Solution 05
+          - generic:
+            - generic: trending_up
+            - generic: 投資指導
+          - generic: 分析市場趨勢，提供酒類投資建議，讓您的收藏既有品飲價值又具投資潛力。
+        - generic:
+          - generic: Solution 06
+          - generic:
+            - generic: diamond
+            - generic: VIP 服務
+          - generic: 專屬客戶享有優先選購權、私人品鑒會以及限定酒莊參訪等尊榮體驗。
+    - generic [ref=e103]:
+      - generic [ref=e104]: Private Advisory
+      - heading "聯繫我們的專業團隊" [level=2] [ref=e105]
+      - paragraph [ref=e106]: 專業酒類顧問為您提供個人化服務，立即展開探索您的專屬品酒之旅。我們嚴格對待每一次聯繫，為您帶來絕對的頂級奢華體驗。
+      - generic [ref=e107]:
+        - link "chat WhatsApp 諮詢 即時獲得選酒建議與服務 Message Us" [ref=e108] [cursor=pointer]:
+          - /url: https://wa.me/886227912147
+          - generic [ref=e110]: chat
+          - heading "WhatsApp 諮詢" [level=3] [ref=e111]
+          - paragraph [ref=e112]: 即時獲得選酒建議與服務
+          - text: Message Us
+        - link "mail 電子郵件聯繫 深入討論與企業、大量採購需求 Email Us" [ref=e113] [cursor=pointer]:
+          - /url: mailto:account2@7pyramid.com?subject=葡萄酒諮詢
+          - generic [ref=e115]: mail
+          - heading "電子郵件聯繫" [level=3] [ref=e116]
+          - paragraph [ref=e117]: 深入討論與企業、大量採購需求
+          - text: Email Us
+        - link "call 顧問直線 直接與專業品酒顧問對話 +886-2-2791-2147" [ref=e118] [cursor=pointer]:
+          - /url: tel:+886-2-2791-2147
+          - generic [ref=e120]: call
+          - heading "顧問直線" [level=3] [ref=e121]
+          - paragraph [ref=e122]: 直接與專業品酒顧問對話
+          - text: +886-2-2791-2147
+  - contentinfo [ref=e123]:
+    - generic [ref=e124]:
+      - generic [ref=e125]:
+        - link "Facebook" [ref=e126] [cursor=pointer]:
+          - /url: https://www.facebook.com/SevenPyramid/
+          - generic [ref=e127]: thumb_up
+        - link "Instagram" [ref=e128] [cursor=pointer]:
+          - /url: https://www.instagram.com/seven_pyramid/
+          - generic [ref=e129]: photo_camera
+      - generic [ref=e130]:
+        - heading "SEVEN PYRAMID 七銘企業" [level=4] [ref=e131]
+        - paragraph [ref=e132]:
+          - text: Architectural Integrity in Viticulture.
+          - text: 嚴選代理進口法國、頂級莊園葡萄酒。
+        - generic [ref=e133]:
+          - link "常見問題 FAQ" [ref=e134] [cursor=pointer]:
+            - /url: faq.html
+          - link "酒款目錄" [ref=e135] [cursor=pointer]:
+            - /url: wine_list.html
+          - link "專業服務" [ref=e136] [cursor=pointer]:
+            - /url: "#services"
+      - paragraph [ref=e137]: © 2025 Seven Pyramid 七銘企業. All Rights Reserved.
+      - paragraph [ref=e138]:
+        - text: Built by
+        - link "RXAI" [ref=e139] [cursor=pointer]:
+          - /url: https://rxai.com.au

@@ -1,4 +1,5 @@
-import * as THREE from './vendor/three.module.min.js';
+// THREE is loaded dynamically so a missing vendor file doesn't kill the whole module
+let THREE = null;
 
 const root = document.documentElement;
 const revealTargets = new WeakSet();
@@ -278,6 +279,16 @@ function initThreeCanvases({ reduceMotion }) {
     return 0;
   }
 
+  // Lazily load THREE so a missing vendor file doesn't break the rest of the module
+  const threeReady = THREE
+    ? Promise.resolve(THREE)
+    : import('./vendor/three.module.min.js')
+        .then((mod) => { THREE = mod; return mod; })
+        .catch(() => null);
+
+  threeReady.then((mod) => {
+    if (!mod) return; // Three.js unavailable — skip particle canvases silently
+
   nodes.forEach((node) => {
     if (threeScenes.has(node)) {
       return;
@@ -337,6 +348,8 @@ function initThreeCanvases({ reduceMotion }) {
     node.dataset.motionState = 'active';
     startThreeSceneLoop(instance);
   });
+
+  }); // end threeReady.then
 
   return nodes.length;
 }
@@ -410,5 +423,5 @@ window.SevenPyramidEditorialMotion = {
   init: initEditorialMotion,
   refreshReducedMotion: syncReducedMotion,
   shouldReduceMotion,
-  THREE
+  get THREE() { return THREE; }
 };
